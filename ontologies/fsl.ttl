@@ -1,307 +1,603 @@
-@prefix : <http://www.softlang.org/ontologies/sle/> .
+@prefix : <http://www.softlang.org/ontologies/ofsl/> .
+@prefix ofsl: <http://www.softlang.org/ontologies/ofsl/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@base <http://www.softlang.org/ontologies/sle/> .
+@base <http://www.softlang.org/ontologies/ofsl/> .
 
 #################################################################
 # Ontology
 #################################################################
 
-<http://www.softlang.org/ontologies/sle>
+<http://www.softlang.org/ontologies/ofsl>
     rdf:type owl:Ontology ;
-    rdfs:comment "Taxonomy of software language engineering formalisms and approaches"@en .
+    rdfs:label "Ontology on Formalisms for Software Languages (OFSL)"@en ;
+    rdfs:comment "Ontology on formalisms used in SLE, CC, PLT, TCS, etc."@en .
 
 #################################################################
-# Classes (categories)
+# Meta-classes for ontology entities
+#################################################################
+
+:OntologyEntity
+    a owl:Class ;
+    rdfs:label "Ontology entity"@en ;
+    rdfs:comment "top-level category for entities represented in this ontology"@en .
+
+:PrimaryEntity
+    a owl:Class ;
+    rdfs:subClassOf
+        :OntologyEntity ,
+        [
+            a owl:Restriction ;
+            owl:onProperty :hasArea ;
+            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onClass :Area
+        ] ,
+        [
+            a owl:Restriction ;
+            owl:onProperty :hasArea ;
+            owl:maxQualifiedCardinality "3"^^xsd:nonNegativeInteger ;
+            owl:onClass :Area
+        ] ;
+    rdfs:label "Primary entity"@en ;
+    rdfs:comment "main ontological entity used to represent formalisms, approaches, languages, theories, models of computation, and related concepts"@en .
+
+:SecondaryEntity
+    a owl:Class ;
+    rdfs:subClassOf :OntologyEntity ;
+    rdfs:label "Secondary entity"@en ;
+    rdfs:comment "auxiliary ontological entity used for annotation-like or supporting purposes"@en .
+
+#################################################################
+# Properties
+#################################################################
+
+:hasArea
+    a owl:ObjectProperty ;
+    rdfs:domain :PrimaryEntity ;
+    rdfs:range :Area ;
+    rdfs:label "has area"@en ;
+    rdfs:comment "identifies an important subject area of interest for a primary entity"@en .
+
+:uses
+    a owl:ObjectProperty ;
+    rdfs:domain :OntologyEntity ;
+    rdfs:range :OntologyEntity ;
+    owl:inverseOf :isUsedBy ;
+    rdfs:label "uses"@en ;
+    rdfs:comment "relates an ontology entity to another ontology entity that it uses conceptually, methodologically, or technically"@en .
+
+:isUsedBy
+    a owl:ObjectProperty ;
+    rdfs:domain :OntologyEntity ;
+    rdfs:range :OntologyEntity ;
+    owl:inverseOf :uses ;
+    rdfs:label "is used by"@en ;
+    rdfs:comment "relates an ontology entity to another ontology entity that uses it conceptually, methodologically, or technically"@en .
+
+:hasPart
+    a owl:ObjectProperty , owl:AsymmetricProperty , owl:IrreflexiveProperty ;
+    rdfs:subPropertyOf :uses ;
+    rdfs:domain :OntologyEntity ;
+    rdfs:range :OntologyEntity ;
+    rdfs:label "has part"@en ;
+    rdfs:comment "relates an ontology entity to another ontology entity that is a structural part or constituent of it"@en .
+
+:serves
+    a owl:ObjectProperty ;
+    rdfs:domain :PrimaryEntity ;
+    rdfs:range :Approach ;
+    owl:inverseOf :isServedBy ;
+    rdfs:label "serves"@en ;
+    rdfs:comment "relates a primary entity to an approach that it serves, realizes, supports, or instantiates in an important way"@en .
+
+:isServedBy
+    a owl:ObjectProperty ;
+    rdfs:domain :Approach ;
+    rdfs:range :PrimaryEntity ;
+    owl:inverseOf :serves ;
+    rdfs:label "is served by"@en ;
+    rdfs:comment "relates an approach to a primary entity that serves, realizes, supports, or instantiates it in an important way"@en .
+
+:isSpecifiedBy
+    a owl:ObjectProperty ;
+    rdfs:domain :PrimaryEntity ;
+    rdfs:range :Approach ;
+    owl:inverseOf :specifies ;
+    rdfs:label "is specified by"@en ;
+    rdfs:comment "relates a primary entity to an approach used to formally specify or define its behavior or meaning"@en .
+
+:specifies
+    a owl:ObjectProperty ;
+    rdfs:domain :Approach ;
+    rdfs:range :PrimaryEntity ;
+    owl:inverseOf :isSpecifiedBy ;
+    rdfs:label "specifies"@en ;
+    rdfs:comment "relates an approach to a primary entity whose behavior or meaning it is used to formally specify or define"@en .
+
+#################################################################
+# Secondary entities
+#################################################################
+
+:Area
+    a owl:Class , :SecondaryEntity ;
+    rdfs:label "Area"@en ;
+    rdfs:comment "research or application area relevant to formalisms for software languages and related disciplines"@en .
+
+#################################################################
+# Areas
+#################################################################
+
+:SLE
+    a owl:NamedIndividual , :Area ;
+    rdfs:label "Software Language Engineering"@en ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Language_engineering> ;
+    rdfs:comment "area concerned with the engineering of software languages and related artifacts"@en .
+
+:CC
+    a owl:NamedIndividual , :Area ;
+    rdfs:label "Compiler Construction"@en ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Compiler#Compiler_construction> ;
+    rdfs:comment "area concerned with the design and implementation of compilers"@en .
+
+:PLT
+    a owl:NamedIndividual , :Area ;
+    rdfs:label "Programming Language Theory"@en ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Programming_language_theory> ;
+    rdfs:comment "area concerned with the formal study of programming languages and their properties"@en .
+
+:TCS
+    a owl:NamedIndividual , :Area ;
+    rdfs:label "Theoretical Computer Science"@en ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Theoretical_computer_science> ;
+    rdfs:comment "area concerned with the mathematical and theoretical foundations of computer science"@en .
+
+:SE
+    a owl:NamedIndividual , :Area ;
+    rdfs:label "Software Engineering"@en ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Software_engineering> ;
+    rdfs:comment "area concerned with systematic methods for the development and maintenance of software"@en .
+
+:FM
+    a owl:NamedIndividual , :Area ;
+    rdfs:label "Formal Methods"@en ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Formal_methods> ;
+    rdfs:comment "area concerned with mathematically rigorous methods for specification, development, and verification"@en .
+
+:KR
+    a owl:NamedIndividual , :Area ;
+    rdfs:label "Knowledge Representation & Reasoning"@en ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Knowledge_representation_and_reasoning> ;
+    rdfs:comment "area concerned with representing knowledge and supporting automated reasoning"@en .
+
+:CL
+    a owl:NamedIndividual , :Area ;
+    rdfs:label "Computational Linguistics"@en ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Computational_linguistics> ;
+    rdfs:comment "area concerned with computational models and processing of natural language"@en .
+
+:NLP
+    a owl:NamedIndividual , :Area ;
+    rdfs:label "Natural Language Processing"@en ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Natural_language_processing> ;
+    rdfs:comment "area concerned with computational techniques for analyzing and generating natural language"@en .
+
+#################################################################
+# Classes (primary entities)
 #################################################################
 
 :SoftwareLanguage
-    a owl:Class ;
+    a owl:Class , :PrimaryEntity ;
     rdfs:label "Software language"@en ;
     owl:sameAs <https://en.wikipedia.org/wiki/Software_language> ;
-    rdfs:comment "language used in software development"@en .
-
-:FormalGrammar
-    a owl:Class ;
-    rdfs:label "Formal grammar"@en ;
-    rdfs:subClassOf :FormalSystem ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Formal_grammar> ;
-    rdfs:comment "formal grammar for languages"@en .
-
-:GenerativeGrammar
-    a owl:Class ;
-    rdfs:label "Generative grammar"@en ;
-    rdfs:subClassOf :FormalGrammar ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Formal_grammar#The_Chomsky_hierarchy> ;
-    rdfs:comment "grammar generating valid strings"@en .
-
-:AnalyticGrammar
-    a owl:Class ;
-    rdfs:label "Analytic grammar"@en ;
-    rdfs:subClassOf :FormalGrammar ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Formal_grammar#Analytic_grammars> ;
-    rdfs:comment "grammar recognizing valid strings"@en .
-
-:Metalanguage
-    a owl:Class ;
-    rdfs:label "Metalanguage"@en ;
-    rdfs:subClassOf :SoftwareLanguage ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Metalanguage> ;
-    rdfs:comment "language for describing languages"@en .
+    rdfs:comment "language used in software development"@en ;
+    :hasArea :SLE , :SE .
 
 :FormalSystem
-    a owl:Class ;
+    a owl:Class , :PrimaryEntity ;
     rdfs:label "Formal system"@en ;
     owl:sameAs <https://en.wikipedia.org/wiki/Formal_system> ;
-    rdfs:comment "symbolic deductive formal system"@en .
+    rdfs:comment "symbolic deductive formal system"@en ;
+    :hasArea :PLT , :TCS , :FM .
+
+:Theory
+    a owl:Class , :PrimaryEntity ;
+    rdfs:label "Theory"@en ;
+    rdfs:subClassOf :FormalSystem ;
+    rdfs:comment "formal mathematical theory used to reason about computation, languages, or semantic structures"@en ;
+    :hasArea :PLT , :TCS , :FM .
+
+:FormalGrammar
+    a owl:Class , :PrimaryEntity ;
+    rdfs:subClassOf :FormalSystem ;
+    rdfs:label "Formal grammar"@en ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Formal_grammar> ;
+    rdfs:comment "formal grammar for languages"@en ;
+    :hasArea :SLE , :CC , :TCS .
+
+:GenerativeGrammar
+    a owl:Class , :PrimaryEntity ;
+    rdfs:subClassOf :FormalGrammar ;
+    rdfs:label "Generative grammar"@en ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Formal_grammar#The_Chomsky_hierarchy> ;
+    rdfs:comment "grammar generating valid strings"@en ;
+    :hasArea :CC , :TCS , :CL .
+
+:AnalyticGrammar
+    a owl:Class , :PrimaryEntity ;
+    rdfs:subClassOf :FormalGrammar ;
+    rdfs:label "Analytic grammar"@en ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Formal_grammar#Analytic_grammars> ;
+    rdfs:comment "grammar recognizing valid strings"@en ;
+    :hasArea :CC , :SLE , :TCS .
+
+:Metalanguage
+    a owl:Class , :PrimaryEntity ;
+    rdfs:subClassOf :SoftwareLanguage ;
+    rdfs:label "Metalanguage"@en ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Metalanguage> ;
+    rdfs:comment "language for describing languages"@en ;
+    :hasArea :SLE , :CC .
 
 :LambdaCalculus
-    a owl:Class ;
-    rdfs:label "Lambda calculus"@en ;
+    a owl:Class , :PrimaryEntity ;
     rdfs:subClassOf :FormalSystem ;
+    rdfs:label "Lambda calculus"@en ;
     owl:sameAs <https://en.wikipedia.org/wiki/Lambda_calculus> ;
-    rdfs:comment "formalism for function abstraction"@en .
+    rdfs:comment "formalism for function abstraction"@en ;
+    :hasArea :PLT , :TCS .
 
 :LambdaCube
-    a owl:Class ;
-    rdfs:label "Lambda cube"@en ;
+    a owl:Class , :PrimaryEntity ;
     rdfs:subClassOf :LambdaCalculus ;
+    rdfs:label "Lambda cube"@en ;
     owl:sameAs <https://en.wikipedia.org/wiki/Lambda_cube> ;
-    rdfs:comment "typed lambda calculus family"@en .
+    rdfs:comment "typed lambda calculus family"@en ;
+    :hasArea :PLT , :TCS .
 
 :ClassicalLambdaCalculus
-    a owl:Class ;
-    rdfs:label "Classical lambda calculus"@en ;
+    a owl:Class , :PrimaryEntity ;
     rdfs:subClassOf :LambdaCalculus ;
+    rdfs:label "Classical lambda calculus"@en ;
     owl:sameAs <https://en.wikipedia.org/wiki/Classical_logic#Lambda_calculi> ;
-    rdfs:comment "family of lambda calculi corresponding to classical logic"@en .
+    rdfs:comment "family of lambda calculi corresponding to classical logic"@en ;
+    :hasArea :PLT , :TCS .
 
 :TypeTheory
-    a owl:Class ;
+    a owl:Class , :PrimaryEntity ;
+    rdfs:subClassOf :Theory ;
     rdfs:label "Type theory"@en ;
-    rdfs:subClassOf :FormalSystem ;
     owl:sameAs <https://en.wikipedia.org/wiki/Type_theory> ;
-    rdfs:comment "formal theory of types"@en .
+    rdfs:comment "formal theory of types used in programming language semantics and logic"@en ;
+    :hasArea :PLT , :TCS , :FM .
 
-:FormalSemanticsApproach
-    a owl:Class ;
-    rdfs:label "Formal semantics approach"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Semantics_(programming_languages)#Approaches> ;
-    rdfs:comment "approach to programming language semantics"@en .
-
-:MetaprogrammingApproach
-    a owl:Class ;
-    rdfs:label "Metaprogramming approach"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Metaprogramming> ;
-    rdfs:comment "approach based on programs manipulating programs"@en .
-
-:ProgramTransformationApproach
-    a owl:Class ;
-    rdfs:label "Program transformation approach"@en ;
-    rdfs:subClassOf :MetaprogrammingApproach ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Program_transformation> ;
-    rdfs:comment "approach for transforming programs"@en .
-
-:SyntaxDirectedTranslationApproach
-    a owl:Class ;
-    rdfs:label "Syntax-directed translation approach"@en ;
-    rdfs:subClassOf :MetaprogrammingApproach ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Syntax-directed_translation> ;
-    rdfs:comment "approach driven by syntax structure"@en .
+:DomainTheory
+    a owl:Class , :PrimaryEntity ;
+    rdfs:subClassOf :Theory ;
+    rdfs:label "Domain theory"@en ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Domain_theory> ;
+    rdfs:comment "mathematical theory of ordered structures used to model the semantics of computation"@en ;
+    :hasArea :PLT , :TCS , :FM .
 
 :ProgramLogic
-    a owl:Class ;
-    rdfs:label "Program logic"@en ;
+    a owl:Class , :PrimaryEntity ;
     rdfs:subClassOf :FormalSystem ;
+    rdfs:label "Program logic"@en ;
     owl:sameAs <https://en.wikipedia.org/wiki/Category:Program_logic> ;
-    rdfs:comment "logic for reasoning about programs"@en .
+    rdfs:comment "logic for reasoning about programs"@en ;
+    :hasArea :FM , :PLT , :TCS .
 
 :DescriptionLogic
-    a owl:Class ;
-    rdfs:label "Description logic"@en ;
+    a owl:Class , :PrimaryEntity ;
     rdfs:subClassOf :FormalSystem ;
+    rdfs:label "Description logic"@en ;
     owl:sameAs <https://en.wikipedia.org/wiki/Description_logic> ;
-    rdfs:comment "logic family for structured knowledge"@en .
+    rdfs:comment "logic family for structured knowledge"@en ;
+    :hasArea :KR , :TCS .
 
 :ProcessCalculus
-    a owl:Class ;
-    rdfs:label "Process calculus"@en ;
+    a owl:Class , :PrimaryEntity ;
     rdfs:subClassOf :FormalSystem ;
+    rdfs:label "Process calculus"@en ;
     owl:sameAs <https://en.wikipedia.org/wiki/Process_calculus> ;
-    rdfs:comment "calculus for concurrent processes"@en .
+    rdfs:comment "calculus for concurrent processes"@en ;
+    :hasArea :PLT , :TCS , :FM .
+
+:ModelOfComputation
+    a owl:Class , :PrimaryEntity ;
+    rdfs:label "Model of computation"@en ;
+    rdfs:comment "formal model for representing computation, execution, or state evolution"@en ;
+    :hasArea :PLT , :TCS , :FM .
 
 :AbstractRewritingSystem
-    a owl:Class ;
+    a owl:Class , :PrimaryEntity ;
+    rdfs:subClassOf :ModelOfComputation ;
     rdfs:label "Abstract rewriting system"@en ;
-    rdfs:subClassOf :FormalSystem ;
     owl:sameAs <https://en.wikipedia.org/wiki/Abstract_rewriting_system> ;
-    rdfs:comment "abstract formal rewriting framework"@en .
+    rdfs:comment "model of computation based on abstract rewriting steps"@en ;
+    :hasArea :TCS , :PLT , :SLE .
+
+:TransitionSystem
+    a owl:Class , :PrimaryEntity ;
+    rdfs:subClassOf :ModelOfComputation ;
+    rdfs:label "Transition system"@en ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Transition_system> ;
+    rdfs:comment "model of computation based on states and transitions between them"@en ;
+    :hasArea :PLT , :TCS , :FM .
 
 :ModelingLanguage
-    a owl:Class ;
-    rdfs:label "Modeling language"@en ;
+    a owl:Class , :PrimaryEntity ;
     rdfs:subClassOf :SoftwareLanguage ;
+    rdfs:label "Modeling language"@en ;
     owl:sameAs <https://en.wikipedia.org/wiki/Modeling_language> ;
-    rdfs:comment "language for modeling systems"@en .
+    rdfs:comment "language for modeling systems"@en ;
+    :hasArea :SLE , :SE , :FM .
 
 #################################################################
-# Individuals (entities)
+# Approach taxonomy
+#################################################################
+
+:Approach
+    a owl:Class , :PrimaryEntity ;
+    rdfs:label "Approach"@en ;
+    rdfs:comment "class of primary entities that represent methodological orientations, techniques, or styles of treatment used in the study or engineering of software languages and related formalisms"@en ;
+    :hasArea :SLE , :PLT .
+
+:FormalSemantics
+    a owl:Class , :PrimaryEntity ;
+    rdfs:subClassOf :Approach ;
+    rdfs:label "Formal semantics"@en ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Semantics_(programming_languages)#Approaches> ;
+    rdfs:comment "approach concerned with mathematically rigorous treatment of the meaning of software languages"@en ;
+    :hasArea :PLT , :SLE , :CC .
+
+:FormalSyntax
+    a owl:Class , :PrimaryEntity ;
+    rdfs:subClassOf :Approach ;
+    rdfs:label "Formal syntax"@en ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Syntax_(programming_languages)> ;
+    rdfs:comment "approach concerned with the formally defined syntactic structure of software languages and related formal notations"@en ;
+    :hasArea :SLE , :CC , :PLT .
+
+:Metaprogramming
+    a owl:Class , :PrimaryEntity ;
+    rdfs:subClassOf :Approach ;
+    rdfs:label "Metaprogramming"@en ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Metaprogramming> ;
+    rdfs:comment "approach concerned with artifacts that generate, manipulate, analyze, or derive other artifacts"@en ;
+    :hasArea :SLE , :CC ;
+    :uses :FormalSyntax .
+
+#################################################################
+# Individuals (primary entities)
 #################################################################
 
 :ContextFreeGrammar
-    a owl:NamedIndividual , :GenerativeGrammar ;
+    a owl:NamedIndividual , :GenerativeGrammar , :PrimaryEntity ;
     rdfs:label "Context-free grammar"@en ;
     owl:sameAs <https://en.wikipedia.org/wiki/Context-free_grammar> ;
-    rdfs:comment "grammar with context-free productions"@en .
+    rdfs:comment "grammar with context-free productions"@en ;
+    :hasArea :CC , :SLE , :TCS ;
+    :serves :ConcreteSyntax .
 
 :RegularGrammar
-    a owl:NamedIndividual , :GenerativeGrammar ;
+    a owl:NamedIndividual , :GenerativeGrammar , :PrimaryEntity ;
     rdfs:label "Regular grammar"@en ;
     owl:sameAs <https://en.wikipedia.org/wiki/Regular_grammar> ;
-    rdfs:comment "grammar for regular languages"@en .
+    rdfs:comment "grammar for regular languages"@en ;
+    :hasArea :CC , :TCS ;
+    :serves :ConcreteSyntax .
 
 :ParsingExpressionGrammar
-    a owl:NamedIndividual , :AnalyticGrammar ;
+    a owl:NamedIndividual , :AnalyticGrammar , :PrimaryEntity ;
     rdfs:label "Parsing expression grammar"@en ;
     owl:sameAs <https://en.wikipedia.org/wiki/Parsing_expression_grammar> ;
-    rdfs:comment "recognition-based formal grammar"@en .
+    rdfs:comment "recognition-based formal grammar"@en ;
+    :hasArea :CC , :SLE .
 
 :TDPLGrammar
-    a owl:NamedIndividual , :AnalyticGrammar ;
+    a owl:NamedIndividual , :AnalyticGrammar , :PrimaryEntity ;
     rdfs:label "TDPL grammar"@en ;
     owl:sameAs <https://en.wikipedia.org/wiki/Top-down_parsing_language> ;
-    rdfs:comment "recognition-based grammar in the top-down parsing language formalism"@en .
+    rdfs:comment "recognition-based grammar in the top-down parsing language formalism"@en ;
+    :hasArea :CC , :TCS .
 
 :ExtendedBackusNaurForm
-    a owl:NamedIndividual , :Metalanguage ;
+    a owl:NamedIndividual , :Metalanguage , :PrimaryEntity ;
     rdfs:label "Extended Backus-Naur form"@en ;
     owl:sameAs <https://en.wikipedia.org/wiki/Extended_Backus-Naur_form> ;
-    rdfs:comment "metalanguage for grammar notation"@en .
+    rdfs:comment "metalanguage for grammar notation"@en ;
+    :hasArea :SLE , :CC ;
+    :serves :ConcreteSyntax ;
+    :hasPart :BackusNaurForm .
 
 :BackusNaurForm
-    a owl:NamedIndividual , :Metalanguage ;
+    a owl:NamedIndividual , :Metalanguage , :PrimaryEntity ;
     rdfs:label "Backus-Naur form"@en ;
     owl:sameAs <https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form> ;
-    rdfs:comment "metalanguage for expressing context-free grammars"@en .
+    rdfs:comment "metalanguage for expressing context-free grammars"@en ;
+    :hasArea :CC , :SLE ;
+    :serves :ConcreteSyntax .
 
 :AttributeGrammar
-    a owl:NamedIndividual , :FormalGrammar , :SyntaxDirectedTranslationApproach ;
+    a owl:NamedIndividual , :FormalGrammar , :PrimaryEntity ;
     rdfs:label "Attribute grammar"@en ;
     owl:sameAs <https://en.wikipedia.org/wiki/Attribute_grammar> ;
-    rdfs:comment "grammar with attributes and rules"@en .
+    rdfs:comment "formal grammar with attributes and semantic rules"@en ;
+    :hasArea :CC , :SLE , :PLT ;
+    :serves :SyntaxDirectedTranslation ;
+    :hasPart :ContextFreeGrammar ;
+    :uses :ContextFreeGrammar .
 
 :TermRewritingSystem
-    a owl:NamedIndividual , :AbstractRewritingSystem , :ProgramTransformationApproach ;
+    a owl:NamedIndividual , :AbstractRewritingSystem , :PrimaryEntity ;
     rdfs:label "Term rewriting system"@en ;
     owl:sameAs <https://en.wikipedia.org/wiki/Rewriting#Term_rewriting_systems> ;
-    rdfs:comment "rewriting system over algebraic terms"@en .
+    rdfs:comment "rewriting system over algebraic terms"@en ;
+    :hasArea :TCS , :PLT , :SLE ;
+    :serves :ProgramTransformation .
 
 :GraphRewritingSystem
-    a owl:NamedIndividual , :AbstractRewritingSystem ;
+    a owl:NamedIndividual , :AbstractRewritingSystem , :PrimaryEntity ;
     rdfs:label "Graph rewriting system"@en ;
     owl:sameAs <https://en.wikipedia.org/wiki/Graph_rewriting> ;
-    rdfs:comment "rewriting system based on graph transformation rules"@en .
+    rdfs:comment "rewriting system based on graph transformation rules"@en ;
+    :hasArea :TCS , :SLE .
 
 :TreeTransducer
-    a owl:NamedIndividual , :ProgramTransformationApproach , :SyntaxDirectedTranslationApproach ;
+    a owl:NamedIndividual , :PrimaryEntity ;
     rdfs:label "Tree transducer"@en ;
     owl:sameAs <https://en.wikipedia.org/wiki/Tree_transducer> ;
-    rdfs:comment "formalism for syntax-directed transformation of trees"@en .
+    rdfs:comment "formalism for the transformation of trees in a syntax-sensitive manner"@en ;
+    :hasArea :CC , :SLE , :TCS ;
+    :serves :ProgramTransformation , :SyntaxDirectedTranslation ;
+    :uses :AbstractSyntax .
 
 :UntypedLambdaCalculus
-    a owl:NamedIndividual , :LambdaCalculus , :ClassicalLambdaCalculus ;
+    a owl:NamedIndividual , :LambdaCalculus , :ClassicalLambdaCalculus , :PrimaryEntity ;
     rdfs:label "Untyped lambda calculus"@en ;
     owl:sameAs <https://en.wikipedia.org/wiki/Lambda_calculus> ;
-    rdfs:comment "lambda calculus without types"@en .
+    rdfs:comment "lambda calculus without types"@en ;
+    :hasArea :PLT , :TCS .
 
 :LambdaMuCalculus
-    a owl:NamedIndividual , :LambdaCalculus ;
+    a owl:NamedIndividual , :LambdaCalculus , :PrimaryEntity ;
     rdfs:label "Lambda-mu calculus"@en ;
     owl:sameAs <https://en.wikipedia.org/wiki/Lambda-mu_calculus> ;
-    rdfs:comment "lambda calculus for classical computation with named continuations"@en .
+    rdfs:comment "lambda calculus for classical computation with named continuations"@en ;
+    :hasArea :PLT , :TCS .
 
 :SimplyTypedLambdaCalculus
-    a owl:NamedIndividual , :LambdaCube , :TypeTheory , :ClassicalLambdaCalculus ;
+    a owl:NamedIndividual , :LambdaCube , :TypeTheory , :ClassicalLambdaCalculus , :PrimaryEntity ;
     rdfs:label "Simply typed lambda calculus"@en ;
     owl:sameAs <https://en.wikipedia.org/wiki/Simply_typed_lambda_calculus> ;
-    rdfs:comment "typed lambda calculus with simple types"@en .
+    rdfs:comment "typed lambda calculus with simple types"@en ;
+    :hasArea :PLT , :TCS , :FM .
 
 :SystemF
-    a owl:NamedIndividual , :LambdaCube , :TypeTheory ;
+    a owl:NamedIndividual , :LambdaCube , :TypeTheory , :PrimaryEntity ;
     rdfs:label "System F"@en ;
     owl:sameAs <https://en.wikipedia.org/wiki/System_F> ;
-    rdfs:comment "polymorphic typed lambda calculus"@en .
+    rdfs:comment "polymorphic typed lambda calculus"@en ;
+    :hasArea :PLT , :TCS .
 
 :DenotationalSemantics
-    a owl:NamedIndividual , :FormalSemanticsApproach ;
+    a owl:NamedIndividual , :FormalSemantics , :PrimaryEntity ;
     rdfs:label "Denotational semantics"@en ;
     owl:sameAs <https://en.wikipedia.org/wiki/Denotational_semantics> ;
-    rdfs:comment "semantics via mathematical denotations"@en .
+    rdfs:comment "formal-semantics approach based on mathematical denotations"@en ;
+    :hasArea :PLT , :SLE ;
+    :uses :AbstractSyntax , :LambdaCalculus , :DomainTheory ;
+    :serves :ProgramTransformation , :Metaprogramming .
 
 :OperationalSemantics
-    a owl:NamedIndividual , :FormalSemanticsApproach ;
+    a owl:NamedIndividual , :FormalSemantics , :PrimaryEntity ;
     rdfs:label "Operational semantics"@en ;
     owl:sameAs <https://en.wikipedia.org/wiki/Operational_semantics> ;
-    rdfs:comment "semantics via execution steps"@en .
+    rdfs:comment "formal-semantics approach based on execution and transition steps"@en ;
+    :hasArea :PLT , :CC , :SLE ;
+    :uses :AbstractSyntax , :AbstractRewritingSystem , :TransitionSystem ;
+    :serves :ProgramTransformation , :Metaprogramming .
 
 :AxiomaticSemantics
-    a owl:NamedIndividual , :FormalSemanticsApproach ;
+    a owl:NamedIndividual , :FormalSemantics , :PrimaryEntity ;
     rdfs:label "Axiomatic semantics"@en ;
     owl:sameAs <https://en.wikipedia.org/wiki/Axiomatic_semantics> ;
-    rdfs:comment "semantics via logical axioms"@en .
+    rdfs:comment "formal-semantics approach based on axioms and logical proof principles"@en ;
+    :hasArea :FM , :PLT ;
+    :uses :AbstractSyntax , :ProgramLogic .
+
+:ConcreteSyntax
+    a owl:NamedIndividual , :FormalSyntax , :PrimaryEntity ;
+    rdfs:label "Concrete syntax"@en ;
+    rdfs:comment "formal-syntax approach concerned with the explicit surface representation of language constructs, including notation, delimiters, and other syntactically relevant details"@en ;
+    :hasArea :SLE , :CC .
+
+:AbstractSyntax
+    a owl:NamedIndividual , :FormalSyntax , :PrimaryEntity ;
+    rdfs:label "Abstract syntax"@en ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Abstract_syntax> ;
+    rdfs:comment "formal-syntax approach concerned with the structural representation of language constructs independently of concrete notation details"@en ;
+    :hasArea :SLE , :PLT , :CC .
+
+:ProgramTransformation
+    a owl:NamedIndividual , :Metaprogramming , :PrimaryEntity ;
+    rdfs:label "Program transformation"@en ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Program_transformation> ;
+    rdfs:comment "metaprogramming approach concerned with the systematic transformation of programs or related formal artifacts"@en ;
+    :hasArea :SLE , :CC , :PLT ;
+    :uses :TermRewritingSystem .
+
+:SyntaxDirectedTranslation
+    a owl:NamedIndividual , :Metaprogramming , :PrimaryEntity ;
+    rdfs:label "Syntax-directed translation"@en ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Syntax-directed_translation> ;
+    rdfs:comment "metaprogramming approach concerned with translation processes driven by syntactic structure"@en ;
+    :hasArea :CC , :SLE ;
+    :uses :ContextFreeGrammar .
 
 :CommunicatingSequentialProcesses
-    a owl:NamedIndividual , :ProcessCalculus ;
+    a owl:NamedIndividual , :ProcessCalculus , :PrimaryEntity ;
     rdfs:label "Communicating sequential processes"@en ;
     owl:sameAs <https://en.wikipedia.org/wiki/Communicating_sequential_processes> ;
-    rdfs:comment "process algebra for communication"@en .
+    rdfs:comment "process algebra for communication"@en ;
+    :hasArea :TCS , :PLT , :FM ;
+    :isSpecifiedBy :OperationalSemantics .
 
 :CalculusOfCommunicatingSystems
-    a owl:NamedIndividual , :ProcessCalculus ;
+    a owl:NamedIndividual , :ProcessCalculus , :PrimaryEntity ;
     rdfs:label "Calculus of communicating systems"@en ;
     owl:sameAs <https://en.wikipedia.org/wiki/Calculus_of_communicating_systems> ;
-    rdfs:comment "calculus for communicating concurrent systems"@en .
+    rdfs:comment "calculus for communicating concurrent systems"@en ;
+    :hasArea :TCS , :PLT ;
+    :isSpecifiedBy :OperationalSemantics .
 
 :HoareLogic
-    a owl:NamedIndividual , :ProgramLogic ;
+    a owl:NamedIndividual , :ProgramLogic , :PrimaryEntity ;
     rdfs:label "Hoare logic"@en ;
     owl:sameAs <https://en.wikipedia.org/wiki/Hoare_logic> ;
-    rdfs:comment "program logic using Hoare triples"@en .
+    rdfs:comment "program logic using Hoare triples"@en ;
+    :hasArea :FM , :PLT .
 
 :SeparationLogic
-    a owl:NamedIndividual , :ProgramLogic ;
+    a owl:NamedIndividual , :ProgramLogic , :PrimaryEntity ;
     rdfs:label "Separation logic"@en ;
     owl:sameAs <https://en.wikipedia.org/wiki/Separation_logic> ;
-    rdfs:comment "program logic for reasoning about mutable heap structures"@en .
+    rdfs:comment "program logic for reasoning about mutable heap structures"@en ;
+    :hasArea :FM , :PLT , :SE .
 
 :ALC
-    a owl:NamedIndividual , :DescriptionLogic ;
+    a owl:NamedIndividual , :DescriptionLogic , :PrimaryEntity ;
     rdfs:label "ALC"@en ;
     owl:sameAs <https://en.wikipedia.org/wiki/Description_logic> ;
-    rdfs:comment "basic attributional description logic with complement"@en .
+    rdfs:comment "basic attributional description logic with complement"@en ;
+    :hasArea :KR , :TCS .
 
 :ELPlusPlus
-    a owl:NamedIndividual , :DescriptionLogic ;
+    a owl:NamedIndividual , :DescriptionLogic , :PrimaryEntity ;
     rdfs:label "EL++"@en ;
     owl:sameAs <https://en.wikipedia.org/wiki/EL%2B%2B> ;
-    rdfs:comment "lightweight description logic underlying the OWL 2 EL profile"@en .
+    rdfs:comment "lightweight description logic underlying the OWL 2 EL profile"@en ;
+    :hasArea :KR , :TCS .
 
 :DependencyGrammar
-    a owl:NamedIndividual , :FormalGrammar ;
+    a owl:NamedIndividual , :FormalGrammar , :PrimaryEntity ;
     rdfs:label "Dependency grammar"@en ;
     owl:sameAs <https://en.wikipedia.org/wiki/Dependency_grammar> ;
-    rdfs:comment "grammar based on dependency relations"@en .
+    rdfs:comment "grammar based on dependency relations"@en ;
+    :hasArea :CL , :TCS , :NLP .
 
 :UMLStateMachine
-    a owl:NamedIndividual , :ModelingLanguage ;
+    a owl:NamedIndividual , :ModelingLanguage , :PrimaryEntity ;
     rdfs:label "UML state machine"@en ;
     owl:sameAs <https://en.wikipedia.org/wiki/UML_state_machine> ;
-    rdfs:comment "behavioral state machine notation in UML"@en .
+    rdfs:comment "behavioral state machine notation in UML"@en ;
+    :hasArea :SE , :SLE , :FM .
 
 :PetriNet
-    a owl:NamedIndividual , :ModelingLanguage ;
+    a owl:NamedIndividual , :ModelingLanguage , :PrimaryEntity ;
     rdfs:label "Petri net"@en ;
     owl:sameAs <https://en.wikipedia.org/wiki/Petri_net> ;
-    rdfs:comment "mathematical modeling language for distributed systems"@en .
+    rdfs:comment "mathematical modeling language for distributed systems"@en ;
+    :hasArea :FM , :SE , :TCS .
