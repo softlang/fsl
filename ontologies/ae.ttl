@@ -1,6 +1,7 @@
 @prefix : <http://www.softlang.org/ontologies/ae#> .
 @prefix le: <http://www.softlang.org/ontologies/le#> .
 @prefix pe: <http://www.softlang.org/ontologies/pe#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix tbox: <http://www.softlang.org/ontologies/tbox#> .
@@ -126,3 +127,25 @@
     tbox:elementOf le:RDF ;
     rdfs:subClassOf tbox:SoftwareArtifact .
 
+
+
+:RequirementsArtifact a tbox:ArtifactEntity ;
+    rdfs:label "Requirements artifact"@en ;
+    rdfs:comment "artifact kind for requirements specifications and similar requirements-level documents or models"@en ;
+    tbox:elementOf le:RequirementsSpecificationLanguage ;
+    foaf:page <https://en.wikipedia.org/wiki/Software_requirements_specification> ;
+    rdfs:subClassOf tbox:SoftwareArtifact .
+
+:BuildScriptArtifact a tbox:ArtifactEntity ;
+    rdfs:label "Build script artifact"@en ;
+    rdfs:comment "artifact kind for build scripts and build automation specifications"@en ;
+    tbox:elementOf le:BuildScriptingLanguage ;
+    foaf:page <https://en.wikipedia.org/wiki/Build_automation> ;
+    rdfs:subClassOf tbox:SoftwareArtifact .
+
+:ConfigurationArtifact a tbox:ArtifactEntity ;
+    rdfs:label "Configuration artifact"@en ;
+    rdfs:comment "artifact kind for configuration files and related configuration-level assets"@en ;
+    tbox:elementOf le:ConfigurationLanguage ;
+    foaf:page <https://en.wikipedia.org/wiki/Configuration_file> ;
+    rdfs:subClassOf tbox:SoftwareArtifact .

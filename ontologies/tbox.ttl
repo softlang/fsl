@@ -5,6 +5,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix tbox: <http://www.softlang.org/ontologies/tbox#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
 <http://www.softlang.org/ontologies/tbox> a owl:Ontology ;
     rdfs:comment "Shared TBox of the FSL ontology"@en ;
@@ -283,6 +284,40 @@ tbox:uses a owl:ObjectProperty ;
     rdfs:range tbox:Entity ;
     owl:inverseOf tbox:isUsedBy .
 
+
+tbox:hasInputArtifact a owl:ObjectProperty ;
+    rdfs:label "Has input artifact"@en ;
+    rdfs:comment "relates a software engineering activity or software tool to an artifact kind that it typically requires or consumes as input"@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( ce:EngineeringActivity tbox:ToolEntity ) ] ;
+    rdfs:range tbox:ArtifactEntity .
+
+tbox:hasOutputArtifact a owl:ObjectProperty ;
+    rdfs:label "Has output artifact"@en ;
+    rdfs:comment "relates a software engineering activity or software tool to an artifact kind that it typically produces as output"@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( ce:EngineeringActivity tbox:ToolEntity ) ] ;
+    rdfs:range tbox:ArtifactEntity .
+
+tbox:hasAffectedArtifact a owl:ObjectProperty ;
+    rdfs:label "Has affected artifact"@en ;
+    rdfs:comment "relates a software engineering activity or software tool to an artifact kind that it characteristically affects or modifies when the role is not best captured as input or output alone"@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( ce:EngineeringActivity tbox:ToolEntity ) ] ;
+    rdfs:range tbox:ArtifactEntity .
+
+tbox:hasSupportingTool a owl:ObjectProperty ;
+    rdfs:label "Has supporting tool"@en ;
+    rdfs:comment "relates a software engineering activity to a tool kind that characteristically supports carrying out the activity"@en ;
+    rdfs:domain ce:EngineeringActivity ;
+    rdfs:range tbox:ToolEntity .
+
+tbox:hasSupportingLanguage a owl:ObjectProperty ;
+    rdfs:label "Has supporting language"@en ;
+    rdfs:comment "relates a software engineering activity to a language kind that is characteristically used to perform or express the activity"@en ;
+    rdfs:domain ce:EngineeringActivity ;
+    rdfs:range tbox:LanguageEntity .
+
 tbox:hasSpace a owl:ObjectProperty ;
     rdfs:label "has space"@en ;
     rdfs:comment "associates an entity with a technological space to which it characteristically belongs"@en ;
@@ -295,7 +330,7 @@ tbox:hasSpace a owl:ObjectProperty ;
 tbox:SoftwareLanguage a tbox:LanguageEntity ;
     rdfs:label "Software language"@en ;
     rdfs:comment "Concrete software languages (e.g., XML, SQL, OWL) are represented as individuals of this class. Language families are represented as subclasses. Artifact kinds capture the kinds of artifacts written in such languages."@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Software_language> ;
+    foaf:page <https://en.wikipedia.org/wiki/Software_language> ;
     rdfs:subClassOf tbox:LanguageEntity .
 
 tbox:hasArea a owl:ObjectProperty ;
@@ -347,7 +382,14 @@ tbox:LanguageEntity rdfs:label "Language entity"@en ;
 
 tbox:Entity a owl:Class ;
     rdfs:label "Entity"@en ;
-    rdfs:comment "top-level category for entities represented in this ontology"@en .
+    rdfs:comment "Top-level category for entities represented in this ontology. Entities should be linked to at least one descriptive document via foaf:isPrimaryTopicOf or foaf:page."@en ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:unionOf ( [ a owl:Restriction ;
+                        owl:onProperty foaf:isPrimaryTopicOf ;
+                        owl:someValuesFrom foaf:Document ]
+                    [ a owl:Restriction ;
+                        owl:onProperty foaf:page ;
+                        owl:someValuesFrom foaf:Document ] ) ] .
 
 tbox:ArtifactEntity rdfs:label "Artifact entity"@en ;
     rdfs:comment "ontological entity used to represent software artifacts, artifact families, and artifact-related instances"@en ;

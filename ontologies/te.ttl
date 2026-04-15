@@ -6,6 +6,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix tbox: <http://www.softlang.org/ontologies/tbox#> .
 @prefix : <http://www.softlang.org/ontologies/te#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
 <http://www.softlang.org/ontologies/te> a owl:Ontology ;
     rdfs:comment "Sub-ontology / ABox for software tools"@en ;
@@ -17,7 +18,7 @@
         owl:NamedIndividual ;
     rdfs:label "ANTLR"@en ;
     rdfs:comment "parser generator based on grammar notation with semantic and syntactic processing support"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/ANTLR> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/ANTLR> .
 
 :ApacheJena a tbox:ToolEntity,
         :Reasoner,
@@ -25,7 +26,7 @@
         owl:NamedIndividual ;
     rdfs:label "Apache Jena"@en ;
     rdfs:comment "framework for RDF storage, SPARQL processing, and reasoning"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Apache_Jena> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Apache_Jena> .
 
 :BaseX a tbox:ToolEntity,
         :QueryProcessor,
@@ -33,17 +34,19 @@
         owl:NamedIndividual ;
     rdfs:label "BaseX"@en ;
     rdfs:comment "XML database and XQuery processor"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/BaseX> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/BaseX> .
 
 :Bison a tbox:ToolEntity,
         :ParserGenerator,
         owl:NamedIndividual ;
     rdfs:label "Bison"@en ;
     rdfs:comment "parser generator for context-free grammars"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/GNU_Bison> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/GNU_Bison> .
 
 :Compiler a tbox:ToolEntity ;
     rdfs:label "Compiler"@en ;
+    tbox:hasInputArtifact ae:ProgramArtifact ;
+    tbox:hasOutputArtifact ae:ProgramArtifact ;
     tbox:processesArtifactKind ae:ProgramArtifact ;
     tbox:supportsLanguage pe:ProgrammingLanguage ;
     rdfs:subClassOf tbox:SoftwareTool .
@@ -53,21 +56,21 @@
         owl:NamedIndividual ;
     rdfs:label "Coq proof assistant"@en ;
     rdfs:comment "proof assistant for interactive theorem proving based on dependent type theory"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Coq> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Coq> .
 
 :Drools a tbox:ToolEntity,
         :RuleEngine,
         owl:NamedIndividual ;
     rdfs:label "Drools"@en ;
     rdfs:comment "rule engine and business rule management system"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Drools> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Drools> .
 
 :EclipseModelingFramework a tbox:ToolEntity,
         :ModelingWorkbench,
         owl:NamedIndividual ;
     rdfs:label "Eclipse Modeling Framework"@en ;
     rdfs:comment "modeling workbench for Ecore-based models and metamodels"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Eclipse_Modeling_Framework> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Eclipse_Modeling_Framework> .
 
 :GrammarAnalyzer a tbox:ToolEntity ;
     rdfs:label "Grammar analyzer"@en ;
@@ -87,10 +90,11 @@
         owl:NamedIndividual ;
     rdfs:label "GraphDB"@en ;
     rdfs:comment "semantic graph database with RDF storage and reasoning support"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/GraphDB> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/GraphDB> .
 
 :Interpreter a tbox:ToolEntity ;
     rdfs:label "Interpreter"@en ;
+    tbox:hasInputArtifact ae:ProgramArtifact ;
     tbox:processesArtifactKind ae:ProgramArtifact ;
     tbox:supportsLanguage pe:ProgrammingLanguage ;
     rdfs:subClassOf tbox:SoftwareTool .
@@ -109,7 +113,7 @@
         owl:NamedIndividual ;
     rdfs:label "Lean proof assistant"@en ;
     rdfs:comment "proof assistant and programming environment for mechanized reasoning"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Lean_(proof_assistant)> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Lean_(proof_assistant)> .
 
 :MarkupProcessor a tbox:ToolEntity ;
     rdfs:label "Markup processor"@en ;
@@ -119,6 +123,9 @@
 
 :ModelTransformationEngine a tbox:ToolEntity ;
     rdfs:label "Model transformation engine"@en ;
+    tbox:hasInputArtifact ae:MetamodelArtifact,
+        ae:ModelArtifact ;
+    tbox:hasOutputArtifact ae:ModelArtifact ;
     tbox:processesArtifactKind ae:MetamodelArtifact,
         ae:ModelArtifact ;
     tbox:supportsLanguage le:ModelTransformationLanguage ;
@@ -135,28 +142,28 @@
         owl:NamedIndividual ;
     rdfs:label "Neo4j"@en ;
     rdfs:comment "graph database management system for property graphs"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Neo4j> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Neo4j> .
 
 :PostgreSQL a tbox:ToolEntity,
         :RelationalDatabaseManagementSystem,
         owl:NamedIndividual ;
     rdfs:label "PostgreSQL"@en ;
     rdfs:comment "relational database management system"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/PostgreSQL> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/PostgreSQL> .
 
 :Protege a tbox:ToolEntity,
         :OntologyEditor,
         owl:NamedIndividual ;
     rdfs:label "Protégé"@en ;
     rdfs:comment "ontology editor and knowledge-modeling environment"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Prot%C3%A9g%C3%A9_(software)> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Prot%C3%A9g%C3%A9_(software)> .
 
 :SWIProlog a tbox:ToolEntity,
         :LogicProgrammingSystem,
         owl:NamedIndividual ;
     rdfs:label "SWI-Prolog"@en ;
     rdfs:comment "logic programming system for Prolog and related symbolic reasoning tasks"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/SWI-Prolog> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/SWI-Prolog> .
 
 :Saxon a tbox:ToolEntity,
         :QueryProcessor,
@@ -165,10 +172,11 @@
         owl:NamedIndividual ;
     rdfs:label "Saxon"@en ;
     rdfs:comment "processor for XSLT, XQuery, and XPath"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Saxon_XSLT> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Saxon_XSLT> .
 
 :StaticAnalyzer a tbox:ToolEntity ;
     rdfs:label "Static analyzer"@en ;
+    tbox:hasInputArtifact ae:ProgramArtifact ;
     tbox:processesArtifactKind ae:ProgramArtifact ;
     tbox:supportsLanguage pe:ProgrammingLanguage ;
     rdfs:subClassOf tbox:SoftwareTool .
@@ -178,10 +186,13 @@
         owl:NamedIndividual ;
     rdfs:label "Swagger Editor"@en ;
     rdfs:comment "tool for authoring and validating OpenAPI descriptions"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/OpenAPI_Specification> .
+    foaf:page <https://en.wikipedia.org/wiki/Swagger_(software)> .
 
 :APIWorkbench a tbox:ToolEntity ;
     rdfs:label "API workbench"@en ;
+    tbox:hasInputArtifact ae:APIDescriptionArtifact ;
+    tbox:hasOutputArtifact ae:APIDescriptionArtifact ;
+    tbox:hasAffectedArtifact ae:APIDescriptionArtifact ;
     tbox:processesArtifactKind ae:APIDescriptionArtifact ;
     tbox:supportsLanguage le:InterfaceDescriptionLanguage ;
     rdfs:subClassOf tbox:SoftwareTool .
@@ -189,14 +200,14 @@
 :Database a tbox:ToolEntity ;
     rdfs:label "Database"@en ;
     rdfs:comment "software tool for storing, organizing, and retrieving data"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Database> ;
+    foaf:page <https://en.wikipedia.org/wiki/Database> ;
     rdfs:subClassOf tbox:SoftwareTool .
 
 :GraphDatabase a tbox:ToolEntity ;
     rdfs:label "Graph database"@en ;
     tbox:hasSpace ce:Graphware ;
     rdfs:comment "database specialized for storing and querying graph-structured data"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Graph_database> ;
+    foaf:page <https://en.wikipedia.org/wiki/Graph_database> ;
     rdfs:subClassOf :Database .
 
 :GraphDatabaseManagementSystem a tbox:ToolEntity ;
@@ -247,7 +258,7 @@
     tbox:hasSpace ce:Ruleware ;
     tbox:processesArtifactKind ae:RuleArtifact ;
     tbox:supportsLanguage le:RuleLanguage ;
-    rdfs:seeAlso <https://en.wikipedia.org/?title=Rule_engine&redirect=no> ;
+    foaf:page <https://en.wikipedia.org/?title=Rule_engine&redirect=no> ;
     rdfs:subClassOf tbox:SoftwareTool .
 
 :SemanticReasoner a tbox:ToolEntity ;
@@ -255,7 +266,7 @@
     tbox:hasSpace ce:Logicware,
         ce:Ontoware ;
     rdfs:comment "software tool for inferring logical consequences from semantic data and ontologies"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Semantic_reasoner> ;
+    foaf:page <https://en.wikipedia.org/wiki/Semantic_reasoner> ;
     rdfs:subClassOf tbox:SoftwareTool .
 
 :ParserGenerator a tbox:ToolEntity ;
@@ -266,6 +277,9 @@
 
 :ProofAssistant a tbox:ToolEntity ;
     rdfs:label "Proof assistant"@en ;
+    tbox:hasInputArtifact ae:ProofArtifact ;
+    tbox:hasOutputArtifact ae:ProofArtifact ;
+    tbox:hasAffectedArtifact ae:ProofArtifact ;
     tbox:processesArtifactKind ae:ProofArtifact ;
     tbox:supportsLanguage le:ProofLanguage ;
     rdfs:subClassOf tbox:SoftwareTool .
@@ -308,3 +322,94 @@
     rdfs:label "Query processor"@en ;
     rdfs:subClassOf tbox:SoftwareTool .
 
+
+
+:GCC a tbox:ToolEntity,
+        :Compiler,
+        owl:NamedIndividual ;
+    rdfs:label "GCC"@en ;
+    rdfs:comment "compiler collection for several programming languages"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/GNU_Compiler_Collection> .
+
+:CPython a tbox:ToolEntity,
+        :Interpreter,
+        owl:NamedIndividual ;
+    rdfs:label "CPython"@en ;
+    rdfs:comment "reference interpreter implementation of the Python programming language"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/CPython> .
+
+:SonarQube a tbox:ToolEntity,
+        :StaticAnalyzer,
+        owl:NamedIndividual ;
+    rdfs:label "SonarQube"@en ;
+    rdfs:comment "static analysis platform for inspecting source code quality"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/SonarQube> .
+
+:ATLTransformationEngine a tbox:ToolEntity,
+        :ModelTransformationEngine,
+        owl:NamedIndividual ;
+    rdfs:label "ATL transformation engine"@en ;
+    rdfs:comment "engine for executing ATL model transformations"@en ;
+    foaf:page <https://eclipse.dev/atl/> .
+
+:BuildTool a tbox:ToolEntity ;
+    rdfs:label "Build tool"@en ;
+    tbox:hasInputArtifact ae:BuildScriptArtifact,
+        ae:ConfigurationArtifact ;
+    tbox:supportsLanguage le:BuildScriptingLanguage,
+        le:ConfigurationLanguage ;
+    foaf:page <https://en.wikipedia.org/wiki/Build_automation> ;
+    rdfs:subClassOf tbox:SoftwareTool .
+
+:GNUMake a tbox:ToolEntity,
+        :BuildTool,
+        owl:NamedIndividual ;
+    rdfs:label "GNU Make"@en ;
+    rdfs:comment "build automation tool for executing Makefile-based build specifications"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/GNU_Make> .
+
+:RefactoringTool a tbox:ToolEntity ;
+    rdfs:label "Refactoring tool"@en ;
+    tbox:hasAffectedArtifact ae:ProgramArtifact ;
+    tbox:supportsLanguage pe:ProgrammingLanguage ;
+    foaf:page <https://en.wikipedia.org/wiki/Code_refactoring> ;
+    rdfs:subClassOf tbox:SoftwareTool .
+
+:EclipseIDE a tbox:ToolEntity,
+        :RefactoringTool,
+        owl:NamedIndividual ;
+    rdfs:label "Eclipse IDE"@en ;
+    rdfs:comment "integrated development environment with refactoring support"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Eclipse_(software)> .
+
+:RequirementsTool a tbox:ToolEntity ;
+    rdfs:label "Requirements tool"@en ;
+    tbox:hasInputArtifact ae:RequirementsArtifact ;
+    tbox:hasOutputArtifact ae:RequirementsArtifact ;
+    tbox:hasAffectedArtifact ae:RequirementsArtifact ;
+    tbox:supportsLanguage le:RequirementsSpecificationLanguage ;
+    foaf:page <https://en.wikipedia.org/wiki/Requirements_engineering> ;
+    rdfs:subClassOf tbox:SoftwareTool .
+
+:IBMDOORS a tbox:ToolEntity,
+        :RequirementsTool,
+        owl:NamedIndividual ;
+    rdfs:label "IBM DOORS"@en ;
+    rdfs:comment "requirements management tool for capturing and organizing requirements artifacts"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/IBM_DOORS> .
+
+:ConfigurationTool a tbox:ToolEntity ;
+    rdfs:label "Configuration tool"@en ;
+    tbox:hasInputArtifact ae:ConfigurationArtifact ;
+    tbox:hasOutputArtifact ae:ConfigurationArtifact ;
+    tbox:hasAffectedArtifact ae:ConfigurationArtifact ;
+    tbox:supportsLanguage le:ConfigurationLanguage ;
+    foaf:page <https://en.wikipedia.org/wiki/Configuration_management> ;
+    rdfs:subClassOf tbox:SoftwareTool .
+
+:Ansible a tbox:ToolEntity,
+        :ConfigurationTool,
+        owl:NamedIndividual ;
+    rdfs:label "Ansible"@en ;
+    rdfs:comment "configuration automation tool commonly used with YAML-based configuration artifacts"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Ansible_(software)> .

@@ -1,6 +1,10 @@
 @prefix ae: <http://www.softlang.org/ontologies/ae#> .
 @prefix ce: <http://www.softlang.org/ontologies/ce#> .
+@prefix fe: <http://www.softlang.org/ontologies/fe#> .
+@prefix le: <http://www.softlang.org/ontologies/le#> .
+@prefix pe: <http://www.softlang.org/ontologies/pe#> .
 @prefix re: <http://www.softlang.org/ontologies/re#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -14,126 +18,129 @@
 
 ce:Abstraction a ce:AbstractionConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "abstraction"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Abstraction_(computer_science)> ;
-    owl:sameAs <https://dbpedia.org/resource/Abstraction_(computer_science)> .
+    rdfs:label "Abstraction"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Abstraction_(computer_science)> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Abstraction_(computer_science)> .
 
 ce:Actors a ce:CompositeConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "actors"@en ;
+    rdfs:label "Actors"@en ;
     ce:hasPrimaryComponent ce:ActorBasedConcurrency,
         ce:Encapsulation,
         ce:VariablesAsState ;
     ce:hasSecondaryComponent ce:MessagePassingConcurrency,
         ce:Modules,
         ce:SideEffects ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Actor_model> ;
-    owl:sameAs <https://dbpedia.org/resource/Actor_model> .
+    foaf:page <https://en.wikipedia.org/wiki/Actor_model> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Actor_model> .
 
 ce:AdHocPolymorphism a ce:TypeConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "ad hoc polymorphism"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ad_hoc_polymorphism> ;
-    owl:sameAs <https://dbpedia.org/resource/Ad_hoc_polymorphism> .
+    rdfs:label "Ad hoc polymorphism"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Ad_hoc_polymorphism> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Ad_hoc_polymorphism> .
 
 ce:AlgebraicDataTypes a ce:CompositeConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "algebraic data types"@en ;
+    rdfs:label "Algebraic data types"@en ;
     ce:hasPrimaryComponent ce:DataAbstraction,
         ce:ParametricPolymorphism,
         ce:ProductLikeData,
         ce:SumLikeData ;
     ce:hasSecondaryComponent ce:ModuleAbstraction,
         ce:RecursiveData ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Algebraic_data_type> ;
-    owl:sameAs <https://dbpedia.org/resource/Algebraic_data_type> .
+    foaf:page <https://en.wikipedia.org/wiki/Algebraic_data_type> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Algebraic_data_type> .
 
 ce:AnalogicalApplicability a ce:LanguageConceptApplicability,
         tbox:ConceptualEntity ;
-    rdfs:label "analogical applicability"@en .
+    rdfs:label "Analogical applicability"@en .
 
 ce:Backtracking a ce:ControlConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "backtracking"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Backtracking> ;
-    owl:sameAs <https://dbpedia.org/resource/Backtracking> .
+    rdfs:label "Backtracking"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Backtracking> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Backtracking> .
 
 ce:BacktrackingMechanism a ce:ImplementationMechanismConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "backtracking mechanism"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Backtracking> ;
-    owl:sameAs <https://dbpedia.org/resource/Backtracking> .
+    rdfs:label "Backtracking mechanism"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Backtracking> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Backtracking> .
 
 ce:Binding a ce:BindingConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "binding"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Name_binding> .
+    rdfs:label "Binding"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Name_binding> .
 
 ce:BindingTime a ce:BindingConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "binding time"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Binding_time> .
+    rdfs:label "Binding time"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Binding_time> .
 
 ce:Branching a ce:ControlConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "branching"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Conditional_(computer_programming)> .
+    rdfs:label "Branching"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Conditional_(computer_programming)> .
 
 ce:CallByName a ce:EvaluationStrategyConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "call by name"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Evaluation_strategy#Call_by_name> .
+    rdfs:label "Call by name"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Evaluation_strategy#Call_by_name> .
 
 ce:CallByNeed a ce:EvaluationStrategyConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "call by need"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Evaluation_strategy#Call_by_need> .
+    rdfs:label "Call by need"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Evaluation_strategy#Call_by_need> .
 
 ce:CallByValue a ce:EvaluationStrategyConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "call by value"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Evaluation_strategy#Call_by_value> .
+    rdfs:label "Call by value"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Evaluation_strategy#Call_by_value> .
 
 ce:ClassBasedMechanism a ce:ImplementationMechanismConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "class-based mechanism"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Class-based_programming> ;
-    owl:sameAs <https://dbpedia.org/resource/Class-based_programming> .
+    rdfs:label "Class-based mechanism"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Class-based_programming> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Class-based_programming> .
 
 ce:Closures a ce:CompositeConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "closures"@en ;
+    rdfs:label "Closures"@en ;
     ce:hasPrimaryComponent ce:FirstClassFunctions,
         ce:FunctionAbstraction,
         ce:HeapLifetime,
         ce:LexicalScope,
         ce:NameBinding ;
     ce:hasSecondaryComponent ce:Records ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Closure_(computer_programming)> ;
-    owl:sameAs <https://dbpedia.org/resource/Closure_(computer_programming)> .
+    foaf:page <https://en.wikipedia.org/wiki/Closure_(computer_programming)> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Closure_(computer_programming)> .
 
-ce:CodeGeneration a ce:MetaprogrammingConcept,
+ce:CodeGeneration a tbox:ConceptualEntity,
+        ce:MetaprogrammingConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "code generation"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Code_generation_(compiler)> ;
-    owl:sameAs <https://dbpedia.org/resource/Code_generation_(compiler)> .
+    rdfs:subClassOf ce:Implementation ;
+    rdfs:label "Code generation"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Code_generation_(compiler)> ;
+    foaf:page <https://en.wikipedia.org/wiki/Code_generation_(compiler)> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Code_generation_(compiler)> .
 
 ce:ComputationExpressionMechanism a ce:ImplementationMechanismConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "computation-expression mechanism"@en ;
-    rdfs:seeAlso <https://learn.microsoft.com/dotnet/fsharp/language-reference/computation-expressions> .
+    rdfs:label "Computation-expression mechanism"@en ;
+    foaf:page <https://learn.microsoft.com/dotnet/fsharp/language-reference/computation-expressions> .
 
 ce:ComputationalParadigmsAndEvaluationModels a ce:ParadigmConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "computational paradigms and evaluation models"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Programming_paradigm> ;
-    owl:sameAs <https://dbpedia.org/resource/Programming_paradigm> .
+    rdfs:label "Computational paradigms and evaluation models"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Programming_paradigm> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Programming_paradigm> .
 
 ce:Concurrency a ce:ConcurrencyConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "concurrency"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Concurrent_computing> ;
-    owl:sameAs <https://dbpedia.org/resource/Concurrent_computing> .
+    rdfs:label "Concurrency"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Concurrent_computing> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Concurrent_computing> .
 
 ce:ConstraintConcept a owl:Class,
         tbox:ConceptualEntity ;
@@ -142,113 +149,113 @@ ce:ConstraintConcept a owl:Class,
 
 ce:ContinuationOperatorMechanism a ce:ImplementationMechanismConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "continuation operator mechanism"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Continuation> .
+    rdfs:label "Continuation operator mechanism"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Continuation> .
 
 ce:ControlFlow a ce:ControlConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "control flow"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Control_flow> ;
-    owl:sameAs <https://dbpedia.org/resource/Control_flow> .
+    rdfs:label "Control flow"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Control_flow> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Control_flow> .
 
 ce:Data a ce:DataConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "data"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Data_type> ;
-    owl:sameAs <https://dbpedia.org/resource/Data_type> .
+    rdfs:label "Data"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Data_type> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Data_type> .
 
 ce:DataParallelism a ce:ParallelismConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "data parallelism"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Data_parallelism> ;
-    owl:sameAs <https://dbpedia.org/resource/Data_parallelism> .
+    rdfs:label "Data parallelism"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Data_parallelism> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Data_parallelism> .
 
 ce:DeclarativeParadigm a ce:ParadigmConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "declarative paradigm"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Declarative_programming> ;
-    owl:sameAs <https://dbpedia.org/resource/Declarative_programming> .
+    rdfs:label "Declarative paradigm"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Declarative_programming> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Declarative_programming> .
 
 ce:DynamicScope a ce:ScopeConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "dynamic scope"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Scope_(computer_science)#Dynamic_scope> .
+    rdfs:label "Dynamic scope"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Scope_(computer_science)#Dynamic_scope> .
 
 ce:DynamicTyping a ce:TypeConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "dynamic typing"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Type_system#Dynamic_type_checking_and_runtime_type_information> .
+    rdfs:label "Dynamic typing"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Type_system#Dynamic_type_checking_and_runtime_type_information> .
 
 ce:EagerEvaluation a ce:EvaluationStrategyConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "eager evaluation"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Evaluation_strategy> .
+    rdfs:label "Eager evaluation"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Evaluation_strategy> .
 
 ce:EffectHandlerMechanism a ce:ImplementationMechanismConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "effect-handler mechanism"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Effect_system> .
+    rdfs:label "Effect-handler mechanism"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Effect_system> .
 
 ce:Effects a ce:EffectConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "effects"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Side_effect_(computer_science)> ;
-    owl:sameAs <https://dbpedia.org/resource/Side_effect_(computer_science)> .
+    rdfs:label "Effects"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Side_effect_(computer_science)> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Side_effect_(computer_science)> .
 
 ce:Enums a ce:DataConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "enums"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Enumerated_type> ;
-    owl:sameAs <https://dbpedia.org/resource/Enumerated_type> .
+    rdfs:label "Enums"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Enumerated_type> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Enumerated_type> .
 
 ce:EvaluationStrategy a ce:EvaluationStrategyConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "evaluation strategy"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Evaluation_strategy> ;
-    owl:sameAs <https://dbpedia.org/resource/Evaluation_strategy> .
+    rdfs:label "Evaluation strategy"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Evaluation_strategy> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Evaluation_strategy> .
 
 ce:ExceptionMechanism a ce:ImplementationMechanismConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "exception mechanism"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Exception_handling> ;
-    owl:sameAs <https://dbpedia.org/resource/Exception_handling> .
+    rdfs:label "Exception mechanism"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Exception_handling> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Exception_handling> .
 
 ce:Exceptions a ce:ErrorHandlingConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "exceptions"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Exception_handling> ;
-    owl:sameAs <https://dbpedia.org/resource/Exception_handling> .
+    rdfs:label "Exceptions"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Exception_handling> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Exception_handling> .
 
 ce:ExceptionsAsEffects a ce:EffectConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "exceptions as effects"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Exception_handling> .
+    rdfs:label "Exceptions as effects"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Exception_handling> .
 
 ce:FirstClassModules a ce:HigherOrderConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "first-class modules"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Module_(programming)> .
+    rdfs:label "First-class modules"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Module_(programming)> .
 
 ce:FunctionalParadigm a ce:ParadigmConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "functional paradigm"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Functional_programming> ;
-    owl:sameAs <https://dbpedia.org/resource/Functional_programming> .
+    rdfs:label "Functional paradigm"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Functional_programming> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Functional_programming> .
 
 ce:FuturesAndPromises a ce:CompositeConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "futures and promises"@en ;
+    rdfs:label "Futures and promises"@en ;
     ce:hasPrimaryComponent ce:AsyncEventDrivenConcurrency,
         ce:IOEffects ;
     ce:hasSecondaryComponent ce:Continuations,
         ce:ErrorHandling ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Futures_and_promises> ;
-    owl:sameAs <https://dbpedia.org/resource/Futures_and_promises> .
+    foaf:page <https://en.wikipedia.org/wiki/Futures_and_promises> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Futures_and_promises> .
 
 ce:GeneratorProtocolMechanism a ce:ImplementationMechanismConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "generator protocol mechanism"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Generator_(computer_programming)> .
+    rdfs:label "Generator protocol mechanism"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Generator_(computer_programming)> .
 
 ce:GrammarConcept a owl:Class,
         tbox:ConceptualEntity ;
@@ -257,41 +264,41 @@ ce:GrammarConcept a owl:Class,
 
 ce:HigherOrderEntities a ce:HigherOrderConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "higher-order entities"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Higher-order_function> ;
-    owl:sameAs <https://dbpedia.org/resource/Higher-order_function> .
+    rdfs:label "Higher-order entities"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Higher-order_function> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Higher-order_function> .
 
 ce:ImmutableData a ce:MutabilityConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "immutable data"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Immutable_object> .
+    rdfs:label "Immutable data"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Immutable_object> .
 
 ce:ImperativeParadigm a ce:ParadigmConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "imperative paradigm"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Imperative_programming> ;
-    owl:sameAs <https://dbpedia.org/resource/Imperative_programming> .
+    rdfs:label "Imperative paradigm"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Imperative_programming> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Imperative_programming> .
 
 ce:Introspection a ce:MetaprogrammingConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "introspection"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Type_introspection> .
+    rdfs:label "Introspection"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Type_introspection> .
 
 ce:IteratorsAndGenerators a ce:CompositeConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "iterators and generators"@en ;
+    rdfs:label "Iterators and generators"@en ;
     ce:hasPrimaryComponent ce:Iteration,
         ce:ProceduralAbstraction,
         ce:VariablesAsState ;
     ce:hasSecondaryComponent ce:Coroutines,
         ce:FirstClassFunctions ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Generator_(computer_programming)>,
+    foaf:page <https://en.wikipedia.org/wiki/Generator_(computer_programming)>,
         <https://en.wikipedia.org/wiki/Iterator> .
 
 ce:KindPolymorphism a ce:HigherOrderConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "kind polymorphism"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Kind_(type_theory)> .
+    rdfs:label "Kind polymorphism"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Kind_(type_theory)> .
 
 ce:KnowledgeRepresentationConcept a owl:Class,
         tbox:ConceptualEntity ;
@@ -300,38 +307,38 @@ ce:KnowledgeRepresentationConcept a owl:Class,
 
 ce:LazyEvaluation a ce:EvaluationStrategyConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "lazy evaluation"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Lazy_evaluation> ;
-    owl:sameAs <https://dbpedia.org/resource/Lazy_evaluation> .
+    rdfs:label "Lazy evaluation"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Lazy_evaluation> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Lazy_evaluation> .
 
 ce:Lifetime a ce:LifetimeConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "lifetime"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Object_lifetime> .
+    rdfs:label "Lifetime"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Object_lifetime> .
 
 ce:Lists a ce:DataConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "lists"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/List_(abstract_data_type)> ;
-    owl:sameAs <https://dbpedia.org/resource/List_(abstract_data_type)> .
+    rdfs:label "Lists"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/List_(abstract_data_type)> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/List_(abstract_data_type)> .
 
 ce:LogicParadigm a ce:ParadigmConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "logic paradigm"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Logic_programming> ;
-    owl:sameAs <https://dbpedia.org/resource/Logic_programming> .
+    rdfs:label "Logic paradigm"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Logic_programming> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Logic_programming> .
 
 ce:Macros a ce:MetaprogrammingConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "macros"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Macro_(computer_science)> ;
-    owl:sameAs <https://dbpedia.org/resource/Macro_(computer_science)> .
+    rdfs:label "Macros"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Macro_(computer_science)> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Macro_(computer_science)> .
 
 ce:Metaprogramming a ce:MetaprogrammingConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "metaprogramming"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Metaprogramming> ;
-    owl:sameAs <https://dbpedia.org/resource/Metaprogramming> .
+    rdfs:label "Metaprogramming"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Metaprogramming> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Metaprogramming> .
 
 ce:ModelingConcept a owl:Class,
         tbox:ConceptualEntity ;
@@ -340,39 +347,39 @@ ce:ModelingConcept a owl:Class,
 
 ce:Modularity a ce:ModularityConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "modularity"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Modular_programming> ;
-    owl:sameAs <https://dbpedia.org/resource/Modular_programming> .
+    rdfs:label "Modularity"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Modular_programming> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Modular_programming> .
 
 ce:Mutability a ce:MutabilityConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "mutability"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Immutable_object> .
+    rdfs:label "Mutability"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Immutable_object> .
 
 ce:Namespaces a ce:ModularityConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "namespaces"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Namespace> ;
-    owl:sameAs <https://dbpedia.org/resource/Namespace> .
+    rdfs:label "Namespaces"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Namespace> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Namespace> .
 
 ce:NativeSupport a ce:LanguageSupportKind,
         tbox:ConceptualEntity ;
-    rdfs:label "native support"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Programming_language> .
+    rdfs:label "Native support"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Programming_language> .
 
 ce:NaturalApplicability a ce:LanguageConceptApplicability,
         tbox:ConceptualEntity ;
-    rdfs:label "natural applicability"@en .
+    rdfs:label "Natural applicability"@en .
 
 ce:ObjectOrientedParadigm a ce:ParadigmConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "object-oriented paradigm"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Object-oriented_programming> ;
-    owl:sameAs <https://dbpedia.org/resource/Object-oriented_programming> .
+    rdfs:label "Object-oriented paradigm"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Object-oriented_programming> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Object-oriented_programming> .
 
 ce:Objects a ce:CompositeConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "objects"@en ;
+    rdfs:label "Objects"@en ;
     ce:hasPrimaryComponent ce:Encapsulation,
         ce:InterfacesAndContracts,
         ce:ObjectsAsData ;
@@ -380,44 +387,44 @@ ce:Objects a ce:CompositeConcept,
         ce:MutableData,
         ce:SideEffects,
         ce:VariablesAsState ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Object_(computer_science)> ;
-    owl:sameAs <https://dbpedia.org/resource/Object_(computer_science)> .
+    foaf:page <https://en.wikipedia.org/wiki/Object_(computer_science)> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Object_(computer_science)> .
 
 ce:OptionTypeMechanism a ce:ImplementationMechanismConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "option-type mechanism"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Option_type> .
+    rdfs:label "Option-type mechanism"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Option_type> .
 
 ce:Packages a ce:ModularityConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "packages"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Package_(package_management_system)> .
+    rdfs:label "Packages"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Package_(package_management_system)> .
 
 ce:Parallelism a ce:ParallelismConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "parallelism"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Parallel_computing> ;
-    owl:sameAs <https://dbpedia.org/resource/Parallel_computing> .
+    rdfs:label "Parallelism"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Parallel_computing> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Parallel_computing> .
 
 ce:PersistentState a ce:StateConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "persistent state"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Persistent_data_structure> .
+    rdfs:label "Persistent state"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Persistent_data_structure> .
 
 ce:PipelineOperatorMechanism a ce:ImplementationMechanismConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "pipeline-operator mechanism"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Pipeline_(software)> .
+    rdfs:label "Pipeline-operator mechanism"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Pipeline_(software)> .
 
 ce:PipelineParallelism a ce:ParallelismConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "pipeline parallelism"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Pipeline_(computing)> .
+    rdfs:label "Pipeline parallelism"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Pipeline_(computing)> .
 
 ce:PrimitiveValues a ce:DataConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "primitive values"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Primitive_data_type> .
+    rdfs:label "Primitive values"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Primitive_data_type> .
 
 ce:ProofConcept a owl:Class,
         tbox:ConceptualEntity ;
@@ -426,14 +433,14 @@ ce:ProofConcept a owl:Class,
 
 ce:PrototypeBasedMechanism a ce:ImplementationMechanismConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "prototype-based mechanism"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Prototype-based_programming> ;
-    owl:sameAs <https://dbpedia.org/resource/Prototype-based_programming> .
+    rdfs:label "Prototype-based mechanism"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Prototype-based_programming> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Prototype-based_programming> .
 
 ce:PureComputation a ce:EffectConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "pure computation"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Pure_function> .
+    rdfs:label "Pure computation"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Pure_function> .
 
 ce:QueryConcept a owl:Class,
         tbox:ConceptualEntity ;
@@ -442,30 +449,30 @@ ce:QueryConcept a owl:Class,
 
 ce:Recursion a ce:ControlConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "recursion"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Recursion_(computer_science)> ;
-    owl:sameAs <https://dbpedia.org/resource/Recursion_(computer_science)> .
+    rdfs:label "Recursion"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Recursion_(computer_science)> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Recursion_(computer_science)> .
 
 ce:ReferenceSemantics a ce:MutabilityConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "reference semantics"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Object_reference> .
+    rdfs:label "Reference semantics"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Object_reference> .
 
 ce:ReferencesAndPointers a ce:DataConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "references and pointers"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Pointer_(computer_programming)> .
+    rdfs:label "References and pointers"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Pointer_(computer_programming)> .
 
 ce:Reflection a ce:MetaprogrammingConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "reflection"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Reflective_programming> ;
-    owl:sameAs <https://dbpedia.org/resource/Reflective_programming> .
+    rdfs:label "Reflection"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Reflective_programming> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Reflective_programming> .
 
 ce:RuleAndPredicateMechanism a ce:ImplementationMechanismConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "rule-and-predicate mechanism"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Logic_programming> .
+    rdfs:label "Rule-and-predicate mechanism"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Logic_programming> .
 
 ce:SchemaConcept a owl:Class,
         tbox:ConceptualEntity ;
@@ -474,61 +481,61 @@ ce:SchemaConcept a owl:Class,
 
 ce:Scope a ce:ScopeConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "scope"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Scope_(computer_science)> ;
-    owl:sameAs <https://dbpedia.org/resource/Scope_(computer_science)> .
+    rdfs:label "Scope"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Scope_(computer_science)> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Scope_(computer_science)> .
 
 ce:Sequencing a ce:ControlConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "sequencing"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Control_flow> .
+    rdfs:label "Sequencing"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Control_flow> .
 
 ce:SharedMemoryConcurrency a ce:ConcurrencyConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "shared-memory concurrency"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Concurrent_computing> .
+    rdfs:label "Shared-memory concurrency"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Concurrent_computing> .
 
 ce:ShortCircuitEvaluation a ce:EvaluationStrategyConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "short-circuit evaluation"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Short-circuit_evaluation> ;
-    owl:sameAs <https://dbpedia.org/resource/Short-circuit_evaluation> .
+    rdfs:label "Short-circuit evaluation"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Short-circuit_evaluation> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Short-circuit_evaluation> .
 
 ce:SoftwareTransactionalMemory a ce:ConcurrencyConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "software transactional memory"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Software_transactional_memory> ;
-    owl:sameAs <https://dbpedia.org/resource/Software_transactional_memory> .
+    rdfs:label "Software transactional memory"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Software_transactional_memory> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Software_transactional_memory> .
 
 ce:StackLifetime a ce:LifetimeConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "stack lifetime"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Stack-based_memory_allocation> .
+    rdfs:label "Stack lifetime"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Stack-based_memory_allocation> .
 
 ce:StandardLibrarySupport a ce:LanguageSupportKind,
         tbox:ConceptualEntity ;
-    rdfs:label "standard-library support"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Standard_library> .
+    rdfs:label "Standard-library support"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Standard_library> .
 
 ce:State a ce:StateConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "state"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/State_(computer_science)> ;
-    owl:sameAs <https://dbpedia.org/resource/State_(computer_science)> .
+    rdfs:label "State"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/State_(computer_science)> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/State_(computer_science)> .
 
 ce:StaticTyping a ce:TypeConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "static typing"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Type_system#Static_type_checking> .
+    rdfs:label "Static typing"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Type_system#Static_type_checking> .
 
 ce:StrongTyping a ce:TypeConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "strong typing"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Strong_and_weak_typing> .
+    rdfs:label "Strong typing"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Strong_and_weak_typing> .
 
 ce:StructuredComputationAbstractions a ce:CompositeConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "structured computation abstractions"@en ;
+    rdfs:label "Structured computation abstractions"@en ;
     ce:hasPrimaryComponent ce:FunctionAbstraction,
         ce:HigherOrderFunctions,
         ce:TypeAbstraction ;
@@ -540,26 +547,26 @@ ce:StructuredComputationAbstractions a ce:CompositeConcept,
         ce:OptionResultTypes,
         ce:PipelineStyle,
         ce:SideEffects ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Applicative_functor>,
+    foaf:page <https://en.wikipedia.org/wiki/Applicative_functor>,
         <https://en.wikipedia.org/wiki/Arrow_(computer_science)>,
         <https://en.wikipedia.org/wiki/Monad_(functional_programming)> .
 
 ce:Subtyping a ce:TypeConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "subtyping"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Subtyping> ;
-    owl:sameAs <https://dbpedia.org/resource/Subtyping> .
+    rdfs:label "Subtyping"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Subtyping> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Subtyping> .
 
 ce:TaskLibraryMechanism a ce:ImplementationMechanismConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "task-library mechanism"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Futures_and_promises> .
+    rdfs:label "Task-library mechanism"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Futures_and_promises> .
 
 ce:TaskParallelism a ce:ParallelismConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "task parallelism"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Task_parallelism> ;
-    owl:sameAs <https://dbpedia.org/resource/Task_parallelism> .
+    rdfs:label "Task parallelism"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Task_parallelism> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Task_parallelism> .
 
 ce:TransformationConcept a owl:Class,
         tbox:ConceptualEntity ;
@@ -568,93 +575,93 @@ ce:TransformationConcept a owl:Class,
 
 ce:Tuples a ce:DataConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "tuples"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Tuple> ;
-    owl:sameAs <https://dbpedia.org/resource/Tuple> .
+    rdfs:label "Tuples"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Tuple> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Tuple> .
 
 ce:TypeClassBasedMechanism a ce:ImplementationMechanismConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "type-class-based mechanism"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Type_class> ;
-    owl:sameAs <https://dbpedia.org/resource/Type_class> .
+    rdfs:label "Type-class-based mechanism"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Type_class> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Type_class> .
 
 ce:TypeInference a ce:TypeConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "type inference"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Type_inference> ;
-    owl:sameAs <https://dbpedia.org/resource/Type_inference> .
+    rdfs:label "Type inference"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Type_inference> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Type_inference> .
 
 ce:Types a ce:TypeConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "types"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Type_system> ;
-    owl:sameAs <https://dbpedia.org/resource/Type_system> .
+    rdfs:label "Types"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Type_system> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Type_system> .
 
 ce:ValueSemantics a ce:MutabilityConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "value semantics"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Value_semantics> .
+    rdfs:label "Value semantics"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Value_semantics> .
 
 ce:Variants a ce:DataConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "variants"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Tagged_union> .
+    rdfs:label "Variants"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Tagged_union> .
 
 ce:WeakTyping a ce:TypeConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "weak typing"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Strong_and_weak_typing> .
+    rdfs:label "Weak typing"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Strong_and_weak_typing> .
 
 ce:assertedForConcept a owl:ObjectProperty ;
-    rdfs:label "asserted for concept"@en ;
+    rdfs:label "Asserted for concept"@en ;
     rdfs:domain ce:LanguageSupportAssertion ;
     rdfs:range ce:LanguageConcept .
 
 ce:assertedForLanguage a owl:ObjectProperty ;
-    rdfs:label "asserted for language"@en ;
+    rdfs:label "Asserted for language"@en ;
     rdfs:domain ce:LanguageSupportAssertion ;
     rdfs:range <http://www.softlang.org/ontologies/pe#ProgrammingLanguage> .
 
 ce:hasApplicability a owl:ObjectProperty ;
-    rdfs:label "has applicability"@en ;
+    rdfs:label "Has applicability"@en ;
     rdfs:domain ce:LanguageSupportAssertion ;
     rdfs:range ce:LanguageConceptApplicability .
 
 ce:hasDominantForm a owl:ObjectProperty ;
-    rdfs:label "has dominant form"@en ;
+    rdfs:label "Has dominant form"@en ;
     rdfs:domain ce:LanguageSupportAssertion ;
     rdfs:range ce:LanguageConcept .
 
 ce:hasPrimaryComponent a owl:ObjectProperty ;
-    rdfs:label "has primary component"@en ;
+    rdfs:label "Has primary component"@en ;
     rdfs:domain ce:CompositeConcept ;
     rdfs:range ce:LanguageConcept ;
     rdfs:subPropertyOf ce:hasComponent .
 
 ce:hasPrimaryMechanism a owl:ObjectProperty ;
-    rdfs:label "has primary mechanism"@en ;
+    rdfs:label "Has primary mechanism"@en ;
     rdfs:domain ce:LanguageSupportAssertion ;
     rdfs:range ce:ImplementationMechanismConcept .
 
 ce:hasSecondaryComponent a owl:ObjectProperty ;
-    rdfs:label "has secondary component"@en ;
+    rdfs:label "Has secondary component"@en ;
     rdfs:domain ce:CompositeConcept ;
     rdfs:range ce:LanguageConcept ;
     rdfs:subPropertyOf ce:hasComponent .
 
 ce:hasSupportKind a owl:ObjectProperty ;
-    rdfs:label "has support kind"@en ;
+    rdfs:label "Has support kind"@en ;
     rdfs:domain ce:LanguageSupportAssertion ;
     rdfs:range ce:LanguageSupportKind .
 
 ce:nativelySupports a owl:ObjectProperty ;
-    rdfs:label "natively supports"@en ;
+    rdfs:label "Natively supports"@en ;
     rdfs:domain <http://www.softlang.org/ontologies/pe#ProgrammingLanguage> ;
     rdfs:range ce:LanguageConcept ;
     rdfs:subPropertyOf ce:supports .
 
 ce:standardlySupports a owl:ObjectProperty ;
-    rdfs:label "standardly supports"@en ;
+    rdfs:label "Standardly supports"@en ;
     rdfs:domain <http://www.softlang.org/ontologies/pe#ProgrammingLanguage> ;
     rdfs:range ce:LanguageConcept ;
     rdfs:subPropertyOf ce:supports .
@@ -671,83 +678,83 @@ ce:APIware a ce:TechnologicalSpace,
 
 ce:ActorBasedConcurrency a ce:ConcurrencyConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "actor-based concurrency"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Actor_model> ;
-    owl:sameAs <https://dbpedia.org/resource/Actor_model> .
+    rdfs:label "Actor-based concurrency"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Actor_model> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Actor_model> .
 
 ce:ApplicativeStyle a ce:StructuredComputationConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "applicative style"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Applicative_functor> .
+    rdfs:label "Applicative style"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Applicative_functor> .
 
 ce:ArrowStyle a ce:StructuredComputationConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "arrow style"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Arrow_(computer_science)> .
+    rdfs:label "Arrow style"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Arrow_(computer_science)> .
 
 ce:AsyncEventDrivenConcurrency a ce:ConcurrencyConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "async/event-driven concurrency"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Event-driven_programming> .
+    rdfs:label "Async/event-driven concurrency"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Event-driven_programming> .
 
 ce:CC a ce:SubjectArea,
         tbox:ConceptualEntity,
         owl:NamedIndividual ;
     rdfs:label "Compiler Construction"@en ;
     rdfs:comment "area concerned with the design and implementation of compilers"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Compiler#Compiler_construction> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Compiler#Compiler_construction> .
 
 ce:CL a ce:SubjectArea,
         tbox:ConceptualEntity,
         owl:NamedIndividual ;
     rdfs:label "Computational Linguistics"@en ;
     rdfs:comment "area concerned with computational models and processing of natural language"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Computational_linguistics> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Computational_linguistics> .
 
 ce:CompositionVsInheritance a ce:ModularityConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "composition versus inheritance"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Composition_over_inheritance> .
+    rdfs:label "Composition versus inheritance"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Composition_over_inheritance> .
 
 ce:ContinuationPassingStyle a ce:StructuredComputationConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "continuation-passing style"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Continuation-passing_style> .
+    rdfs:label "Continuation-passing style"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Continuation-passing_style> .
 
 ce:Continuations a ce:ControlConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "continuations"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Continuation> ;
-    owl:sameAs <https://dbpedia.org/resource/Continuation> .
+    rdfs:label "Continuations"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Continuation> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Continuation> .
 
 ce:Coroutines a ce:ControlConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "coroutines"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Coroutine> ;
-    owl:sameAs <https://dbpedia.org/resource/Coroutine> .
+    rdfs:label "Coroutines"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Coroutine> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Coroutine> .
 
 ce:DataAbstraction a ce:AbstractionConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "data abstraction"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Abstract_data_type> .
+    rdfs:label "Data abstraction"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Abstract_data_type> .
 
 ce:EffectHandlerStyle a ce:StructuredComputationConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "effect-handler style"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Effect_system> .
+    rdfs:label "Effect-handler style"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Effect_system> .
 
 ce:ErrorHandling a ce:ErrorHandlingConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "error handling"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Exception_handling> ;
-    owl:sameAs <https://dbpedia.org/resource/Exception_handling> .
+    rdfs:label "Error handling"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Exception_handling> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Exception_handling> .
 
 ce:FM a ce:SubjectArea,
         tbox:ConceptualEntity,
         owl:NamedIndividual ;
     rdfs:label "Formal Methods"@en ;
     rdfs:comment "area concerned with mathematically rigorous methods for specification, development, and verification"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Formal_methods> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Formal_methods> .
 
 ce:Grammarware a ce:TechnologicalSpace,
         tbox:ConceptualEntity,
@@ -773,29 +780,29 @@ ce:Graphware a ce:TechnologicalSpace,
 
 ce:HeapLifetime a ce:LifetimeConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "heap lifetime"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Memory_management> .
+    rdfs:label "Heap lifetime"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Memory_management> .
 
 ce:HigherOrderFunctions a ce:HigherOrderConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "higher-order functions"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Higher-order_function> ;
-    owl:sameAs <https://dbpedia.org/resource/Higher-order_function> .
+    rdfs:label "Higher-order functions"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Higher-order_function> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Higher-order_function> .
 
 ce:IOEffects a ce:EffectConcept,
         tbox:ConceptualEntity ;
     rdfs:label "I/O effects"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Input/output> .
+    foaf:page <https://en.wikipedia.org/wiki/Input/output> .
 
 ce:InterfacesAndContracts a ce:ModularityConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "interfaces and contracts"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Interface_(object-oriented_programming)> .
+    rdfs:label "Interfaces and contracts"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Interface_(object-oriented_programming)> .
 
 ce:Iteration a ce:ControlConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "iteration"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Control_flow#Loops> .
+    rdfs:label "Iteration"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Control_flow#Loops> .
 
 ce:JSONware a ce:TechnologicalSpace,
         tbox:ConceptualEntity,
@@ -814,12 +821,12 @@ ce:KR a ce:SubjectArea,
         owl:NamedIndividual ;
     rdfs:label "Knowledge Representation & Reasoning"@en ;
     rdfs:comment "area concerned with representing knowledge and supporting automated reasoning"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Knowledge_representation_and_reasoning> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Knowledge_representation_and_reasoning> .
 
 ce:LexicalScope a ce:ScopeConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "lexical scope"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Scope_(computer_science)#Lexical_scope> .
+    rdfs:label "Lexical scope"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Scope_(computer_science)#Lexical_scope> .
 
 ce:Logicware a ce:TechnologicalSpace,
         tbox:ConceptualEntity,
@@ -836,7 +843,7 @@ ce:MDE a ce:SubjectArea,
         tbox:ConceptualEntity ;
     rdfs:label "Model-driven engineering"@en ;
     rdfs:comment "area concerned with the engineering of software systems through models, metamodels, model transformations, and related model-based techniques"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Model-driven_engineering> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Model-driven_engineering> .
 
 ce:Markupware a ce:TechnologicalSpace,
         tbox:ConceptualEntity,
@@ -850,8 +857,8 @@ ce:Markupware a ce:TechnologicalSpace,
 
 ce:MessagePassingConcurrency a ce:ConcurrencyConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "message-passing concurrency"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Message_passing> .
+    rdfs:label "Message-passing concurrency"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Message_passing> .
 
 ce:Modelware a ce:TechnologicalSpace,
         tbox:ConceptualEntity,
@@ -867,41 +874,41 @@ ce:Modelware a ce:TechnologicalSpace,
 
 ce:ModuleAbstraction a ce:AbstractionConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "module abstraction"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Modular_programming> .
+    rdfs:label "Module abstraction"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Modular_programming> .
 
 ce:Modules a ce:ModularityConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "modules"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Modular_programming> ;
-    owl:sameAs <https://dbpedia.org/resource/Modular_programming> .
+    rdfs:label "Modules"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Modular_programming> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Modular_programming> .
 
 ce:MonadicStyle a ce:StructuredComputationConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "monadic style"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Monad_(functional_programming)> .
+    rdfs:label "Monadic style"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Monad_(functional_programming)> .
 
 ce:MutableData a ce:MutabilityConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "mutable data"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Immutable_object> .
+    rdfs:label "Mutable data"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Immutable_object> .
 
 ce:NLP a ce:SubjectArea,
         tbox:ConceptualEntity,
         owl:NamedIndividual ;
     rdfs:label "Natural Language Processing"@en ;
     rdfs:comment "area concerned with computational techniques for analyzing and generating natural language"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Natural_language_processing> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Natural_language_processing> .
 
 ce:NameBinding a ce:BindingConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "name binding"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Name_binding> .
+    rdfs:label "Name binding"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Name_binding> .
 
 ce:ObjectsAsData a ce:DataConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "objects as data"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Object_(computer_science)> .
+    rdfs:label "Objects as data"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Object_(computer_science)> .
 
 ce:Ontoware a ce:TechnologicalSpace,
         tbox:ConceptualEntity,
@@ -920,36 +927,36 @@ ce:Ontoware a ce:TechnologicalSpace,
 
 ce:OptionResultTypes a ce:ErrorHandlingConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "option/result types"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Option_type> .
+    rdfs:label "Option/result types"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Option_type> .
 
 ce:PLT a ce:SubjectArea,
         tbox:ConceptualEntity,
         owl:NamedIndividual ;
     rdfs:label "Programming Language Theory"@en ;
     rdfs:comment "area concerned with the formal study of programming languages and their properties"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Programming_language_theory> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Programming_language_theory> .
 
 ce:ParametricPolymorphism a ce:TypeConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "parametric polymorphism"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Parametric_polymorphism> ;
-    owl:sameAs <https://dbpedia.org/resource/Parametric_polymorphism> .
+    rdfs:label "Parametric polymorphism"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Parametric_polymorphism> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Parametric_polymorphism> .
 
 ce:PipelineStyle a ce:StructuredComputationConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "pipeline style"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Pipeline_(software)> .
+    rdfs:label "Pipeline style"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Pipeline_(software)> .
 
 ce:ProceduralAbstraction a ce:AbstractionConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "procedural abstraction"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Procedure_(computer_science)> .
+    rdfs:label "Procedural abstraction"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Procedure_(computer_science)> .
 
 ce:ProductLikeData a ce:DataConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "product-like data"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Product_type> .
+    rdfs:label "Product-like data"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Product_type> .
 
 ce:Programware a ce:TechnologicalSpace,
         tbox:ConceptualEntity,
@@ -973,14 +980,14 @@ ce:Proofware a ce:TechnologicalSpace,
 
 ce:Records a ce:DataConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "records"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Record_(computer_science)> ;
-    owl:sameAs <https://dbpedia.org/resource/Record_(computer_science)> .
+    rdfs:label "Records"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Record_(computer_science)> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Record_(computer_science)> .
 
 ce:RecursiveData a ce:DataConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "recursive data"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Recursive_data_type> .
+    rdfs:label "Recursive data"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Recursive_data_type> .
 
 ce:Ruleware a ce:TechnologicalSpace,
         tbox:ConceptualEntity,
@@ -998,14 +1005,14 @@ ce:SE a ce:SubjectArea,
         owl:NamedIndividual ;
     rdfs:label "Software Engineering"@en ;
     rdfs:comment "area concerned with systematic methods for the development and maintenance of software"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Software_engineering> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Software_engineering> .
 
 ce:SLE a ce:SubjectArea,
         tbox:ConceptualEntity,
         owl:NamedIndividual ;
     rdfs:label "Software Language Engineering"@en ;
     rdfs:comment "area concerned with the engineering of software languages and related artifacts"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Language_engineering> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Language_engineering> .
 
 ce:SQLware a ce:TechnologicalSpace,
         tbox:ConceptualEntity,
@@ -1021,20 +1028,20 @@ ce:SQLware a ce:TechnologicalSpace,
 
 ce:SumLikeData a ce:DataConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "sum-like data"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Sum_type> .
+    rdfs:label "Sum-like data"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Sum_type> .
 
 ce:TCS a ce:SubjectArea,
         tbox:ConceptualEntity,
         owl:NamedIndividual ;
     rdfs:label "Theoretical Computer Science"@en ;
     rdfs:comment "area concerned with the mathematical and theoretical foundations of computer science"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Theoretical_computer_science> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Theoretical_computer_science> .
 
 ce:TypeAbstraction a ce:AbstractionConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "type abstraction"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Type_system> .
+    rdfs:label "Type abstraction"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Type_system> .
 
 ce:XMLware a ce:TechnologicalSpace,
         tbox:ConceptualEntity,
@@ -1050,27 +1057,27 @@ ce:XMLware a ce:TechnologicalSpace,
 
 ce:Encapsulation a ce:AbstractionConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "encapsulation"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)> ;
-    owl:sameAs <https://dbpedia.org/resource/Encapsulation_(computer_programming)> .
+    rdfs:label "Encapsulation"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Encapsulation_(computer_programming)> .
 
 ce:FirstClassFunctions a ce:HigherOrderConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "first-class functions"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/First-class_function> .
+    rdfs:label "First-class functions"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/First-class_function> .
 
 ce:FunctionAbstraction a ce:AbstractionConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "function abstraction"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Function_(computer_programming)> .
+    rdfs:label "Function abstraction"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Function_(computer_programming)> .
 
 ce:hasComponent a owl:ObjectProperty ;
-    rdfs:label "has component"@en ;
+    rdfs:label "Has component"@en ;
     rdfs:domain ce:CompositeConcept ;
     rdfs:range ce:LanguageConcept .
 
 ce:supports a owl:ObjectProperty ;
-    rdfs:label "supports"@en ;
+    rdfs:label "Supports"@en ;
     rdfs:domain <http://www.softlang.org/ontologies/pe#ProgrammingLanguage> ;
     rdfs:range ce:LanguageConcept ;
     owl:propertyChainAxiom [ ] .
@@ -1105,9 +1112,9 @@ ce:ScopeConcept a owl:Class,
 
 ce:SideEffects a ce:EffectConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "side effects"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Side_effect_(computer_science)> ;
-    owl:sameAs <https://dbpedia.org/resource/Side_effect_(computer_science)> .
+    rdfs:label "Side effects"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Side_effect_(computer_science)> ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Side_effect_(computer_science)> .
 
 ce:StateConcept a owl:Class,
         tbox:ConceptualEntity ;
@@ -1115,8 +1122,8 @@ ce:StateConcept a owl:Class,
 
 ce:VariablesAsState a ce:StateConcept,
         tbox:ConceptualEntity ;
-    rdfs:label "variables as state"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/State_(computer_science)> .
+    rdfs:label "Variables as state"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/State_(computer_science)> .
 
 ce:ParallelismConcept a owl:Class,
         tbox:ConceptualEntity ;
@@ -1221,3 +1228,580 @@ ce:LanguageConcept a owl:Class,
 [] a owl:AllDifferent ;
     owl:distinctMembers ( ce:Grammarware ce:Modelware ce:Programware ce:XMLware ce:JSONware ce:SQLware ce:Ontoware ce:Graphware ce:APIware ce:Logicware ce:Ruleware ce:Proofware ce:Markupware ) .
 
+
+
+#################################################################
+# Software Engineering Activity Vocabulary (SEAV)
+# Integrated into the conceptual-entities module
+#################################################################
+
+
+ce:EngineeringActivity a owl:Class,
+        tbox:ConceptualEntity ;
+    rdfs:subClassOf tbox:ConceptualEntity ;
+    rdfs:label "Engineering activity"@en ;
+    rdfs:comment "Root class for software engineering activity types."@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Software_development_process> .
+
+ce:PlanningAndManagementActivity a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:EngineeringActivity ;
+    rdfs:label "Planning and management activity"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Software_project_management> .
+
+ce:RequirementsEngineeringActivity a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:EngineeringActivity ;
+    rdfs:label "Requirements engineering activity"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Requirements_engineering> .
+
+ce:DesignActivity a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:EngineeringActivity ;
+    rdfs:label "Design activity"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Software_design> .
+
+ce:ImplementationActivity a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:EngineeringActivity ;
+    rdfs:label "Implementation activity"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Implementation> .
+
+ce:VerificationAndValidationActivity a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:EngineeringActivity ;
+    rdfs:label "Verification and validation activity"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Verification_and_validation> .
+
+ce:ReleaseAndDeploymentActivity a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:EngineeringActivity ;
+    rdfs:label "Release and deployment activity"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Software_release_life_cycle> .
+
+ce:OperationsAndMaintenanceActivity a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:EngineeringActivity ;
+    rdfs:label "Operations and maintenance activity"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Software_maintenance> .
+
+ce:EvolutionAndImprovementActivity a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:EngineeringActivity ;
+    rdfs:label "Evolution and improvement activity"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Software_evolution> .
+
+ce:QualityAndGovernanceActivity a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:EngineeringActivity ;
+    rdfs:label "Quality and governance activity"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Software_quality> .
+
+ce:SupportActivity a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:EngineeringActivity ;
+    rdfs:label "Support activity"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Systems_development_life_cycle> .
+
+ce:ProjectPlanning a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:PlanningAndManagementActivity ;
+    rdfs:label "Project planning"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Project_planning> .
+
+ce:Roadmapping a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:PlanningAndManagementActivity ;
+    rdfs:label "Roadmapping"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Technology_roadmap> .
+
+ce:EffortEstimation a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:PlanningAndManagementActivity ;
+    rdfs:label "Effort estimation"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Software_development_effort_estimation> .
+
+ce:ResourceAllocation a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:PlanningAndManagementActivity ;
+    rdfs:label "Resource allocation"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Resource_allocation> .
+
+ce:RiskManagement a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:PlanningAndManagementActivity ;
+    rdfs:label "Risk management"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Risk_management> .
+
+ce:StakeholderManagement a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:PlanningAndManagementActivity ;
+    rdfs:label "Stakeholder management"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Stakeholder_management> .
+
+ce:ProcessDefinition a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:PlanningAndManagementActivity ;
+    rdfs:label "Process definition"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Software_development_process> .
+
+ce:ConfigurationManagementPlanning a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:PlanningAndManagementActivity ;
+    rdfs:label "Configuration management planning"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Configuration_management> .
+
+ce:RequirementsElicitation a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:RequirementsEngineeringActivity ;
+    rdfs:label "Requirements elicitation"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Requirements_elicitation> .
+
+ce:RequirementsAnalysis a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:RequirementsEngineeringActivity ;
+    rdfs:label "Requirements analysis"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Requirements_engineering> .
+
+ce:RequirementsSpecification a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:RequirementsEngineeringActivity ;
+    rdfs:label "Requirements specification"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Software_requirements_specification> .
+
+ce:RequirementsValidation a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:RequirementsEngineeringActivity ;
+    rdfs:label "Requirements validation"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Requirements_engineering> .
+
+ce:RequirementsPrioritization a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:RequirementsEngineeringActivity ;
+    rdfs:label "Requirements prioritization"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Requirements_engineering> .
+
+ce:RequirementsManagement a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:RequirementsEngineeringActivity ;
+    rdfs:label "Requirements management"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Requirements_engineering> .
+
+ce:SystemArchitectureDesign a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:DesignActivity ;
+    rdfs:label "System architecture design"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Software_architecture> .
+
+ce:HighLevelDesign a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:DesignActivity ;
+    rdfs:label "High-level design"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Software_design> .
+
+ce:LowLevelDesign a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:DesignActivity ;
+    rdfs:label "Low-level design"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Software_design> .
+
+ce:InterfaceDesign a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:DesignActivity ;
+    rdfs:label "Interface design"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Interface_(computing)> .
+
+ce:APIDesign a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:InterfaceDesign ;
+    rdfs:label "API design"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/API> .
+
+ce:DataModelDesign a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:DesignActivity ;
+    rdfs:label "Data model design"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Data_model> .
+
+ce:UXUIDesign a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:DesignActivity ;
+    rdfs:label "UX/UI design"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/User_experience_design>,
+        <https://en.wikipedia.org/wiki/User_interface_design> .
+
+ce:DesignValidation a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:DesignActivity ;
+    rdfs:label "Design validation"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Software_design> .
+
+ce:Prototyping a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:DesignValidation ;
+    rdfs:label "Prototyping"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Software_prototyping> .
+
+ce:Implementation a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:ImplementationActivity ;
+    rdfs:label "Implementation"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Implementation> .
+
+ce:Coding a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:Implementation ;
+    rdfs:label "Coding"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Computer_programming> .
+
+ce:Programming a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:Coding ;
+    rdfs:label "Programming"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Computer_programming> .
+
+
+ce:Refactoring a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:ImplementationActivity,
+        ce:EvolutionAndImprovementActivity ;
+    rdfs:label "Refactoring"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Code_refactoring> .
+
+ce:CodeReview a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:ImplementationActivity,
+        ce:VerificationAndValidationActivity ;
+    rdfs:label "Code review"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Code_review> .
+
+ce:BuildScripting a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:ImplementationActivity ;
+    rdfs:label "Build scripting"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Build_automation> .
+
+ce:DependencyManagement a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:ImplementationActivity ;
+    rdfs:label "Dependency management"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Package_manager> .
+
+ce:VerificationActivity a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:VerificationAndValidationActivity ;
+    rdfs:label "Verification activity"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Verification_and_validation> .
+
+ce:ValidationActivity a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:VerificationAndValidationActivity ;
+    rdfs:label "Validation activity"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Verification_and_validation> .
+
+ce:TestingActivity a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:VerificationAndValidationActivity ;
+    rdfs:label "Testing activity"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Software_testing> .
+
+ce:VerificationTestingActivity a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:TestingActivity,
+        ce:VerificationActivity ;
+    rdfs:label "Verification testing activity"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Software_testing> .
+
+ce:ValidationTestingActivity a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:TestingActivity,
+        ce:ValidationActivity ;
+    rdfs:label "Validation testing activity"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Software_testing> .
+
+ce:UnitTesting a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:VerificationTestingActivity ;
+    rdfs:label "Unit testing"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Unit_testing> .
+
+ce:IntegrationTesting a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:VerificationTestingActivity ;
+    rdfs:label "Integration testing"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Integration_testing> .
+
+ce:SystemTesting a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:ValidationTestingActivity ;
+    rdfs:label "System testing"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/System_testing> .
+
+ce:AcceptanceTesting a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:ValidationTestingActivity ;
+    rdfs:label "Acceptance testing"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Acceptance_testing> .
+
+ce:UserAcceptanceTesting a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:AcceptanceTesting ;
+    rdfs:label "User acceptance testing"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Acceptance_testing> .
+
+ce:UsabilityTesting a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:ValidationTestingActivity ;
+    rdfs:label "Usability testing"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Usability_testing> .
+
+ce:PerformanceTesting a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:ValidationTestingActivity ;
+    rdfs:label "Performance testing"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Performance_testing> .
+
+ce:SecurityTesting a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:ValidationTestingActivity ;
+    rdfs:label "Security testing"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Security_testing> .
+
+ce:StaticAnalysis a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:VerificationActivity ;
+    rdfs:label "Static analysis"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Static_program_analysis> .
+
+ce:FormalVerification a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:VerificationActivity ;
+    rdfs:label "Formal verification"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Formal_verification> .
+
+ce:CodeInspection a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:VerificationActivity ;
+    rdfs:label "Code inspection"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Software_inspection> .
+
+ce:Packaging a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:ReleaseAndDeploymentActivity ;
+    rdfs:label "Packaging"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Software_packaging> .
+
+ce:ReleaseManagement a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:ReleaseAndDeploymentActivity ;
+    rdfs:label "Release management"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Release_management> .
+
+ce:Versioning a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:ReleaseAndDeploymentActivity ;
+    rdfs:label "Versioning"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Software_versioning> .
+
+ce:ContinuousIntegration a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:ReleaseAndDeploymentActivity ;
+    rdfs:label "Continuous integration"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Continuous_integration> .
+
+ce:ContinuousDelivery a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:ReleaseAndDeploymentActivity ;
+    rdfs:label "Continuous delivery"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Continuous_delivery> .
+
+ce:ContinuousDeployment a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:ReleaseAndDeploymentActivity ;
+    rdfs:label "Continuous deployment"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Continuous_deployment> .
+
+ce:Deployment a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:ReleaseAndDeploymentActivity ;
+    rdfs:label "Deployment"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Software_deployment> .
+
+ce:RollbackManagement a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:ReleaseAndDeploymentActivity ;
+    rdfs:label "Rollback management"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Rollback_(data_management)> .
+
+ce:Monitoring a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:OperationsAndMaintenanceActivity ;
+    rdfs:label "Monitoring"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/System_monitoring> .
+
+ce:Logging a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:OperationsAndMaintenanceActivity ;
+    rdfs:label "Logging"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Logging_(computing)> .
+
+ce:IncidentManagement a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:OperationsAndMaintenanceActivity ;
+    rdfs:label "Incident management"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Incident_management> .
+
+ce:BugFixing a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:OperationsAndMaintenanceActivity ;
+    rdfs:label "Bug fixing"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Software_bug> .
+
+ce:Patching a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:OperationsAndMaintenanceActivity ;
+    rdfs:label "Patching"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Patch_(computing)> .
+
+ce:PerformanceTuning a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:OperationsAndMaintenanceActivity ;
+    rdfs:label "Performance tuning"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Performance_testing> .
+
+ce:CapacityPlanning a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:OperationsAndMaintenanceActivity ;
+    rdfs:label "Capacity planning"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Capacity_management> .
+
+ce:BackupAndRecovery a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:OperationsAndMaintenanceActivity ;
+    rdfs:label "Backup and recovery"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Backup>,
+        <https://en.wikipedia.org/wiki/Data_recovery> .
+
+ce:ChangeManagement a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:EvolutionAndImprovementActivity ;
+    rdfs:label "Change management"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Change_management> .
+
+ce:FeatureEnhancement a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:EvolutionAndImprovementActivity ;
+    rdfs:label "Feature enhancement"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Software_evolution> .
+
+ce:TechnicalDebtManagement a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:EvolutionAndImprovementActivity ;
+    rdfs:label "Technical debt management"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Technical_debt> .
+
+ce:Reengineering a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:EvolutionAndImprovementActivity ;
+    rdfs:label "Re-engineering"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Reengineering> .
+
+ce:Migration a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:EvolutionAndImprovementActivity ;
+    rdfs:label "Migration"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Migration_(software)> .
+
+ce:QualityAssurance a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:QualityAndGovernanceActivity ;
+    rdfs:label "Quality assurance"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Quality_assurance> .
+
+ce:QualityControl a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:QualityAndGovernanceActivity ;
+    rdfs:label "Quality control"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Quality_control> .
+
+ce:Auditing a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:QualityAndGovernanceActivity ;
+    rdfs:label "Auditing"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Audit> .
+
+ce:ComplianceManagement a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:QualityAndGovernanceActivity ;
+    rdfs:label "Compliance management"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Regulatory_compliance> .
+
+ce:SecurityManagement a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:QualityAndGovernanceActivity ;
+    rdfs:label "Security management"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Information_security_management> .
+
+ce:Documentation a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:QualityAndGovernanceActivity ;
+    rdfs:label "Documentation"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Documentation> .
+
+ce:ToolingSetup a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:SupportActivity ;
+    rdfs:label "Tooling setup"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Software_tool> .
+
+ce:EnvironmentProvisioning a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:SupportActivity ;
+    rdfs:label "Environment provisioning"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Provisioning> .
+
+ce:DevOpsPractice a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:SupportActivity ;
+    rdfs:label "DevOps practice"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/DevOps> .
+
+ce:KnowledgeManagement a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:SupportActivity ;
+    rdfs:label "Knowledge management"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Knowledge_management> .
+
+ce:TrainingAndOnboarding a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:SupportActivity ;
+    rdfs:label "Training and onboarding"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Onboarding> .
+
+ce:Experimentation a tbox:ConceptualEntity ;
+    rdfs:subClassOf ce:SupportActivity ;
+    rdfs:label "Experimentation"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Experiment> .
+
+
+#################################################################
+# Software Engineering Activity Integration Assertions
+#################################################################
+
+ce:RequirementsSpecification
+    tbox:hasOutputArtifact ae:RequirementsArtifact ;
+    tbox:hasSupportingLanguage le:RequirementsSpecificationLanguage ;
+    tbox:hasSupportingTool te:RequirementsTool .
+
+ce:RequirementsAnalysis
+    tbox:hasInputArtifact ae:RequirementsArtifact ;
+    tbox:hasAffectedArtifact ae:RequirementsArtifact ;
+    tbox:hasSupportingLanguage le:RequirementsSpecificationLanguage ;
+    tbox:hasSupportingTool te:RequirementsTool .
+
+ce:SystemArchitectureDesign
+    tbox:hasSupportingLanguage le:ModelingLanguage ;
+    tbox:uses fe:SoftwareDesignApproach .
+
+ce:DataModelDesign
+    tbox:hasSupportingLanguage le:DataDefinitionLanguage,
+        le:SemanticDataModelLanguage,
+        le:OntologyLanguage ;
+    tbox:uses fe:DataManagementApproach .
+
+ce:InterfaceDesign
+    tbox:hasOutputArtifact ae:APIDescriptionArtifact ;
+    tbox:hasSupportingLanguage le:InterfaceDescriptionLanguage ;
+    tbox:hasSupportingTool te:APIWorkbench ;
+    tbox:uses fe:SoftwareDesignApproach .
+
+ce:APIDesign
+    tbox:hasOutputArtifact ae:APIDescriptionArtifact ;
+    tbox:hasSupportingLanguage le:InterfaceDescriptionLanguage ;
+    tbox:hasSupportingTool te:APIWorkbench ;
+    tbox:uses fe:SoftwareDesignApproach .
+
+ce:Prototyping
+    tbox:hasOutputArtifact ae:ModelArtifact,
+        ae:ProgramArtifact ;
+    tbox:hasSupportingLanguage le:ModelingLanguage,
+        pe:ProgrammingLanguage ;
+    tbox:uses fe:SoftwareDesignApproach .
+
+ce:Implementation
+    tbox:hasOutputArtifact ae:ProgramArtifact ;
+    tbox:hasSupportingLanguage pe:ProgrammingLanguage ;
+    tbox:hasSupportingTool te:Compiler,
+        te:Interpreter ;
+    tbox:uses fe:SoftwareDesignApproach .
+
+ce:Coding
+    tbox:hasOutputArtifact ae:ProgramArtifact ;
+    tbox:hasSupportingLanguage pe:ProgrammingLanguage ;
+    tbox:hasSupportingTool te:Compiler,
+        te:Interpreter .
+
+ce:Programming
+    tbox:hasOutputArtifact ae:ProgramArtifact ;
+    tbox:hasSupportingLanguage pe:ProgrammingLanguage ;
+    tbox:hasSupportingTool te:Compiler,
+        te:Interpreter ;
+    tbox:uses fe:ModelOfComputation .
+
+ce:CodeGeneration
+    tbox:hasInputArtifact ae:ModelArtifact,
+        ae:GrammarArtifact ;
+    tbox:hasOutputArtifact ae:ProgramArtifact ;
+    tbox:hasSupportingLanguage le:ModelTransformationLanguage,
+        pe:ProgrammingLanguage ;
+    tbox:hasSupportingTool te:ModelTransformationEngine ;
+    tbox:uses fe:MetaprogrammingApproach .
+
+ce:BuildScripting
+    tbox:hasOutputArtifact ae:BuildScriptArtifact ;
+    tbox:hasSupportingLanguage le:BuildScriptingLanguage ;
+    tbox:hasSupportingTool te:BuildTool .
+
+ce:Refactoring
+    tbox:hasAffectedArtifact ae:ProgramArtifact ;
+    tbox:hasSupportingLanguage pe:ProgrammingLanguage ;
+    tbox:hasSupportingTool te:RefactoringTool ;
+    tbox:uses fe:SoftwareDesignApproach .
+
+ce:StaticAnalysis
+    tbox:hasInputArtifact ae:ProgramArtifact ;
+    tbox:hasSupportingLanguage pe:ProgrammingLanguage ;
+    tbox:hasSupportingTool te:StaticAnalyzer ;
+    tbox:uses fe:ProgramLogic,
+        fe:FormalSemanticsApproach .
+
+ce:CodeInspection
+    tbox:hasInputArtifact ae:ProgramArtifact ;
+    tbox:hasSupportingLanguage pe:ProgrammingLanguage .
+
+ce:CodeReview
+    tbox:hasInputArtifact ae:ProgramArtifact ;
+    tbox:hasSupportingLanguage pe:ProgrammingLanguage .
+
+ce:FormalVerification
+    tbox:hasInputArtifact ae:ProgramArtifact,
+        ae:ModelArtifact ;
+    tbox:hasSupportingLanguage le:ProofLanguage,
+        le:ModelingLanguage,
+        pe:ProgrammingLanguage ;
+    tbox:hasSupportingTool te:ProofAssistant ;
+    tbox:uses fe:ProgramLogic,
+        fe:FormalSemanticsApproach,
+        fe:TypeTheory .

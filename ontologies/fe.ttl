@@ -3,6 +3,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix tbox: <http://www.softlang.org/ontologies/tbox#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
 <http://www.softlang.org/ontologies/fe> a owl:Ontology ;
     rdfs:comment "Sub-ontology / ABox for the foundational entities"@en ;
@@ -16,7 +17,7 @@
         ce:TCS ;
     tbox:hasSpace ce:Ontoware ;
     rdfs:comment "basic attributional description logic with complement"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Description_logic> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Description_logic> .
 
 :AttributeGrammar a :FormalGrammar,
         tbox:FoundationalEntity,
@@ -30,7 +31,7 @@
     tbox:serves :SyntaxDirectedTranslation ;
     tbox:uses :ContextFreeGrammar ;
     rdfs:comment "formal grammar with attributes and semantic rules"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Attribute_grammar> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Attribute_grammar> .
 
 :AxiomaticSemantics a :FormalSemanticsApproach,
         tbox:FoundationalEntity,
@@ -42,7 +43,7 @@
     tbox:uses :AbstractSyntaxDefinitionApproach,
         :ProgramLogic ;
     rdfs:comment "formal-semantics approach based on axioms and logical proof principles"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Axiomatic_semantics> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Axiomatic_semantics> .
 
 :CalculusOfCommunicatingSystems a :ProcessCalculus,
         tbox:FoundationalEntity,
@@ -53,7 +54,7 @@
     tbox:hasSpace ce:Programware ;
     tbox:isSpecifiedBy :OperationalSemantics ;
     rdfs:comment "calculus for communicating concurrent systems"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Calculus_of_communicating_systems> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Calculus_of_communicating_systems> .
 
 :CategoryTheory a :Theory,
         tbox:FoundationalEntity,
@@ -64,7 +65,7 @@
         ce:TCS ;
     tbox:hasSpace ce:Modelware ;
     rdfs:comment "mathematical theory of objects and morphisms used widely in abstract modeling and semantics"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Category_theory> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Category_theory> .
 
 :CommunicatingSequentialProcesses a :ProcessCalculus,
         tbox:FoundationalEntity,
@@ -76,7 +77,7 @@
     tbox:hasSpace ce:Programware ;
     tbox:isSpecifiedBy :OperationalSemantics ;
     rdfs:comment "process algebra for communication"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Communicating_sequential_processes> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Communicating_sequential_processes> .
 
 :ConstraintSatisfactionProblem a :ComputationalProblem,
         tbox:FoundationalEntity,
@@ -87,7 +88,7 @@
         ce:TCS ;
     rdfs:comment "computational problem of assigning values so that all specified constraints are satisfied"@en,
         "computational problem of assigning values subject to constraints"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Constraint_satisfaction_problem> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Constraint_satisfaction_problem> .
 
 :DataValidation a :DataManagementApproach,
         tbox:FoundationalEntity,
@@ -101,7 +102,7 @@
         ce:XMLware ;
     rdfs:comment "data-management methodology concerned with checking data quality and conformance to constraints"@en,
         "data-management methodology concerned with ensuring that data conforms to structural and semantic expectations"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Data_validation> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Data_validation> .
 
 :DenotationalSemantics a :FormalSemanticsApproach,
         tbox:FoundationalEntity,
@@ -116,7 +117,7 @@
         :DomainTheory,
         :LambdaCalculus ;
     rdfs:comment "formal-semantics approach based on mathematical denotations"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Denotational_semantics> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Denotational_semantics> .
 
 :DependencyGrammar a :FormalGrammar,
         tbox:FoundationalEntity,
@@ -127,7 +128,7 @@
         ce:TCS ;
     tbox:hasSpace ce:Grammarware ;
     rdfs:comment "grammar based on dependency relations"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Dependency_grammar> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Dependency_grammar> .
 
 :DependencyGraph a :DataStructure,
         tbox:FoundationalEntity,
@@ -138,7 +139,7 @@
     tbox:hasSpace ce:Graphware ;
     rdfs:comment "data structure representing dependency relations among entities"@en,
         "data-structure notion of a graph used to represent dependency relationships"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Dependency_graph> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Dependency_graph> .
 
 :DesignByContract a :SoftwareDesignApproach,
         tbox:FoundationalEntity,
@@ -150,7 +151,7 @@
     tbox:hasSpace ce:APIware ;
     rdfs:comment "software-design methodology based on explicit obligations, guarantees, and contracts"@en,
         "software-design methodology based on formally specified obligations and guarantees"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Design_by_contract> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Design_by_contract> .
 
 :ELPlusPlus a :DescriptionLogic,
         tbox:FoundationalEntity,
@@ -160,7 +161,7 @@
         ce:TCS ;
     tbox:hasSpace ce:Ontoware ;
     rdfs:comment "lightweight description logic underlying the OWL 2 EL profile"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/EL%2B%2B> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/EL%2B%2B> .
 
 :FirstOrderLogic a :FormalSystem,
         tbox:FoundationalEntity,
@@ -171,7 +172,7 @@
         ce:TCS ;
     tbox:hasSpace ce:Logicware ;
     rdfs:comment "formal system based on quantified predicates over individuals"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/First-order_logic> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/First-order_logic> .
 
 :FormalProof a :FormalObject,
         tbox:FoundationalEntity,
@@ -182,7 +183,7 @@
     tbox:hasSpace ce:Logicware,
         ce:Proofware ;
     rdfs:comment "formal object representing a proof in a deductive system"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Formal_proof> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Formal_proof> .
 
 :Graph a :MathematicalStructure,
         tbox:FoundationalEntity,
@@ -192,7 +193,7 @@
         ce:TCS ;
     tbox:hasSpace ce:Graphware ;
     rdfs:comment "mathematical structure consisting of vertices and edges"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)> .
 
 :GraphRewritingSystem a :AbstractRewritingSystem,
         tbox:FoundationalEntity,
@@ -202,7 +203,7 @@
         ce:TCS ;
     tbox:hasSpace ce:Graphware ;
     rdfs:comment "rewriting system based on graph transformation rules"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Graph_rewriting> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Graph_rewriting> .
 
 :GraphTheory a :Theory,
         tbox:FoundationalEntity,
@@ -212,7 +213,7 @@
         ce:TCS ;
     tbox:hasSpace ce:Graphware ;
     rdfs:comment "mathematical theory of graphs and their properties"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Graph_theory> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Graph_theory> .
 
 :HoareLogic a :ProgramLogic,
         tbox:FoundationalEntity,
@@ -223,7 +224,7 @@
     tbox:hasSpace ce:Programware,
         ce:Proofware ;
     rdfs:comment "program logic using Hoare triples"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Hoare_logic> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Hoare_logic> .
 
 :HornClause a :FormalObject,
         tbox:FoundationalEntity,
@@ -233,7 +234,7 @@
         ce:TCS ;
     tbox:hasSpace ce:Logicware ;
     rdfs:comment "formal object consisting of a clause with at most one positive literal, important in logic programming"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Horn_clause> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Horn_clause> .
 
 :LambdaMuCalculus a :LambdaCalculus,
         tbox:FoundationalEntity,
@@ -243,7 +244,7 @@
         ce:TCS ;
     tbox:hasSpace ce:Programware ;
     rdfs:comment "lambda calculus for classical computation with named continuations"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Lambda-mu_calculus> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Lambda-mu_calculus> .
 
 :ModelTransformation a :MetaprogrammingApproach,
         tbox:FoundationalEntity,
@@ -255,7 +256,7 @@
     tbox:hasSpace ce:Modelware ;
     rdfs:comment "metaprogramming approach concerned with the systematic transformation of models and related artifacts"@en,
         "metaprogramming approach concerned with the systematic transformation of models or metamodel-related artifacts"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Model_transformation> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Model_transformation> .
 
 :ParsingExpressionGrammar a :AnalyticGrammar,
         tbox:FoundationalEntity,
@@ -265,7 +266,7 @@
         ce:SLE ;
     tbox:hasSpace ce:Grammarware ;
     rdfs:comment "recognition-based formal grammar"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Parsing_expression_grammar> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Parsing_expression_grammar> .
 
 :RegularGrammar a :GenerativeGrammar,
         tbox:FoundationalEntity,
@@ -276,7 +277,7 @@
     tbox:hasSpace ce:Grammarware ;
     tbox:serves :ConcreteSyntaxDefinitionApproach ;
     rdfs:comment "grammar for regular languages"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Regular_grammar> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Regular_grammar> .
 
 :RelationalAlgebra a :FormalSystem,
         tbox:FoundationalEntity,
@@ -287,7 +288,7 @@
         ce:TCS ;
     tbox:hasSpace ce:SQLware ;
     rdfs:comment "formal system for query and transformation operations over relations"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Relational_algebra> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Relational_algebra> .
 
 :RelationalCalculus a :FormalSystem,
         tbox:FoundationalEntity,
@@ -298,7 +299,7 @@
         ce:TCS ;
     tbox:hasSpace ce:SQLware ;
     rdfs:comment "formal declarative query system for relational data"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Relational_calculus> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Relational_calculus> .
 
 :RelationalModel a :DataManagementApproach,
         tbox:FoundationalEntity,
@@ -309,7 +310,7 @@
     tbox:hasSpace ce:SQLware ;
     rdfs:comment "data-management methodology and formal model for relational data"@en,
         "data-management methodology based on organizing data as relations"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Relational_model> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Relational_model> .
 
 :Rule a :FormalObject,
         tbox:FoundationalEntity,
@@ -319,7 +320,7 @@
         ce:SE ;
     tbox:hasSpace ce:Ruleware ;
     rdfs:comment "formal object representing a production-system rule"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Rule-based_system#Production_system_rules> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Rule-based_system#Production_system_rules> .
 
 :SeparationLogic a :ProgramLogic,
         tbox:FoundationalEntity,
@@ -330,7 +331,7 @@
         ce:SE ;
     tbox:hasSpace ce:Programware ;
     rdfs:comment "program logic for reasoning about mutable heap structures"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Separation_logic> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Separation_logic> .
 
 :SequentCalculus a :FormalSystem,
         tbox:FoundationalEntity,
@@ -341,7 +342,7 @@
         ce:TCS ;
     tbox:hasSpace ce:Proofware ;
     rdfs:comment "formal proof system based on sequents and inference rules"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Sequent_calculus> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Sequent_calculus> .
 
 :SimplyTypedLambdaCalculus a :ClassicalLambdaCalculus,
         tbox:FoundationalEntity,
@@ -355,7 +356,7 @@
         ce:TCS ;
     tbox:hasSpace ce:Programware ;
     rdfs:comment "typed lambda calculus with simple types"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Simply_typed_lambda_calculus> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Simply_typed_lambda_calculus> .
 
 :SoftwareInterface a :FormalObject,
         tbox:FoundationalEntity ;
@@ -364,7 +365,7 @@
         ce:SLE ;
     tbox:hasSpace ce:APIware ;
     rdfs:comment "formal object concerned with the specified boundary and interaction contract between software components"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Interface_(computing)#Software_interfaces> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Interface_(computing)#Software_interfaces> .
 
 :StringRewritingSystem a :AbstractRewritingSystem,
         tbox:FoundationalEntity,
@@ -375,7 +376,7 @@
     tbox:hasSpace ce:Markupware ;
     rdfs:comment "rewriting system over strings, also known as a semi-Thue system"@en,
         "rewriting system over strings, corresponding to semi-Thue systems"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Semi-Thue_system> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Semi-Thue_system> .
 
 :SystemF a :LambdaCube,
         tbox:FoundationalEntity,
@@ -387,7 +388,7 @@
         ce:TCS ;
     tbox:hasSpace ce:Programware ;
     rdfs:comment "polymorphic typed lambda calculus"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/System_F> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/System_F> .
 
 :TDPLGrammar a :AnalyticGrammar,
         tbox:FoundationalEntity,
@@ -397,7 +398,7 @@
         ce:TCS ;
     tbox:hasSpace ce:Grammarware ;
     rdfs:comment "recognition-based grammar in the top-down parsing language formalism"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Top-down_parsing_language> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Top-down_parsing_language> .
 
 :TreeTransducer a tbox:FoundationalEntity,
         owl:NamedIndividual ;
@@ -410,7 +411,7 @@
         :SyntaxDirectedTranslation ;
     tbox:uses :AbstractSyntaxDefinitionApproach ;
     rdfs:comment "formalism for the transformation of trees in a syntax-sensitive manner"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Tree_transducer> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Tree_transducer> .
 
 :UntypedLambdaCalculus a :ClassicalLambdaCalculus,
         tbox:FoundationalEntity,
@@ -422,7 +423,7 @@
         ce:TCS ;
     tbox:hasSpace ce:Programware ;
     rdfs:comment "lambda calculus without types"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Lambda_calculus> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Lambda_calculus> .
 
 :ComputationalProblem a tbox:FoundationalEntity ;
     rdfs:label "Computational problem"@en ;
@@ -431,7 +432,7 @@
         ce:TCS ;
     rdfs:comment "methodological approach centered on formally posed problems to be solved computationally"@en,
         "methodological approach concerned with problem formulations addressed by computation"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Computational_problem> ;
+    foaf:page <https://en.wikipedia.org/wiki/Computational_problem> ;
     rdfs:subClassOf tbox:FoundationalEntity .
 
 :DataStructure a tbox:FoundationalEntity ;
@@ -441,7 +442,7 @@
     tbox:hasSpace ce:Graphware ;
     rdfs:comment "methodological approach concerned with organizing and relating data in structures suited for computation and analysis"@en,
         "methodological approach concerned with the organization of data for efficient processing and access"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Data_structure> ;
+    foaf:page <https://en.wikipedia.org/wiki/Data_structure> ;
     rdfs:subClassOf tbox:FoundationalEntity .
 
 :DomainTheory a tbox:FoundationalEntity ;
@@ -450,7 +451,7 @@
         ce:PLT,
         ce:TCS ;
     tbox:hasSpace ce:Programware ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Domain_theory> ;
+    foaf:page <https://en.wikipedia.org/wiki/Domain_theory> ;
     rdfs:subClassOf :Theory .
 
 :MathematicalStructure a tbox:FoundationalEntity ;
@@ -459,7 +460,7 @@
         ce:TCS ;
     tbox:hasSpace ce:Graphware ;
     rdfs:comment "methodological approach centered on mathematical structures used to organize formal reasoning"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Mathematical_structure> ;
+    foaf:page <https://en.wikipedia.org/wiki/Mathematical_structure> ;
     rdfs:subClassOf tbox:FoundationalEntity .
 
 :SoftwareDesignApproach a tbox:FoundationalEntity ;
@@ -469,7 +470,7 @@
     tbox:hasSpace ce:APIware ;
     rdfs:comment "methodological approach concerned with the design of software structures, interfaces, and behavior"@en,
         "methodological approach concerned with the design of software systems and their structures, interfaces, and contracts"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Software_design> ;
+    foaf:page <https://en.wikipedia.org/wiki/Software_design> ;
     rdfs:subClassOf :MethodologicalApproach .
 
 :TermRewritingSystem a :AbstractRewritingSystem,
@@ -482,7 +483,7 @@
     tbox:hasSpace ce:Grammarware ;
     tbox:serves :ProgramTransformation ;
     rdfs:comment "rewriting system over algebraic terms"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Rewriting#Term_rewriting_systems> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Rewriting#Term_rewriting_systems> .
 
 :TransitionSystem a tbox:FoundationalEntity ;
     rdfs:label "Transition system"@en ;
@@ -490,7 +491,7 @@
         ce:PLT,
         ce:TCS ;
     tbox:hasSpace ce:Programware ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Transition_system> ;
+    foaf:page <https://en.wikipedia.org/wiki/Transition_system> ;
     rdfs:subClassOf :ModelOfComputation .
 
 :AnalyticGrammar a tbox:FoundationalEntity ;
@@ -499,7 +500,7 @@
         ce:SLE,
         ce:TCS ;
     tbox:hasSpace ce:Grammarware ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Formal_grammar#Analytic_grammars> ;
+    foaf:page <https://en.wikipedia.org/wiki/Formal_grammar#Analytic_grammars> ;
     rdfs:subClassOf :FormalGrammar .
 
 :ClassicalLambdaCalculus a tbox:FoundationalEntity ;
@@ -507,7 +508,7 @@
     tbox:hasArea ce:PLT,
         ce:TCS ;
     tbox:hasSpace ce:Programware ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Classical_logic#Lambda_calculi> ;
+    foaf:page <https://en.wikipedia.org/wiki/Classical_logic#Lambda_calculi> ;
     rdfs:subClassOf :LambdaCalculus .
 
 :ConcreteSyntaxDefinitionApproach a :SyntaxDefinitionApproach,
@@ -531,7 +532,7 @@
         ce:XMLware ;
     rdfs:comment "methodological approach concerned with modeling, validating, and maintaining data"@en,
         "methodological approach concerned with organizing, validating, governing, and manipulating data artifacts"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Data_management> ;
+    foaf:page <https://en.wikipedia.org/wiki/Data_management> ;
     rdfs:subClassOf :MethodologicalApproach .
 
 :DescriptionLogic a tbox:FoundationalEntity ;
@@ -539,7 +540,7 @@
     tbox:hasArea ce:KR,
         ce:TCS ;
     tbox:hasSpace ce:Ontoware ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Description_logic> ;
+    foaf:page <https://en.wikipedia.org/wiki/Description_logic> ;
     rdfs:subClassOf :FormalSystem .
 
 :GenerativeGrammar a tbox:FoundationalEntity ;
@@ -548,7 +549,7 @@
         ce:CL,
         ce:TCS ;
     tbox:hasSpace ce:Grammarware ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Formal_grammar#The_Chomsky_hierarchy> ;
+    foaf:page <https://en.wikipedia.org/wiki/Formal_grammar#The_Chomsky_hierarchy> ;
     rdfs:subClassOf :FormalGrammar .
 
 :LambdaCube a tbox:FoundationalEntity ;
@@ -556,13 +557,13 @@
     tbox:hasArea ce:PLT,
         ce:TCS ;
     tbox:hasSpace ce:Programware ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Lambda_cube> ;
+    foaf:page <https://en.wikipedia.org/wiki/Lambda_cube> ;
     rdfs:subClassOf :LambdaCalculus .
 
 :ModelOfComputation a tbox:FoundationalEntity ;
     rdfs:label "Model of computation"@en ;
     rdfs:comment "formal model for representing computation, execution, or state evolution"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Model_of_computation> ;
+    foaf:page <https://en.wikipedia.org/wiki/Model_of_computation> ;
     rdfs:subClassOf tbox:FoundationalEntity .
 
 :OperationalSemantics a :FormalSemanticsApproach,
@@ -579,7 +580,7 @@
         :AbstractSyntaxDefinitionApproach,
         :TransitionSystem ;
     rdfs:comment "formal-semantics approach based on execution and transition steps"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Operational_semantics> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Operational_semantics> .
 
 :ProcessCalculus a tbox:FoundationalEntity ;
     rdfs:label "Process calculus"@en ;
@@ -587,7 +588,7 @@
         ce:PLT,
         ce:TCS ;
     tbox:hasSpace ce:Programware ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Process_calculus> ;
+    foaf:page <https://en.wikipedia.org/wiki/Process_calculus> ;
     rdfs:subClassOf :FormalSystem .
 
 :SyntaxDirectedTranslation a :MetaprogrammingApproach,
@@ -599,7 +600,7 @@
     tbox:hasSpace ce:Grammarware ;
     tbox:uses :ContextFreeGrammar ;
     rdfs:comment "metaprogramming approach concerned with translation processes driven by syntactic structure"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Syntax-directed_translation> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Syntax-directed_translation> .
 
 :TypeTheory a tbox:FoundationalEntity ;
     rdfs:label "Type theory"@en ;
@@ -608,7 +609,7 @@
         ce:TCS ;
     tbox:hasSpace ce:Programware,
         ce:Proofware ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Type_theory> ;
+    foaf:page <https://en.wikipedia.org/wiki/Type_theory> ;
     rdfs:subClassOf :Theory .
 
 :ContextFreeGrammar a :GenerativeGrammar,
@@ -621,7 +622,7 @@
     tbox:hasSpace ce:Grammarware ;
     tbox:serves :ConcreteSyntaxDefinitionApproach ;
     rdfs:comment "grammar with context-free productions"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Context-free_grammar> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Context-free_grammar> .
 
 :FormalSemanticsApproach a tbox:FoundationalEntity ;
     rdfs:label "Formal semantics approach"@en ;
@@ -629,7 +630,7 @@
         ce:PLT,
         ce:SLE ;
     tbox:hasSpace ce:Programware ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Semantics_(programming_languages)#Approaches> ;
+    foaf:page <https://en.wikipedia.org/wiki/Semantics_(programming_languages)#Approaches> ;
     rdfs:subClassOf :MethodologicalApproach .
 
 :ProgramLogic a tbox:FoundationalEntity ;
@@ -638,7 +639,7 @@
         ce:PLT,
         ce:TCS ;
     tbox:hasSpace ce:Programware ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Category:Program_logic> ;
+    foaf:page <https://en.wikipedia.org/wiki/Category:Program_logic> ;
     rdfs:subClassOf :FormalSystem .
 
 :SyntaxDefinitionApproach a tbox:FoundationalEntity ;
@@ -647,7 +648,7 @@
         ce:PLT,
         ce:SLE ;
     tbox:hasSpace ce:Grammarware ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Syntax_(programming_languages)> ;
+    foaf:page <https://en.wikipedia.org/wiki/Syntax_(programming_languages)> ;
     rdfs:subClassOf :MethodologicalApproach .
 
 :AbstractRewritingSystem a tbox:FoundationalEntity ;
@@ -656,7 +657,7 @@
         ce:SLE,
         ce:TCS ;
     tbox:hasSpace ce:Grammarware ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Abstract_rewriting_system> ;
+    foaf:page <https://en.wikipedia.org/wiki/Abstract_rewriting_system> ;
     rdfs:subClassOf :ModelOfComputation .
 
 :AbstractSyntaxDefinitionApproach a :SyntaxDefinitionApproach,
@@ -672,7 +673,7 @@
         ce:Modelware,
         ce:XMLware ;
     rdfs:comment "syntax-definition approach concerned with the structural representation of language constructs independently of concrete notation details"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Abstract_syntax> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Abstract_syntax> .
 
 :FormalGrammar a tbox:FoundationalEntity ;
     rdfs:label "Formal grammar"@en ;
@@ -680,13 +681,13 @@
         ce:SLE,
         ce:TCS ;
     tbox:hasSpace ce:Grammarware ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Formal_grammar> ;
+    foaf:page <https://en.wikipedia.org/wiki/Formal_grammar> ;
     rdfs:subClassOf :FormalSystem .
 
 :FormalObject a tbox:FoundationalEntity ;
     rdfs:label "Formal object"@en ;
     rdfs:comment "formal object used as a mathematically characterized syntactic or symbolic entity"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Formalism_(philosophy_of_mathematics)> ;
+    foaf:page <https://en.wikipedia.org/wiki/Formalism_(philosophy_of_mathematics)> ;
     rdfs:subClassOf tbox:FoundationalEntity .
 
 :ProgramTransformation a :MetaprogrammingApproach,
@@ -699,7 +700,7 @@
     tbox:hasSpace ce:Programware ;
     tbox:uses :TermRewritingSystem ;
     rdfs:comment "metaprogramming approach concerned with the systematic transformation of programs or related formal artifacts"@en ;
-    owl:sameAs <https://en.wikipedia.org/wiki/Program_transformation> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Program_transformation> .
 
 :Theory a tbox:FoundationalEntity ;
     rdfs:label "Theory"@en ;
@@ -707,7 +708,7 @@
         ce:PLT,
         ce:TCS ;
     tbox:hasSpace ce:Programware ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Theory> ;
+    foaf:page <https://en.wikipedia.org/wiki/Theory> ;
     rdfs:subClassOf tbox:FoundationalEntity .
 
 :LambdaCalculus a tbox:FoundationalEntity ;
@@ -715,7 +716,7 @@
     tbox:hasArea ce:PLT,
         ce:TCS ;
     tbox:hasSpace ce:Programware ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Lambda_calculus> ;
+    foaf:page <https://en.wikipedia.org/wiki/Lambda_calculus> ;
     rdfs:subClassOf :FormalSystem .
 
 :MetaprogrammingApproach a tbox:FoundationalEntity ;
@@ -724,7 +725,7 @@
         ce:SLE ;
     tbox:hasSpace ce:Programware ;
     tbox:uses :SyntaxDefinitionApproach ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Metaprogramming> ;
+    foaf:page <https://en.wikipedia.org/wiki/Metaprogramming> ;
     rdfs:subClassOf :MethodologicalApproach .
 
 :MethodologicalApproach a tbox:FoundationalEntity ;
@@ -735,6 +736,6 @@
 :FormalSystem a tbox:FoundationalEntity ;
     rdfs:label "Formal system"@en ;
     rdfs:comment "symbolic deductive formal system"@en ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Formal_system> ;
+    foaf:page <https://en.wikipedia.org/wiki/Formal_system> ;
     rdfs:subClassOf tbox:FoundationalEntity .
 
