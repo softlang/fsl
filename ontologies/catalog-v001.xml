@@ -5,6 +5,7 @@
     <uri id="User Entered Import Resolution" name="http://www.softlang.org/ontologies/le" uri="le.ttl"/>
     <uri id="User Entered Import Resolution" name="http://www.softlang.org/ontologies/pe" uri="pe.ttl"/>
     <uri id="User Entered Import Resolution" name="http://www.softlang.org/ontologies/fe" uri="fe.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://www.softlang.org/ontologies/ie" uri="ie.ttl"/>
     <uri id="User Entered Import Resolution" name="http://www.softlang.org/ontologies/ce" uri="ce.ttl"/>
     <uri id="User Entered Import Resolution" name="http://www.softlang.org/ontologies/tbox" uri="tbox.ttl"/>
     <uri id="User Entered Import Resolution" name="http://www.softlang.org/ontologies/ae" uri="ae.ttl"/>

@@ -401,3 +401,45 @@ tbox:ReferenceEntity a owl:Class ;
     rdfs:comment "Reference entities are essentially literature references with properties inspired by the BIB format."@en ;
     rdfs:subClassOf tbox:Entity .
 
+tbox:IssueEntity a owl:Class,
+        tbox:Entity ;
+    rdfs:label "Issue entity"@en ;
+    rdfs:comment "entity for representing review issues, critiques, and proposed resolutions concerning resources, predicates, or fully specified assertions in the ontology"@en ;
+    tbox:metamodelingPolicy "Declare every subclass and every individual derived from IssueEntity explicitly as an Entity."@en ;
+    rdfs:subClassOf tbox:Entity .
+
+tbox:subject a rdf:Property ;
+    rdfs:label "subject"@en ;
+    rdfs:comment "identifies the subject constituent of an issue when the issue concerns a particular assertion; this property designates subject role rather than the overall issue target"@en ;
+    rdfs:domain tbox:IssueEntity ;
+    rdfs:subPropertyOf rdf:subject .
+
+tbox:predicate a rdf:Property ;
+    rdfs:label "predicate"@en ;
+    rdfs:comment "identifies the predicate constituent of an issue when the issue concerns a particular assertion; this property designates predicate role rather than the overall issue target"@en ;
+    rdfs:domain tbox:IssueEntity ;
+    rdfs:subPropertyOf rdf:predicate .
+
+tbox:object a rdf:Property ;
+    rdfs:label "object"@en ;
+    rdfs:comment "identifies the object constituent of an issue when the issue concerns a particular assertion; this property designates object role rather than the overall issue target"@en ;
+    rdfs:domain tbox:IssueEntity ;
+    rdfs:subPropertyOf rdf:object .
+
+tbox:target a rdf:Property ;
+    rdfs:label "target"@en ;
+    rdfs:comment "identifies the primary resource that an issue is about, such as a reviewed resource or an ontology/module addressed as a whole; assertion-level issues are instead designated through subject, predicate, and object"@en ;
+    rdfs:domain tbox:IssueEntity .
+
+tbox:critique a owl:DatatypeProperty ;
+    rdfs:label "critique"@en ;
+    rdfs:comment "describes the problem, concern, or critique expressed by an issue"@en ;
+    rdfs:domain tbox:IssueEntity ;
+    rdfs:range xsd:string .
+
+tbox:suggestion a owl:DatatypeProperty ;
+    rdfs:label "suggestion"@en ;
+    rdfs:comment "records a suggested resolution or improvement for an issue"@en ;
+    rdfs:domain tbox:IssueEntity ;
+    rdfs:range xsd:string .
+

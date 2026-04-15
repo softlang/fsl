@@ -1,0 +1,37 @@
+@prefix : <http://www.softlang.org/ontologies/ie#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tbox: <http://www.softlang.org/ontologies/tbox#> .
+
+<http://www.softlang.org/ontologies/ie> a owl:Ontology ;
+    rdfs:comment "Sub-ontology / ABox for issue entities. At this stage, the content is illustrative only. Resource-level issues use tbox:target. Assertion-level issues use tbox:subject, tbox:predicate, and tbox:object to designate the roles of resources in the reviewed assertion."@en ;
+    owl:imports <http://www.softlang.org/ontologies/tbox> .
+
+:IssueOnResourceByTargetExample a tbox:IssueEntity ;
+    rdfs:label "Illustrative issue on a resource via target"@en ;
+    tbox:target tbox:IssueEntity ;
+    tbox:critique "Illustrative example only: the resource might need a clearer comment or label."@en ;
+    tbox:suggestion "No ontology change requested; this example exists only to illustrate a resource-level issue addressed via tbox:target."@en .
+
+:IssueOnModuleByTargetExample a tbox:IssueEntity ;
+    rdfs:label "Illustrative issue on a module via target"@en ;
+    tbox:target <http://www.softlang.org/ontologies/tbox> ;
+    tbox:critique "Illustrative example only: the module documentation might deserve review as a whole."@en ;
+    tbox:suggestion "No ontology change requested; this example exists only to illustrate that a whole module can be addressed via its ontology IRI as tbox:target."@en .
+
+:IssueOnAssertionSubjectRoleExample a tbox:IssueEntity ;
+    rdfs:label "Illustrative issue on an assertion with an explicit subject role"@en ;
+    tbox:subject tbox:IssueEntity ;
+    tbox:predicate rdfs:subClassOf ;
+    tbox:object tbox:Entity ;
+    tbox:critique "Illustrative example only: the assertion may deserve review or further justification."@en ;
+    tbox:suggestion "No ontology change requested; this example exists only to illustrate an assertion-level issue where the same resource appears specifically in subject role, unlike tbox:target which addresses a resource directly."@en .
+
+:IssueOnAssertionObjectRoleExample a tbox:IssueEntity ;
+    rdfs:label "Illustrative issue on an assertion with an explicit object role"@en ;
+    tbox:subject tbox:issue ;
+    tbox:predicate rdfs:range ;
+    tbox:object tbox:IssueEntity ;
+    tbox:critique "Illustrative example only: the reviewed assertion may merit reconsideration with focus on its object constituent."@en ;
+    tbox:suggestion "No ontology change requested; this example exists only to illustrate that tbox:subject, tbox:predicate, and tbox:object designate roles within an assertion rather than the overall issue target."@en .

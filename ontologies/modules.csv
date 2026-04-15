@@ -2,6 +2,7 @@ Prefix;Ontology URI;Comment
 fsl;http://www.softlang.org/ontologies/fsl;Ontology on the foundations of software languages
 tbox;http://www.softlang.org/ontologies/tbox;Shared TBox of the FSL ontology
 fe;http://www.softlang.org/ontologies/fe;Sub-ontology / ABox for the foundational entities
+ie;http://www.softlang.org/ontologies/ie;Sub-ontology / ABox for issue entities
 le;http://www.softlang.org/ontologies/le;Sub-ontology / ABox for software languages
 pe;http://www.softlang.org/ontologies/pe;Sub-ontology / ABox for programming-language concepts and programming languages
 te;http://www.softlang.org/ontologies/te;Sub-ontology / ABox for software tools
