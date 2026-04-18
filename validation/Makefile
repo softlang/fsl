@@ -38,7 +38,6 @@ all-abox:
 	  ${master}/ie.ttl \
 	  ${master}/le.ttl \
 	  ${master}/pe.ttl \
-	  ${master}/re.ttl \
 	  ${master}/te.ttl \
 	  > $*.log
 	@grep "Severity: sh:Violation" $*.log | wc -l

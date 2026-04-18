@@ -49,5 +49,5 @@ Intermediate SHAs:
 * c. [Resolution of the filed issues](https://github.com/softlang/fsl/commit/18b47af242a83cf12f8d82765b6b31c7b1f3540f)
 * d. [Addition of SHACL-based validation](https://github.com/softlang/fsl/commit/abec42f5795f47a3efd014f9cf7c9ec70d7ae92c)
 * e. [Filing, again, a number of issues](https://github.com/softlang/fsl/commit/c235855c52d82b492bf52bef4addd72b8c20fd49)
-* f. [Resolution, again, of the filed issues](TODO)
+* f. [Resolution, again, of the filed issues](https://github.com/softlang/fsl/commit/f17f379a8f01cf92e0e45171340fbe6b783ce59d)
 
