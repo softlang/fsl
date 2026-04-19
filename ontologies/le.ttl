@@ -17,6 +17,196 @@
     owl:imports <http://www.softlang.org/ontologies/ce>,
         <http://www.softlang.org/ontologies/tbox> .
 
+
+
+:ConstraintLanguage ce:supports
+        ce:ConstraintConcept,
+        ce:DeclarativeParadigm,
+        ce:LogicParadigm,
+        ce:PureComputation,
+        ce:StaticTyping,
+        ce:StrongTyping .
+
+:QueryLanguage ce:supports
+        ce:QueryConcept,
+        ce:DeclarativeParadigm,
+        ce:PureComputation .
+
+:SchemaLanguage ce:supports
+        ce:SchemaConcept,
+        ce:StaticTyping,
+        ce:StrongTyping .
+
+:XMLQueryLanguage ce:supports
+        ce:QueryConcept,
+        ce:DeclarativeParadigm,
+        ce:Lists,
+        ce:Namespaces .
+
+:XMLSchemaLanguage ce:supports
+        ce:SchemaConcept,
+        ce:StaticTyping,
+        ce:StrongTyping,
+        ce:Namespaces .
+
+:GrammarMetalanguage ce:supports
+        ce:GrammarConcept,
+        ce:Recursion .
+
+:MetamodelingLanguage ce:supports
+        ce:ModelingConcept,
+        ce:TransformationConcept,
+        ce:Abstraction,
+        ce:DataAbstraction,
+        ce:Namespaces,
+        ce:Packages .
+
+:OntologyLanguage ce:supports
+        ce:KnowledgeRepresentationConcept,
+        ce:QueryConcept,
+        ce:DeclarativeParadigm,
+        ce:LogicParadigm,
+        ce:Namespaces .
+
+:ProofLanguage ce:supports
+        ce:ProofConcept,
+        ce:LogicParadigm .
+
+:TransformationLanguage ce:supports
+        ce:TransformationConcept,
+        ce:Abstraction .
+
+:ModelTransformationLanguage ce:supports
+        ce:ModelingConcept,
+        ce:TransformationConcept,
+        ce:Abstraction,
+        ce:DataAbstraction .
+
+:ATL ce:supports
+        ce:ModelingConcept,
+        ce:TransformationConcept,
+        ce:Abstraction,
+        ce:DataAbstraction .
+
+:BackusNaurForm ce:supports
+        ce:GrammarConcept,
+        ce:Recursion .
+
+:BNF ce:supports
+        ce:GrammarConcept,
+        ce:Recursion .
+
+:EBNF ce:supports
+        ce:GrammarConcept,
+        ce:Recursion .
+
+:ExtendedBackusNaurForm ce:supports
+        ce:GrammarConcept,
+        ce:Recursion .
+
+:Ecore ce:supports
+        ce:ModelingConcept,
+        ce:TransformationConcept,
+        ce:Abstraction,
+        ce:DataAbstraction,
+        ce:Namespaces,
+        ce:Packages .
+
+:JSONSchema ce:supports
+        ce:SchemaConcept,
+        ce:StaticTyping,
+        ce:StrongTyping,
+        ce:DataAbstraction .
+
+:MOF ce:supports
+        ce:ModelingConcept,
+        ce:TransformationConcept,
+        ce:Abstraction,
+        ce:DataAbstraction,
+        ce:Namespaces,
+        ce:Packages .
+
+:OCL ce:supports
+        ce:ConstraintConcept,
+        ce:QueryConcept,
+        ce:DeclarativeParadigm,
+        ce:LogicParadigm,
+        ce:StaticTyping,
+        ce:StrongTyping,
+        ce:PureComputation,
+        ce:Tuples,
+        ce:Lists .
+
+:OWL ce:supports
+        ce:KnowledgeRepresentationConcept,
+        ce:DeclarativeParadigm,
+        ce:LogicParadigm,
+        ce:Namespaces .
+
+:QVT ce:supports
+        ce:ModelingConcept,
+        ce:TransformationConcept,
+        ce:Abstraction,
+        ce:DataAbstraction .
+
+:RDFS ce:supports
+        ce:KnowledgeRepresentationConcept,
+        ce:DeclarativeParadigm,
+        ce:Namespaces .
+
+:RELAXNG ce:supports
+        ce:SchemaConcept,
+        ce:StaticTyping,
+        ce:StrongTyping,
+        ce:Namespaces .
+
+:SHACL ce:supports
+        ce:ConstraintConcept,
+        ce:SchemaConcept,
+        ce:KnowledgeRepresentationConcept,
+        ce:DeclarativeParadigm,
+        ce:LogicParadigm,
+        ce:StaticTyping,
+        ce:Namespaces .
+
+:ShEx ce:supports
+        ce:ConstraintConcept,
+        ce:SchemaConcept,
+        ce:KnowledgeRepresentationConcept,
+        ce:DeclarativeParadigm,
+        ce:StaticTyping,
+        ce:StrongTyping .
+
+:SPARQL ce:supports
+        ce:QueryConcept,
+        ce:KnowledgeRepresentationConcept,
+        ce:DeclarativeParadigm,
+        ce:Namespaces .
+
+:XMLSchema ce:supports
+        ce:SchemaConcept,
+        ce:StaticTyping,
+        ce:StrongTyping,
+        ce:Namespaces .
+
+:XPath ce:supports
+        ce:QueryConcept,
+        ce:DeclarativeParadigm,
+        ce:Lists,
+        ce:Namespaces .
+
+:XQuery ce:supports
+        ce:QueryConcept,
+        ce:DeclarativeParadigm,
+        ce:Lists,
+        ce:Namespaces,
+        ce:Recursion .
+
+:XSLT ce:supports
+        ce:TransformationConcept,
+        ce:SchemaConcept,
+        ce:DeclarativeParadigm .
+
 :BuildScriptingLanguage a tbox:LanguageEntity ;
     rdfs:label "Build scripting language"@en ;
     tbox:hasArea ce:SE,

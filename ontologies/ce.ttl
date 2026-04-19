@@ -139,7 +139,8 @@
     rdfs:subClassOf :PlanningAndManagementActivity ;
     foaf:page <https://en.wikipedia.org/wiki/Configuration_management> .
 
-:ConstraintConcept a tbox:ConceptualEntity,
+:ConstraintConcept a :LanguageConcept,
+        tbox:ConceptualEntity,
         owl:Class ;
     rdfs:label "Constraint concept"@en ;
     rdfs:subClassOf :LanguageConcept .
@@ -258,7 +259,8 @@
     rdfs:subClassOf :VerificationActivity ;
     foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Formal_verification> .
 
-:GrammarConcept a tbox:ConceptualEntity,
+:GrammarConcept a :LanguageConcept,
+        tbox:ConceptualEntity,
         owl:Class ;
     rdfs:label "Grammar concept"@en ;
     rdfs:subClassOf :LanguageConcept .
@@ -315,7 +317,8 @@
     rdfs:subClassOf :SupportActivity ;
     foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Knowledge_management> .
 
-:KnowledgeRepresentationConcept a tbox:ConceptualEntity,
+:KnowledgeRepresentationConcept a :LanguageConcept,
+        tbox:ConceptualEntity,
         owl:Class ;
     rdfs:label "Knowledge-representation concept"@en ;
     rdfs:subClassOf :LanguageConcept .
@@ -367,7 +370,8 @@
     rdfs:subClassOf :EvolutionAndImprovementActivity ;
     foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Migration_(software)> .
 
-:ModelingConcept a tbox:ConceptualEntity,
+:ModelingConcept a :LanguageConcept,
+        tbox:ConceptualEntity,
         owl:Class ;
     rdfs:label "Modeling concept"@en ;
     rdfs:subClassOf :LanguageConcept .
@@ -448,7 +452,8 @@
     rdfs:subClassOf :PlanningAndManagementActivity ;
     foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Project_planning> .
 
-:ProofConcept a tbox:ConceptualEntity,
+:ProofConcept a :LanguageConcept,
+        tbox:ConceptualEntity,
         owl:Class ;
     rdfs:label "Proof concept"@en ;
     rdfs:subClassOf :LanguageConcept .
@@ -478,7 +483,8 @@
     rdfs:subClassOf :QualityAndGovernanceActivity ;
     foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Quality_control> .
 
-:QueryConcept a tbox:ConceptualEntity,
+:QueryConcept a :LanguageConcept,
+        tbox:ConceptualEntity,
         owl:Class ;
     rdfs:label "Query concept"@en ;
     rdfs:subClassOf :LanguageConcept .
@@ -570,7 +576,8 @@
     rdfs:subClassOf :ReleaseAndDeploymentActivity ;
     foaf:page <https://en.wikipedia.org/wiki/Rollback_(data_management)> .
 
-:SchemaConcept a tbox:ConceptualEntity,
+:SchemaConcept a :LanguageConcept,
+        tbox:ConceptualEntity,
         owl:Class ;
     rdfs:label "Schema concept"@en ;
     rdfs:subClassOf :LanguageConcept .
@@ -651,7 +658,8 @@
     rdfs:subClassOf :SupportActivity ;
     foaf:page <https://en.wikipedia.org/wiki/Onboarding> .
 
-:TransformationConcept a tbox:ConceptualEntity,
+:TransformationConcept a :LanguageConcept,
+        tbox:ConceptualEntity,
         owl:Class ;
     rdfs:label "Transformation concept"@en ;
     rdfs:subClassOf :LanguageConcept .
@@ -721,7 +729,7 @@
 :assertedForLanguage a owl:ObjectProperty ;
     rdfs:label "Asserted for language"@en ;
     rdfs:domain :LanguageSupportAssertion ;
-    rdfs:range pe:ProgrammingLanguage .
+    rdfs:range tbox:LanguageEntity .
 
 :hasApplicability a owl:ObjectProperty ;
     rdfs:label "Has applicability"@en ;
@@ -762,19 +770,19 @@
 
 :nativelySupports a owl:ObjectProperty ;
     rdfs:label "Natively supports"@en ;
-    rdfs:domain pe:ProgrammingLanguage ;
+    rdfs:domain tbox:LanguageEntity ;
     rdfs:range :LanguageConcept ;
     rdfs:subPropertyOf :supports .
 
 :standardlySupports a owl:ObjectProperty ;
     rdfs:label "Standardly supports"@en ;
-    rdfs:domain pe:ProgrammingLanguage ;
+    rdfs:domain tbox:LanguageEntity ;
     rdfs:range :LanguageConcept ;
     rdfs:subPropertyOf :supports .
 
 :supports a owl:ObjectProperty ;
     rdfs:label "Supports"@en ;
-    rdfs:domain pe:ProgrammingLanguage ;
+    rdfs:domain tbox:LanguageEntity ;
     rdfs:range :LanguageConcept .
 
 :Abstraction a :AbstractionConcept,
