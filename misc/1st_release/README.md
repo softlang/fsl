@@ -6,7 +6,7 @@ The corresponding snapshots of the emerging ontology are linked via
 the commit SHA below.
 
 Summaries of CbatGPT conversations used in the development are avaible
-under [misc/1st_release/conversations](https://github.com/softlang/fsl/tree/main/misc/1st_release/conversations).
+under [misc/1st_release/conversations](https://github.com/softlang/fsl/tree/main/misc/1st_release/conversations). (Not all phases used GenAI in a noteworthy manner.)
 
 ## Phase 1: Taxonomy initialization
 

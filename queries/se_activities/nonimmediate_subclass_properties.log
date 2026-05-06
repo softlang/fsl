@@ -1,0 +1,6 @@
+http://www.softlang.org/ontologies/tbox#hasAffectedArtifact
+http://www.softlang.org/ontologies/tbox#hasInputArtifact
+http://www.softlang.org/ontologies/tbox#hasOutputArtifact
+http://www.softlang.org/ontologies/tbox#hasSupportingLanguage
+http://www.softlang.org/ontologies/tbox#hasSupportingTool
+http://www.softlang.org/ontologies/tbox#uses

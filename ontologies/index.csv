@@ -1,0 +1,10 @@
+Ontology,URI,Purpose
+fsl,http://www.softlang.org/ontologies/fsl,FSL as the union of imports
+tbox,http://www.softlang.org/ontologies/tbox,Shared TBOX of FSL
+fe,http://www.softlang.org/ontologies/fe,ABox for formal entities
+pe,http://www.softlang.org/ontologies/pe,ABox for programming languages and their concepts
+le,http://www.softlang.org/ontologies/le,ABox for (other) software languages
+te,http://www.softlang.org/ontologies/te,ABox for software tools
+ae,http://www.softlang.org/ontologies/ae,ABox for software artifacts
+ce,http://www.softlang.org/ontologies/ce,ABox + TBox for conceptual entities
+ie,http://www.softlang.org/ontologies/ie,ABox for pending issues

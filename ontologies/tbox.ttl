@@ -121,7 +121,7 @@
 :classifies a owl:ObjectProperty,
         :PropertyEntity ;
     rdfs:label "classifies"@en ;
-    rdfs:comment "A metamodel-to-model-like classification relationship generalizing across technological spaces"@en ;
+    rdfs:comment "Relates an artifact to another artifact in the generalized sense of metamodels classifying models"@en ;
     foaf:page <https://en.wikipedia.org/wiki/Metamodeling> ;
     rdfs:domain :ArtifactEntity ;
     rdfs:range :ArtifactEntity ;
@@ -136,7 +136,7 @@
 :conformsTo a owl:ObjectProperty,
         :PropertyEntity ;
     rdfs:label "conforms to"@en ;
-    rdfs:comment "A model-to-metamodel-like conformance relationship generalizing across technological spaces"@en ;
+    rdfs:comment "Relates an artifact to another artifact in the generalized sense of models conforming to metamodels"@en ;
     foaf:page <https://en.wikipedia.org/wiki/Metamodeling> ;
     rdfs:domain :ArtifactEntity ;
     rdfs:range :ArtifactEntity ;
@@ -192,7 +192,7 @@
 :hasAffectedArtifact a owl:ObjectProperty,
         :PropertyEntity ;
     rdfs:label "has affected artifact"@en ;
-    rdfs:comment "Relates a software engineering activity or software tool to an artifact kind that it characteristically affects or modifies when the role is not best captured as input or output alone"@en ;
+    rdfs:comment "Relates an activity or a tool to an artifact kind that it typically affects (thereby complementing in- and output)"@en ;
     foaf:page <https://en.wikipedia.org/wiki/Artifact_(software_development)> ;
     rdfs:domain [ a owl:Class ;
             owl:unionOf ( :EngineeringActivity :ToolEntity ) ] ;
@@ -201,7 +201,7 @@
 :hasArea a owl:ObjectProperty,
         :PropertyEntity ;
     rdfs:label "has area"@en ;
-    rdfs:comment "Identifies an important subject area of interest for an entity"@en ;
+    rdfs:comment "Relates an entity to an important subject area of interest"@en ;
     foaf:page <https://en.wikipedia.org/wiki/Academic_discipline> ;
     rdfs:domain :Entity ;
     rdfs:range :SubjectArea ;
@@ -242,7 +242,7 @@
 :hasInputArtifact a owl:ObjectProperty,
         :PropertyEntity ;
     rdfs:label "has input artifact"@en ;
-    rdfs:comment "Relates a software engineering activity or software tool to an artifact kind that it typically requires or consumes as input"@en ;
+    rdfs:comment "Relates an activity or a tool to an artifact kind that it typically requires or consumes as input"@en ;
     foaf:page <https://en.wikipedia.org/wiki/Artifact_(software_development)> ;
     rdfs:domain [ a owl:Class ;
             owl:unionOf ( :EngineeringActivity :ToolEntity ) ] ;
@@ -253,7 +253,7 @@
 :hasOutputArtifact a owl:ObjectProperty,
         :PropertyEntity ;
     rdfs:label "has output artifact"@en ;
-    rdfs:comment "Relates a software engineering activity or software tool to an artifact kind that it typically produces as output"@en ;
+    rdfs:comment "Relates an activity or a tool to an artifact kind that it typically produces as output"@en ;
     foaf:page <https://en.wikipedia.org/wiki/Artifact_(software_development)> ;
     rdfs:domain [ a owl:Class ;
             owl:unionOf ( :EngineeringActivity :ToolEntity ) ] ;
@@ -278,7 +278,7 @@
 :hasSpace a owl:ObjectProperty,
         :PropertyEntity ;
     rdfs:label "has space"@en ;
-    rdfs:comment "Associates an entity with a technological space to which it characteristically belongs"@en ;
+    rdfs:comment "Relates an entity to a technological space to which it characteristically belongs"@en ;
     foaf:page <https://en.wikipedia.org/wiki/N/A> ;
     rdfs:domain :Entity ;
     rdfs:range :TechnologicalSpace ;
@@ -426,7 +426,7 @@
 :metamodelingPolicy a owl:AnnotationProperty,
         :PropertyEntity ;
     rdfs:label "Metamodeling policy"@en ;
-    rdfs:comment "Documents ontology-wide expectations for explicit punning-based typing of classes and individuals with the corresponding Entity subclass"@en ;
+    rdfs:comment "Documents ontology-wide expectations for explicit punning-based typing of classes and individuals"@en ;
     foaf:page <https://en.wikipedia.org/wiki/Guideline> .
 
 :processes a owl:ObjectProperty,

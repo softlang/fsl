@@ -1,0 +1,6 @@
+http://www.softlang.org/ontologies/ce#nativelySupports
+http://www.softlang.org/ontologies/ce#supports
+http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+http://www.w3.org/2000/01/rdf-schema#domain
+http://www.w3.org/2000/01/rdf-schema#range
+http://www.w3.org/2000/01/rdf-schema#subClassOf

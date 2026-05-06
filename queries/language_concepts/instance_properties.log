@@ -1,0 +1,8 @@
+http://www.softlang.org/ontologies/ce#assertedForConcept
+http://www.softlang.org/ontologies/ce#hasDominantForm
+http://www.softlang.org/ontologies/ce#hasPrimaryComponent
+http://www.softlang.org/ontologies/ce#hasPrimaryMechanism
+http://www.softlang.org/ontologies/ce#hasSecondaryComponent
+http://www.softlang.org/ontologies/ce#nativelySupports
+http://www.softlang.org/ontologies/ce#standardlySupports
+http://www.softlang.org/ontologies/ce#supports

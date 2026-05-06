@@ -1,0 +1,17 @@
+http://www.softlang.org/ontologies/ce#APIDesign
+http://www.softlang.org/ontologies/ce#BuildScripting
+http://www.softlang.org/ontologies/ce#CodeGeneration
+http://www.softlang.org/ontologies/ce#CodeInspection
+http://www.softlang.org/ontologies/ce#CodeReview
+http://www.softlang.org/ontologies/ce#Coding
+http://www.softlang.org/ontologies/ce#DataModelDesign
+http://www.softlang.org/ontologies/ce#FormalVerification
+http://www.softlang.org/ontologies/ce#Implementation
+http://www.softlang.org/ontologies/ce#InterfaceDesign
+http://www.softlang.org/ontologies/ce#Programming
+http://www.softlang.org/ontologies/ce#Prototyping
+http://www.softlang.org/ontologies/ce#Refactoring
+http://www.softlang.org/ontologies/ce#RequirementsAnalysis
+http://www.softlang.org/ontologies/ce#RequirementsSpecification
+http://www.softlang.org/ontologies/ce#StaticAnalysis
+http://www.softlang.org/ontologies/ce#SystemArchitectureDesign
