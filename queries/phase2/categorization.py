@@ -20,6 +20,31 @@ ttl_files = sorted(ttl_dir.glob("*.ttl"))
 g = Graph()
 for ttl in ttl_files:
     g.parse(ttl, format="turtle")
+
+seed = [
+    "Class",
+    "ContextFreeGrammar",
+    "ParsingExpressionGrammar",
+    "ExtendedBackusNaurForm",
+    "RegularGrammar",
+    "AttributeGrammar",
+    "TermRewritingSystem",
+    "LambdaCalculus",
+    "UntypedLambdaCalculus",
+    "SimplyTypedLambdaCalculus",
+    "SystemF",
+    "LambdaCube",
+    "DenotationalSemantics",
+    "OperationalSemantics",
+    "AxiomaticSemantics",
+    "ProcessCalculus",
+    "CommunicatingSequentialProcesses",
+    "CalculusOfCommunicatingSystems",
+    "UMLStateMachine",
+    "HoareLogic",
+    "DescriptionLogic",
+    "DependencyGrammar"
+]
     
 # Query of interest
 query = """
@@ -52,7 +77,7 @@ G = nx.DiGraph()
 
 for _, row in df.iterrows():
     G.add_edge(row["source"], row["target"])
-
+    
 sources = set(df["source"])
 targets = set(df["target"])
 
@@ -61,6 +86,10 @@ G.add_node("Class")
 for node in targets:
     G.add_edge(node, "Class")
 
+# To account for late seed-set changes
+G.add_edge("DescriptionLogic", "Class")
+targets.add("DescriptionLogic")
+    
 agraph = to_agraph(G)
 
 #agraph.graph_attr.update(
@@ -86,5 +115,9 @@ for node in G.nodes():
         n.attr["shape"] = "ellipse"   # "to"-only nodes
     else:
         n.attr["shape"] = "diamond"   # owl:class
+    if node not in seed:
+        n.attr["penwidth"] = 4
+        n.attr["style"] = "filled"
+        n.attr["fillcolor"] = "lightblue"
 
 agraph.draw("categorization.png", prog="dot")

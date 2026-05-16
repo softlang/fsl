@@ -353,6 +353,13 @@
     rdfs:subClassOf tbox:SoftwareLanguage ;
     foaf:page <https://en.wikipedia.org/wiki/Modeling_language> .
 
+:MegamodelingLanguage a tbox:LanguageEntity ;
+    rdfs:label "Megamodeling language"@en ;
+    tbox:hasArea ce:MDE,
+        ce:SLE ;
+    rdfs:comment "modeling language for expressing megamodels"@en ;
+    rdfs:subClassOf :ModelingLanguage .
+
 :ModelTransformationLanguage a tbox:LanguageEntity ;
     rdfs:label "Model transformation language"@en ;
     tbox:hasArea ce:MDE,

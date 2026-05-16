@@ -41,6 +41,7 @@
 :TechnologicalSpace a :ConceptualEntity ;
     rdfs:label "Technological space"@en ;
     rdfs:comment "Technological spaces are families of related software-language technologies that share characteristic artifact kinds, metalanguages, tools, conformance relations, skills, and communities of practice. A technological space is not just a single language or formalism, but a working context in which artifacts are defined, manipulated, queried, transformed, validated, exchanged, and executed according to characteristic principles. This class represents such ecosystems."@en ;
+    :hasBibTeX "KurtevBezivinAksit2002TechnologicalSpaces" ;
     rdfs:subClassOf :ConceptualEntity .
 
 
@@ -138,6 +139,11 @@
     rdfs:label "conforms to"@en ;
     rdfs:comment "Relates an artifact to another artifact in the generalized sense of models conforming to metamodels"@en ;
     foaf:page <https://en.wikipedia.org/wiki/Metamodeling> ;
+    :hasBibTeX "AtkinsonKuehne2003MetamodelingFoundation",
+        "AtkinsonGerbig2016OntologicalClassification",
+        "DegueuleEtAl2017SafeModelPolymorphism",
+        "RossiniDeLaraGuerraEtAl2014DeepMetamodelling",
+        "Favre2005MetaPyramids" ;
     rdfs:domain :ArtifactEntity ;
     rdfs:range :ArtifactEntity ;
     owl:inverseOf :classifies .
@@ -164,6 +170,7 @@
     rdfs:label "element of"@en ;
     rdfs:comment "Relates an artifact to a language in the set-theoretic sense"@en ;
     foaf:page <https://en.wikipedia.org/wiki/Membership_function_(mathematics)> ;
+    :hasBibTeX "Favre2005MetaPyramids" ;
     rdfs:domain :ArtifactEntity ;
     rdfs:range :LanguageEntity ;
     owl:inverseOf :hasElement .
@@ -516,12 +523,6 @@
     foaf:page <https://en.wikipedia.org/wiki/Issue_tracking_system> ;
     rdfs:domain :IssueEntity ;
     rdfs:range :IssueEntity.
-
-:conformsTo :hasBibTeX "AtkinsonKuehne2003MetamodelingFoundation",
-        "AtkinsonGerbig2016OntologicalClassification",
-        "DegueuleEtAl2017SafeModelPolymorphism",
-        "RossiniDeLaraGuerraEtAl2014DeepMetamodelling",
-        "Favre2005MetaPyramids" .
 
 # Language-concept schema moved from ce.
 

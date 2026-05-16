@@ -9,4 +9,5 @@ all:
 	cd modules; make
 	cd constraints; make
 	cd issues; make
+	cd references; make
 

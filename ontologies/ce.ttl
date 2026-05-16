@@ -1177,8 +1177,6 @@
         owl:NamedIndividual ;
     rdfs:label "Logicware"@en ;
     tbox:hasArtifact ae:LogicProgramArtifact ;
-    tbox:hasBibTeX "FavreLaemmelVaranovich2012LinguisticArchitecture",
-        "KurtevBezivinAksit2002TechnologicalSpaces" ;
     tbox:hasTool te:LogicProgrammingSystem,
         te:Reasoner ;
     rdfs:comment "technological space centered on logic programs, logical theories, symbolic inference, and logic-oriented programming systems"@en .
@@ -1194,7 +1192,6 @@
         owl:NamedIndividual ;
     rdfs:label "Markupware"@en ;
     tbox:hasArtifact ae:MarkupArtifact ;
-    tbox:hasBibTeX "KurtevBezivinAksit2002TechnologicalSpaces" ;
     tbox:hasTool te:MarkupProcessor,
         te:TransformationEngine ;
     rdfs:comment "technological space centered on markup artifacts, markup languages, markup transformation, and markup-aware processors"@en .
@@ -1318,7 +1315,6 @@
     tbox:hasArtifact ae:OntologyArtifact,
         ae:RDFGraphArtifact,
         ae:ShapeArtifact ;
-    tbox:hasBibTeX "FavreNguyen2004MegamodelEvolution" ;
     tbox:hasTool te:OntologyEditor,
         te:QueryProcessor,
         te:Reasoner,
@@ -1410,8 +1406,6 @@
         owl:NamedIndividual ;
     rdfs:label "Proofware"@en ;
     tbox:hasArtifact ae:ProofArtifact ;
-    tbox:hasBibTeX "FavreLaemmelVaranovich2012LinguisticArchitecture",
-        "KurtevBezivinAksit2002TechnologicalSpaces" ;
     tbox:hasTool te:ProofAssistant ;
     rdfs:comment "technological space centered on formal proofs, proof languages, theorem provers, proof assistants, and mechanized reasoning"@en .
 
@@ -1469,8 +1463,6 @@
         owl:NamedIndividual ;
     rdfs:label "Ruleware"@en ;
     tbox:hasArtifact ae:RuleArtifact ;
-    tbox:hasBibTeX "FavreLaemmelVaranovich2012LinguisticArchitecture",
-        "KurtevBezivinAksit2002TechnologicalSpaces" ;
     tbox:hasTool te:RuleEngine,
         te:Validator ;
     rdfs:comment "technological space centered on rule artifacts, rule languages, rule engines, and symbolic rule-based reasoning"@en .

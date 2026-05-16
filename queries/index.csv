@@ -5,6 +5,7 @@ entities, 1, FSL entity type-usage metrics
 properties, 1, FSL property-usage metrics
 spaces, 8, Specification aspects for technological spaces in FSL
 language_concepts, 8, Specification aspects for language concepts in FSL
-se_activities, 6, Specification aspects for SE activities in FSL
+se_activities, 10, Specification aspects for SE activities in FSL
 modules, 2, Graphs for import and namespace dependencies of FSL
 constraints, 1, Constraint usage metrics for FSL
+references, 1, Use of scholarly references in FSL

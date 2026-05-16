@@ -78,6 +78,9 @@ phase2.add("Class")
 for node in targets:
     G.add_edge(node, "Class")
 
+# To account for late seed-set changes
+phase2.add("DescriptionLogic")
+    
 agraph = to_agraph(G)
 
 #agraph.graph_attr.update(

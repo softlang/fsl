@@ -84,6 +84,13 @@
     tbox:elementOf le:ModelingLanguage ;
     rdfs:subClassOf tbox:SoftwareArtifact .
 
+:MegamodelArtifact a tbox:ArtifactEntity ;
+    rdfs:label "Megamodel artifact"@en ;
+    tbox:elementOf le:MegamodelingLanguage ;
+    rdfs:subClassOf tbox:SoftwareArtifact ;
+    tbox:hasBibTeX "FavreLaemmelVaranovich2012LinguisticArchitecture" ,
+        "FavreNguyen2004MegamodelEvolution" .
+
 :OntologyArtifact a tbox:ArtifactEntity ;
     rdfs:label "Ontology artifact"@en ;
     tbox:classifies :RDFGraphArtifact ;
