@@ -1,0 +1,29 @@
+name: Ontology CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install pyshacl rdflib
+
+      - name: Run SHACL validation
+        run: |
+          python -m pyshacl \
+            -s validation/ClassDeclarationsMustHaveCommentShape.ttl \
+            -e ontologies/tbox.ttl \
+            test_fail.ttl

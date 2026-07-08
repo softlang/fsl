@@ -1,0 +1,78 @@
+[
+  {
+    "file": "results/broken.txt",
+    "parsed_violation": {
+      "focus_node": null,
+      "message": null,
+      "shape": null
+    },
+    "llm_output": null,
+    "warnings": [
+      "Incomplete SHACL report"
+    ]
+  },
+  {
+    "file": "results/comment_violation.txt",
+    "parsed_violation": {
+      "focus_node": ":Entity",
+      "message": "Class declaration is missing an rdfs:comment.",
+      "shape": "ve:ClassDeclarationsMustHaveCommentShape"
+    },
+    "llm_output": {
+      "focus_node": ":Entity",
+      "shape": "ve:ClassDeclarationsMustHaveCommentShape",
+      "issue": "Class declaration is missing an rdfs:comment.",
+      "why_it_matters": "A class declaration should have a comment to describe its purpose and scope.",
+      "fix_rdf": "@prefix : <http://example.org/ontology#> .\n\n:Entity a ve:Class ;\trdfs:comment \"An entity is a thing that exists independently.\" ."
+    },
+    "warnings": [
+      "Placeholder URI detected"
+    ]
+  },
+  {
+    "file": "results/foaf_violation.txt",
+    "parsed_violation": {
+      "focus_node": ":Entity",
+      "message": "Class declaration is missing both foaf:page and foaf:isPrimaryTopicOf.",
+      "shape": "ve:ClassDeclarationsMustHaveFoafLinkShape"
+    },
+    "llm_output": {
+      "focus_node": ":Entity",
+      "shape": "ve:ClassDeclarationsMustHaveFoafLinkShape",
+      "issue": "Class declaration is missing both foaf:page and foaf:isPrimaryTopicOf.",
+      "why_it_matters": "This shape ensures that class declarations are properly linked to their respective pages and topics, facilitating discovery and consistency across the ontology.",
+      "fix_rdf": "Entity a owl:Class; foaf:page <https://example.com/entity-page> ; foaf:isPrimaryTopicOf <https://example.com/entity-topic> ."
+    },
+    "warnings": []
+  },
+  {
+    "file": "results/property_comment.txt",
+    "parsed_violation": {
+      "focus_node": ":hasAuthor",
+      "message": "Property declaration is missing an rdfs:comment.",
+      "shape": "ve:PropertyDeclarationsMustHaveCommentShape"
+    },
+    "llm_output": {
+      "error": "invalid_json",
+      "raw": "{\n  \"focus_node\": \":hasAuthor\",\n  \"shape\": \"ve:PropertyDeclarationsMustHaveCommentShape\",\n  \"issue\": \"Property declaration is missing an rdfs:comment.\",\n  \"why_it_matters\": \"A comment helps to understand the property's purpose and intention, making it easier for humans and machines to understand its meaning and usage.\",\n  \"fix_rdf\": \"\"\"\n    :hasAuthor a rdf:Property ;\n      rdfs:domain :Book ;\n      rdfs:range :Person ;\n      rdfs:comment \"The author of the book.\" .\n  \"\"\"\n}"
+    },
+    "warnings": [
+      "LLM parsing failed (invalid_json)"
+    ]
+  },
+  {
+    "file": "results/sample_violation.txt",
+    "parsed_violation": {
+      "focus_node": ":Entity",
+      "message": "Class declaration is missing an rdfs:comment.",
+      "shape": "ve:ClassDeclarationsMustHaveCommentShape"
+    },
+    "llm_output": {
+      "error": "invalid_json",
+      "raw": "{\n  \"focus_node\": \":Entity\",\n  \"shape\": \"ve:ClassDeclarationsMustHaveCommentShape\",\n  \"issue\": \"Class declaration is missing an rdfs:comment.\",\n  \"why_it_matters\": \"The rdfs:comment provides a human-readable description of the class, which is essential for understanding its purpose and semantics.\",\n  \"fix_rdf\": \"\"\"\n@Entity a ve:ClassDeclaration ;\n   rdfs:comment \"Description of :Entity\"@en .\n\"\"\"\n}"
+    },
+    "warnings": [
+      "LLM parsing failed (invalid_json)"
+    ]
+  }
+]

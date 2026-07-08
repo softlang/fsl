@@ -1,0 +1,7 @@
+@prefix :    <http://example.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#> .
+
+:BrokenClass a owl:Class ;
+    rdfs:comment "Broken class example" ;
+    :completelyInvalidProperty "x" .
