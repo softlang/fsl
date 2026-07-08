@@ -3,6 +3,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.softlang.org/ontologies/tbox> a owl:Ontology ;
@@ -10,7 +11,8 @@
     :formattingPolicy "TTL syntax is to be used so that triples are grouped by shared subject. Default namespace (\":\") instead of explicit prefixes should be used, whenever possible. The required order in ontology files is: prefix declarations first, followed by the ontology header, then classes ordered by class name, then properties ordered by property name, and finally all remaining assertions ordered by subject name. Any serialization of the ontology should obey this formatting policy."@en ;
     :linkingPolicy "All important classes and individuals should link to Wikipedia. Use foaf:isPrimaryTopicOf where possible. Use foaf:page otherwise. Link to https://en.wikipedia.org/wiki/N/A to express that no useful page could be determined."@en ;
     :metamodelingPolicy "Punning/metamodeling is used systematically. Every class that is a subclass of an Entity subclass should also be explicitly typed as that Entity subclass. Every individual whose asserted type derives from an Entity subclass should also be explicitly typed as that Entity subclass. Example: le:QueryLanguage a tbox:LanguageEntity . Example: le:SQL a tbox:LanguageEntity . This expectation should be maintained as the ontology evolves."@en ;
-    rdfs:comment "Shared TBox of the FSL ontology"@en .
+    rdfs:comment "Shared TBox of the FSL ontology"@en ;
+    owl:imports <http://www.w3.org/2006/time> .
 
 :ArtifactEntity rdfs:subClassOf :Entity ;
     rdfs:label "Artifact entity"@en ;
@@ -661,3 +663,76 @@
     rdfs:range :LanguageSupportKind ;
     rdfs:comment "Relates a reified assertion about language concepts with the type of support"@en ;
     foaf:page <https://en.wikipedia.org/wiki/Category:Programming_language_concepts> .
+
+# Language version history — SAREF time-series pattern transposed to FSL
+
+:LanguageVersion a :LanguageEntity ;
+    rdfs:label "Language version"@en ;
+    rdfs:comment "A specific released version of a software language, positioned in a temporal version sequence. Inspired by the SAREF time-series pattern (ETSI TS 103 673)."@en ;
+    rdfs:subClassOf :SoftwareLanguage ;
+    foaf:page <https://en.wikipedia.org/wiki/Software_versioning> .
+
+:ToolVersion a :ToolEntity ;
+    rdfs:label "Tool version"@en ;
+    rdfs:comment "A specific released version of a software tool, positioned in a temporal version sequence. Parallel to LanguageVersion for the tool hierarchy."@en ;
+    rdfs:subClassOf :SoftwareTool ;
+    foaf:page <https://en.wikipedia.org/wiki/Software_versioning> .
+
+:hasPredecessor a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty,
+        :PropertyEntity ;
+    rdfs:label "has predecessor"@en ;
+    rdfs:comment "Relates a language or tool version to its immediately preceding released version in the version sequence."@en ;
+    rdfs:domain [ a owl:Class ; owl:unionOf ( :LanguageVersion :ToolVersion ) ] ;
+    rdfs:range  [ a owl:Class ; owl:unionOf ( :LanguageVersion :ToolVersion ) ] ;
+    owl:inverseOf :hasSuccessor ;
+    foaf:page <https://en.wikipedia.org/wiki/Software_versioning> .
+
+:hasSuccessor a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty,
+        :PropertyEntity ;
+    rdfs:label "has successor"@en ;
+    rdfs:comment "Relates a language or tool version to its immediately following released version in the version sequence."@en ;
+    rdfs:domain [ a owl:Class ; owl:unionOf ( :LanguageVersion :ToolVersion ) ] ;
+    rdfs:range  [ a owl:Class ; owl:unionOf ( :LanguageVersion :ToolVersion ) ] ;
+    owl:inverseOf :hasPredecessor ;
+    foaf:page <https://en.wikipedia.org/wiki/Software_versioning> .
+
+:hasVersion a owl:ObjectProperty,
+        :PropertyEntity ;
+    rdfs:label "has version"@en ;
+    rdfs:comment "Relates a software language or tool to one of its released versions."@en ;
+    rdfs:domain [ a owl:Class ; owl:unionOf ( :SoftwareLanguage :SoftwareTool ) ] ;
+    rdfs:range  [ a owl:Class ; owl:unionOf ( :LanguageVersion :ToolVersion ) ] ;
+    owl:inverseOf :versionOf ;
+    foaf:page <https://en.wikipedia.org/wiki/Software_versioning> .
+
+:releaseDate a owl:ObjectProperty,
+        :PropertyEntity ;
+    rdfs:label "release date"@en ;
+    rdfs:comment "Relates a language or tool version to a time:Instant representing its official release. Reuses OWL-Time following the same pattern as SAREF Core."@en ;
+    rdfs:domain [ a owl:Class ; owl:unionOf ( :LanguageVersion :ToolVersion ) ] ;
+    rdfs:range time:Instant ;
+    foaf:page <https://en.wikipedia.org/wiki/Software_release_life_cycle> .
+
+:versionOf a owl:ObjectProperty,
+        :PropertyEntity ;
+    rdfs:label "version of"@en ;
+    rdfs:comment "Relates a language or tool version to the entity of which it is a version."@en ;
+    rdfs:domain [ a owl:Class ; owl:unionOf ( :LanguageVersion :ToolVersion ) ] ;
+    rdfs:range  [ a owl:Class ; owl:unionOf ( :SoftwareLanguage :SoftwareTool ) ] ;
+    owl:inverseOf :hasVersion ;
+    foaf:page <https://en.wikipedia.org/wiki/Software_versioning> .
+
+:versionTag a owl:DatatypeProperty,
+        :PropertyEntity ;
+    rdfs:label "version tag"@en ;
+    rdfs:comment "The official version identifier string for a language or tool release (e.g., '3.12.0')."@en ;
+    rdfs:domain [ a owl:Class ; owl:unionOf ( :LanguageVersion :ToolVersion ) ] ;
+    rdfs:range xsd:string ;
+    foaf:page <https://en.wikipedia.org/wiki/Software_versioning> .
+
+
+    

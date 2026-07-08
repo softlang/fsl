@@ -1,0 +1,8 @@
+Id;Category;Requirement
+R1;Coverage;The ontology shall cover major categories of software languages including programming languages modeling languages configuration languages and query languages
+R2;Classification;The ontology shall enable classification of programming languages by paradigm such as functional object-oriented procedural and logical
+R3;Alignment;The ontology shall link software language entities to their corresponding Wikipedia resources using foaf:isPrimaryTopicOf or foaf:page
+R4;Grammar;The ontology shall capture the grammar formalism associated with each language
+R5;Tools;The ontology shall capture tools and frameworks associated with software languages
+R6;Activities;The ontology shall represent software language engineering activities
+R7;Spaces;The ontology shall capture technology spaces relevant to software languages

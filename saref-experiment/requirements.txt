@@ -1,0 +1,5 @@
+# Requires Python >= 3.13
+# Bootstrap: python -m venv venv && venv/bin/pip install -r requirements.txt
+rdflib>=7.0.0
+pyshacl>=0.25.0
+saref-dev

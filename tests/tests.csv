@@ -1,0 +1,5 @@
+Id;Requirement;Category;Test
+T1;R2;Classification;Every individual of type ProgrammingLanguage should have at least one hasParadigm assertion
+T2;R3;Alignment;Every LanguageEntity individual should have either foaf:isPrimaryTopicOf or foaf:page linking to Wikipedia
+T3;Coverage;Labels;Every owl:Class declaration should have an rdfs:label in English
+T4;Coverage;Comments;Every owl:Class declaration should have an rdfs:comment in English

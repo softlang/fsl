@@ -1,0 +1,32 @@
+name: Ontology Quality Checks
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  clause9-checks:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout FSL
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.13
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install rdflib pyshacl
+
+      - name: Run Clause 9 checks on FSL
+        run: |
+          python saref-experiment/run_checks.py \
+            --ttl ontologies/fsl.ttl \
+            --extra-ttl ontologies/ \
+            --label FSL
