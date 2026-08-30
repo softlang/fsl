@@ -1,0 +1,8 @@
+Validation Report
+Conforms: False
+
+Focus Node: :hasAuthor
+
+Source Shape: ve:PropertyDeclarationsMustHaveCommentShape
+
+sh:message Literal("Property declaration is missing an rdfs:comment.")

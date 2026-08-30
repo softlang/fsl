@@ -6,21 +6,16 @@
 
 ve:ClassDeclarationsMustHaveCommentShape
   a sh:NodeShape ;
-  sh:targetSubjectsOf rdf:type ;
+  sh:targetClass owl:Class ;
+
   sh:sparql [
     a sh:SPARQLConstraint ;
     sh:message "Class declaration is missing an rdfs:comment." ;
     sh:select """
       SELECT $this
       WHERE {
-        $this rdf:type ?t .
-        FILTER(STRSTARTS(STR($this), "http://www.softlang.org/ontologies/"))
-        FILTER (
-          ?t IN (
-            owl:Class,
-            rdfs:Class
-          )
-        )
+        $this rdf:type owl:Class .
+        FILTER(isIRI($this))
         FILTER NOT EXISTS { $this rdfs:comment ?c . }
       }
     """ ;

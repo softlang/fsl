@@ -1,0 +1,23 @@
+Validation Report
+Conforms: False
+Results (1):
+Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: ve:ClassDeclarationsMustHaveCommentShape
+	Focus Node: :Entity
+	Value Node: :Entity
+	Source Constraint: [ rdf:type sh:SPARQLConstraint ; sh:message Literal("Class declaration is missing an rdfs:comment.") ; sh:select Literal("
+      SELECT $this
+      WHERE {
+        $this rdf:type ?t .
+        FILTER(STRSTARTS(STR($this), "http://www.softlang.org/ontologies/"))
+        FILTER (
+          ?t IN (
+            owl:Class,
+            rdfs:Class
+          )
+        )
+        FILTER NOT EXISTS { $this rdfs:comment ?c . }
+      }
+    ") ]
+	Message: Class declaration is missing an rdfs:comment.

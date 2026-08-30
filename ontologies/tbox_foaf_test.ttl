@@ -47,7 +47,7 @@
 :Entity a owl:Class ;
     rdfs:label "Entity"@en ;
     rdfs:comment "Top-level category for entities represented in this ontology. Entities should be linked to at least one descriptive document via foaf:isPrimaryTopicOf or foaf:page."@en ;
-    foaf:page <https://en.wikipedia.org/wiki/Knowledge_representation_and_reasoning> ;
+  
     rdfs:subClassOf [ a owl:Class ;
             owl:unionOf ( [ a owl:Restriction ;
                         owl:onProperty foaf:isPrimaryTopicOf ;

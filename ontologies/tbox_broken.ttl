@@ -19,7 +19,6 @@
 
 :Assertion rdfs:subClassOf :ConceptualEntity ;
     rdfs:label "Assertion"@en ;
-    rdfs:comment "Reified assertion entity used for qualified statements in language-related modules"@en ;
     foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Reification_(knowledge_representation)> .
 
 :ConceptualEntity rdfs:subClassOf :Entity ;
@@ -29,6 +28,7 @@
 
 :EngineeringActivity a :ConceptualEntity ;
     rdfs:label "Engineering activity"@en ;
+    rdfs:comment "Root class for software engineering activity types."@en ;
     rdfs:subClassOf :ConceptualEntity ;
     foaf:page <https://en.wikipedia.org/wiki/Software_development_process> .
 
