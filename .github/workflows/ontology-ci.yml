@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Setup Python
@@ -21,9 +21,21 @@ jobs:
         run: |
           pip install pyshacl rdflib
 
-      - name: Run SHACL validation
+      - name: Validate valid ontology
         run: |
           python -m pyshacl \
             -s validation/ClassDeclarationsMustHaveCommentShape.ttl \
             -e ontologies/tbox.ttl \
-            test_fail.ttl
+            test_pass.ttl
+
+      - name: Validate invalid ontology
+        run: |
+          if python -m pyshacl \
+            -s validation/ClassDeclarationsMustHaveCommentShape.ttl \
+            -e ontologies/tbox.ttl \
+            test_fail.ttl; then
+              echo "ERROR: Invalid ontology unexpectedly passed validation"
+              exit 1
+          else
+              echo "Expected SHACL violation detected"
+          fi
