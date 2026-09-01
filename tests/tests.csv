@@ -1,0 +1,5 @@
+Id;Requirement;Category;Test
+T1;R2;Classification;Every individual of type ProgrammingLanguage should be linked via tbox:LanguageSupportAssertion (tbox:assertedForLanguage) to at least one concept whose tbox:hasDominantForm identifies a paradigm (FSL represents paradigms through concept support, not a hasParadigm property or subclassing — see pe.ttl)
+T2;R3;Alignment;Every LanguageEntity individual should have either foaf:isPrimaryTopicOf or foaf:page linking to Wikipedia
+T3;Coverage;Labels;Every owl:Class declaration should have an rdfs:label in English
+T4;Coverage;Comments;Every owl:Class declaration should have an rdfs:comment in English

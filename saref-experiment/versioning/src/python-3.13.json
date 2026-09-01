@@ -1,0 +1,12 @@
+{
+  "runId": "python-3.13",
+  "parentEntity": "pe:Python",
+  "entityKind": "language",
+  "targetModule": "ontologies/pe.ttl",
+  "version": "3.13",
+  "releaseDate": "2024-10-07",
+  "predecessor": "pe:Python_3_12",
+  "officialSource": "https://www.python.org/downloads/release/python-3130/",
+  "evidenceRetrievedAt": "2026-08-09",
+  "notes": "Initial dry-run evidence fixture. Confirm and snapshot the official source before an evaluated run."
+}

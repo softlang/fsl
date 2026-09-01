@@ -5,6 +5,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix tbox: <http://www.softlang.org/ontologies/tbox#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.softlang.org/ontologies/pe> a owl:Ontology ;
     tbox:commentingPolicy "See http://www.softlang.org/ontologies/tbox -- the same policy applies here."@en ;
@@ -682,6 +684,9 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:SE,
         ce:SLE ;
     tbox:hasSpace ce:Programware ;
+    tbox:hasVersion :Python_2_7,
+        :Python_3_6,
+        :Python_3_12 ;
     rdfs:comment "multi-paradigm programming language with dynamic typing and strong support for scripting, data processing, and general-purpose programming"@en ;
     foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Python_(programming_language)> ;
     foaf:page <https://en.wikipedia.org/wiki/Python_(programming_language)> .
@@ -835,3 +840,65 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
     rdfs:comment "family of Microsoft programming languages and environments"@en ;
     foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Visual_Basic> ;
     foaf:page <https://en.wikipedia.org/wiki/Visual_Basic> .
+
+# Python version history — SAREF time-series pattern PoC
+
+:Python_2_7 a :ProgrammingLanguage,
+        tbox:LanguageEntity,
+        tbox:LanguageVersion,
+        owl:NamedIndividual ;
+    rdfs:label "Python 2.7"@en ;
+    tbox:versionOf :Python ;
+    tbox:versionTag "2.7" ;
+    tbox:releaseDate :Python_2_7_release ;
+    tbox:hasSuccessor :Python_3_6 ;
+    tbox:hasArea ce:PLT,
+        ce:SE,
+        ce:SLE ;
+    tbox:hasSpace ce:Programware ;
+    rdfs:comment "Final major release series of the Python 2 line; reached end-of-life on 2020-01-01."@en ;
+    foaf:page <https://en.wikipedia.org/wiki/History_of_Python> .
+
+:Python_3_6 a :ProgrammingLanguage,
+        tbox:LanguageEntity,
+        tbox:LanguageVersion,
+        owl:NamedIndividual ;
+    rdfs:label "Python 3.6"@en ;
+    tbox:versionOf :Python ;
+    tbox:versionTag "3.6" ;
+    tbox:releaseDate :Python_3_6_release ;
+    tbox:hasPredecessor :Python_2_7 ;
+    tbox:hasSuccessor :Python_3_12 ;
+    tbox:hasArea ce:PLT,
+        ce:SE,
+        ce:SLE ;
+    tbox:hasSpace ce:Programware ;
+    rdfs:comment "Python 3.6 introduced f-strings, type variable tuples, and the secrets module."@en ;
+    foaf:page <https://en.wikipedia.org/wiki/History_of_Python> .
+
+:Python_3_12 a :ProgrammingLanguage,
+        tbox:LanguageEntity,
+        tbox:LanguageVersion,
+        owl:NamedIndividual ;
+    rdfs:label "Python 3.12"@en ;
+    tbox:versionOf :Python ;
+    tbox:versionTag "3.12" ;
+    tbox:releaseDate :Python_3_12_release ;
+    tbox:hasPredecessor :Python_3_6 ;
+    tbox:hasArea ce:PLT,
+        ce:SE,
+        ce:SLE ;
+    tbox:hasSpace ce:Programware ;
+    rdfs:comment "Python 3.12 is a current active release with improved error messages, performance improvements, and new type system features."@en ;
+    foaf:page <https://en.wikipedia.org/wiki/History_of_Python> .
+
+# OWL-Time Instant individuals for Python version releases
+
+:Python_2_7_release a time:Instant ;
+    time:inXSDDate "2010-07-03"^^xsd:date .
+
+:Python_3_6_release a time:Instant ;
+    time:inXSDDate "2016-12-23"^^xsd:date .
+
+:Python_3_12_release a time:Instant ;
+    time:inXSDDate "2023-10-02"^^xsd:date .

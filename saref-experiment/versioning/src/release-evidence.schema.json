@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FSL version-addition evidence",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "runId",
+    "parentEntity",
+    "entityKind",
+    "targetModule",
+    "version",
+    "releaseDate",
+    "predecessor",
+    "officialSource",
+    "evidenceRetrievedAt"
+  ],
+  "properties": {
+    "runId": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+    "parentEntity": {"type": "string", "pattern": "^(pe|te):[A-Za-z][A-Za-z0-9_]*$"},
+    "entityKind": {"enum": ["language", "tool"]},
+    "targetModule": {"enum": ["ontologies/pe.ttl", "ontologies/te.ttl"]},
+    "version": {"type": "string", "minLength": 1},
+    "releaseDate": {"type": "string", "format": "date"},
+    "predecessor": {"type": "string", "pattern": "^(pe|te):[A-Za-z][A-Za-z0-9_]*$"},
+    "officialSource": {"type": "string", "format": "uri"},
+    "evidenceRetrievedAt": {"type": "string", "format": "date"},
+    "sourceSnapshotSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "notes": {"type": "string"}
+  }
+}

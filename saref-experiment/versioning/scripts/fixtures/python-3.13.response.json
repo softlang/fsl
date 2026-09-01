@@ -1,0 +1,17 @@
+{
+  "runId": "python-3.13",
+  "targetModule": "ontologies/pe.ttl",
+  "parentEntity": "pe:Python",
+  "entityKind": "language",
+  "version": "3.13",
+  "candidate": {
+    "iri": "pe:Python_3_13",
+    "label": "Python 3.13",
+    "versionTag": "3.13",
+    "releaseDate": "2024-10-07",
+    "predecessor": "pe:Python_3_12",
+    "officialSource": "https://www.python.org/downloads/release/python-3130/",
+    "turtleBlock": ":Python_3_13 a :ProgrammingLanguage,\n        tbox:LanguageEntity,\n        tbox:LanguageVersion,\n        owl:NamedIndividual ;\n    rdfs:label \"Python 3.13\"@en ;\n    tbox:versionOf :Python ;\n    tbox:versionTag \"3.13\" ;\n    tbox:releaseDate :Python_3_13_release ;\n    tbox:hasPredecessor :Python_3_12 ;\n    rdfs:comment \"Python 3.13 adds a JIT compiler and an experimental free-threaded build.\"@en ;\n    foaf:page <https://en.wikipedia.org/wiki/History_of_Python> .\n\n:Python_3_13_release a time:Instant ;\n    time:inXSDDate \"2024-10-07\"^^xsd:date ."
+  },
+  "rationale": "Added Python 3.13 as the successor to Python 3.12 using the confirmed release evidence; the release-date instant follows the existing SAREF time-series pattern used by the other Python versions."
+}

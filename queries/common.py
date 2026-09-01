@@ -17,6 +17,9 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX owl:  <http://www.w3.org/2002/07/owl#>
 PREFIX tbox: <http://www.softlang.org/ontologies/tbox#>
 PREFIX ie:   <http://www.softlang.org/ontologies/ie#>
+PREFIX pe:   <http://www.softlang.org/ontologies/pe#>
+PREFIX te:   <http://www.softlang.org/ontologies/te#>
+PREFIX time: <http://www.w3.org/2006/time#>
 """
 
 def local_name(value):

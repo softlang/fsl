@@ -1,0 +1,5 @@
+venv/
+saref-core-reference/
+__pycache__/
+*.pyc
+results/

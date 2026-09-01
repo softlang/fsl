@@ -7,6 +7,8 @@
 @prefix pe: <http://www.softlang.org/ontologies/pe#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix tbox: <http://www.softlang.org/ontologies/tbox#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.softlang.org/ontologies/te> a owl:Ontology ;
     tbox:commentingPolicy "See http://www.softlang.org/ontologies/tbox -- the same policy applies here."@en ;
@@ -305,7 +307,57 @@
         owl:NamedIndividual ;
     rdfs:label "CPython"@en ;
     rdfs:comment "reference interpreter implementation of the Python programming language"@en ;
+    tbox:hasVersion :CPython_2_7,
+        :CPython_3_6,
+        :CPython_3_12 ;
     foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/CPython> .
+
+# CPython version history — SAREF time-series pattern PoC (technology side)
+
+:CPython_2_7 a tbox:ToolEntity,
+        tbox:ToolVersion,
+        owl:NamedIndividual ;
+    rdfs:label "CPython 2.7"@en ;
+    tbox:versionOf :CPython ;
+    tbox:versionTag "2.7" ;
+    tbox:releaseDate :CPython_2_7_release ;
+    tbox:hasSuccessor :CPython_3_6 ;
+    rdfs:comment "CPython 2.7 is the final release of the CPython 2.x series; end-of-life 2020-01-01."@en ;
+    foaf:page <https://en.wikipedia.org/wiki/CPython> .
+
+:CPython_3_6 a tbox:ToolEntity,
+        tbox:ToolVersion,
+        owl:NamedIndividual ;
+    rdfs:label "CPython 3.6"@en ;
+    tbox:versionOf :CPython ;
+    tbox:versionTag "3.6" ;
+    tbox:releaseDate :CPython_3_6_release ;
+    tbox:hasPredecessor :CPython_2_7 ;
+    tbox:hasSuccessor :CPython_3_12 ;
+    rdfs:comment "CPython 3.6 corresponds to the Python 3.6 language release."@en ;
+    foaf:page <https://en.wikipedia.org/wiki/CPython> .
+
+:CPython_3_12 a tbox:ToolEntity,
+        tbox:ToolVersion,
+        owl:NamedIndividual ;
+    rdfs:label "CPython 3.12"@en ;
+    tbox:versionOf :CPython ;
+    tbox:versionTag "3.12" ;
+    tbox:releaseDate :CPython_3_12_release ;
+    tbox:hasPredecessor :CPython_3_6 ;
+    rdfs:comment "CPython 3.12 is the current active release corresponding to the Python 3.12 language version."@en ;
+    foaf:page <https://en.wikipedia.org/wiki/CPython> .
+
+# OWL-Time Instant individuals for CPython version releases
+
+:CPython_2_7_release a time:Instant ;
+    time:inXSDDate "2010-07-03"^^xsd:date .
+
+:CPython_3_6_release a time:Instant ;
+    time:inXSDDate "2016-12-23"^^xsd:date .
+
+:CPython_3_12_release a time:Instant ;
+    time:inXSDDate "2023-10-02"^^xsd:date .
 
 :Drools a tbox:ToolEntity,
         :RuleEngine,

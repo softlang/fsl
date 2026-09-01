@@ -1,0 +1,23 @@
+{
+  "namespaces": {
+    "pe": "http://www.softlang.org/ontologies/pe#",
+    "te": "http://www.softlang.org/ontologies/te#",
+    "tbox": "http://www.softlang.org/ontologies/tbox#"
+  },
+  "entities": [
+    {
+      "parentEntity": "pe:Python",
+      "entityKind": "language",
+      "targetModule": "ontologies/pe.ttl",
+      "feed": { "type": "endoflife", "product": "python" },
+      "officialSourceTemplate": "https://www.python.org/downloads/release/python-{version_nodot}/"
+    },
+    {
+      "parentEntity": "te:CPython",
+      "entityKind": "tool",
+      "targetModule": "ontologies/te.ttl",
+      "feed": { "type": "endoflife", "product": "python" },
+      "officialSourceTemplate": "https://www.python.org/downloads/release/python-{version_nodot}/"
+    }
+  ]
+}

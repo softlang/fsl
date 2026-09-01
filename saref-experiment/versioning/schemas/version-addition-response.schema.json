@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FSL candidate version addition",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["runId", "targetModule", "parentEntity", "entityKind", "version", "candidate", "rationale"],
+  "properties": {
+    "runId": {"type": "string"},
+    "targetModule": {"enum": ["ontologies/pe.ttl", "ontologies/te.ttl"]},
+    "parentEntity": {"type": "string"},
+    "entityKind": {"enum": ["language", "tool"]},
+    "version": {"type": "string"},
+    "candidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["iri", "label", "versionTag", "releaseDate", "predecessor", "officialSource", "turtleBlock"],
+      "properties": {
+        "iri": {"type": "string", "pattern": "^(pe|te):[A-Za-z][A-Za-z0-9_]*$"},
+        "label": {"type": "string", "minLength": 1},
+        "versionTag": {"type": "string", "minLength": 1},
+        "releaseDate": {"type": "string", "format": "date"},
+        "predecessor": {"type": "string", "pattern": "^(pe|te):[A-Za-z][A-Za-z0-9_]*$"},
+        "officialSource": {"type": "string", "format": "uri"},
+        "turtleBlock": {"type": "string", "minLength": 1}
+      }
+    },
+    "rationale": {"type": "string", "minLength": 1}
+  }
+}

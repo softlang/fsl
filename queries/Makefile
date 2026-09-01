@@ -10,4 +10,5 @@ all:
 	cd constraints; make
 	cd issues; make
 	cd references; make
+	cd saref_experiment; make
 
