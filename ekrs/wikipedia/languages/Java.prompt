@@ -1,0 +1,30 @@
+We are concerned with the following ontology:
+https://github.com/softlang/fsl/tree/main/ontologies
+(More limited context follows.)
+
+In particular, see the tbox here:
+https://github.com/softlang/fsl/blob/main/ontologies/tbox.ttl
+
+We are focusing on some part of the abox where Java appears as subject or object; see this CSV file:
+https://github.com/softlang/fsl/blob/main/queries/languages/contexts/Java.csv
+
+We would like to compare the abox fragment to the Wikipedia page for the same entity, i.e.:
+https://en.wikipedia.org/wiki/Java_(programming_language)
+
+The comparison should be an array of JSON objects with key-values pairs as follows:
+* key "subject", value "Java" or another entity that is or could be in the ontology.
+* key "property", value the name of a property declared in the tbox or exercised in the abox fragment at hand.
+* key "object", value "Java" or another entity that is or could be in the ontology.
+* key "verdict", value "support", "challenge", "reject", "add" to mean that an existing triple from the given context is supported by Wikipedia, must be rejected or at least challenged on the grounds of Wikipedia, or should be added based on Wikipedia and in alignment with the tbox at hand.
+* key "explanation", value a short paragraph explaining the verdict, possibly quoting Wikipedia content as means of support. If quoting Wikipedia, use only short quotes and escape quotation marks correctly; the value must contain plain text only and must be valid as a JSON string.
+* key "references", value a JSON array of absolute URL strings; put supporting Wikipedia pages here.
+
+The following additional constraints apply:
+* Each row of the context/CSV file must be covered by a verdict and explanation.
+* At least of one of the two, "subject" and "object" must be "Java".
+* False positives (i.e., verdict "add") must be minimized; blatant ommissions should be reported.
+* False negatives (i.e., verdict "reject) must be minimized; in case of doubt, use "challenge" instead of "reject".
+* Return only a syntactically valid JSON array. Do not use Markdown, code fences, comments, footnotes, citation markup, or any text before or after the JSON.
+* Every element must be a JSON object with exactly these keys: "subject", "property", "object", "verdict", "explanation", "references".
+* Don't bother about NamedIndividual.
+* The entire response must be parseable directly with json.loads(...) without preprocessing.
