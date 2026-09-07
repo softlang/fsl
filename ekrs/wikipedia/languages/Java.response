@@ -1,0 +1,302 @@
+[
+{
+"subject": "Java",
+"property": "hasArea",
+"object": "PLT",
+"verdict": "challenge",
+"explanation": "Wikipedia clearly identifies Java as a programming language, but it does not characterize Programming Language Theory as an important subject area of Java itself. The association is plausible in the broader ontology, but the page does not provide sufficiently direct support for this particular hasArea assertion.",
+"references": [
+"[https://en.wikipedia.org/wiki/Java_(programming_language)](https://en.wikipedia.org/wiki/Java_%28programming_language%29)"
+]
+},
+{
+"subject": "Java",
+"property": "hasArea",
+"object": "SE",
+"verdict": "challenge",
+"explanation": "Wikipedia discusses Java extensively as a language for application development and describes Java libraries and platforms used in software development, but it does not explicitly classify Software Engineering as an important subject area of Java. The assertion is plausible but not directly established by the page.",
+"references": [
+"[https://en.wikipedia.org/wiki/Java_(programming_language)](https://en.wikipedia.org/wiki/Java_%28programming_language%29)"
+]
+},
+{
+"subject": "Java",
+"property": "hasArea",
+"object": "SLE",
+"verdict": "challenge",
+"explanation": "Wikipedia establishes that Java is a programming language but does not identify Software Language Engineering as a subject area specifically associated with Java. This ontology-specific disciplinary classification therefore lacks direct support from the page.",
+"references": [
+"[https://en.wikipedia.org/wiki/Java_(programming_language)](https://en.wikipedia.org/wiki/Java_%28programming_language%29)"
+]
+},
+{
+"subject": "Java",
+"property": "hasSpace",
+"object": "Programware",
+"verdict": "challenge",
+"explanation": "Wikipedia describes the Java language, JVM, class libraries, tools, and Java platform, which are compatible with viewing Java as belonging to a program-oriented technological ecosystem. However, it does not use or define the ontology's Programware technological-space category, so the precise classification is not directly verifiable from Wikipedia.",
+"references": [
+"[https://en.wikipedia.org/wiki/Java_(programming_language)](https://en.wikipedia.org/wiki/Java_%28programming_language%29)"
+]
+},
+{
+"subject": "Java",
+"property": "nativelySupports",
+"object": "AdHocPolymorphism",
+"verdict": "challenge",
+"explanation": "Java has forms of polymorphism associated with methods and object-oriented programming, but the Wikipedia page explicitly notes that Java does not support operator overloading. Because AdHocPolymorphism can cover several mechanisms and the page does not directly characterize Java in those terms, native support should be treated cautiously rather than rejected.",
+"references": [
+"[https://en.wikipedia.org/wiki/Java_(programming_language)](https://en.wikipedia.org/wiki/Java_%28programming_language%29)"
+]
+},
+{
+"subject": "Java",
+"property": "nativelySupports",
+"object": "Branching",
+"verdict": "challenge",
+"explanation": "Branching is a standard Java language capability, but the examined Wikipedia page does not directly document Java's conditional branching constructs. The assertion is highly plausible, yet the requested comparison to this Wikipedia resource alone does not furnish explicit evidence.",
+"references": [
+"[https://en.wikipedia.org/wiki/Java_(programming_language)](https://en.wikipedia.org/wiki/Java_%28programming_language%29)"
+]
+},
+{
+"subject": "Java",
+"property": "nativelySupports",
+"object": "Closures",
+"verdict": "challenge",
+"explanation": "Wikipedia identifies functional programming, lambdas, and streaming among Java's paradigms and library capabilities, which is compatible with closure-like functionality. However, the page does not explicitly state that Java supports closures, so the stronger ontology assertion of native closure support is not directly established.",
+"references": [
+"[https://en.wikipedia.org/wiki/Java_(programming_language)](https://en.wikipedia.org/wiki/Java_%28programming_language%29)"
+]
+},
+{
+"subject": "Java",
+"property": "nativelySupports",
+"object": "DataAbstraction",
+"verdict": "challenge",
+"explanation": "Wikipedia describes Java as class-based and object-oriented and discusses classes and interfaces, all of which are closely associated with data abstraction. It nevertheless does not explicitly characterize data abstraction as a Java language concept, so direct support for this ontology assertion is incomplete.",
+"references": [
+"[https://en.wikipedia.org/wiki/Java_(programming_language)](https://en.wikipedia.org/wiki/Java_%28programming_language%29)"
+]
+},
+{
+"subject": "Java",
+"property": "nativelySupports",
+"object": "Encapsulation",
+"verdict": "challenge",
+"explanation": "Java's class-based object-oriented nature is consistent with encapsulation, but the Wikipedia page does not explicitly identify encapsulation as a Java-supported language concept. The assertion is plausible and should not be rejected, but the evidence is indirect.",
+"references": [
+"[https://en.wikipedia.org/wiki/Java_(programming_language)](https://en.wikipedia.org/wiki/Java_%28programming_language%29)"
+]
+},
+{
+"subject": "Java",
+"property": "nativelySupports",
+"object": "Exceptions",
+"verdict": "support",
+"explanation": "Wikipedia explicitly discusses Java exceptions, including that calling methods for a non-existent object can cause a null pointer exception, and describes Java packages as containing exceptions. This directly supports exceptions as a native Java language capability.",
+"references": [
+"[https://en.wikipedia.org/wiki/Java_(programming_language)](https://en.wikipedia.org/wiki/Java_%28programming_language%29)"
+]
+},
+{
+"subject": "Java",
+"property": "nativelySupports",
+"object": "ImperativeParadigm",
+"verdict": "support",
+"explanation": "Wikipedia's infobox explicitly classifies Java as multi-paradigm and includes "imperative" among its paradigms. This directly supports the assertion that Java natively supports the imperative paradigm.",
+"references": [
+"[https://en.wikipedia.org/wiki/Java_(programming_language)](https://en.wikipedia.org/wiki/Java_%28programming_language%29)"
+]
+},
+{
+"subject": "Java",
+"property": "nativelySupports",
+"object": "Iteration",
+"verdict": "challenge",
+"explanation": "Iteration is a standard part of Java syntax, but the examined Wikipedia page does not explicitly discuss Java's looping constructs. Consequently, the assertion is credible but not directly evidenced by this particular Wikipedia resource.",
+"references": [
+"[https://en.wikipedia.org/wiki/Java_(programming_language)](https://en.wikipedia.org/wiki/Java_%28programming_language%29)"
+]
+},
+{
+"subject": "Java",
+"property": "nativelySupports",
+"object": "ModuleAbstraction",
+"verdict": "challenge",
+"explanation": "Wikipedia states that Java API classes are organized into packages containing related interfaces, classes, subpackages, and exceptions. This supplies evidence for modular organization, but the page does not directly equate packages or Java modules with the ontology's ModuleAbstraction concept, so the assertion remains somewhat interpretive.",
+"references": [
+"[https://en.wikipedia.org/wiki/Java_(programming_language)](https://en.wikipedia.org/wiki/Java_%28programming_language%29)"
+]
+},
+{
+"subject": "Java",
+"property": "nativelySupports",
+"object": "ObjectOrientedParadigm",
+"verdict": "support",
+"explanation": "Wikipedia explicitly describes Java as an "object-oriented" programming language and lists object-oriented, specifically class-based, among its paradigms. This is direct support for the assertion.",
+"references": [
+"[https://en.wikipedia.org/wiki/Java_(programming_language)](https://en.wikipedia.org/wiki/Java_%28programming_language%29)"
+]
+},
+{
+"subject": "Java",
+"property": "nativelySupports",
+"object": "Objects",
+"verdict": "support",
+"explanation": "Wikipedia states that Java was built almost exclusively as an object-oriented language and that, apart from primitive data types, data items are objects. It also discusses the object lifecycle and object creation, directly supporting native object facilities.",
+"references": [
+"[https://en.wikipedia.org/wiki/Java_(programming_language)](https://en.wikipedia.org/wiki/Java_%28programming_language%29)"
+]
+},
+{
+"subject": "Java",
+"property": "nativelySupports",
+"object": "Recursion",
+"verdict": "challenge",
+"explanation": "Recursion is available in Java through method invocation, but the examined Wikipedia page does not explicitly discuss recursive functions or methods. There is therefore insufficient direct Wikipedia evidence to mark this ontology assertion as supported, while there is no basis for rejection.",
+"references": [
+"[https://en.wikipedia.org/wiki/Java_(programming_language)](https://en.wikipedia.org/wiki/Java_%28programming_language%29)"
+]
+},
+{
+"subject": "Java",
+"property": "nativelySupports",
+"object": "Sequencing",
+"verdict": "challenge",
+"explanation": "Sequential execution is fundamental to ordinary Java programs, but the Wikipedia page does not explicitly present sequencing as a Java language concept. The ontology assertion is plausible but cannot be directly validated from this page.",
+"references": [
+"[https://en.wikipedia.org/wiki/Java_(programming_language)](https://en.wikipedia.org/wiki/Java_%28programming_language%29)"
+]
+},
+{
+"subject": "Java",
+"property": "nativelySupports",
+"object": "StaticTyping",
+"verdict": "support",
+"explanation": "Wikipedia explicitly gives Java's typing discipline as "Static, strong, safe" and additionally discusses compile-time type checking for generics. This directly supports Java's native static typing.",
+"references": [
+"[https://en.wikipedia.org/wiki/Java_(programming_language)](https://en.wikipedia.org/wiki/Java_%28programming_language%29)"
+]
+},
+{
+"subject": "Java",
+"property": "nativelySupports",
+"object": "Subtyping",
+"verdict": "support",
+"explanation": "Wikipedia's discussion of Java generics explicitly refers to subtypes of classes and interfaces, and the page describes Java's class- and interface-based object system. This provides direct evidence that subtyping is part of Java's language model.",
+"references": [
+"[https://en.wikipedia.org/wiki/Java_(programming_language)](https://en.wikipedia.org/wiki/Java_%28programming_language%29)"
+]
+},
+{
+"subject": "Java",
+"property": "standardlySupports",
+"object": "FuturesAndPromises",
+"verdict": "challenge",
+"explanation": "Wikipedia explicitly documents Java concurrency, threading, and the java.util.concurrent package, but the examined page does not mention futures or promises specifically. Concurrency alone is insufficient to verify the narrower assertion that FuturesAndPromises are standardly supported.",
+"references": [
+"[https://en.wikipedia.org/wiki/Java_(programming_language)](https://en.wikipedia.org/wiki/Java_%28programming_language%29)"
+]
+},
+{
+"subject": "Java",
+"property": "type",
+"object": "ProgrammingLanguage",
+"verdict": "support",
+"explanation": "Wikipedia explicitly states that Java is a high-level, general-purpose, memory-safe, object-oriented programming language. This directly supports its classification as ProgrammingLanguage.",
+"references": [
+"[https://en.wikipedia.org/wiki/Java_(programming_language)](https://en.wikipedia.org/wiki/Java_%28programming_language%29)"
+]
+},
+{
+"subject": "Java",
+"property": "type",
+"object": "LanguageEntity",
+"verdict": "support",
+"explanation": "Wikipedia unequivocally identifies Java as a programming language. Given the ontology's LanguageEntity category for software languages and language-related instances, the Wikipedia characterization supports this broader ontological typing.",
+"references": [
+"[https://en.wikipedia.org/wiki/Java_(programming_language)](https://en.wikipedia.org/wiki/Java_%28programming_language%29)"
+]
+},
+{
+"subject": "Java",
+"property": "comment",
+"object": "class-based general-purpose programming language targeting portability and managed execution",
+"verdict": "support",
+"explanation": "The comment closely matches Wikipedia's characterization. The page calls Java a general-purpose object-oriented language, identifies its object-oriented paradigm as class-based, emphasizes "write once, run anywhere" portability through JVM bytecode, and describes automatic garbage collection and JVM-based execution.",
+"references": [
+"[https://en.wikipedia.org/wiki/Java_(programming_language)](https://en.wikipedia.org/wiki/Java_%28programming_language%29)"
+]
+},
+{
+"subject": "Java",
+"property": "label",
+"object": "Java",
+"verdict": "support",
+"explanation": "The Wikipedia article is titled Java (programming language) and uses Java as the name of the language throughout. The ontology label "Java" is therefore directly supported.",
+"references": [
+"[https://en.wikipedia.org/wiki/Java_(programming_language)](https://en.wikipedia.org/wiki/Java_%28programming_language%29)"
+]
+},
+{
+"subject": "Java",
+"property": "isPrimaryTopicOf",
+"object": "[https://dbpedia.org/resource/Java_(programming_language)](https://dbpedia.org/resource/Java_%28programming_language%29)",
+"verdict": "challenge",
+"explanation": "The Wikipedia article establishes the identity and subject matter of Java, but it does not itself establish that the specified DBpedia resource is a primary-topic document for the ontology entity. This link may be correct, but verification requires DBpedia rather than the Wikipedia page alone.",
+"references": [
+"[https://en.wikipedia.org/wiki/Java_(programming_language)](https://en.wikipedia.org/wiki/Java_%28programming_language%29)"
+]
+},
+{
+"subject": "Java",
+"property": "page",
+"object": "[https://en.wikipedia.org/wiki/Java_(programming_language)](https://en.wikipedia.org/wiki/Java_%28programming_language%29)",
+"verdict": "support",
+"explanation": "The referenced Wikipedia page is specifically about the Java programming language and therefore directly supports its use as a descriptive page for the Java ontology entity.",
+"references": [
+"[https://en.wikipedia.org/wiki/Java_(programming_language)](https://en.wikipedia.org/wiki/Java_%28programming_language%29)"
+]
+},
+{
+"subject": "Java_ErrorHandling_assertion",
+"property": "assertedForLanguage",
+"object": "Java",
+"verdict": "challenge",
+"explanation": "Wikipedia provides substantive evidence that Java has exception handling, so an ontology assertion concerning Java and error handling is plausible. However, Wikipedia cannot independently establish the existence or intended identity of the ontology-internal reified individual Java_ErrorHandling_assertion, so the bookkeeping triple itself is only indirectly supported.",
+"references": [
+"[https://en.wikipedia.org/wiki/Java_(programming_language)](https://en.wikipedia.org/wiki/Java_%28programming_language%29)"
+]
+},
+{
+"subject": "Java_FuturesAndPromises_assertion",
+"property": "assertedForLanguage",
+"object": "Java",
+"verdict": "challenge",
+"explanation": "Wikipedia documents Java concurrency and the java.util.concurrent package but does not specifically discuss futures or promises on this page. It also cannot verify the ontology-internal reified assertion individual. The association with Java is therefore plausible but insufficiently established by this resource.",
+"references": [
+"[https://en.wikipedia.org/wiki/Java_(programming_language)](https://en.wikipedia.org/wiki/Java_%28programming_language%29)"
+]
+},
+{
+"subject": "Java_Objects_assertion",
+"property": "assertedForLanguage",
+"object": "Java",
+"verdict": "challenge",
+"explanation": "Wikipedia strongly supports the underlying claim that Java has native object facilities, describing Java as class-based and object-oriented and discussing object creation and lifecycle. Nevertheless, the specific Java_Objects_assertion individual is an ontology-internal reification that Wikipedia does not independently identify, so the assertedForLanguage bookkeeping triple is conservatively challenged rather than fully supported.",
+"references": [
+"[https://en.wikipedia.org/wiki/Java_(programming_language)](https://en.wikipedia.org/wiki/Java_%28programming_language%29)"
+]
+},
+{
+"subject": "Java",
+"property": "nativelySupports",
+"object": "FunctionalParadigm",
+"verdict": "add",
+"explanation": "Wikipedia explicitly lists functional programming among Java's paradigms and also identifies functional programming with lambdas and streaming among Java's core-library capabilities. Given the existing use of nativelySupports for paradigm concepts, FunctionalParadigm is a conspicuous omission from the examined Java context.",
+"references": [
+"[https://en.wikipedia.org/wiki/Java_(programming_language)](https://en.wikipedia.org/wiki/Java_%28programming_language%29)"
+]
+}
+]
