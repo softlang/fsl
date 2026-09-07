@@ -1,0 +1,22 @@
+Subject,Predicate,Object
+http://www.softlang.org/ontologies/pe#JavaScript,http://www.softlang.org/ontologies/tbox#hasArea,http://www.softlang.org/ontologies/ce#PLT
+http://www.softlang.org/ontologies/pe#JavaScript,http://www.softlang.org/ontologies/tbox#hasArea,http://www.softlang.org/ontologies/ce#SE
+http://www.softlang.org/ontologies/pe#JavaScript,http://www.softlang.org/ontologies/tbox#hasArea,http://www.softlang.org/ontologies/ce#SLE
+http://www.softlang.org/ontologies/pe#JavaScript,http://www.softlang.org/ontologies/tbox#hasSpace,http://www.softlang.org/ontologies/ce#Programware
+http://www.softlang.org/ontologies/pe#JavaScript,http://www.softlang.org/ontologies/tbox#nativelySupports,http://www.softlang.org/ontologies/ce#Branching
+http://www.softlang.org/ontologies/pe#JavaScript,http://www.softlang.org/ontologies/tbox#nativelySupports,http://www.softlang.org/ontologies/ce#Closures
+http://www.softlang.org/ontologies/pe#JavaScript,http://www.softlang.org/ontologies/tbox#nativelySupports,http://www.softlang.org/ontologies/ce#DynamicTyping
+http://www.softlang.org/ontologies/pe#JavaScript,http://www.softlang.org/ontologies/tbox#nativelySupports,http://www.softlang.org/ontologies/ce#FirstClassFunctions
+http://www.softlang.org/ontologies/pe#JavaScript,http://www.softlang.org/ontologies/tbox#nativelySupports,http://www.softlang.org/ontologies/ce#FunctionalParadigm
+http://www.softlang.org/ontologies/pe#JavaScript,http://www.softlang.org/ontologies/tbox#nativelySupports,http://www.softlang.org/ontologies/ce#HigherOrderFunctions
+http://www.softlang.org/ontologies/pe#JavaScript,http://www.softlang.org/ontologies/tbox#nativelySupports,http://www.softlang.org/ontologies/ce#ImperativeParadigm
+http://www.softlang.org/ontologies/pe#JavaScript,http://www.softlang.org/ontologies/tbox#nativelySupports,http://www.softlang.org/ontologies/ce#Iteration
+http://www.softlang.org/ontologies/pe#JavaScript,http://www.softlang.org/ontologies/tbox#nativelySupports,http://www.softlang.org/ontologies/ce#Recursion
+http://www.softlang.org/ontologies/pe#JavaScript,http://www.softlang.org/ontologies/tbox#nativelySupports,http://www.softlang.org/ontologies/ce#Sequencing
+http://www.softlang.org/ontologies/pe#JavaScript,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.softlang.org/ontologies/pe#ProgrammingLanguage
+http://www.softlang.org/ontologies/pe#JavaScript,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.softlang.org/ontologies/tbox#LanguageEntity
+http://www.softlang.org/ontologies/pe#JavaScript,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#NamedIndividual
+http://www.softlang.org/ontologies/pe#JavaScript,http://www.w3.org/2000/01/rdf-schema#comment,dynamic multi-paradigm language widely used for web programming
+http://www.softlang.org/ontologies/pe#JavaScript,http://www.w3.org/2000/01/rdf-schema#label,JavaScript
+http://www.softlang.org/ontologies/pe#JavaScript,http://xmlns.com/foaf/0.1/isPrimaryTopicOf,https://dbpedia.org/resource/JavaScript
+http://www.softlang.org/ontologies/pe#JavaScript,http://xmlns.com/foaf/0.1/page,https://en.wikipedia.org/wiki/JavaScript

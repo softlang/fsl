@@ -1,0 +1,17 @@
+Subject,Predicate,Object
+http://www.softlang.org/ontologies/le#SQL,http://www.softlang.org/ontologies/tbox#hasArea,http://www.softlang.org/ontologies/ce#SE
+http://www.softlang.org/ontologies/le#SQL,http://www.softlang.org/ontologies/tbox#hasArea,http://www.softlang.org/ontologies/ce#SLE
+http://www.softlang.org/ontologies/le#SQL,http://www.softlang.org/ontologies/tbox#hasPart,http://www.softlang.org/ontologies/le#SQLDDL
+http://www.softlang.org/ontologies/le#SQL,http://www.softlang.org/ontologies/tbox#hasPart,http://www.softlang.org/ontologies/le#SQLDML
+http://www.softlang.org/ontologies/le#SQL,http://www.softlang.org/ontologies/tbox#hasPart,http://www.softlang.org/ontologies/le#SQLQuery
+http://www.softlang.org/ontologies/le#SQL,http://www.softlang.org/ontologies/tbox#hasSpace,http://www.softlang.org/ontologies/ce#SQLware
+http://www.softlang.org/ontologies/le#SQL,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.softlang.org/ontologies/tbox#LanguageEntity
+http://www.softlang.org/ontologies/le#SQL,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.softlang.org/ontologies/tbox#SoftwareLanguage
+http://www.softlang.org/ontologies/le#SQL,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#NamedIndividual
+http://www.softlang.org/ontologies/le#SQL,http://www.w3.org/2000/01/rdf-schema#comment,"language family for relational schema definition, data manipulation, and querying"
+http://www.softlang.org/ontologies/le#SQL,http://www.w3.org/2000/01/rdf-schema#label,SQL
+http://www.softlang.org/ontologies/le#SQL,http://xmlns.com/foaf/0.1/isPrimaryTopicOf,https://en.wikipedia.org/wiki/SQL
+http://www.softlang.org/ontologies/le#SQLDDL,http://www.softlang.org/ontologies/tbox#isPartOf,http://www.softlang.org/ontologies/le#SQL
+http://www.softlang.org/ontologies/le#SQLDML,http://www.softlang.org/ontologies/tbox#isPartOf,http://www.softlang.org/ontologies/le#SQL
+http://www.softlang.org/ontologies/le#SQLQuery,http://www.softlang.org/ontologies/tbox#isPartOf,http://www.softlang.org/ontologies/le#SQL
+http://www.softlang.org/ontologies/te#RelationalDatabaseManagementSystem,http://www.softlang.org/ontologies/tbox#targets,http://www.softlang.org/ontologies/le#SQL
