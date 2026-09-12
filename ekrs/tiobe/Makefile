@@ -1,3 +1,3 @@
 all:
-	python3 top20.py
+	python3 top10.py
 
