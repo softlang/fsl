@@ -1,0 +1,14 @@
+We aim at a comparison for alignment of two resources on software engineering (SE) areas or activities. The first resource https://github.com/PR0CK0/swebok-rebel-rdf/blob/main/02_single_SWEBOK_file/01-15_SWEBOK_post_construct_FIXED.ttl is a projection or representation of the Software Engineering Body of Knowledge (SWEBOK), referred to as the SWEBOK resource subsequently; we are specifically interested in SE knowledge areas and their decomposition, as modelled by this resource. The second resource https://github.com/softlang/fsl/blob/main/queries/activies/instances.csv is a projection or representation of an ontology on Software Language Engineering, referered to as the SLE resource subsequently; we are specifically interested in the taxonomy of SE activities in the sense of the software lifecycle, as modelled by this resource.
+
+Compare the two resources in the sense of reviewing the taxonomy of the latter by means of the SE knowledge areas and their decomposition of the former. The comparison should be an array of JSON objects with key-values pairs as follows:
+* key "superclass", value a SE activity.
+* key "subclass", value a SE activity.
+* key "verdict", value "support", "challenge", "reject" to mean whether the subclass-relationship from the SLE resource is supported, rejected or challenged on the grounds of the SWEBOK resource.
+* key "explanation", value a short paragraph explaining the verdict, possibly including details from the SWEBOK resource as means of support.
+
+The following additional constraints apply:
+* All superclass-subclass relationships from the SLE resource must be covered by a verdict and an explanation; no other superclass-subclass relationships are to be considered.
+* False negatives (i.e., verdict "reject") must be minimized; in case of doubt, use "challenge" instead of "reject".
+* Return only a syntactically valid JSON array. Do not use Markdown, code fences, comments, footnotes, citation markup, or any text before or after the JSON.
+* Every element must be a JSON object with exactly these keys: "superclass", "subclass", "verdict", "explanation".
+* The entire response must be parseable directly with json.loads(...) without preprocessing.

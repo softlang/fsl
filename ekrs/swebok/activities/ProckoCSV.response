@@ -1,0 +1,566 @@
+[
+{
+"superclass": "AcceptanceTesting",
+"subclass": "UserAcceptanceTesting",
+"verdict": "support",
+"explanation": "SWEBOK represents acceptance/qualification testing as a recognized testing form and repeatedly connects requirements and testing to customers and end users. Treating user acceptance testing as a specialization of acceptance testing is therefore consistent with its decomposition."
+},
+{
+"superclass": "Coding",
+"subclass": "Programming",
+"verdict": "support",
+"explanation": "SWEBOK's Software Construction material includes code creation and programming-oriented concepts. Programming is a natural specialization of coding in that construction context, and the resource gives no competing placement that would contradict this relation."
+},
+{
+"superclass": "DesignActivity",
+"subclass": "DataModelDesign",
+"verdict": "support",
+"explanation": "SWEBOK decomposes software design into structures, models, and detailed design concerns, and includes data-related design artifacts and modeling concepts. Data-model design fits directly as a specialized design activity."
+},
+{
+"superclass": "DesignActivity",
+"subclass": "DesignValidation",
+"verdict": "support",
+"explanation": "SWEBOK includes software design quality analysis, design evaluation, reviews, and validation-related concepts. Design validation is therefore well supported as an activity concerned with assessing a design."
+},
+{
+"superclass": "DesignActivity",
+"subclass": "HighLevelDesign",
+"verdict": "support",
+"explanation": "SWEBOK explicitly represents software architectural design as part of software design. High-level design corresponds closely to architectural and structural design, supporting this specialization."
+},
+{
+"superclass": "DesignActivity",
+"subclass": "InterfaceDesign",
+"verdict": "support",
+"explanation": "SWEBOK models interfaces as part of software design and includes software user-interface concerns. Interface design is consequently a well-supported specialization of design."
+},
+{
+"superclass": "DesignActivity",
+"subclass": "LowLevelDesign",
+"verdict": "support",
+"explanation": "SWEBOK distinguishes design at architectural and more detailed levels and includes decomposition, modules, and detailed software structures. Low-level design fits this detailed-design portion of the Software Design knowledge area."
+},
+{
+"superclass": "DesignActivity",
+"subclass": "SystemArchitectureDesign",
+"verdict": "support",
+"explanation": "SWEBOK explicitly contains software architectural design within software design and treats software architecture as a central design concern. The subclass relation is directly aligned."
+},
+{
+"superclass": "DesignActivity",
+"subclass": "UXUIDesign",
+"verdict": "support",
+"explanation": "SWEBOK includes software user-interface design within software design concerns. UX/UI design is somewhat broader in modern terminology, but its core activity is clearly a specialization of design."
+},
+{
+"superclass": "DesignValidation",
+"subclass": "Prototyping",
+"verdict": "support",
+"explanation": "SWEBOK contains prototype validation as well as simulation and prototyping. Prototyping is explicitly used as a means of evaluating feasibility and validating design choices, which supports placing it under design validation."
+},
+{
+"superclass": "EvolutionAndImprovementActivity",
+"subclass": "ChangeManagement",
+"verdict": "challenge",
+"explanation": "SWEBOK treats software change both in Software Maintenance and in Software Configuration Management, especially configuration control and change requests. The activity is clearly relevant to evolution, but SWEBOK makes it cross-cutting rather than uniquely subordinate to evolution and improvement."
+},
+{
+"superclass": "EvolutionAndImprovementActivity",
+"subclass": "FeatureEnhancement",
+"verdict": "support",
+"explanation": "SWEBOK Software Maintenance covers modifications that enhance capabilities and improve an existing system, corresponding to perfective and enhancement-oriented maintenance. Feature enhancement therefore fits naturally under evolution and improvement."
+},
+{
+"superclass": "EvolutionAndImprovementActivity",
+"subclass": "Migration",
+"verdict": "support",
+"explanation": "SWEBOK explicitly represents migration, migration plans, retirement, and maintenance-related transition concerns. Migration is therefore supported as an evolution/maintenance activity."
+},
+{
+"superclass": "EvolutionAndImprovementActivity",
+"subclass": "Reengineering",
+"verdict": "support",
+"explanation": "SWEBOK includes reverse engineering, design recovery, redocumentation, and related restructuring concepts in the maintenance/evolution space. These are canonical constituents of software reengineering, supporting the relation."
+},
+{
+"superclass": "EvolutionAndImprovementActivity",
+"subclass": "Refactoring",
+"verdict": "support",
+"explanation": "SWEBOK explicitly represents refactoring and refactoring of legacy software in the context of software change and maintenance. Refactoring is therefore well aligned with evolution and improvement."
+},
+{
+"superclass": "EvolutionAndImprovementActivity",
+"subclass": "TechnicalDebtManagement",
+"verdict": "challenge",
+"explanation": "Managing technical debt is compatible with SWEBOK concerns such as maintenance, quality, refactoring, and change, but the resource does not expose technical-debt management as a clear decomposition node of the maintenance knowledge area. The placement is plausible rather than directly confirmed."
+},
+{
+"superclass": "Implementation",
+"subclass": "CodeGeneration",
+"verdict": "support",
+"explanation": "SWEBOK's Software Construction material includes code creation and implementation-oriented transformation activities. Code generation is a specialized way of producing implementation code and is consistent with that construction decomposition."
+},
+{
+"superclass": "Implementation",
+"subclass": "Coding",
+"verdict": "support",
+"explanation": "SWEBOK equates the core of Software Construction with creating source code and programming-related work. Coding is therefore a direct specialization of implementation."
+},
+{
+"superclass": "ImplementationActivity",
+"subclass": "BuildScripting",
+"verdict": "support",
+"explanation": "SWEBOK Software Construction includes build-related practices and construction tools, while configuration management also addresses controlled builds. Build scripting is thus supported as implementation/construction work, even though it interfaces with configuration management."
+},
+{
+"superclass": "ImplementationActivity",
+"subclass": "CodeReview",
+"verdict": "challenge",
+"explanation": "SWEBOK recognizes reviews and technical reviews, but review is generally treated as a verification/quality technique rather than exclusively as implementation. Code review concerns implementation artifacts, yet its SWEBOK placement is cross-cutting."
+},
+{
+"superclass": "ImplementationActivity",
+"subclass": "DependencyManagement",
+"verdict": "challenge",
+"explanation": "Dependency management is compatible with construction, build, and configuration-management concerns, but SWEBOK does not clearly make it a subordinate implementation activity. It is better viewed as spanning implementation and configuration management."
+},
+{
+"superclass": "ImplementationActivity",
+"subclass": "Implementation",
+"verdict": "support",
+"explanation": "SWEBOK's Software Construction knowledge area covers the realization of software designs through code creation and related implementation work. The SLE relation is therefore conceptually aligned."
+},
+{
+"superclass": "ImplementationActivity",
+"subclass": "Refactoring",
+"verdict": "challenge",
+"explanation": "SWEBOK recognizes refactoring, especially in maintenance and reengineering contexts. Refactoring can occur during implementation, but SWEBOK does not confine it there, so the subclass relation is plausible but narrower than the resource suggests."
+},
+{
+"superclass": "InterfaceDesign",
+"subclass": "APIDesign",
+"verdict": "support",
+"explanation": "SWEBOK treats interfaces as design objects and software design includes interface specification and design. API design is a specific form of interface design and is fully compatible with that decomposition."
+},
+{
+"superclass": "OperationsAndMaintenanceActivity",
+"subclass": "BackupAndRecovery",
+"verdict": "support",
+"explanation": "SWEBOK maintenance material includes operational support, archival, restart and recovery-related concerns. Backup and recovery therefore fit the operational-maintenance scope represented in the resource."
+},
+{
+"superclass": "OperationsAndMaintenanceActivity",
+"subclass": "BugFixing",
+"verdict": "support",
+"explanation": "Corrective maintenance is a central SWEBOK maintenance concern, and the resource models defects, faults, changes, and software modifications. Bug fixing is a direct instance of corrective maintenance."
+},
+{
+"superclass": "OperationsAndMaintenanceActivity",
+"subclass": "CapacityPlanning",
+"verdict": "challenge",
+"explanation": "Capacity planning is relevant to operating and evolving software and connects to performance concerns, but SWEBOK does not clearly expose it as a software-maintenance subtopic. The SLE placement is reasonable but only indirectly supported."
+},
+{
+"superclass": "OperationsAndMaintenanceActivity",
+"subclass": "IncidentManagement",
+"verdict": "challenge",
+"explanation": "Incident handling is operationally related to maintenance and defect correction, but SWEBOK is organized around software engineering maintenance rather than IT service-management incident processes. The relation is plausible but not directly mirrored."
+},
+{
+"superclass": "OperationsAndMaintenanceActivity",
+"subclass": "Logging",
+"verdict": "challenge",
+"explanation": "Logging supports operation, diagnosis, testing, and maintenance, but SWEBOK does not clearly classify logging itself as a maintenance activity. Its role is enabling and cross-cutting, so the parentage is only indirect."
+},
+{
+"superclass": "OperationsAndMaintenanceActivity",
+"subclass": "Monitoring",
+"verdict": "challenge",
+"explanation": "SWEBOK includes monitoring and controlling in engineering management and measurement-oriented concepts, while runtime monitoring also serves maintenance. Because the term spans management and operations, the SLE placement is plausible but not uniquely supported."
+},
+{
+"superclass": "OperationsAndMaintenanceActivity",
+"subclass": "Patching",
+"verdict": "support",
+"explanation": "SWEBOK treats maintenance as modification of delivered software and models software changes and configuration control. Applying patches is a standard corrective or adaptive maintenance action, supporting this relation."
+},
+{
+"superclass": "OperationsAndMaintenanceActivity",
+"subclass": "PerformanceTuning",
+"verdict": "support",
+"explanation": "SWEBOK maintenance includes improvement-oriented changes, while performance requirements and performance testing are explicitly modeled. Performance tuning is a natural perfective-maintenance activity."
+},
+{
+"superclass": "PlanningAndManagementActivity",
+"subclass": "ConfigurationManagementPlanning",
+"verdict": "support",
+"explanation": "SWEBOK explicitly represents software configuration management planning and software configuration management plans. This is direct evidence for configuration-management planning as a planning/management activity."
+},
+{
+"superclass": "PlanningAndManagementActivity",
+"subclass": "EffortEstimation",
+"verdict": "support",
+"explanation": "SWEBOK Software Engineering Management includes estimation and project planning concepts, and the resource explicitly models estimation within risk/project-management contexts. Effort estimation is therefore a standard planning and management activity."
+},
+{
+"superclass": "PlanningAndManagementActivity",
+"subclass": "ProcessDefinition",
+"verdict": "challenge",
+"explanation": "SWEBOK has a distinct Software Engineering Process knowledge area for process definition, assessment, measurement, and improvement. Process definition is certainly an engineering activity, but SWEBOK separates it from project management, making this parentage only partially aligned."
+},
+{
+"superclass": "PlanningAndManagementActivity",
+"subclass": "ProjectPlanning",
+"verdict": "support",
+"explanation": "SWEBOK explicitly models project planning, project plans, milestones, estimation, and related management concepts. The subclass relation is directly supported."
+},
+{
+"superclass": "PlanningAndManagementActivity",
+"subclass": "ResourceAllocation",
+"verdict": "support",
+"explanation": "SWEBOK engineering management covers personnel, work assignment, planning, and allocation of project resources. Resource allocation is therefore a conventional specialization of planning and management."
+},
+{
+"superclass": "PlanningAndManagementActivity",
+"subclass": "RiskManagement",
+"verdict": "support",
+"explanation": "SWEBOK explicitly represents project risk management and risk management with constituent activities such as risk identification and estimation. This directly supports the relation."
+},
+{
+"superclass": "PlanningAndManagementActivity",
+"subclass": "Roadmapping",
+"verdict": "challenge",
+"explanation": "Roadmapping is consistent with planning, prioritization, milestones, and lifecycle management, but SWEBOK does not clearly expose roadmapping as a named management decomposition. The classification is plausible rather than directly evidenced."
+},
+{
+"superclass": "PlanningAndManagementActivity",
+"subclass": "StakeholderManagement",
+"verdict": "support",
+"explanation": "SWEBOK requirements and engineering-management material repeatedly addresses customers, participants, communication, and project organization. Stakeholder management fits naturally within planning and management, although elements also occur in Requirements Engineering."
+},
+{
+"superclass": "QualityAndGovernanceActivity",
+"subclass": "Auditing",
+"verdict": "support",
+"explanation": "SWEBOK explicitly models software configuration auditing, configuration audits, product/process assurance, and quality-related assessment. Auditing is therefore strongly supported as a quality/governance activity."
+},
+{
+"superclass": "QualityAndGovernanceActivity",
+"subclass": "ComplianceManagement",
+"verdict": "support",
+"explanation": "SWEBOK quality, configuration-management, and professional-practice material addresses standards, conformance, reviews, and assurance. Managing compliance is consistent with these governance and quality concerns."
+},
+{
+"superclass": "QualityAndGovernanceActivity",
+"subclass": "Documentation",
+"verdict": "challenge",
+"explanation": "SWEBOK contains many documentation artifacts and documentation practices across requirements, design, maintenance, and management. Documentation contributes to quality and governance, but it is cross-cutting rather than clearly subordinate to the Software Quality area."
+},
+{
+"superclass": "QualityAndGovernanceActivity",
+"subclass": "QualityAssurance",
+"verdict": "support",
+"explanation": "Software quality assurance is a core concern of SWEBOK's Software Quality knowledge area, including product and process assurance. This relation is directly aligned."
+},
+{
+"superclass": "QualityAndGovernanceActivity",
+"subclass": "QualityControl",
+"verdict": "support",
+"explanation": "SWEBOK Software Quality covers evaluation, reviews, testing-related quality activities, measurement, and defect-oriented control. Quality control is consistent with that quality decomposition."
+},
+{
+"superclass": "QualityAndGovernanceActivity",
+"subclass": "SecurityManagement",
+"verdict": "challenge",
+"explanation": "SWEBOK models security requirements, vulnerabilities, security testing, and related quality concerns, but security is distributed across requirements, design, testing, and foundations rather than clearly represented as a quality-governance subactivity. The placement is defensible but not direct."
+},
+{
+"superclass": "ReleaseAndDeploymentActivity",
+"subclass": "ContinuousDelivery",
+"verdict": "challenge",
+"explanation": "SWEBOK contains delivery, build-test-deploy, configuration management, and construction concepts that underpin continuous delivery, but it does not clearly decompose a release/deployment knowledge area around continuous delivery. The SLE grouping is modern and plausible rather than directly mirrored."
+},
+{
+"superclass": "ReleaseAndDeploymentActivity",
+"subclass": "ContinuousDeployment",
+"verdict": "challenge",
+"explanation": "Automatic deployment fits SWEBOK's delivery, automation, build, construction, and configuration-management concerns, but continuous deployment is not clearly represented as a named subordinate activity. The relationship is reasonable but indirect."
+},
+{
+"superclass": "ReleaseAndDeploymentActivity",
+"subclass": "ContinuousIntegration",
+"verdict": "challenge",
+"explanation": "SWEBOK includes integration testing, build-related construction, automation, and configuration-management concepts. Continuous integration spans these areas, so its inclusion under release/deployment is plausible but not uniquely supported by SWEBOK."
+},
+{
+"superclass": "ReleaseAndDeploymentActivity",
+"subclass": "Deployment",
+"verdict": "support",
+"explanation": "SWEBOK models delivery and lifecycle transition concepts and treats release/configuration activities as part of bringing software into use. Deployment is therefore compatible with the release and transition concerns present in the resource."
+},
+{
+"superclass": "ReleaseAndDeploymentActivity",
+"subclass": "Packaging",
+"verdict": "challenge",
+"explanation": "Packaging is associated with construction, delivery, and configuration control, but SWEBOK does not clearly identify it as a release/deployment decomposition item. The relation is plausible but only indirectly evidenced."
+},
+{
+"superclass": "ReleaseAndDeploymentActivity",
+"subclass": "ReleaseManagement",
+"verdict": "support",
+"explanation": "SWEBOK Software Configuration Management covers configuration identification, control, status accounting, audits, baselines, and release-oriented control of software items. Release management fits this cluster and supports the SLE relation."
+},
+{
+"superclass": "ReleaseAndDeploymentActivity",
+"subclass": "RollbackManagement",
+"verdict": "challenge",
+"explanation": "SWEBOK models configuration control, versions, baselines, changes, recovery, and controlled software items, which provide the mechanisms for rollback. Rollback management itself is not a clear named decomposition, so support is indirect."
+},
+{
+"superclass": "ReleaseAndDeploymentActivity",
+"subclass": "Versioning",
+"verdict": "support",
+"explanation": "Version and configuration control are central Software Configuration Management concerns in SWEBOK. Treating versioning as a release/deployment activity is consistent with those release-control mechanisms."
+},
+{
+"superclass": "RequirementsEngineeringActivity",
+"subclass": "RequirementsAnalysis",
+"verdict": "support",
+"explanation": "SWEBOK explicitly represents requirements analysis and software requirements analysis within the requirements/design context. This directly supports the specialization."
+},
+{
+"superclass": "RequirementsEngineeringActivity",
+"subclass": "RequirementsElicitation",
+"verdict": "support",
+"explanation": "SWEBOK explicitly represents requirements elicitation as a software requirements concern. The subclass relation is directly aligned."
+},
+{
+"superclass": "RequirementsEngineeringActivity",
+"subclass": "RequirementsManagement",
+"verdict": "support",
+"explanation": "SWEBOK explicitly represents requirements management as part of requirements practice. This is direct support for the SLE relationship."
+},
+{
+"superclass": "RequirementsEngineeringActivity",
+"subclass": "RequirementsPrioritization",
+"verdict": "support",
+"explanation": "SWEBOK explicitly represents requirements prioritization and associated approaches such as analytic hierarchy and cost-value methods. The relation is directly supported."
+},
+{
+"superclass": "RequirementsEngineeringActivity",
+"subclass": "RequirementsSpecification",
+"verdict": "support",
+"explanation": "SWEBOK represents specification, system requirements specifications, specification documents, and requirements artifacts as core requirements concerns. Requirements specification is therefore directly supported."
+},
+{
+"superclass": "RequirementsEngineeringActivity",
+"subclass": "RequirementsValidation",
+"verdict": "support",
+"explanation": "SWEBOK explicitly represents requirements validation and software requirements validation as part of the software requirements process. This is direct support."
+},
+{
+"superclass": "SupportActivity",
+"subclass": "DevOpsPractice",
+"verdict": "challenge",
+"explanation": "SWEBOK contains build-test-deploy, automation, construction, configuration-management, and operational-transition concepts associated with DevOps, but DevOps is inherently cross-cutting and not clearly a subordinate support category in the resource."
+},
+{
+"superclass": "SupportActivity",
+"subclass": "EnvironmentProvisioning",
+"verdict": "challenge",
+"explanation": "Provisioning development or operational environments relates to construction tools, configuration management, and deployment, but SWEBOK does not clearly make environment provisioning a generic support subactivity. The placement is useful but indirect."
+},
+{
+"superclass": "SupportActivity",
+"subclass": "Experimentation",
+"verdict": "challenge",
+"explanation": "SWEBOK contains simulation, prototyping, feasibility prototypes, measurement, and evaluation, all of which can support experimentation. Experimentation itself is not a clearly bounded support decomposition, so the relation is only partially evidenced."
+},
+{
+"superclass": "SupportActivity",
+"subclass": "KnowledgeManagement",
+"verdict": "challenge",
+"explanation": "SWEBOK is itself organized as bodies and areas of knowledge and includes professional/organizational concerns, but knowledge management is not clearly modeled as a lifecycle support subactivity. The SLE placement is plausible but not directly aligned."
+},
+{
+"superclass": "SupportActivity",
+"subclass": "ToolingSetup",
+"verdict": "challenge",
+"explanation": "SWEBOK names tools across management, requirements, construction, testing, and configuration management. Tool setup supports all of them, making it cross-cutting rather than a clearly defined SWEBOK support subclass."
+},
+{
+"superclass": "SupportActivity",
+"subclass": "TrainingAndOnboarding",
+"verdict": "challenge",
+"explanation": "SWEBOK professional practice and engineering management cover skills, personnel, and professional development, but training and onboarding are not clearly represented as a software-lifecycle support decomposition. The classification is reasonable but indirect."
+},
+{
+"superclass": "TestingActivity",
+"subclass": "ValidationTestingActivity",
+"verdict": "support",
+"explanation": "SWEBOK treats testing as a major software-engineering concern and connects testing to validation objectives. A validation-oriented testing specialization is compatible with its treatment of testing and V&V."
+},
+{
+"superclass": "TestingActivity",
+"subclass": "VerificationTestingActivity",
+"verdict": "support",
+"explanation": "SWEBOK connects testing with verification and validation and explicitly models verification-and-validation activities. A verification-oriented testing specialization is therefore conceptually supported."
+},
+{
+"superclass": "ValidationActivity",
+"subclass": "ValidationTestingActivity",
+"verdict": "support",
+"explanation": "SWEBOK explicitly represents verification and validation and includes software testing as a primary technique for establishing required behavior. Validation testing is therefore a natural specialization of validation activity."
+},
+{
+"superclass": "ValidationTestingActivity",
+"subclass": "AcceptanceTesting",
+"verdict": "support",
+"explanation": "SWEBOK explicitly represents acceptance/qualification testing. Acceptance testing evaluates whether software satisfies user or contractual needs, which is strongly validation-oriented and supports the relation."
+},
+{
+"superclass": "ValidationTestingActivity",
+"subclass": "PerformanceTesting",
+"verdict": "challenge",
+"explanation": "SWEBOK explicitly represents performance testing, but it treats test types through objectives and techniques rather than assigning performance testing exclusively to validation. The activity is valid, while the specific parentage is not directly established."
+},
+{
+"superclass": "ValidationTestingActivity",
+"subclass": "SecurityTesting",
+"verdict": "challenge",
+"explanation": "SWEBOK explicitly represents security testing, but security testing can support both verification and validation objectives. The resource does not clearly make it exclusively a validation-testing subtype, so the relation is best challenged rather than rejected."
+},
+{
+"superclass": "ValidationTestingActivity",
+"subclass": "SystemTesting",
+"verdict": "support",
+"explanation": "SWEBOK explicitly represents system testing. At the system level, testing commonly evaluates the integrated system against system requirements, which supports a validation-oriented placement, although verification aspects may also be present."
+},
+{
+"superclass": "ValidationTestingActivity",
+"subclass": "UsabilityTesting",
+"verdict": "support",
+"explanation": "SWEBOK explicitly represents usability testing. Because usability testing evaluates software with respect to user-oriented quality needs, its placement under validation testing is well aligned."
+},
+{
+"superclass": "VerificationActivity",
+"subclass": "CodeInspection",
+"verdict": "support",
+"explanation": "SWEBOK includes reviews, technical reviews, static techniques, and inspection-like evaluation of software artifacts. Code inspection is a classic verification activity and is well supported by that treatment."
+},
+{
+"superclass": "VerificationActivity",
+"subclass": "FormalVerification",
+"verdict": "support",
+"explanation": "SWEBOK explicitly represents formal verification and its use of logical inference. This is direct support for formal verification as a verification activity."
+},
+{
+"superclass": "VerificationActivity",
+"subclass": "StaticAnalysis",
+"verdict": "support",
+"explanation": "SWEBOK explicitly represents static analysis and automated static analysis. Static analysis examines software artifacts without execution and is a canonical verification technique, directly supporting the relation."
+},
+{
+"superclass": "VerificationActivity",
+"subclass": "VerificationTestingActivity",
+"verdict": "support",
+"explanation": "SWEBOK explicitly treats verification and validation as engineering concerns and testing as a means of checking software against specified expectations. A testing specialization devoted to verification is consistent with that structure."
+},
+{
+"superclass": "VerificationAndValidationActivity",
+"subclass": "CodeReview",
+"verdict": "support",
+"explanation": "SWEBOK models reviews and technical reviews as mechanisms for examining software artifacts and finding defects. Code review is therefore a standard V&V activity."
+},
+{
+"superclass": "VerificationAndValidationActivity",
+"subclass": "TestingActivity",
+"verdict": "support",
+"explanation": "SWEBOK gives Software Testing its own major knowledge area and also links testing closely with verification and validation. Treating testing as part of a broader V&V activity grouping is well supported conceptually."
+},
+{
+"superclass": "VerificationAndValidationActivity",
+"subclass": "ValidationActivity",
+"verdict": "support",
+"explanation": "SWEBOK explicitly represents verification and validation together as a software-engineering concern. Validation activity is therefore directly compatible as one branch of a V&V grouping."
+},
+{
+"superclass": "VerificationAndValidationActivity",
+"subclass": "VerificationActivity",
+"verdict": "support",
+"explanation": "SWEBOK explicitly represents verification and validation together as a software-engineering concern. Verification activity is therefore directly compatible as one branch of a V&V grouping."
+},
+{
+"superclass": "VerificationTestingActivity",
+"subclass": "IntegrationTesting",
+"verdict": "support",
+"explanation": "SWEBOK explicitly represents unit and integration testing as construction/testing concerns and discusses incremental integration testing. Integration testing is strongly verification-oriented because it checks interactions among composed units, supporting the relation."
+},
+{
+"superclass": "VerificationTestingActivity",
+"subclass": "UnitTesting",
+"verdict": "support",
+"explanation": "SWEBOK explicitly represents unit testing as a form of software testing and as part of construction practice. Unit testing commonly verifies individual implementation units against their specifications, supporting this specialization."
+},
+{
+"superclass": "EngineeringActivity",
+"subclass": "DesignActivity",
+"verdict": "support",
+"explanation": "Software Design is a principal SWEBOK knowledge area and is explicitly modeled as part of software engineering. Design activity is therefore directly supported as a major engineering activity."
+},
+{
+"superclass": "EngineeringActivity",
+"subclass": "EvolutionAndImprovementActivity",
+"verdict": "support",
+"explanation": "SWEBOK has a dedicated Software Maintenance knowledge area covering modification, enhancement, migration, reengineering, and related evolution concerns. Evolution and improvement are therefore clearly software-engineering activities."
+},
+{
+"superclass": "EngineeringActivity",
+"subclass": "ImplementationActivity",
+"verdict": "support",
+"explanation": "SWEBOK has a dedicated Software Construction knowledge area centered on code creation, programming, and implementation. Implementation activity is directly supported as a software-engineering activity."
+},
+{
+"superclass": "EngineeringActivity",
+"subclass": "OperationsAndMaintenanceActivity",
+"verdict": "support",
+"explanation": "SWEBOK has a dedicated Software Maintenance knowledge area and includes operational support, delivery, recovery, migration, and post-delivery change concepts. The combined operations-and-maintenance category is broader than the KA but remains compatible."
+},
+{
+"superclass": "EngineeringActivity",
+"subclass": "PlanningAndManagementActivity",
+"verdict": "support",
+"explanation": "SWEBOK explicitly models Software Engineering Management, including project planning, estimation, risk management, monitoring, and personnel/work concerns. Planning and management are therefore core engineering activities."
+},
+{
+"superclass": "EngineeringActivity",
+"subclass": "QualityAndGovernanceActivity",
+"verdict": "support",
+"explanation": "SWEBOK has a dedicated Software Quality knowledge area and includes assurance, reviews, audits, standards, and process/product quality. Quality and governance are therefore well supported as engineering activities."
+},
+{
+"superclass": "EngineeringActivity",
+"subclass": "ReleaseAndDeploymentActivity",
+"verdict": "challenge",
+"explanation": "SWEBOK contains delivery, configuration management, build, maintenance transition, and release-control concepts, but it distributes them across several knowledge areas rather than defining a standalone release-and-deployment branch. The activity is valid, but the taxonomy is not directly mirrored."
+},
+{
+"superclass": "EngineeringActivity",
+"subclass": "RequirementsEngineeringActivity",
+"verdict": "support",
+"explanation": "Software Requirements is a principal SWEBOK knowledge area with elicitation, analysis, specification, validation, prioritization, and management concerns. Requirements engineering is therefore directly supported as a major engineering activity."
+},
+{
+"superclass": "EngineeringActivity",
+"subclass": "SupportActivity",
+"verdict": "challenge",
+"explanation": "SWEBOK contains many cross-cutting supporting concerns such as tools, professional practice, process, configuration management, and foundations, but it does not consolidate them into a single generic Support Activity branch. The grouping is reasonable but ontology-specific."
+},
+{
+"superclass": "EngineeringActivity",
+"subclass": "VerificationAndValidationActivity",
+"verdict": "support",
+"explanation": "SWEBOK explicitly represents verification and validation and gives substantial coverage to testing, reviews, static analysis, formal verification, and quality assurance. V&V is therefore clearly a software-engineering activity."
+}
+]
