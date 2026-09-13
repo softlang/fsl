@@ -1,0 +1,35 @@
+Property;Type;Domain;Range;Label;Comment;Inverse;Assertions
+hasArea;O;Entity;SubjectArea;has area;Relates an entity to an important subject area of interest;isAreaOf;422
+nativelySupports;O;LanguageEntity;LanguageConcept;Natively supports;Relates a language to a concept that it supports natively;;379
+hasSpace;O;Entity;TechnologicalSpace;has space;Relates an entity to a technological space to which it characteristically belongs;isSpaceOf;186
+supports;O;LanguageEntity;LanguageConcept;Supports;Relates a language to a concept that it supports;;126
+targets;O;ToolEntity;LanguageEntity;targets;Relates a tool entity to a language entity that it targets;isTargetedBy;39
+hasTool;O;TechnologicalSpace;ToolEntity;has tool;Relates a technological space to a kind of tool that it is concerned with;isToolOf;38
+processes;O;ToolEntity;ArtifactEntity;processes;Relates a tool entity to an artifact entity that it characteristically processes;isProcessedBy;29
+uses;O;Entity;Entity;uses;Relates an ontology entity to another ontology entity that it uses conceptually, methodologically, or technically;isUsedBy;27
+elementOf;O;ArtifactEntity;LanguageEntity;element of;Relates an artifact to a language in the set-theoretic sense;hasElement;26
+hasSupportingLanguage;O;EngineeringActivity;LanguageEntity;has supporting language;Relates a software engineering activity to a language kind that is characteristically used to perform or express the activity;;23
+hasPrimaryComponent;O;CompositeConcept;LanguageConcept;Has primary component;Relates a composite language concept to a (primary) component;;23
+hasSecondaryComponent;O;CompositeConcept;LanguageConcept;Has secondary component;Relates a composite language concept to a (secondary) component;;22
+hasArtifact;O;TechnologicalSpace;ArtifactEntity;has artifact;Relates a technological space to a kind of artifact that it is concerned with;isArtifactOf;21
+hasInputArtifact;O;;ArtifactEntity;has input artifact;Relates an activity or a tool to an artifact kind that it typically requires or consumes as input;;19
+hasOutputArtifact;O;;ArtifactEntity;has output artifact;Relates an activity or a tool to an artifact kind that it typically produces as output;;16
+hasSupportingTool;O;EngineeringActivity;ToolEntity;has supporting tool;Relates a software engineering activity to a tool kind that characteristically supports carrying out the activity;;15
+metamodelingPolicy;A;;;Metamodeling policy;Documents ontology-wide expectations for explicit punning-based typing of classes and individuals;;14
+assertedForConcept;O;LanguageSupportAssertion;LanguageConcept;Asserted for concept;Relates a reified assertion about language concepts with the concept;;13
+assertedForLanguage;O;LanguageSupportAssertion;LanguageEntity;Asserted for language;Relates a reified assertion about language concepts with the language;;13
+hasDominantForm;O;LanguageSupportAssertion;LanguageConcept;Has dominant form;Relates a language concept to a dominated form;;13
+hasSupportKind;O;LanguageSupportAssertion;LanguageSupportKind;Has support kind;Relates a reified assertion about language concepts with the type of support;;13
+serves;O;Entity;MethodologicalApproach;serves;Relates an entity to a methodological approach that it serves, realizes, supports, or instantiates in an important way;isServedBy;12
+hasPrimaryMechanism;O;LanguageSupportAssertion;ImplementationMechanismConcept;Has primary mechanism;Relates a reified assertion about language concepts with the primary mechanism for realization;;12
+hasBibTeX;D;Entity;string;has BibTeX;Relates an entity to the BibTeX key of a bibliographic entry that documents, discusses, or supports it;;11
+commentingPolicy;A;;;Commenting policy;Documents the ontology-wide expectation regarding commenting;;9
+formattingPolicy;A;;;Formatting policy;Documents the ontology-wide expectation regarding formatting;;9
+linkingPolicy;A;;;Linking policy;Documents ontology-wide expectations for linking classes and individuals to descriptive web pages;;9
+hasAffectedArtifact;O;;ArtifactEntity;has affected artifact;Relates an activity or a tool to an artifact kind that it typically affects (thereby complementing in- and output);;7
+conformsTo;O;ArtifactEntity;ArtifactEntity;conforms to;Relates an artifact to another artifact in the generalized sense of models conforming to metamodels;classifies;6
+classifies;O;ArtifactEntity;ArtifactEntity;classifies;Relates an artifact to another artifact in the generalized sense of metamodels classifying models;conformsTo;5
+extends;O;SoftwareLanguage;SoftwareLanguage;extends;Relates a software language to another software language that it extends or generalizes;isExtendedBy;3
+standardlySupports;O;LanguageEntity;LanguageConcept;Standardly supports;Relates a language to a concept that it supports standardly;;3
+isSpecifiedBy;O;FormalEntity;MethodologicalApproach;is specified by;Relates an entity to a methodological approach used to formally specify or define its behavior or meaning;specifies;2
+defines;O;ArtifactEntity;LanguageEntity;defines;Relates an artifact to a language in the sense of a definition (specification);isDefinedBy;1
