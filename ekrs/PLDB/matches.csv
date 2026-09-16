@@ -1,0 +1,71 @@
+FslLanguage,FslLabel,FslClassifier,FslPage,PldbId,PldbName,PldbWikipedia,matched,match_count,name_matches,url_equal
+ATL,ATL,ModelTransformationLanguage,https://en.wikipedia.org/wiki/ATLAS_Transformation_Language,,,,False,0,,
+BNF,BNF,GrammarMetalanguage,https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form,bnf,BNF,https://en.wikipedia.org/wiki/Backus–Naur_form,True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,False
+BackusNaurForm,Backus-Naur form,GrammarMetalanguage,https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form,,,,False,0,,
+Coq,Coq,ProofLanguage,https://en.wikipedia.org/wiki/Coq,coq,Coq,https://en.wikipedia.org/wiki/Coq,True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,True
+Cypher,Cypher,GraphQueryLanguage,https://en.wikipedia.org/wiki/Cypher_(query_language),cypher,Cypher Query Language,https://en.wikipedia.org/wiki/Cypher_Query_Language,True,1,SoftwareLanguage -> id; Label -> id,False
+EBNF,EBNF,GrammarMetalanguage,https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form,ebnf,EBNF,https://en.wikipedia.org/wiki/Extended_Backus–Naur_form,True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,False
+Ecore,Ecore,MetamodelingLanguage,https://en.wikipedia.org/wiki/Eclipse_Modeling_Framework,,,,False,0,,
+ExtendedBackusNaurForm,Extended Backus-Naur form,GrammarMetalanguage,https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form,,,,False,0,,
+GraphQLSchema,GraphQL schema language,InterfaceDescriptionLanguage,https://en.wikipedia.org/wiki/GraphQL,,,,False,0,,
+GraphQueryLanguageStandard,Graph Query Language,QueryLanguage,https://en.wikipedia.org/wiki/Graph_Query_Language,,,,False,0,,
+Gremlin,Gremlin,QueryLanguage,https://en.wikipedia.org/wiki/Gremlin_(query_language),gremlin,Gremlin,https://en.wikipedia.org/wiki/Gremlin_(programming_language),True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,False
+HTML,HTML,MarkupLanguage,https://en.wikipedia.org/wiki/HTML,html,HTML,https://en.wikipedia.org/wiki/HTML,True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,True
+JSON,JSON,SoftwareLanguage,https://en.wikipedia.org/wiki/JSON,json,JSON,https://en.wikipedia.org/wiki/JSON,True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,True
+JSONSchema,JSON Schema,JSONSchemaLanguage,https://en.wikipedia.org/wiki/JSON_Schema,json-schema,JSON Schema,,True,1,Label -> name,
+Lean,Lean,ProofLanguage,https://en.wikipedia.org/wiki/Lean_(proof_assistant),lean,Lean,,True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,
+MOF,MOF,MetamodelingLanguage,https://en.wikipedia.org/wiki/Meta-Object_Facility,,,,False,0,,
+Makefile,Makefile,BuildScriptingLanguage,,,,,False,0,,
+Markdown,Markdown,MarkupLanguage,https://en.wikipedia.org/wiki/Markdown,markdown,Markdown,https://en.wikipedia.org/wiki/Markdown,True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,True
+OCL,OCL,ConstraintLanguage,https://en.wikipedia.org/wiki/Object_Constraint_Language,ocl,OCL,https://en.wikipedia.org/wiki/Object_Constraint_Language,True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,True
+OCL,OCL,QueryLanguage,https://en.wikipedia.org/wiki/Object_Constraint_Language,ocl,OCL,https://en.wikipedia.org/wiki/Object_Constraint_Language,True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,True
+OWL,OWL,OntologyLanguage,https://en.wikipedia.org/wiki/Web_Ontology_Language,owl,OWL,https://en.wikipedia.org/wiki/Web_Ontology_Language,True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,True
+OpenAPI,OpenAPI,InterfaceDescriptionLanguage,https://en.wikipedia.org/wiki/OpenAPI_Specification,,,,False,0,,
+PetriNet,Petri net,ModelingLanguage,https://en.wikipedia.org/wiki/Petri_net,,,,False,0,,
+QVT,QVT,ModelTransformationLanguage,https://en.wikipedia.org/wiki/QVT,,,,False,0,,
+RDF,RDF,SemanticDataModelLanguage,https://en.wikipedia.org/wiki/Resource_Description_Framework,rdf,RDF,https://en.wikipedia.org/wiki/Resource_Description_Framework,True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,True
+RDFS,RDFS,OntologyLanguage,https://en.wikipedia.org/wiki/RDF_Schema,,,,False,0,,
+RELAXNG,RELAX NG,XMLSchemaLanguage,https://en.wikipedia.org/wiki/RELAX_NG,relaxng,RELAX NG,https://en.wikipedia.org/wiki/RELAX_NG,True,1,SoftwareLanguage -> id; Label -> name,True
+RequirementsInterchangeFormat,Requirements Interchange Format,RequirementsSpecificationLanguage,,,,,False,0,,
+SHACL,SHACL,ConstraintLanguage,https://en.wikipedia.org/wiki/Shapes_Constraint_Language,shacl,SHACL,https://en.wikipedia.org/wiki/SHACL,True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,False
+SPARQL,SPARQL,SemanticQueryLanguage,https://en.wikipedia.org/wiki/SPARQL,sparql,SPARQL,https://en.wikipedia.org/wiki/SPARQL,True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,True
+SQL,SQL,SoftwareLanguage,https://en.wikipedia.org/wiki/SQL,sql,SQL,https://en.wikipedia.org/wiki/SQL,True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,True
+SQLDDL,SQL DDL,DataDefinitionLanguage,https://en.wikipedia.org/wiki/Data_definition_language,,,,False,0,,
+SQLDML,SQL DML,DataManipulationLanguage,https://en.wikipedia.org/wiki/Data_manipulation_language,,,,False,0,,
+SQLQuery,SQL query language,RelationalQueryLanguage,https://en.wikipedia.org/wiki/SQL,,,,False,0,,
+SWRL,SWRL,RuleLanguage,https://en.wikipedia.org/wiki/Semantic_Web_Rule_Language,swrl,Semantic Web Rule Language,https://en.wikipedia.org/wiki/Semantic_Web_Rule_Language,True,1,SoftwareLanguage -> id; Label -> id,True
+ShEx,ShEx,ConstraintLanguage,https://en.wikipedia.org/wiki/Shape_Expressions,shex,ShEx,https://en.wikipedia.org/wiki/ShEx,True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,False
+UMLStateMachine,UML state machine,ModelingLanguage,https://en.wikipedia.org/wiki/UML_state_machine,,,,False,0,,
+XML,XML,SoftwareLanguage,https://en.wikipedia.org/wiki/XML,xml,XML,https://en.wikipedia.org/wiki/XML,True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,True
+XMLSchema,XML Schema,XMLSchemaLanguage,https://en.wikipedia.org/wiki/XML_Schema_(W3C),,,,False,0,,
+XPath,XPath,XMLQueryLanguage,https://en.wikipedia.org/wiki/XPath,xpath,XPath,https://en.wikipedia.org/wiki/XPath,True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,True
+XQuery,XQuery,XMLQueryLanguage,https://en.wikipedia.org/wiki/XQuery,xquery,XQuery,https://en.wikipedia.org/wiki/XQuery,True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,True
+XSLT,XSLT,DocumentTransformationLanguage,https://en.wikipedia.org/wiki/XSLT,xslt,XSLT,,True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,
+YAML,YAML,ConfigurationLanguage,https://en.wikipedia.org/wiki/YAML,yaml,YAML,https://en.wikipedia.org/wiki/YAML,True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,True
+Ada,Ada,ProgrammingLanguage,https://dbpedia.org/resource/Ada_(programming_language),ada,Ada,https://en.wikipedia.org/wiki/Ada_(programming_language),True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,False
+Assembly_Language,Assembly language,ProgrammingLanguage,https://dbpedia.org/resource/Assembly_language,assembly-language,Assembly language,https://en.wikipedia.org/wiki/Assembly_language,True,1,Label -> name,False
+C,C,ProgrammingLanguage,https://dbpedia.org/resource/C_(programming_language),c,C,https://en.wikipedia.org/wiki/C_(programming_language),True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,False
+COBOL,COBOL,ProgrammingLanguage,https://dbpedia.org/resource/COBOL,cobol,COBOL,https://en.wikipedia.org/wiki/COBOL,True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,False
+C_Sharp,C#,ProgrammingLanguage,https://dbpedia.org/resource/C_Sharp_(programming_language),csharp,C#,https://en.wikipedia.org/wiki/C_Sharp_(programming_language),True,1,Label -> name,False
+Cpp,C++,ProgrammingLanguage,https://dbpedia.org/resource/C%2B%2B,cpp,C++,https://en.wikipedia.org/wiki/C++,True,1,SoftwareLanguage -> id; Label -> name,False
+Datalog,Datalog,ProgrammingLanguage,,datalog,Datalog,https://en.wikipedia.org/wiki/Datalog,True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,
+Delphi_Object_Pascal,Delphi/Object Pascal,ProgrammingLanguage,,,,,False,0,,
+F_Sharp,F#,ProgrammingLanguage,https://dbpedia.org/resource/F_Sharp_(programming_language),f-sharp,F#,https://en.wikipedia.org/wiki/F_Sharp_(programming_language),True,1,Label -> name,False
+Fortran,Fortran,ProgrammingLanguage,https://dbpedia.org/resource/Fortran,fortran,Fortran,https://en.wikipedia.org/wiki/Fortran,True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,False
+Go,Go,ProgrammingLanguage,https://dbpedia.org/resource/Go_(programming_language),go,Go,https://en.wikipedia.org/wiki/Go_(programming_language),True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,False
+Haskell,Haskell,ProgrammingLanguage,https://dbpedia.org/resource/Haskell_(programming_language),haskell,Haskell,https://en.wikipedia.org/wiki/Haskell_(programming_language),True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,False
+Java,Java,ProgrammingLanguage,https://dbpedia.org/resource/Java_(programming_language),java,Java,https://en.wikipedia.org/wiki/Java_(programming_language),True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,False
+JavaScript,JavaScript,ProgrammingLanguage,https://dbpedia.org/resource/JavaScript,javascript,JavaScript,https://en.wikipedia.org/wiki/JavaScript,True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,False
+Koka,Koka,ProgrammingLanguage,,koka,Koka,,True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,
+MATLAB,MATLAB,ProgrammingLanguage,https://dbpedia.org/resource/MATLAB,matlab,MATLAB,https://en.wikipedia.org/wiki/MATLAB,True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,False
+PHP,PHP,ProgrammingLanguage,https://dbpedia.org/resource/PHP,php,PHP,https://en.wikipedia.org/wiki/PHP,True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,False
+Pascal,Pascal,ProgrammingLanguage,https://dbpedia.org/resource/Pascal_(programming_language),pascal,Pascal,https://en.wikipedia.org/wiki/Pascal_(programming_language),True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,False
+Perl,Perl,ProgrammingLanguage,https://dbpedia.org/resource/Perl,perl,Perl,https://en.wikipedia.org/wiki/Perl,True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,False
+Prolog,Prolog,ProgrammingLanguage,https://dbpedia.org/resource/Prolog,prolog,Prolog,https://en.wikipedia.org/wiki/Prolog,True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,False
+Python,Python,ProgrammingLanguage,https://dbpedia.org/resource/Python_(programming_language),python,Python,https://en.wikipedia.org/wiki/Python_(programming_language),True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,False
+R,R,ProgrammingLanguage,https://dbpedia.org/resource/R_(programming_language),r,R,https://en.wikipedia.org/wiki/R_(programming_language),True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,False
+Rust,Rust,ProgrammingLanguage,https://dbpedia.org/resource/Rust_(programming_language),rust,Rust,https://en.wikipedia.org/wiki/Rust_(programming_language),True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,False
+Scheme,Scheme,ProgrammingLanguage,https://dbpedia.org/resource/Scheme_(programming_language),scheme,Scheme,https://en.wikipedia.org/wiki/Scheme_(programming_language),True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,False
+Scratch,Scratch,ProgrammingLanguage,https://dbpedia.org/resource/Scratch_(programming_language),scratch,Scratch,https://en.wikipedia.org/wiki/Scratch_(programming_language),True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,False
+Swift,Swift,ProgrammingLanguage,https://dbpedia.org/resource/Swift_(programming_language),swift,Swift,https://en.wikipedia.org/wiki/Swift_(programming_language),True,1,SoftwareLanguage -> id; SoftwareLanguage -> name; Label -> id; Label -> name,False
+Visual_Basic,Visual Basic,ProgrammingLanguage,https://dbpedia.org/resource/Visual_Basic,visual-basic,Visual Basic,https://en.wikipedia.org/wiki/Visual_Basic,True,1,Label -> name,False
