@@ -1,71 +1,71 @@
-SoftwareLanguage,Classifier
-Makefile,BuildScriptingLanguage
-YAML,ConfigurationLanguage
-OCL,ConstraintLanguage
-SHACL,ConstraintLanguage
-ShEx,ConstraintLanguage
-SQLDDL,DataDefinitionLanguage
-SQLDML,DataManipulationLanguage
-XSLT,DocumentTransformationLanguage
-BNF,GrammarMetalanguage
-BackusNaurForm,GrammarMetalanguage
-EBNF,GrammarMetalanguage
-ExtendedBackusNaurForm,GrammarMetalanguage
-Cypher,GraphQueryLanguage
-GraphQLSchema,InterfaceDescriptionLanguage
-OpenAPI,InterfaceDescriptionLanguage
-JSONSchema,JSONSchemaLanguage
-HTML,MarkupLanguage
-Markdown,MarkupLanguage
-Ecore,MetamodelingLanguage
-MOF,MetamodelingLanguage
-ATL,ModelTransformationLanguage
-QVT,ModelTransformationLanguage
-PetriNet,ModelingLanguage
-UMLStateMachine,ModelingLanguage
-OWL,OntologyLanguage
-RDFS,OntologyLanguage
-Coq,ProofLanguage
-Lean,ProofLanguage
-GraphQueryLanguageStandard,QueryLanguage
-Gremlin,QueryLanguage
-OCL,QueryLanguage
-SQLQuery,RelationalQueryLanguage
-RequirementsInterchangeFormat,RequirementsSpecificationLanguage
-SWRL,RuleLanguage
-RDF,SemanticDataModelLanguage
-SPARQL,SemanticQueryLanguage
-XPath,XMLQueryLanguage
-XQuery,XMLQueryLanguage
-RELAXNG,XMLSchemaLanguage
-XMLSchema,XMLSchemaLanguage
-Ada,ProgrammingLanguage
-Assembly_Language,ProgrammingLanguage
-C,ProgrammingLanguage
-COBOL,ProgrammingLanguage
-C_Sharp,ProgrammingLanguage
-Cpp,ProgrammingLanguage
-Datalog,ProgrammingLanguage
-Delphi_Object_Pascal,ProgrammingLanguage
-F_Sharp,ProgrammingLanguage
-Fortran,ProgrammingLanguage
-Go,ProgrammingLanguage
-Haskell,ProgrammingLanguage
-Java,ProgrammingLanguage
-JavaScript,ProgrammingLanguage
-Koka,ProgrammingLanguage
-MATLAB,ProgrammingLanguage
-PHP,ProgrammingLanguage
-Pascal,ProgrammingLanguage
-Perl,ProgrammingLanguage
-Prolog,ProgrammingLanguage
-Python,ProgrammingLanguage
-R,ProgrammingLanguage
-Rust,ProgrammingLanguage
-Scheme,ProgrammingLanguage
-Scratch,ProgrammingLanguage
-Swift,ProgrammingLanguage
-Visual_Basic,ProgrammingLanguage
-JSON,SoftwareLanguage
-SQL,SoftwareLanguage
-XML,SoftwareLanguage
+SoftwareLanguage,Label,Classifier,Page
+ATL,ATL,ModelTransformationLanguage,https://en.wikipedia.org/wiki/ATLAS_Transformation_Language
+BNF,BNF,GrammarMetalanguage,https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form
+BackusNaurForm,Backus-Naur form,GrammarMetalanguage,https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form
+Coq,Coq,ProofLanguage,https://en.wikipedia.org/wiki/Coq
+Cypher,Cypher,GraphQueryLanguage,https://en.wikipedia.org/wiki/Cypher_(query_language)
+EBNF,EBNF,GrammarMetalanguage,https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form
+Ecore,Ecore,MetamodelingLanguage,https://en.wikipedia.org/wiki/Eclipse_Modeling_Framework
+ExtendedBackusNaurForm,Extended Backus-Naur form,GrammarMetalanguage,https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form
+GraphQLSchema,GraphQL schema language,InterfaceDescriptionLanguage,https://en.wikipedia.org/wiki/GraphQL
+GraphQueryLanguageStandard,Graph Query Language,QueryLanguage,https://en.wikipedia.org/wiki/Graph_Query_Language
+Gremlin,Gremlin,QueryLanguage,https://en.wikipedia.org/wiki/Gremlin_(query_language)
+HTML,HTML,MarkupLanguage,https://en.wikipedia.org/wiki/HTML
+JSON,JSON,SoftwareLanguage,https://en.wikipedia.org/wiki/JSON
+JSONSchema,JSON Schema,JSONSchemaLanguage,https://en.wikipedia.org/wiki/JSON_Schema
+Lean,Lean,ProofLanguage,https://en.wikipedia.org/wiki/Lean_(proof_assistant)
+MOF,MOF,MetamodelingLanguage,https://en.wikipedia.org/wiki/Meta-Object_Facility
+Makefile,Makefile,BuildScriptingLanguage,
+Markdown,Markdown,MarkupLanguage,https://en.wikipedia.org/wiki/Markdown
+OCL,OCL,ConstraintLanguage,https://en.wikipedia.org/wiki/Object_Constraint_Language
+OCL,OCL,QueryLanguage,https://en.wikipedia.org/wiki/Object_Constraint_Language
+OWL,OWL,OntologyLanguage,https://en.wikipedia.org/wiki/Web_Ontology_Language
+OpenAPI,OpenAPI,InterfaceDescriptionLanguage,https://en.wikipedia.org/wiki/OpenAPI_Specification
+PetriNet,Petri net,ModelingLanguage,https://en.wikipedia.org/wiki/Petri_net
+QVT,QVT,ModelTransformationLanguage,https://en.wikipedia.org/wiki/QVT
+RDF,RDF,SemanticDataModelLanguage,https://en.wikipedia.org/wiki/Resource_Description_Framework
+RDFS,RDFS,OntologyLanguage,https://en.wikipedia.org/wiki/RDF_Schema
+RELAXNG,RELAX NG,XMLSchemaLanguage,https://en.wikipedia.org/wiki/RELAX_NG
+RequirementsInterchangeFormat,Requirements Interchange Format,RequirementsSpecificationLanguage,
+SHACL,SHACL,ConstraintLanguage,https://en.wikipedia.org/wiki/Shapes_Constraint_Language
+SPARQL,SPARQL,SemanticQueryLanguage,https://en.wikipedia.org/wiki/SPARQL
+SQL,SQL,SoftwareLanguage,https://en.wikipedia.org/wiki/SQL
+SQLDDL,SQL DDL,DataDefinitionLanguage,https://en.wikipedia.org/wiki/Data_definition_language
+SQLDML,SQL DML,DataManipulationLanguage,https://en.wikipedia.org/wiki/Data_manipulation_language
+SQLQuery,SQL query language,RelationalQueryLanguage,https://en.wikipedia.org/wiki/SQL
+SWRL,SWRL,RuleLanguage,https://en.wikipedia.org/wiki/Semantic_Web_Rule_Language
+ShEx,ShEx,ConstraintLanguage,https://en.wikipedia.org/wiki/Shape_Expressions
+UMLStateMachine,UML state machine,ModelingLanguage,https://en.wikipedia.org/wiki/UML_state_machine
+XML,XML,SoftwareLanguage,https://en.wikipedia.org/wiki/XML
+XMLSchema,XML Schema,XMLSchemaLanguage,https://en.wikipedia.org/wiki/XML_Schema_(W3C)
+XPath,XPath,XMLQueryLanguage,https://en.wikipedia.org/wiki/XPath
+XQuery,XQuery,XMLQueryLanguage,https://en.wikipedia.org/wiki/XQuery
+XSLT,XSLT,DocumentTransformationLanguage,https://en.wikipedia.org/wiki/XSLT
+YAML,YAML,ConfigurationLanguage,https://en.wikipedia.org/wiki/YAML
+Ada,Ada,ProgrammingLanguage,https://dbpedia.org/resource/Ada_(programming_language)
+Assembly_Language,Assembly language,ProgrammingLanguage,https://dbpedia.org/resource/Assembly_language
+C,C,ProgrammingLanguage,https://dbpedia.org/resource/C_(programming_language)
+COBOL,COBOL,ProgrammingLanguage,https://dbpedia.org/resource/COBOL
+C_Sharp,C#,ProgrammingLanguage,https://dbpedia.org/resource/C_Sharp_(programming_language)
+Cpp,C++,ProgrammingLanguage,https://dbpedia.org/resource/C%2B%2B
+Datalog,Datalog,ProgrammingLanguage,
+Delphi_Object_Pascal,Delphi/Object Pascal,ProgrammingLanguage,
+F_Sharp,F#,ProgrammingLanguage,https://dbpedia.org/resource/F_Sharp_(programming_language)
+Fortran,Fortran,ProgrammingLanguage,https://dbpedia.org/resource/Fortran
+Go,Go,ProgrammingLanguage,https://dbpedia.org/resource/Go_(programming_language)
+Haskell,Haskell,ProgrammingLanguage,https://dbpedia.org/resource/Haskell_(programming_language)
+Java,Java,ProgrammingLanguage,https://dbpedia.org/resource/Java_(programming_language)
+JavaScript,JavaScript,ProgrammingLanguage,https://dbpedia.org/resource/JavaScript
+Koka,Koka,ProgrammingLanguage,
+MATLAB,MATLAB,ProgrammingLanguage,https://dbpedia.org/resource/MATLAB
+PHP,PHP,ProgrammingLanguage,https://dbpedia.org/resource/PHP
+Pascal,Pascal,ProgrammingLanguage,https://dbpedia.org/resource/Pascal_(programming_language)
+Perl,Perl,ProgrammingLanguage,https://dbpedia.org/resource/Perl
+Prolog,Prolog,ProgrammingLanguage,https://dbpedia.org/resource/Prolog
+Python,Python,ProgrammingLanguage,https://dbpedia.org/resource/Python_(programming_language)
+R,R,ProgrammingLanguage,https://dbpedia.org/resource/R_(programming_language)
+Rust,Rust,ProgrammingLanguage,https://dbpedia.org/resource/Rust_(programming_language)
+Scheme,Scheme,ProgrammingLanguage,https://dbpedia.org/resource/Scheme_(programming_language)
+Scratch,Scratch,ProgrammingLanguage,https://dbpedia.org/resource/Scratch_(programming_language)
+Swift,Swift,ProgrammingLanguage,https://dbpedia.org/resource/Swift_(programming_language)
+Visual_Basic,Visual Basic,ProgrammingLanguage,https://dbpedia.org/resource/Visual_Basic

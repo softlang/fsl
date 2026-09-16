@@ -14,22 +14,27 @@ for ttl in ttl_files:
 query = """
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX tbox: <http://www.softlang.org/ontologies/tbox#>
 
-SELECT DISTINCT ?language ?classifier
+SELECT DISTINCT ?language ?label ?classifier ?page
 WHERE {
     ?classifier rdfs:subClassOf* tbox:SoftwareLanguage .
     ?language rdf:type ?classifier .
+    OPTIONAL { ?language rdfs:label ?label . }
+    OPTIONAL { ?language foaf:isPrimaryTopicOf ?page . }
 }
-ORDER BY ?classifier ?language
+ORDER BY ?language
 """
 
 # Write query result to CSV
 output_file = Path("instances.csv")
 with output_file.open("w", newline="", encoding="utf-8") as f:
     writer = csv.writer(f)
-    writer.writerow(["SoftwareLanguage", "Classifier"])
+    writer.writerow(["SoftwareLanguage", "Label", "Classifier", "Page"])
     for row in g.query(query):
         _, language = split_uri(row["language"])
+        label = row["label"]
         _, classifier = split_uri(row["classifier"])
-        writer.writerow([language, classifier])
+        page = row["page"]
+        writer.writerow([language, label, classifier, page])
