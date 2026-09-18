@@ -143,6 +143,24 @@ class FSLOntology:
         result._bind_union_prefixes()
         return result
 
+    def replace_object(
+        self, subject: Identifier, predicate: URIRef, object_: Identifier
+    ) -> frozenset[Identifier]:
+        """Replace every object for ``(subject, predicate)`` with ``object_``.
+
+        This is the RDF equivalent of setting a single-valued property. It is
+        an upsert: when no matching triple exists, the new triple is simply
+        added. If one or several matching triples exist, all are removed first.
+
+        The previous object values are returned for logging or change
+        detection. RDFLib's ``Graph.set`` performs the actual atomic in-memory
+        remove-and-add operation.
+        """
+
+        previous = frozenset(self.graph.objects(subject, predicate))
+        self.graph.set((subject, predicate, object_))
+        return previous
+
     def write(self, output_dir: str | Path) -> dict[str, Path]:
         """Serialize every module and return its output path by module name."""
 

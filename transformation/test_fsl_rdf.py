@@ -88,3 +88,32 @@ def test_sparql_upsert_is_written_to_subject_module(tmp_path):
         for name, path in written.items()
         if name != "ce"
     )
+
+
+def test_replace_object_inserts_when_property_is_absent():
+    ontology = FSLOntology.read(ONTOLOGIES)
+    subject = URIRef("http://www.softlang.org/ontologies/ce#NewActivity")
+    predicate = URIRef("http://xmlns.com/foaf/0.1/isPrimaryTopicOf")
+    page = URIRef("https://en.wikipedia.org/wiki/Software_activity")
+
+    previous = ontology.replace_object(subject, predicate, page)
+
+    assert previous == frozenset()
+    assert set(ontology.graph.objects(subject, predicate)) == {page}
+
+
+def test_replace_object_replaces_all_previous_values():
+    ontology = FSLOntology.read(ONTOLOGIES)
+    subject = URIRef("http://www.softlang.org/ontologies/ce#AcceptanceTesting")
+    predicate = URIRef("http://xmlns.com/foaf/0.1/isPrimaryTopicOf")
+    old_page_1 = URIRef("https://example.org/old-page-1")
+    old_page_2 = URIRef("https://example.org/old-page-2")
+    new_page = URIRef("https://en.wikipedia.org/wiki/Acceptance_testing")
+    ontology.graph.remove((subject, predicate, None))
+    ontology.graph.add((subject, predicate, old_page_1))
+    ontology.graph.add((subject, predicate, old_page_2))
+
+    previous = ontology.replace_object(subject, predicate, new_page)
+
+    assert previous == frozenset({old_page_1, old_page_2})
+    assert set(ontology.graph.objects(subject, predicate)) == {new_page}
