@@ -5,6 +5,7 @@
 @prefix le: <http://www.softlang.org/ontologies/le#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix pe: <http://www.softlang.org/ontologies/pe#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix tbox: <http://www.softlang.org/ontologies/tbox#> .
 
@@ -100,7 +101,8 @@
     tbox:targets le:JSON,
         le:JSONQueryLanguage,
         le:JSONSchemaLanguage ;
-    rdfs:subClassOf tbox:SoftwareTool .
+    rdfs:subClassOf tbox:SoftwareTool ;
+    owl:disjointWith :XMLProcessor .
 
 :LogicProgrammingSystem a tbox:ToolEntity ;
     rdfs:label "Logic programming system"@en ;
@@ -113,14 +115,6 @@
     rdfs:label "Markup processor"@en ;
     tbox:processes ae:MarkupArtifact ;
     tbox:targets le:MarkupLanguage ;
-    rdfs:subClassOf tbox:SoftwareTool .
-
-:ModelingWorkbench a tbox:ToolEntity ;
-    rdfs:label "Modeling workbench"@en ;
-    tbox:processes ae:MetamodelArtifact,
-        ae:ModelArtifact ;
-    tbox:targets le:MetamodelingLanguage,
-        le:ModelingLanguage ;
     rdfs:subClassOf tbox:SoftwareTool .
 
 :ModelTransformationEngine a tbox:ToolEntity ;
@@ -138,6 +132,14 @@
     tbox:processes ae:ModelArtifact ;
     tbox:targets le:ConstraintLanguage ;
     rdfs:subClassOf :Validator .
+
+:ModelingWorkbench a tbox:ToolEntity ;
+    rdfs:label "Modeling workbench"@en ;
+    tbox:processes ae:MetamodelArtifact,
+        ae:ModelArtifact ;
+    tbox:targets le:MetamodelingLanguage,
+        le:ModelingLanguage ;
+    rdfs:subClassOf tbox:SoftwareTool .
 
 :OntologyEditor a tbox:ToolEntity ;
     rdfs:label "Ontology editor"@en ;
@@ -249,19 +251,26 @@
         le:XMLSchemaLanguage ;
     rdfs:subClassOf tbox:SoftwareTool .
 
-:Ansible a tbox:ToolEntity,
-        :ConfigurationTool,
-        owl:NamedIndividual ;
-    rdfs:label "Ansible"@en ;
-    rdfs:comment "configuration automation tool commonly used with YAML-based configuration artifacts"@en ;
-    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Ansible_(software)> .
-
 :ANTLR a tbox:ToolEntity,
         :ParserGenerator,
         owl:NamedIndividual ;
     rdfs:label "ANTLR"@en ;
     rdfs:comment "parser generator based on grammar notation with semantic and syntactic processing support"@en ;
     foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/ANTLR> .
+
+:ATLTransformationEngine a tbox:ToolEntity,
+        :ModelTransformationEngine,
+        owl:NamedIndividual ;
+    rdfs:label "ATL transformation engine"@en ;
+    rdfs:comment "engine for executing ATL model transformations"@en ;
+    foaf:page <https://eclipse.dev/atl/> .
+
+:Ansible a tbox:ToolEntity,
+        :ConfigurationTool,
+        owl:NamedIndividual ;
+    rdfs:label "Ansible"@en ;
+    rdfs:comment "configuration automation tool commonly used with YAML-based configuration artifacts"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Ansible_(software)> .
 
 :ApacheJena a tbox:ToolEntity,
         :Reasoner,
@@ -270,13 +279,6 @@
     rdfs:label "Apache Jena"@en ;
     rdfs:comment "framework for RDF storage, SPARQL processing, and reasoning"@en ;
     foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Apache_Jena> .
-
-:ATLTransformationEngine a tbox:ToolEntity,
-        :ModelTransformationEngine,
-        owl:NamedIndividual ;
-    rdfs:label "ATL transformation engine"@en ;
-    rdfs:comment "engine for executing ATL model transformations"@en ;
-    foaf:page <https://eclipse.dev/atl/> .
 
 :BaseX a tbox:ToolEntity,
         :QueryProcessor,
@@ -293,19 +295,19 @@
     rdfs:comment "parser generator for context-free grammars"@en ;
     foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/GNU_Bison> .
 
-:CoqProofAssistant a tbox:ToolEntity,
-        :ProofAssistant,
-        owl:NamedIndividual ;
-    rdfs:label "Coq proof assistant"@en ;
-    rdfs:comment "proof assistant for interactive theorem proving based on dependent type theory"@en ;
-    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Coq> .
-
 :CPython a tbox:ToolEntity,
         :Interpreter,
         owl:NamedIndividual ;
     rdfs:label "CPython"@en ;
     rdfs:comment "reference interpreter implementation of the Python programming language"@en ;
     foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/CPython> .
+
+:CoqProofAssistant a tbox:ToolEntity,
+        :ProofAssistant,
+        owl:NamedIndividual ;
+    rdfs:label "Coq proof assistant"@en ;
+    rdfs:comment "proof assistant for interactive theorem proving based on dependent type theory"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Coq> .
 
 :Drools a tbox:ToolEntity,
         :RuleEngine,
@@ -385,6 +387,13 @@
     rdfs:comment "ontology editor and knowledge-modeling environment"@en ;
     foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Prot%C3%A9g%C3%A9_(software)> .
 
+:SWIProlog a tbox:ToolEntity,
+        :LogicProgrammingSystem,
+        owl:NamedIndividual ;
+    rdfs:label "SWI-Prolog"@en ;
+    rdfs:comment "logic programming system for Prolog and related symbolic reasoning tasks"@en ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/SWI-Prolog> .
+
 :Saxon a tbox:ToolEntity,
         :QueryProcessor,
         :TransformationEngine,
@@ -408,14 +417,6 @@
     rdfs:comment "tool for authoring and validating OpenAPI descriptions"@en ;
     foaf:page <https://en.wikipedia.org/wiki/Swagger_(software)> .
 
-:SWIProlog a tbox:ToolEntity,
-        :LogicProgrammingSystem,
-        owl:NamedIndividual ;
-    rdfs:label "SWI-Prolog"@en ;
-    rdfs:comment "logic programming system for Prolog and related symbolic reasoning tasks"@en ;
-    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/SWI-Prolog> .
+[] a owl:AllDisjointClasses ;
+    owl:members ( :Reasoner :ParserGenerator :ProofAssistant :RefactoringTool :RequirementsTool ) .
 
-:JSONProcessor owl:disjointWith :XMLProcessor .
-
-[ a owl:AllDisjointClasses ;
-    owl:members ( :Reasoner :ParserGenerator :ProofAssistant :RefactoringTool :RequirementsTool ) ] .

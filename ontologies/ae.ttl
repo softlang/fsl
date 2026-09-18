@@ -3,6 +3,7 @@
 @prefix le: <http://www.softlang.org/ontologies/le#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix pe: <http://www.softlang.org/ontologies/pe#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix tbox: <http://www.softlang.org/ontologies/tbox#> .
 
@@ -35,15 +36,17 @@
 
 :GrammarArtifact a tbox:ArtifactEntity ;
     rdfs:label "Grammar artifact"@en ;
-    tbox:elementOf le:GrammarMetalanguage ;
     tbox:conformsTo :GrammarOfGrammarsArtifact ;
-    rdfs:subClassOf tbox:SoftwareArtifact .
+    tbox:elementOf le:GrammarMetalanguage ;
+    rdfs:subClassOf tbox:SoftwareArtifact ;
+    owl:disjointWith :MetamodelArtifact .
 
 :GrammarOfGrammarsArtifact a tbox:ArtifactEntity ;
     rdfs:label "Grammar of grammars artifact"@en ;
-    tbox:elementOf le:GrammarMetalanguage ;
     tbox:defines le:GrammarMetalanguage ;
-    rdfs:subClassOf tbox:SoftwareArtifact .
+    tbox:elementOf le:GrammarMetalanguage ;
+    rdfs:subClassOf tbox:SoftwareArtifact ;
+    owl:disjointWith :MetamodelArtifact .
 
 :GraphQueryArtifact a tbox:ArtifactEntity ;
     rdfs:label "Graph query artifact"@en ;
@@ -73,6 +76,13 @@
     tbox:elementOf le:MarkupLanguage ;
     rdfs:subClassOf tbox:SoftwareArtifact .
 
+:MegamodelArtifact a tbox:ArtifactEntity ;
+    rdfs:label "Megamodel artifact"@en ;
+    tbox:elementOf le:MegamodelingLanguage ;
+    tbox:hasBibTeX "FavreLaemmelVaranovich2012LinguisticArchitecture",
+        "FavreNguyen2004MegamodelEvolution" ;
+    rdfs:subClassOf tbox:SoftwareArtifact .
+
 :MetamodelArtifact a tbox:ArtifactEntity ;
     rdfs:label "Metamodel artifact"@en ;
     tbox:elementOf le:MetamodelingLanguage ;
@@ -83,13 +93,6 @@
     tbox:conformsTo :MetamodelArtifact ;
     tbox:elementOf le:ModelingLanguage ;
     rdfs:subClassOf tbox:SoftwareArtifact .
-
-:MegamodelArtifact a tbox:ArtifactEntity ;
-    rdfs:label "Megamodel artifact"@en ;
-    tbox:elementOf le:MegamodelingLanguage ;
-    rdfs:subClassOf tbox:SoftwareArtifact ;
-    tbox:hasBibTeX "FavreLaemmelVaranovich2012LinguisticArchitecture" ,
-        "FavreNguyen2004MegamodelEvolution" .
 
 :OntologyArtifact a tbox:ArtifactEntity ;
     rdfs:label "Ontology artifact"@en ;
@@ -105,10 +108,6 @@
 :ProofArtifact a tbox:ArtifactEntity ;
     rdfs:label "Proof artifact"@en ;
     tbox:elementOf le:ProofLanguage ;
-    rdfs:subClassOf tbox:SoftwareArtifact .
-
-:SemanticDataArtifact a tbox:ArtifactEntity ;
-    rdfs:label "Semantic data artifact"@en ;
     rdfs:subClassOf tbox:SoftwareArtifact .
 
 :PropertyGraphArtifact a tbox:ArtifactEntity ;
@@ -151,6 +150,10 @@
     tbox:elementOf le:RuleLanguage ;
     rdfs:subClassOf tbox:SoftwareArtifact .
 
+:SemanticDataArtifact a tbox:ArtifactEntity ;
+    rdfs:label "Semantic data artifact"@en ;
+    rdfs:subClassOf tbox:SoftwareArtifact .
+
 :ShapeArtifact a tbox:ArtifactEntity ;
     rdfs:label "Shape artifact"@en ;
     tbox:classifies :RDFGraphArtifact ;
@@ -161,21 +164,16 @@
     rdfs:label "XML document artifact"@en ;
     tbox:conformsTo :XMLSchemaArtifact ;
     tbox:elementOf le:XML ;
-    rdfs:subClassOf tbox:SoftwareArtifact .
+    rdfs:subClassOf tbox:SoftwareArtifact ;
+    owl:disjointWith :JSONDocumentArtifact .
 
 :XMLSchemaArtifact a tbox:ArtifactEntity ;
     rdfs:label "XML schema artifact"@en ;
     tbox:classifies :XMLDocumentArtifact ;
     tbox:elementOf le:XMLSchemaLanguage ;
-    rdfs:subClassOf tbox:SoftwareArtifact .
+    rdfs:subClassOf tbox:SoftwareArtifact ;
+    owl:disjointWith :JSONSchemaArtifact .
 
-:XMLDocumentArtifact owl:disjointWith :JSONDocumentArtifact .
+[] a owl:AllDisjointClasses ;
+    owl:members ( :SemanticDataArtifact :ModelArtifact :ProgramArtifact ) .
 
-:XMLSchemaArtifact owl:disjointWith :JSONSchemaArtifact .
-
-:GrammarArtifact owl:disjointWith :MetamodelArtifact .
-
-:GrammarOfGrammarsArtifact owl:disjointWith :MetamodelArtifact .
-
-[ a owl:AllDisjointClasses ;
-    owl:members ( :SemanticDataArtifact :ModelArtifact :ProgramArtifact ) ] .

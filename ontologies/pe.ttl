@@ -7,10 +7,6 @@
 @prefix tbox: <http://www.softlang.org/ontologies/tbox#> .
 
 <http://www.softlang.org/ontologies/pe> a owl:Ontology ;
-    tbox:commentingPolicy "See http://www.softlang.org/ontologies/tbox -- the same policy applies here."@en ;
-    tbox:formattingPolicy "See http://www.softlang.org/ontologies/tbox -- the same policy applies here."@en ;
-    tbox:linkingPolicy "See http://www.softlang.org/ontologies/tbox -- the same policy applies here."@en ;
-    tbox:metamodelingPolicy "See http://www.softlang.org/ontologies/tbox -- the same policy applies here."@en ;
     :profilingPolicy """
 Programming-language profiling uses only native support and standard-library support.
 Refined concepts are asserted selectively rather than exhaustively.
@@ -20,6 +16,10 @@ Support assertions are qualified only when especially representative or potentia
 Borderline cases may be documented using skos:note.
 Paradigm-based subclassing of programming languages is not used; paradigms are represented via concept support.
 """@en ;
+    tbox:commentingPolicy "See http://www.softlang.org/ontologies/tbox -- the same policy applies here."@en ;
+    tbox:formattingPolicy "See http://www.softlang.org/ontologies/tbox -- the same policy applies here."@en ;
+    tbox:linkingPolicy "See http://www.softlang.org/ontologies/tbox -- the same policy applies here."@en ;
+    tbox:metamodelingPolicy "See http://www.softlang.org/ontologies/tbox -- the same policy applies here."@en ;
     rdfs:comment "Sub-ontology / ABox for programming-language concepts and programming languages"@en ;
     owl:imports <http://www.softlang.org/ontologies/tbox> .
 
@@ -41,6 +41,10 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         tbox:LanguageEntity,
         owl:NamedIndividual ;
     rdfs:label "Ada"@en ;
+    tbox:hasArea ce:PLT,
+        ce:SE,
+        ce:SLE ;
+    tbox:hasSpace ce:Programware ;
     tbox:nativelySupports ce:DataAbstraction,
         ce:Exceptions,
         ce:ImperativeParadigm,
@@ -49,10 +53,6 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:StaticTyping,
         ce:StrongTyping,
         ce:TaskParallelism ;
-    tbox:hasArea ce:PLT,
-        ce:SE,
-        ce:SLE ;
-    tbox:hasSpace ce:Programware ;
     rdfs:comment "statically typed language with strong support for reliability and concurrency"@en ;
     foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Ada_(programming_language)> ;
     foaf:page <https://en.wikipedia.org/wiki/Ada_(programming_language)> .
@@ -61,14 +61,14 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         tbox:LanguageEntity,
         owl:NamedIndividual ;
     rdfs:label "Assembly language"@en ;
-    tbox:nativelySupports ce:Branching,
-        ce:ImperativeParadigm,
-        ce:Iteration,
-        ce:Sequencing ;
     tbox:hasArea ce:PLT,
         ce:SE,
         ce:SLE ;
     tbox:hasSpace ce:Programware ;
+    tbox:nativelySupports ce:Branching,
+        ce:ImperativeParadigm,
+        ce:Iteration,
+        ce:Sequencing ;
     rdfs:comment "low-level language family closely reflecting machine instruction sets"@en ;
     foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Assembly_language> ;
     foaf:page <https://en.wikipedia.org/wiki/Assembly_language> .
@@ -77,6 +77,10 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         tbox:LanguageEntity,
         owl:NamedIndividual ;
     rdfs:label "C"@en ;
+    tbox:hasArea ce:PLT,
+        ce:SE,
+        ce:SLE ;
+    tbox:hasSpace ce:Programware ;
     tbox:nativelySupports ce:Branching,
         ce:ImperativeParadigm,
         ce:Iteration,
@@ -89,18 +93,38 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:ReferencesAndPointers,
         ce:Sequencing,
         ce:StaticTyping ;
+    rdfs:comment "procedural systems programming language with low-level control and widespread influence"@en ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/C_(programming_language)> ;
+    foaf:page <https://en.wikipedia.org/wiki/C_(programming_language)> .
+
+:COBOL a :ProgrammingLanguage,
+        tbox:LanguageEntity,
+        owl:NamedIndividual ;
+    rdfs:label "COBOL"@en ;
     tbox:hasArea ce:PLT,
         ce:SE,
         ce:SLE ;
     tbox:hasSpace ce:Programware ;
-    rdfs:comment "procedural systems programming language with low-level control and widespread influence"@en ;
-    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/C_(programming_language)> ;
-    foaf:page <https://en.wikipedia.org/wiki/C_(programming_language)> .
+    tbox:nativelySupports ce:Branching,
+        ce:Exceptions,
+        ce:ImperativeParadigm,
+        ce:Iteration,
+        ce:ProceduralAbstraction,
+        ce:Records,
+        ce:Sequencing,
+        ce:StaticTyping ;
+    rdfs:comment "business-oriented programming language family"@en ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/COBOL> ;
+    foaf:page <https://en.wikipedia.org/wiki/COBOL> .
 
 :C_Sharp a :ProgrammingLanguage,
         tbox:LanguageEntity,
         owl:NamedIndividual ;
     rdfs:label "C#"@en ;
+    tbox:hasArea ce:PLT,
+        ce:SE,
+        ce:SLE ;
+    tbox:hasSpace ce:Programware ;
     tbox:nativelySupports ce:Closures,
         ce:DataAbstraction,
         ce:Encapsulation,
@@ -115,38 +139,18 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:Subtyping,
         ce:TypeInference ;
     tbox:standardlySupports ce:FuturesAndPromises ;
-    tbox:hasArea ce:PLT,
-        ce:SE,
-        ce:SLE ;
-    tbox:hasSpace ce:Programware ;
     rdfs:comment "multi-paradigm language on the .NET platform"@en ;
     foaf:isPrimaryTopicOf <https://dbpedia.org/resource/C_Sharp_(programming_language)> ;
     foaf:page <https://en.wikipedia.org/wiki/C_Sharp_(programming_language)> .
-
-:COBOL a :ProgrammingLanguage,
-        tbox:LanguageEntity,
-        owl:NamedIndividual ;
-    rdfs:label "COBOL"@en ;
-    tbox:nativelySupports ce:Branching,
-        ce:Exceptions,
-        ce:ImperativeParadigm,
-        ce:Iteration,
-        ce:ProceduralAbstraction,
-        ce:Records,
-        ce:Sequencing,
-        ce:StaticTyping ;
-    tbox:hasArea ce:PLT,
-        ce:SE,
-        ce:SLE ;
-    tbox:hasSpace ce:Programware ;
-    rdfs:comment "business-oriented programming language family"@en ;
-    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/COBOL> ;
-    foaf:page <https://en.wikipedia.org/wiki/COBOL> .
 
 :Cpp a :ProgrammingLanguage,
         tbox:LanguageEntity,
         owl:NamedIndividual ;
     rdfs:label "C++"@en ;
+    tbox:hasArea ce:PLT,
+        ce:SE,
+        ce:SLE ;
+    tbox:hasSpace ce:Programware ;
     tbox:nativelySupports ce:Closures,
         ce:DataAbstraction,
         ce:Encapsulation,
@@ -161,10 +165,6 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:ReferencesAndPointers,
         ce:StaticTyping,
         ce:Subtyping ;
-    tbox:hasArea ce:PLT,
-        ce:SE,
-        ce:SLE ;
-    tbox:hasSpace ce:Programware ;
     rdfs:comment "general-purpose programming language combining procedural, object-oriented, and generic programming"@en ;
     foaf:isPrimaryTopicOf <https://dbpedia.org/resource/C%2B%2B> ;
     foaf:page <https://en.wikipedia.org/wiki/C%2B%2B> .
@@ -173,13 +173,13 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         tbox:LanguageEntity,
         owl:NamedIndividual ;
     rdfs:label "Datalog"@en ;
-    tbox:nativelySupports ce:DeclarativeParadigm,
-        ce:LogicParadigm ;
     tbox:hasArea ce:KR,
         ce:SE,
         ce:SLE ;
     tbox:hasSpace ce:Logicware,
         ce:Ruleware ;
+    tbox:nativelySupports ce:DeclarativeParadigm,
+        ce:LogicParadigm ;
     rdfs:comment "declarative rule language related to Prolog and widely used for deductive databases and reasoning"@en ;
     foaf:page <https://en.wikipedia.org/wiki/Datalog> .
 
@@ -187,6 +187,10 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         tbox:LanguageEntity,
         owl:NamedIndividual ;
     rdfs:label "Delphi/Object Pascal"@en ;
+    tbox:hasArea ce:PLT,
+        ce:SE,
+        ce:SLE ;
+    tbox:hasSpace ce:Programware ;
     tbox:nativelySupports ce:Branching,
         ce:DataAbstraction,
         ce:Encapsulation,
@@ -201,10 +205,6 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:ReferencesAndPointers,
         ce:Sequencing,
         ce:StaticTyping ;
-    tbox:hasArea ce:PLT,
-        ce:SE,
-        ce:SLE ;
-    tbox:hasSpace ce:Programware ;
     rdfs:comment "Object Pascal family as used in Delphi and related environments"@en ;
     foaf:page <https://en.wikipedia.org/wiki/Delphi_(software)>,
         <https://en.wikipedia.org/wiki/Object_Pascal> .
@@ -213,6 +213,10 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         tbox:LanguageEntity,
         owl:NamedIndividual ;
     rdfs:label "F#"@en ;
+    tbox:hasArea ce:PLT,
+        ce:SE,
+        ce:SLE ;
+    tbox:hasSpace ce:Programware ;
     tbox:nativelySupports ce:Abstraction,
         ce:AdHocPolymorphism,
         ce:AlgebraicDataTypes,
@@ -295,10 +299,6 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:VariablesAsState,
         ce:Variants ;
     tbox:standardlySupports ce:FuturesAndPromises ;
-    tbox:hasArea ce:PLT,
-        ce:SE,
-        ce:SLE ;
-    tbox:hasSpace ce:Programware ;
     rdfs:comment "multi-paradigm functional-first language on .NET"@en ;
     foaf:isPrimaryTopicOf <https://dbpedia.org/resource/F_Sharp_(programming_language)> ;
     foaf:page <https://en.wikipedia.org/wiki/F_Sharp_(programming_language)> .
@@ -321,6 +321,10 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         tbox:LanguageEntity,
         owl:NamedIndividual ;
     rdfs:label "Fortran"@en ;
+    tbox:hasArea ce:PLT,
+        ce:SE,
+        ce:SLE ;
+    tbox:hasSpace ce:Programware ;
     tbox:nativelySupports ce:Branching,
         ce:DataParallelism,
         ce:ImperativeParadigm,
@@ -329,10 +333,6 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:Recursion,
         ce:Sequencing,
         ce:StaticTyping ;
-    tbox:hasArea ce:PLT,
-        ce:SE,
-        ce:SLE ;
-    tbox:hasSpace ce:Programware ;
     rdfs:comment "family of languages with strong historic emphasis on scientific and numeric computing"@en ;
     foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Fortran> ;
     foaf:page <https://en.wikipedia.org/wiki/Fortran> .
@@ -341,16 +341,16 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         tbox:LanguageEntity,
         owl:NamedIndividual ;
     rdfs:label "Go"@en ;
+    tbox:hasArea ce:PLT,
+        ce:SE,
+        ce:SLE ;
+    tbox:hasSpace ce:Programware ;
     tbox:nativelySupports ce:ImperativeParadigm,
         ce:MessagePassingConcurrency,
         ce:ProceduralAbstraction,
         ce:SharedMemoryConcurrency,
         ce:StaticTyping,
         ce:TaskParallelism ;
-    tbox:hasArea ce:PLT,
-        ce:SE,
-        ce:SLE ;
-    tbox:hasSpace ce:Programware ;
     rdfs:comment "compiled language designed for simplicity, tooling, and concurrency"@en ;
     foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Go_(programming_language)> ;
     foaf:page <https://en.wikipedia.org/wiki/Go_(programming_language)> .
@@ -359,6 +359,10 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         tbox:LanguageEntity,
         owl:NamedIndividual ;
     rdfs:label "Haskell"@en ;
+    tbox:hasArea ce:PLT,
+        ce:SE,
+        ce:SLE ;
+    tbox:hasSpace ce:Programware ;
     tbox:nativelySupports ce:Abstraction,
         ce:AdHocPolymorphism,
         ce:AlgebraicDataTypes,
@@ -423,10 +427,6 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:Types,
         ce:ValueSemantics,
         ce:VariablesAsState ;
-    tbox:hasArea ce:PLT,
-        ce:SE,
-        ce:SLE ;
-    tbox:hasSpace ce:Programware ;
     rdfs:comment "statically typed purely functional programming language"@en ;
     foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Haskell_(programming_language)> ;
     foaf:page <https://en.wikipedia.org/wiki/Haskell> .
@@ -449,6 +449,10 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         tbox:LanguageEntity,
         owl:NamedIndividual ;
     rdfs:label "Java"@en ;
+    tbox:hasArea ce:PLT,
+        ce:SE,
+        ce:SLE ;
+    tbox:hasSpace ce:Programware ;
     tbox:nativelySupports ce:AdHocPolymorphism,
         ce:Branching,
         ce:Closures,
@@ -465,13 +469,31 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:StaticTyping,
         ce:Subtyping ;
     tbox:standardlySupports ce:FuturesAndPromises ;
+    rdfs:comment "class-based general-purpose programming language targeting portability and managed execution"@en ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Java_(programming_language)> ;
+    foaf:page <https://en.wikipedia.org/wiki/Java_(programming_language)> .
+
+:JavaScript a :ProgrammingLanguage,
+        tbox:LanguageEntity,
+        owl:NamedIndividual ;
+    rdfs:label "JavaScript"@en ;
     tbox:hasArea ce:PLT,
         ce:SE,
         ce:SLE ;
     tbox:hasSpace ce:Programware ;
-    rdfs:comment "class-based general-purpose programming language targeting portability and managed execution"@en ;
-    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Java_(programming_language)> ;
-    foaf:page <https://en.wikipedia.org/wiki/Java_(programming_language)> .
+    tbox:nativelySupports ce:Branching,
+        ce:Closures,
+        ce:DynamicTyping,
+        ce:FirstClassFunctions,
+        ce:FunctionalParadigm,
+        ce:HigherOrderFunctions,
+        ce:ImperativeParadigm,
+        ce:Iteration,
+        ce:Recursion,
+        ce:Sequencing ;
+    rdfs:comment "dynamic multi-paradigm language widely used for web programming"@en ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/JavaScript> ;
+    foaf:page <https://en.wikipedia.org/wiki/JavaScript> .
 
 :Java_ErrorHandling_assertion a tbox:LanguageSupportAssertion ;
     tbox:assertedForConcept ce:ErrorHandling ;
@@ -494,32 +516,14 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
     tbox:hasPrimaryMechanism ce:ClassBasedMechanism ;
     tbox:hasSupportKind ce:NativeSupport .
 
-:JavaScript a :ProgrammingLanguage,
-        tbox:LanguageEntity,
-        owl:NamedIndividual ;
-    rdfs:label "JavaScript"@en ;
-    tbox:nativelySupports ce:Branching,
-        ce:Closures,
-        ce:DynamicTyping,
-        ce:FirstClassFunctions,
-        ce:FunctionalParadigm,
-        ce:HigherOrderFunctions,
-        ce:ImperativeParadigm,
-        ce:Iteration,
-        ce:Recursion,
-        ce:Sequencing ;
-    tbox:hasArea ce:PLT,
-        ce:SE,
-        ce:SLE ;
-    tbox:hasSpace ce:Programware ;
-    rdfs:comment "dynamic multi-paradigm language widely used for web programming"@en ;
-    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/JavaScript> ;
-    foaf:page <https://en.wikipedia.org/wiki/JavaScript> .
-
 :Koka a :ProgrammingLanguage,
         tbox:LanguageEntity,
         owl:NamedIndividual ;
     rdfs:label "Koka"@en ;
+    tbox:hasArea ce:PLT,
+        ce:SE,
+        ce:SLE ;
+    tbox:hasSpace ce:Programware ;
     tbox:nativelySupports ce:EffectHandlerStyle,
         ce:FirstClassFunctions,
         ce:FunctionalParadigm,
@@ -527,10 +531,6 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:StaticTyping,
         ce:StructuredComputationAbstractions,
         ce:TypeInference ;
-    tbox:hasArea ce:PLT,
-        ce:SE,
-        ce:SLE ;
-    tbox:hasSpace ce:Programware ;
     rdfs:comment "research-oriented language emphasizing effects and effect handlers"@en ;
     foaf:page <https://koka-lang.github.io/koka/doc/index.html> .
 
@@ -546,22 +546,45 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         tbox:LanguageEntity,
         owl:NamedIndividual ;
     rdfs:label "MATLAB"@en ;
-    tbox:nativelySupports ce:DataParallelism,
-        ce:DynamicTyping,
-        ce:ImperativeParadigm,
-        ce:ProceduralAbstraction ;
     tbox:hasArea ce:PLT,
         ce:SE,
         ce:SLE ;
     tbox:hasSpace ce:Programware ;
+    tbox:nativelySupports ce:DataParallelism,
+        ce:DynamicTyping,
+        ce:ImperativeParadigm,
+        ce:ProceduralAbstraction ;
     rdfs:comment "language and environment for numerical computing"@en ;
     foaf:isPrimaryTopicOf <https://dbpedia.org/resource/MATLAB> ;
     foaf:page <https://en.wikipedia.org/wiki/MATLAB> .
+
+:PHP a :ProgrammingLanguage,
+        tbox:LanguageEntity,
+        owl:NamedIndividual ;
+    rdfs:label "PHP"@en ;
+    tbox:hasArea ce:PLT,
+        ce:SE,
+        ce:SLE ;
+    tbox:hasSpace ce:Programware ;
+    tbox:nativelySupports ce:DynamicTyping,
+        ce:Encapsulation,
+        ce:Exceptions,
+        ce:ImperativeParadigm,
+        ce:ObjectOrientedParadigm,
+        ce:Objects,
+        ce:ProceduralAbstraction ;
+    rdfs:comment "server-side scripting language widely used for web development"@en ;
+    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/PHP> ;
+    foaf:page <https://en.wikipedia.org/wiki/PHP> .
 
 :Pascal a :ProgrammingLanguage,
         tbox:LanguageEntity,
         owl:NamedIndividual ;
     rdfs:label "Pascal"@en ;
+    tbox:hasArea ce:PLT,
+        ce:SE,
+        ce:SLE ;
+    tbox:hasSpace ce:Programware ;
     tbox:nativelySupports ce:Branching,
         ce:DataAbstraction,
         ce:Enums,
@@ -575,10 +598,6 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:Sequencing,
         ce:StaticTyping,
         ce:StrongTyping ;
-    tbox:hasArea ce:PLT,
-        ce:SE,
-        ce:SLE ;
-    tbox:hasSpace ce:Programware ;
     rdfs:comment "procedural language family with strong influence on teaching and later descendants"@en ;
     foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Pascal_(programming_language)> ;
     foaf:page <https://en.wikipedia.org/wiki/Pascal_(programming_language)> .
@@ -587,53 +606,34 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         tbox:LanguageEntity,
         owl:NamedIndividual ;
     rdfs:label "Perl"@en ;
+    tbox:hasArea ce:PLT,
+        ce:SE,
+        ce:SLE ;
+    tbox:hasSpace ce:Programware ;
     tbox:nativelySupports ce:CodeGenerationConcept,
         ce:DynamicTyping,
         ce:Exceptions,
         ce:ImperativeParadigm,
         ce:ProceduralAbstraction,
         ce:Reflection ;
-    tbox:hasArea ce:PLT,
-        ce:SE,
-        ce:SLE ;
-    tbox:hasSpace ce:Programware ;
     rdfs:comment "dynamic general-purpose language especially known for text processing"@en ;
     foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Perl> ;
     foaf:page <https://en.wikipedia.org/wiki/Perl> .
-
-:PHP a :ProgrammingLanguage,
-        tbox:LanguageEntity,
-        owl:NamedIndividual ;
-    rdfs:label "PHP"@en ;
-    tbox:nativelySupports ce:DynamicTyping,
-        ce:Encapsulation,
-        ce:Exceptions,
-        ce:ImperativeParadigm,
-        ce:ObjectOrientedParadigm,
-        ce:Objects,
-        ce:ProceduralAbstraction ;
-    tbox:hasArea ce:PLT,
-        ce:SE,
-        ce:SLE ;
-    tbox:hasSpace ce:Programware ;
-    rdfs:comment "server-side scripting language widely used for web development"@en ;
-    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/PHP> ;
-    foaf:page <https://en.wikipedia.org/wiki/PHP> .
 
 :Prolog a :ProgrammingLanguage,
         tbox:LanguageEntity,
         owl:NamedIndividual ;
     rdfs:label "Prolog"@en ;
+    tbox:hasArea ce:FM,
+        ce:KR,
+        ce:SLE ;
+    tbox:hasSpace ce:Logicware ;
     tbox:nativelySupports ce:Backtracking,
         ce:DeclarativeParadigm,
         ce:Lists,
         ce:LogicParadigm,
         ce:Recursion,
         ce:RecursiveData ;
-    tbox:hasArea ce:FM,
-        ce:KR,
-        ce:SLE ;
-    tbox:hasSpace ce:Logicware ;
     rdfs:comment "logic programming language based on rules, facts, and backtracking search"@en ;
     foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Prolog> ;
     foaf:page <https://en.wikipedia.org/wiki/Prolog> .
@@ -657,6 +657,10 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         tbox:LanguageEntity,
         owl:NamedIndividual ;
     rdfs:label "Python"@en ;
+    tbox:hasArea ce:PLT,
+        ce:SE,
+        ce:SLE ;
+    tbox:hasSpace ce:Programware ;
     tbox:nativelySupports ce:Branching,
         ce:Closures,
         ce:Coroutines,
@@ -678,10 +682,6 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:Reflection,
         ce:Sequencing,
         ce:StrongTyping ;
-    tbox:hasArea ce:PLT,
-        ce:SE,
-        ce:SLE ;
-    tbox:hasSpace ce:Programware ;
     rdfs:comment "multi-paradigm programming language with dynamic typing and strong support for scripting, data processing, and general-purpose programming"@en ;
     foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Python_(programming_language)> ;
     foaf:page <https://en.wikipedia.org/wiki/Python_(programming_language)> .
@@ -704,15 +704,15 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         tbox:LanguageEntity,
         owl:NamedIndividual ;
     rdfs:label "R"@en ;
+    tbox:hasArea ce:PLT,
+        ce:SE,
+        ce:SLE ;
+    tbox:hasSpace ce:Programware ;
     tbox:nativelySupports ce:DynamicTyping,
         ce:FirstClassFunctions,
         ce:FunctionalParadigm,
         ce:HigherOrderFunctions,
         ce:PipelineStyle ;
-    tbox:hasArea ce:PLT,
-        ce:SE,
-        ce:SLE ;
-    tbox:hasSpace ce:Programware ;
     rdfs:comment "language and environment for statistical computing and data analysis"@en ;
     foaf:isPrimaryTopicOf <https://dbpedia.org/resource/R_(programming_language)> ;
     foaf:page <https://en.wikipedia.org/wiki/R_(programming_language)> .
@@ -721,6 +721,10 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         tbox:LanguageEntity,
         owl:NamedIndividual ;
     rdfs:label "Rust"@en ;
+    tbox:hasArea ce:PLT,
+        ce:SE,
+        ce:SLE ;
+    tbox:hasSpace ce:Programware ;
     tbox:nativelySupports ce:AlgebraicDataTypes,
         ce:Branching,
         ce:DataAbstraction,
@@ -740,10 +744,6 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:SumLikeData,
         ce:ValueSemantics,
         ce:Variants ;
-    tbox:hasArea ce:PLT,
-        ce:SE,
-        ce:SLE ;
-    tbox:hasSpace ce:Programware ;
     rdfs:comment "systems programming language emphasizing memory safety and concurrency"@en ;
     foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Rust_(programming_language)> ;
     foaf:page <https://en.wikipedia.org/wiki/Rust_(programming_language)> .
@@ -752,6 +752,10 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         tbox:LanguageEntity,
         owl:NamedIndividual ;
     rdfs:label "Scheme"@en ;
+    tbox:hasArea ce:PLT,
+        ce:SE,
+        ce:SLE ;
+    tbox:hasSpace ce:Programware ;
     tbox:nativelySupports ce:Closures,
         ce:ContinuationPassingStyle,
         ce:Continuations,
@@ -759,10 +763,6 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:FirstClassFunctions,
         ce:FunctionalParadigm,
         ce:HigherOrderFunctions ;
-    tbox:hasArea ce:PLT,
-        ce:SE,
-        ce:SLE ;
-    tbox:hasSpace ce:Programware ;
     rdfs:comment "minimalist dialect of Lisp with first-class continuations and lexical scope"@en ;
     foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Scheme_(programming_language)> ;
     foaf:page <https://en.wikipedia.org/wiki/Scheme_(programming_language)> .
@@ -779,15 +779,15 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         tbox:LanguageEntity,
         owl:NamedIndividual ;
     rdfs:label "Scratch"@en ;
+    tbox:hasArea ce:PLT,
+        ce:SE,
+        ce:SLE ;
+    tbox:hasSpace ce:Programware ;
     tbox:nativelySupports ce:Branching,
         ce:ImperativeParadigm,
         ce:Iteration,
         ce:ProceduralAbstraction,
         ce:Sequencing ;
-    tbox:hasArea ce:PLT,
-        ce:SE,
-        ce:SLE ;
-    tbox:hasSpace ce:Programware ;
     rdfs:comment "block-based educational programming language"@en ;
     foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Scratch_(programming_language)> ;
     foaf:page <https://en.wikipedia.org/wiki/Scratch_(programming_language)> .
@@ -796,6 +796,10 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         tbox:LanguageEntity,
         owl:NamedIndividual ;
     rdfs:label "Swift"@en ;
+    tbox:hasArea ce:PLT,
+        ce:SE,
+        ce:SLE ;
+    tbox:hasSpace ce:Programware ;
     tbox:nativelySupports ce:Closures,
         ce:DataAbstraction,
         ce:Encapsulation,
@@ -809,10 +813,6 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:ParametricPolymorphism,
         ce:StaticTyping,
         ce:TypeInference ;
-    tbox:hasArea ce:PLT,
-        ce:SE,
-        ce:SLE ;
-    tbox:hasSpace ce:Programware ;
     rdfs:comment "multi-paradigm language developed for Apple platforms"@en ;
     foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Swift_(programming_language)> ;
     foaf:page <https://en.wikipedia.org/wiki/Swift_(programming_language)> .
@@ -821,6 +821,10 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         tbox:LanguageEntity,
         owl:NamedIndividual ;
     rdfs:label "Visual Basic"@en ;
+    tbox:hasArea ce:PLT,
+        ce:SE,
+        ce:SLE ;
+    tbox:hasSpace ce:Programware ;
     tbox:nativelySupports ce:Branching,
         ce:Exceptions,
         ce:ImperativeParadigm,
@@ -828,10 +832,7 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:ProceduralAbstraction,
         ce:Sequencing,
         ce:StaticTyping ;
-    tbox:hasArea ce:PLT,
-        ce:SE,
-        ce:SLE ;
-    tbox:hasSpace ce:Programware ;
     rdfs:comment "family of Microsoft programming languages and environments"@en ;
     foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Visual_Basic> ;
     foaf:page <https://en.wikipedia.org/wiki/Visual_Basic> .
+
