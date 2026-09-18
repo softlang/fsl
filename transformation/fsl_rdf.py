@@ -74,8 +74,23 @@ class FSLTurtleSerializer(TurtleSerializer):
                 return 4
             return 3
 
+        def sort_key(subject: Identifier) -> tuple[int, int, str]:
+            subject_section = section(subject)
+            # RDFLib's Turtle serializer may serialize an RDF-list tail as a
+            # standalone blank node when it happens to sort before its
+            # unreferenced blank-node owner (for example owl:AllDisjointClasses).
+            # It can then serialize the same tail again through collection
+            # syntax, changing the graph on the next parse.  Put blank-node
+            # roots first so their complete structures are emitted in one pass.
+            blank_node_rank = (
+                0
+                if isinstance(subject, BNode) and self._references[subject] == 0
+                else 1
+            )
+            return subject_section, blank_node_rank, str(subject)
+
         subjects = list(self._subjects)
-        subjects.sort(key=lambda subject: (section(subject), str(subject)))
+        subjects.sort(key=sort_key)
         return subjects
 
 

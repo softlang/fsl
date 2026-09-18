@@ -740,8 +740,18 @@ _:n63571e6a5775491da7f5345f2fdf0cb1b2 a owl:Class ;
     foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Lambda_calculus> .
 
 [] a owl:AllDisjointClasses ;
-    owl:members ( :ComputationalProblem :DataStructure :MathematicalStructure :FormalObject _:n63571e6a5775491da7f5345f2fdf0cb1b2 ) .
+    owl:members (
+        :ComputationalProblem
+        :DataStructure
+        :MathematicalStructure
+        :FormalObject
+        _:unionClass
+    ) .
 
-[] a owl:AllDisjointClasses ;
-    owl:members ( :DescriptionLogic :FormalGrammar :LambdaCalculus :ProcessCalculus :ProgramLogic ) .
+_:unionClass a owl:Class ;
+    owl:unionOf (
+        :FormalSystem
+        :ModelOfComputation
+        :Theory
+    ) .
 

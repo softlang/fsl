@@ -37,6 +37,27 @@ def test_round_trip_preserves_every_module_and_union(tmp_path):
         assert isomorphic(Graph().parse(original), Graph().parse(source))
 
 
+def test_round_trip_output_can_be_round_tripped_again(tmp_path):
+    """Generated Turtle must remain stable when it becomes the next input."""
+
+    first = tmp_path / "first"
+    second = tmp_path / "second"
+
+    original = FSLOntology.read(ONTOLOGIES)
+    first_written = original.write(first)
+    reread = FSLOntology.read(first)
+    second_written = reread.write(second)
+    reread_again = FSLOntology.read(second)
+
+    assert isomorphic(original.graph, reread.graph)
+    assert isomorphic(reread.graph, reread_again.graph)
+    for name in first_written:
+        assert isomorphic(
+            Graph().parse(first_written[name]),
+            Graph().parse(second_written[name]),
+        )
+
+
 def test_each_module_uses_its_own_default_namespace(tmp_path):
     ontology = FSLOntology.read(ONTOLOGIES)
     written = ontology.write(tmp_path)
