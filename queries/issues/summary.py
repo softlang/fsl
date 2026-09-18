@@ -1,7 +1,7 @@
 import csv
 from pathlib import Path
 from rdflib import Graph
-from common import fsl_prefixes, local_name
+from fsl_utils import fsl_prefixes, local_name
 
 ttl9b = Path("../../ontologies/versions/phase9b/ontologies/ie.ttl")
 g9b = Graph()
