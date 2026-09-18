@@ -1,38 +1,17 @@
-from pathlib import Path
-from rdflib import Graph
 import csv
 import pandas as pd
 import networkx as nx
 from networkx.drawing.nx_agraph import to_agraph
-
-# Let's make URIs fully unqualified.
-def local_name(value):
-    if value is None:
-        return ""
-    text = str(value)
-    if "softlang" in text:
-        return text.rsplit("http://www.softlang.org/ontologies/sle/", 1)[1]
-    return text
+from fsl_utils import ONTOLOGIES_DIR, fsl_graph, fsl_prefixes, local_name
 
 # Phase 2 graph
-ttl_dir2 = Path("../../ontologies/versions/phase2/ontologies")
-ttl_files2 = sorted(ttl_dir2.glob("*.ttl"))
-g2 = Graph()
-for ttl in ttl_files2:
-    g2.parse(ttl, format="turtle")
+g2 = fsl_graph(ONTOLOGIES_DIR / "versions/phase2/ontologies")
 
 # Phase 3 graph
-ttl_dir3 = Path("../../ontologies/versions/phase3/ontologies")
-ttl_files3 = sorted(ttl_dir3.glob("*.ttl"))
-g3 = Graph()
-for ttl in ttl_files3:
-    g3.parse(ttl, format="turtle")
+g3 = fsl_graph(ONTOLOGIES_DIR / "versions/phase3/ontologies")
     
 # Query of interest
-query = """
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
+query = fsl_prefixes + """
 
 SELECT
   DISTINCT ?i ?c

@@ -1,24 +1,19 @@
-from pathlib import Path
-from rdflib import Graph
 import csv
 import pandas as pd
 import networkx as nx
 from networkx.drawing.nx_agraph import to_agraph
+from fsl_utils import fsl_graph, fsl_prefixes
 
 # Let's remove common base URIs.
 def strip_base(uri):
     uri = str(uri)
     return uri.removeprefix("http://www.softlang.org/ontologies/")
 
-# Parse all Turtle files of the ontology
-ttl_dir = Path("../../ontologies")
-ttl_files = sorted(ttl_dir.glob("*.ttl"))
-g = Graph()
-for ttl in ttl_files:
-    g.parse(ttl, format="turtle")
+# Retrieve the ontology graph
+g = fsl_graph()
 
 # Query of interest
-query = """
+query = fsl_prefixes + """
 
 SELECT
   DISTINCT ?pfx1 ?pfx2

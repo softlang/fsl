@@ -1,13 +1,9 @@
 import csv
 from pathlib import Path
-from rdflib import Graph
+from fsl_utils import fsl_graph, fsl_prefixes
 
-# Parse all Turtle files of the ontology
-ttl_dir = Path("../../ontologies")
-ttl_files = sorted(ttl_dir.glob("*.ttl"))
-g = Graph()
-for ttl in ttl_files:
-    g.parse(ttl, format="turtle")
+# Retrieve the ontology graph
+g = fsl_graph()
 
 # Languages of interest
 languages = [
@@ -17,9 +13,7 @@ languages = [
 ]
 
 # Query template
-query = """
-PREFIX pe: <http://www.softlang.org/ontologies/pe#>
-PREFIX le: <http://www.softlang.org/ontologies/le#>
+query = fsl_prefixes + """
 
 SELECT DISTINCT ?s ?p ?o
 WHERE {{

@@ -1,19 +1,12 @@
 from pathlib import Path
 import csv
-from rdflib import Graph
-from rdflib.namespace import split_uri
+from fsl_utils import fsl_graph, fsl_prefixes, local_name
 
-# Parse all Turtle files of the ontology
-ttl_dir = Path("../../ontologies")
-ttl_files = sorted(ttl_dir.glob("*.ttl"))
-g = Graph()
-for ttl in ttl_files:
-    g.parse(ttl, format="turtle")
+# Retrieve the ontology graph
+g = fsl_graph()
 
 # Query taxonomy below EngineeringActivity.
-query = """
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX tbox: <http://www.softlang.org/ontologies/tbox#>
+query = fsl_prefixes + """
 
 SELECT DISTINCT ?superclass ?subclass
 WHERE {
@@ -29,6 +22,6 @@ with output_file.open("w", newline="", encoding="utf-8") as f:
     writer = csv.writer(f)
     writer.writerow(["Superclass", "Subclass"])
     for row in g.query(query):
-        _, superclass = split_uri(row["superclass"])
-        _, subclass = split_uri(row["subclass"])
+        superclass = local_name(row["superclass"])
+        subclass = local_name(row["subclass"])
         writer.writerow([superclass, subclass])

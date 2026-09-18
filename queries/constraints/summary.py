@@ -1,5 +1,4 @@
 import csv
-from rdflib import Graph
 from fsl_utils import fsl_graph, fsl_prefixes, local_name
 
 # Retrieve the ontology graph

@@ -1,3 +1,5 @@
+export PYTHONPATH := ../../utils:$(PYTHONPATH)
+
 all:
 	make instances.run
 	make immediate_subclasses.run

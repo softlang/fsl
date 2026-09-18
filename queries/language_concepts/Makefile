@@ -1,3 +1,5 @@
+export PYTHONPATH := ../../utils:$(PYTHONPATH)
+
 all:
 	make concepts.run
 	make instances.run

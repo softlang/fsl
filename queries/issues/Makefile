@@ -1,6 +1,8 @@
+export PYTHONPATH := ../../utils:$(PYTHONPATH)
+
 all:
 	cd ../../ontologies/versions; make
-	PYTHONPATH=../../utils python3 summary.py
+	python3 summary.py
 
 clean:
 	rm -f *.csv

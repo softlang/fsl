@@ -1,9 +1,12 @@
 from pathlib import Path
 from rdflib import Graph
 
-def fsl_graph():
-    ttl_dir = Path("../../ontologies")
-    ttl_files = sorted(ttl_dir.glob("*.ttl"))
+ONTOLOGIES_DIR = Path(__file__).resolve().parents[1] / "ontologies"
+
+
+def fsl_graph(source=ONTOLOGIES_DIR):
+    source = Path(source)
+    ttl_files = [source] if source.suffix == ".ttl" else sorted(source.glob("*.ttl"))
 
     g = Graph()
     for ttl in ttl_files:
@@ -16,6 +19,7 @@ PREFIX ae:   <http://www.softlang.org/ontologies/ae#>
 PREFIX ce:   <http://www.softlang.org/ontologies/ce#>
 PREFIX fe:   <http://www.softlang.org/ontologies/fe#>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX fsl:  <http://www.softlang.org/ontologies/>
 PREFIX ie:   <http://www.softlang.org/ontologies/ie#>
 PREFIX le:   <http://www.softlang.org/ontologies/le#>
 PREFIX owl:  <http://www.w3.org/2002/07/owl#>
@@ -28,10 +32,11 @@ PREFIX te:   <http://www.softlang.org/ontologies/te#>
 PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
 """
 
+
 def local_name(value):
     if value is None:
         return ""
     text = str(value)
     if "#" in text:
         return text.rsplit("#", 1)[1]
-    return text
+    return text.rstrip("/").rsplit("/", 1)[-1]

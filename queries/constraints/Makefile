@@ -1,5 +1,7 @@
+export PYTHONPATH := ../../utils:$(PYTHONPATH)
+
 all:
-	PYTHONPATH=../../utils python3 summary.py
+	python3 summary.py
 
 clean:
 	rm -f *.csv

@@ -1,19 +1,10 @@
 import csv
-from pathlib import Path
-from rdflib import Graph
-from fsl_utils import fsl_prefixes, local_name
+from fsl_utils import ONTOLOGIES_DIR, fsl_graph, fsl_prefixes, local_name
 
-ttl9b = Path("../../ontologies/versions/phase9b/ontologies/ie.ttl")
-g9b = Graph()
-g9b.parse(ttl9b, format="turtle")
-
-ttl9e = Path("../../ontologies/versions/phase9e/ontologies/ie.ttl")
-g9e = Graph()
-g9e.parse(ttl9e, format="turtle")
-
-ttl9j = Path("../../ontologies/versions/phase9j/ontologies/ie.ttl")
-g9j = Graph()
-g9j.parse(ttl9j, format="turtle")
+versions_dir = ONTOLOGIES_DIR / "versions"
+g9b = fsl_graph(versions_dir / "phase9b/ontologies/ie.ttl")
+g9e = fsl_graph(versions_dir / "phase9e/ontologies/ie.ttl")
+g9j = fsl_graph(versions_dir / "phase9j/ontologies/ie.ttl")
 
 # Query of interest
 query = f"""

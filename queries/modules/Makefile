@@ -1,3 +1,5 @@
+export PYTHONPATH := ../../utils:$(PYTHONPATH)
+
 all:
 	python3 imports.py
 	python3 namespaces.py

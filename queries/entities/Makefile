@@ -1,3 +1,5 @@
+export PYTHONPATH := ../../utils:$(PYTHONPATH)
+
 all:
 	python3 summary.py
 

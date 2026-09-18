@@ -1,21 +1,12 @@
 from pathlib import Path
 import csv
-from rdflib import Graph
-from rdflib.namespace import split_uri
+from fsl_utils import fsl_graph, fsl_prefixes, local_name
 
-# Parse all Turtle files of the ontology
-ttl_dir = Path("../../ontologies")
-ttl_files = sorted(ttl_dir.glob("*.ttl"))
-g = Graph()
-for ttl in ttl_files:
-    g.parse(ttl, format="turtle")
+# Retrieve the ontology graph
+g = fsl_graph()
 
 # Query all direct and transitive instances of SoftwareLanguage
-query = """
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX foaf: <http://xmlns.com/foaf/0.1/>
-PREFIX tbox: <http://www.softlang.org/ontologies/tbox#>
+query = fsl_prefixes + """
 
 SELECT DISTINCT ?language ?label ?classifier ?page
 WHERE {
@@ -33,8 +24,8 @@ with output_file.open("w", newline="", encoding="utf-8") as f:
     writer = csv.writer(f)
     writer.writerow(["SoftwareLanguage", "Label", "Classifier", "Page"])
     for row in g.query(query):
-        _, language = split_uri(row["language"])
+        language = local_name(row["language"])
         label = row["label"]
-        _, classifier = split_uri(row["classifier"])
+        classifier = local_name(row["classifier"])
         page = row["page"]
         writer.writerow([language, label, classifier, page])

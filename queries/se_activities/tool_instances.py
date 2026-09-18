@@ -1,19 +1,10 @@
-from pathlib import Path
-from rdflib import Graph
+from fsl_utils import fsl_graph, fsl_prefixes
 
-# Parse all Turtle files of the ontology
-ttl_dir = Path("../../ontologies")
-ttl_files = sorted(ttl_dir.glob("*.ttl"))
-g = Graph()
-for ttl in ttl_files:
-    g.parse(ttl, format="turtle")
+# Retrieve the ontology graph
+g = fsl_graph()
 
 # Query of interest
-query = """
-PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX foaf: <http://xmlns.com/foaf/0.1/>
-PREFIX tbox: <http://www.softlang.org/ontologies/tbox#>
+query = fsl_prefixes + """
 
 SELECT DISTINCT ?t
 WHERE {
