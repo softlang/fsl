@@ -1,12 +1,12 @@
 import csv
-from fsl_utils import fsl_graph, fsl_prefixes, local_name
+from fsl_utils import fsl_graph, fsl_prefixes_sparql, local_name
 
 # Retrieve the ontology graph
 g = fsl_graph()
 
 # Query of interest
 query = f"""
-{fsl_prefixes}
+{fsl_prefixes_sparql}
 SELECT ?e ?r
 WHERE {{
   ?e tbox:hasBibTeX ?r

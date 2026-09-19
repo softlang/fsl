@@ -1,0 +1,17 @@
+{
+  "ae": "http://www.softlang.org/ontologies/ae#",
+  "ce": "http://www.softlang.org/ontologies/ce#",
+  "fe": "http://www.softlang.org/ontologies/fe#",
+  "foaf": "http://xmlns.com/foaf/0.1/",
+  "fsl": "http://www.softlang.org/ontologies/",
+  "ie": "http://www.softlang.org/ontologies/ie#",
+  "le": "http://www.softlang.org/ontologies/le#",
+  "owl": "http://www.w3.org/2002/07/owl#",
+  "pe": "http://www.softlang.org/ontologies/pe#",
+  "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+  "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+  "skos": "http://www.w3.org/2004/02/skos/core#",
+  "tbox": "http://www.softlang.org/ontologies/tbox#",
+  "te": "http://www.softlang.org/ontologies/te#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#"
+}

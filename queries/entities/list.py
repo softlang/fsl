@@ -2,7 +2,7 @@ import json
 from collections import defaultdict
 from pathlib import Path
 
-from fsl_utils import fsl_graph, fsl_prefixes
+from fsl_utils import fsl_graph, fsl_prefixes_sparql
 
 
 # RDFLib does not consistently retain the prefixes used by each parsed Turtle
@@ -35,7 +35,7 @@ g = fsl_graph()
 # Find every resource whose asserted type is tbox:Entity or a direct/indirect
 # subclass of it. Return every named class that is asserted or implied through
 # rdfs:subClassOf; anonymous class expressions cannot have prefixed names.
-query = fsl_prefixes + """
+query = fsl_prefixes_sparql + """
 
 SELECT DISTINCT ?entity ?class
 WHERE {

@@ -2,7 +2,7 @@ import csv
 import pandas as pd
 import networkx as nx
 from networkx.drawing.nx_agraph import to_agraph
-from fsl_utils import ONTOLOGIES_DIR, fsl_graph, fsl_prefixes, local_name
+from fsl_utils import ONTOLOGIES_DIR, fsl_graph, fsl_prefixes_sparql, local_name
 
 # Phase 2 graph
 g2 = fsl_graph(ONTOLOGIES_DIR / "versions/phase2/ontologies")
@@ -11,7 +11,7 @@ g2 = fsl_graph(ONTOLOGIES_DIR / "versions/phase2/ontologies")
 g3 = fsl_graph(ONTOLOGIES_DIR / "versions/phase3/ontologies")
     
 # Query of interest
-query = fsl_prefixes + """
+query = fsl_prefixes_sparql + """
 
 SELECT
   DISTINCT ?i ?c

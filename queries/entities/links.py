@@ -1,11 +1,11 @@
 import json
-from fsl_utils import fsl_graph, fsl_prefixes
+from fsl_utils import fsl_graph, fsl_prefixes_sparql
 
 # Retrieve the ontology graph
 g = fsl_graph()
 
 # Measure compliance with the linking policy for instances of tbox:Entity.
-query = fsl_prefixes + """
+query = fsl_prefixes_sparql + """
 
 SELECT ?failing ?page ?isPrimaryTopicOf ?succeeding
 WHERE {

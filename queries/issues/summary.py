@@ -1,5 +1,5 @@
 import csv
-from fsl_utils import ONTOLOGIES_DIR, fsl_graph, fsl_prefixes, local_name
+from fsl_utils import ONTOLOGIES_DIR, fsl_graph, fsl_prefixes_sparql, local_name
 
 versions_dir = ONTOLOGIES_DIR / "versions"
 g9b = fsl_graph(versions_dir / "phase9b/ontologies/ie.ttl")
@@ -8,7 +8,7 @@ g9j = fsl_graph(versions_dir / "phase9j/ontologies/ie.ttl")
 
 # Query of interest
 query = f"""
-{fsl_prefixes}
+{fsl_prefixes_sparql}
 
 SELECT DISTINCT ?i
 WHERE {{

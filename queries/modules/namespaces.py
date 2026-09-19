@@ -2,7 +2,7 @@ import csv
 import pandas as pd
 import networkx as nx
 from networkx.drawing.nx_agraph import to_agraph
-from fsl_utils import fsl_graph, fsl_prefixes
+from fsl_utils import fsl_graph, fsl_prefixes_sparql
 
 # Let's remove common base URIs.
 def strip_base(uri):
@@ -13,7 +13,7 @@ def strip_base(uri):
 g = fsl_graph()
 
 # Query of interest
-query = fsl_prefixes + """
+query = fsl_prefixes_sparql + """
 
 SELECT
   DISTINCT ?pfx1 ?pfx2

@@ -1,5 +1,5 @@
 import csv
-from fsl_utils import fsl_graph, fsl_prefixes, local_name
+from fsl_utils import fsl_graph, fsl_prefixes_sparql, local_name
 
 def property_type(value):
     ln = local_name(value)
@@ -16,7 +16,7 @@ def property_type(value):
 g = fsl_graph()
 
 # Query of interest
-query = fsl_prefixes + """
+query = fsl_prefixes_sparql + """
 
 SELECT
   ?p ?t ?d ?r ?l ?c ?i ?a
