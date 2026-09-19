@@ -1,0 +1,5148 @@
+[
+  {
+    "entity": "ae:APIDescriptionArtifact",
+    "classes": [
+      "tbox:ArtifactEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ae:BuildScriptArtifact",
+    "classes": [
+      "tbox:ArtifactEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ae:ConfigurationArtifact",
+    "classes": [
+      "tbox:ArtifactEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ae:GrammarArtifact",
+    "classes": [
+      "tbox:ArtifactEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ae:GrammarOfGrammarsArtifact",
+    "classes": [
+      "tbox:ArtifactEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ae:GraphQueryArtifact",
+    "classes": [
+      "tbox:ArtifactEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ae:JSONDocumentArtifact",
+    "classes": [
+      "tbox:ArtifactEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ae:JSONSchemaArtifact",
+    "classes": [
+      "tbox:ArtifactEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ae:LogicProgramArtifact",
+    "classes": [
+      "tbox:ArtifactEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ae:MarkupArtifact",
+    "classes": [
+      "tbox:ArtifactEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ae:MegamodelArtifact",
+    "classes": [
+      "tbox:ArtifactEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ae:MetamodelArtifact",
+    "classes": [
+      "tbox:ArtifactEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ae:ModelArtifact",
+    "classes": [
+      "tbox:ArtifactEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ae:OntologyArtifact",
+    "classes": [
+      "tbox:ArtifactEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ae:ProgramArtifact",
+    "classes": [
+      "tbox:ArtifactEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ae:ProofArtifact",
+    "classes": [
+      "tbox:ArtifactEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ae:PropertyGraphArtifact",
+    "classes": [
+      "tbox:ArtifactEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ae:RDFGraphArtifact",
+    "classes": [
+      "tbox:ArtifactEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ae:RelationalDataArtifact",
+    "classes": [
+      "tbox:ArtifactEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ae:RelationalQueryArtifact",
+    "classes": [
+      "tbox:ArtifactEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ae:RelationalSchemaArtifact",
+    "classes": [
+      "tbox:ArtifactEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ae:RequirementsArtifact",
+    "classes": [
+      "tbox:ArtifactEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ae:RuleArtifact",
+    "classes": [
+      "tbox:ArtifactEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ae:SemanticDataArtifact",
+    "classes": [
+      "tbox:ArtifactEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ae:ShapeArtifact",
+    "classes": [
+      "tbox:ArtifactEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ae:XMLDocumentArtifact",
+    "classes": [
+      "tbox:ArtifactEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ae:XMLSchemaArtifact",
+    "classes": [
+      "tbox:ArtifactEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:APIDesign",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:APIware",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:TechnologicalSpace"
+    ]
+  },
+  {
+    "entity": "ce:Abstraction",
+    "classes": [
+      "ce:AbstractionConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:AbstractionConcept",
+    "classes": [
+      "owl:Class",
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:AcceptanceTesting",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:ActorBasedConcurrency",
+    "classes": [
+      "ce:ConcurrencyConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Actors",
+    "classes": [
+      "tbox:CompositeConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:AdHocPolymorphism",
+    "classes": [
+      "ce:PrimitiveConcept",
+      "ce:TypeConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:AlgebraicDataTypes",
+    "classes": [
+      "tbox:CompositeConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:AnalogicalApplicability",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConceptApplicability"
+    ]
+  },
+  {
+    "entity": "ce:ApplicativeStyle",
+    "classes": [
+      "ce:StructuredComputationConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:ArrowStyle",
+    "classes": [
+      "ce:StructuredComputationConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:AsyncEventDrivenConcurrency",
+    "classes": [
+      "ce:ConcurrencyConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Auditing",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:Backtracking",
+    "classes": [
+      "ce:ControlConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:BacktrackingMechanism",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:ImplementationMechanismConcept",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:BackupAndRecovery",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:Binding",
+    "classes": [
+      "ce:BindingConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:BindingConcept",
+    "classes": [
+      "owl:Class",
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:BindingTime",
+    "classes": [
+      "ce:BindingConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Branching",
+    "classes": [
+      "ce:ControlConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:BugFixing",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:BuildScripting",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:CC",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:SubjectArea"
+    ]
+  },
+  {
+    "entity": "ce:CL",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:SubjectArea"
+    ]
+  },
+  {
+    "entity": "ce:CallByName",
+    "classes": [
+      "ce:EvaluationStrategyConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:CallByNeed",
+    "classes": [
+      "ce:EvaluationStrategyConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:CallByValue",
+    "classes": [
+      "ce:EvaluationStrategyConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:CapacityPlanning",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:ChangeManagement",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:ClassBasedMechanism",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:ImplementationMechanismConcept",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Closures",
+    "classes": [
+      "tbox:CompositeConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:CodeGeneration",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:CodeGenerationConcept",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:CodeInspection",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:CodeReview",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:Coding",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:ComplianceManagement",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:CompositionVsInheritance",
+    "classes": [
+      "ce:ModularityConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:ComputationExpressionMechanism",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:ImplementationMechanismConcept",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:ComputationalParadigmsAndEvaluationModels",
+    "classes": [
+      "ce:ParadigmConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Concurrency",
+    "classes": [
+      "ce:ConcurrencyConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:ConcurrencyConcept",
+    "classes": [
+      "owl:Class",
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:ConfigurationManagementPlanning",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:ConstraintConcept",
+    "classes": [
+      "owl:Class",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:ContinuationOperatorMechanism",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:ImplementationMechanismConcept",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:ContinuationPassingStyle",
+    "classes": [
+      "ce:StructuredComputationConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Continuations",
+    "classes": [
+      "ce:ControlConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:ContinuousDelivery",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:ContinuousDeployment",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:ContinuousIntegration",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:ControlConcept",
+    "classes": [
+      "owl:Class",
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:ControlFlow",
+    "classes": [
+      "ce:ControlConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Coroutines",
+    "classes": [
+      "ce:ControlConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Data",
+    "classes": [
+      "ce:DataConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:DataAbstraction",
+    "classes": [
+      "ce:AbstractionConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:DataConcept",
+    "classes": [
+      "owl:Class",
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:DataModelDesign",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:DataParallelism",
+    "classes": [
+      "ce:ParallelismConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:DeclarativeParadigm",
+    "classes": [
+      "ce:ParadigmConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:DependencyManagement",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:Deployment",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:DesignActivity",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:DesignValidation",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:DevOpsPractice",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:Documentation",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:DynamicScope",
+    "classes": [
+      "ce:PrimitiveConcept",
+      "ce:ScopeConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:DynamicTyping",
+    "classes": [
+      "ce:PrimitiveConcept",
+      "ce:TypeConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:EagerEvaluation",
+    "classes": [
+      "ce:EvaluationStrategyConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:EffectConcept",
+    "classes": [
+      "owl:Class",
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:EffectHandlerMechanism",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:ImplementationMechanismConcept",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:EffectHandlerStyle",
+    "classes": [
+      "ce:StructuredComputationConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Effects",
+    "classes": [
+      "ce:EffectConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:EffortEstimation",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:Encapsulation",
+    "classes": [
+      "ce:AbstractionConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Enums",
+    "classes": [
+      "ce:DataConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:EnvironmentProvisioning",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:ErrorHandling",
+    "classes": [
+      "ce:ErrorHandlingConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:ErrorHandlingConcept",
+    "classes": [
+      "owl:Class",
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:EvaluationStrategy",
+    "classes": [
+      "ce:EvaluationStrategyConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:EvaluationStrategyConcept",
+    "classes": [
+      "owl:Class",
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:EvolutionAndImprovementActivity",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:ExceptionMechanism",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:ImplementationMechanismConcept",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Exceptions",
+    "classes": [
+      "ce:ErrorHandlingConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:ExceptionsAsEffects",
+    "classes": [
+      "ce:EffectConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Experimentation",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:FM",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:SubjectArea"
+    ]
+  },
+  {
+    "entity": "ce:FeatureEnhancement",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:FirstClassFunctions",
+    "classes": [
+      "ce:HigherOrderConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:FirstClassModules",
+    "classes": [
+      "ce:HigherOrderConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:FormalVerification",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:FunctionAbstraction",
+    "classes": [
+      "ce:AbstractionConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:FunctionalParadigm",
+    "classes": [
+      "ce:ParadigmConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:FuturesAndPromises",
+    "classes": [
+      "tbox:CompositeConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:GeneratorProtocolMechanism",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:ImplementationMechanismConcept",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:GrammarConcept",
+    "classes": [
+      "owl:Class",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Grammarware",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:TechnologicalSpace"
+    ]
+  },
+  {
+    "entity": "ce:Graphware",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:TechnologicalSpace"
+    ]
+  },
+  {
+    "entity": "ce:HeapLifetime",
+    "classes": [
+      "ce:LifetimeConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:HighLevelDesign",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:HigherOrderConcept",
+    "classes": [
+      "owl:Class",
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:HigherOrderEntities",
+    "classes": [
+      "ce:HigherOrderConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:HigherOrderFunctions",
+    "classes": [
+      "ce:HigherOrderConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:IOEffects",
+    "classes": [
+      "ce:EffectConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:ImmutableData",
+    "classes": [
+      "ce:MutabilityConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:ImperativeParadigm",
+    "classes": [
+      "ce:ParadigmConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Implementation",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:ImplementationActivity",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:IncidentManagement",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:IntegrationTesting",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:InterfaceDesign",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:InterfacesAndContracts",
+    "classes": [
+      "ce:ModularityConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Introspection",
+    "classes": [
+      "ce:MetaprogrammingConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Iteration",
+    "classes": [
+      "ce:ControlConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:IteratorsAndGenerators",
+    "classes": [
+      "tbox:CompositeConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:JSONware",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:TechnologicalSpace"
+    ]
+  },
+  {
+    "entity": "ce:KR",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:SubjectArea"
+    ]
+  },
+  {
+    "entity": "ce:KindPolymorphism",
+    "classes": [
+      "ce:HigherOrderConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:KnowledgeManagement",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:KnowledgeRepresentationConcept",
+    "classes": [
+      "owl:Class",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:LazyEvaluation",
+    "classes": [
+      "ce:EvaluationStrategyConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:LexicalScope",
+    "classes": [
+      "ce:PrimitiveConcept",
+      "ce:ScopeConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Lifetime",
+    "classes": [
+      "ce:LifetimeConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:LifetimeConcept",
+    "classes": [
+      "owl:Class",
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:Lists",
+    "classes": [
+      "ce:DataConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Logging",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:LogicParadigm",
+    "classes": [
+      "ce:ParadigmConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Logicware",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:TechnologicalSpace"
+    ]
+  },
+  {
+    "entity": "ce:LowLevelDesign",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:MDE",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:SubjectArea"
+    ]
+  },
+  {
+    "entity": "ce:Macros",
+    "classes": [
+      "ce:MetaprogrammingConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Markupware",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:TechnologicalSpace"
+    ]
+  },
+  {
+    "entity": "ce:MessagePassingConcurrency",
+    "classes": [
+      "ce:ConcurrencyConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Metaprogramming",
+    "classes": [
+      "ce:MetaprogrammingConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:MetaprogrammingConcept",
+    "classes": [
+      "owl:Class",
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:Migration",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:ModelingConcept",
+    "classes": [
+      "owl:Class",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Modelware",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:TechnologicalSpace"
+    ]
+  },
+  {
+    "entity": "ce:Modularity",
+    "classes": [
+      "ce:ModularityConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:ModularityConcept",
+    "classes": [
+      "owl:Class",
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:ModuleAbstraction",
+    "classes": [
+      "ce:AbstractionConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Modules",
+    "classes": [
+      "ce:ModularityConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:MonadicStyle",
+    "classes": [
+      "ce:StructuredComputationConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Monitoring",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:Mutability",
+    "classes": [
+      "ce:MutabilityConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:MutabilityConcept",
+    "classes": [
+      "owl:Class",
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:MutableData",
+    "classes": [
+      "ce:MutabilityConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:NLP",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:SubjectArea"
+    ]
+  },
+  {
+    "entity": "ce:NameBinding",
+    "classes": [
+      "ce:BindingConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Namespaces",
+    "classes": [
+      "ce:ModularityConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:NativeSupport",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageSupportKind"
+    ]
+  },
+  {
+    "entity": "ce:NaturalApplicability",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConceptApplicability"
+    ]
+  },
+  {
+    "entity": "ce:ObjectOrientedParadigm",
+    "classes": [
+      "ce:ParadigmConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Objects",
+    "classes": [
+      "tbox:CompositeConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:ObjectsAsData",
+    "classes": [
+      "ce:DataConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Ontoware",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:TechnologicalSpace"
+    ]
+  },
+  {
+    "entity": "ce:OperationsAndMaintenanceActivity",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:OptionResultTypes",
+    "classes": [
+      "ce:ErrorHandlingConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:OptionTypeMechanism",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:ImplementationMechanismConcept",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:PLT",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:SubjectArea"
+    ]
+  },
+  {
+    "entity": "ce:Packages",
+    "classes": [
+      "ce:ModularityConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Packaging",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:ParadigmConcept",
+    "classes": [
+      "owl:Class",
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:Parallelism",
+    "classes": [
+      "ce:ParallelismConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:ParallelismConcept",
+    "classes": [
+      "owl:Class",
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:ParametricPolymorphism",
+    "classes": [
+      "ce:PrimitiveConcept",
+      "ce:TypeConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Patching",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:PerformanceTesting",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:PerformanceTuning",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:PersistentState",
+    "classes": [
+      "ce:PrimitiveConcept",
+      "ce:StateConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:PipelineOperatorMechanism",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:ImplementationMechanismConcept",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:PipelineParallelism",
+    "classes": [
+      "ce:ParallelismConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:PipelineStyle",
+    "classes": [
+      "ce:StructuredComputationConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:PlanningAndManagementActivity",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:PrimitiveConcept",
+    "classes": [
+      "owl:Class",
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:PrimitiveValues",
+    "classes": [
+      "ce:DataConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:ProceduralAbstraction",
+    "classes": [
+      "ce:AbstractionConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:ProcessDefinition",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:ProductLikeData",
+    "classes": [
+      "ce:DataConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Programming",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:Programware",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:TechnologicalSpace"
+    ]
+  },
+  {
+    "entity": "ce:ProjectPlanning",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:ProofConcept",
+    "classes": [
+      "owl:Class",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Proofware",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:TechnologicalSpace"
+    ]
+  },
+  {
+    "entity": "ce:PrototypeBasedMechanism",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:ImplementationMechanismConcept",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Prototyping",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:PureComputation",
+    "classes": [
+      "ce:EffectConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:QualityAndGovernanceActivity",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:QualityAssurance",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:QualityControl",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:QueryConcept",
+    "classes": [
+      "owl:Class",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Records",
+    "classes": [
+      "ce:DataConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Recursion",
+    "classes": [
+      "ce:ControlConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:RecursiveData",
+    "classes": [
+      "ce:DataConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Reengineering",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:Refactoring",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:ReferenceSemantics",
+    "classes": [
+      "ce:MutabilityConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:ReferencesAndPointers",
+    "classes": [
+      "ce:DataConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Reflection",
+    "classes": [
+      "ce:MetaprogrammingConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:ReleaseAndDeploymentActivity",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:ReleaseManagement",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:RequirementsAnalysis",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:RequirementsElicitation",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:RequirementsEngineeringActivity",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:RequirementsManagement",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:RequirementsPrioritization",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:RequirementsSpecification",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:RequirementsValidation",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:ResourceAllocation",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:RiskManagement",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:Roadmapping",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:RollbackManagement",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:RuleAndPredicateMechanism",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:ImplementationMechanismConcept",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Ruleware",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:TechnologicalSpace"
+    ]
+  },
+  {
+    "entity": "ce:SE",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:SubjectArea"
+    ]
+  },
+  {
+    "entity": "ce:SLE",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:SubjectArea"
+    ]
+  },
+  {
+    "entity": "ce:SQLware",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:TechnologicalSpace"
+    ]
+  },
+  {
+    "entity": "ce:SchemaConcept",
+    "classes": [
+      "owl:Class",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Scope",
+    "classes": [
+      "ce:PrimitiveConcept",
+      "ce:ScopeConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:ScopeConcept",
+    "classes": [
+      "owl:Class",
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:SecurityManagement",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:SecurityTesting",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:Sequencing",
+    "classes": [
+      "ce:ControlConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:SharedMemoryConcurrency",
+    "classes": [
+      "ce:ConcurrencyConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:ShortCircuitEvaluation",
+    "classes": [
+      "ce:EvaluationStrategyConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:SideEffects",
+    "classes": [
+      "ce:EffectConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:SoftwareTransactionalMemory",
+    "classes": [
+      "ce:ConcurrencyConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:StackLifetime",
+    "classes": [
+      "ce:LifetimeConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:StakeholderManagement",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:StandardLibrarySupport",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageSupportKind"
+    ]
+  },
+  {
+    "entity": "ce:State",
+    "classes": [
+      "ce:PrimitiveConcept",
+      "ce:StateConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:StateConcept",
+    "classes": [
+      "owl:Class",
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:StaticAnalysis",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:StaticTyping",
+    "classes": [
+      "ce:PrimitiveConcept",
+      "ce:TypeConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:StrongTyping",
+    "classes": [
+      "ce:PrimitiveConcept",
+      "ce:TypeConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:StructuredComputationAbstractions",
+    "classes": [
+      "tbox:CompositeConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:StructuredComputationConcept",
+    "classes": [
+      "owl:Class",
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:Subtyping",
+    "classes": [
+      "ce:PrimitiveConcept",
+      "ce:TypeConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:SumLikeData",
+    "classes": [
+      "ce:DataConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:SupportActivity",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:SystemArchitectureDesign",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:SystemTesting",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:TCS",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:SubjectArea"
+    ]
+  },
+  {
+    "entity": "ce:TaskLibraryMechanism",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:ImplementationMechanismConcept",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:TaskParallelism",
+    "classes": [
+      "ce:ParallelismConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:TechnicalDebtManagement",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:TestingActivity",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:ToolingSetup",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:TrainingAndOnboarding",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:TransformationConcept",
+    "classes": [
+      "owl:Class",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Tuples",
+    "classes": [
+      "ce:DataConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:TypeAbstraction",
+    "classes": [
+      "ce:AbstractionConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:TypeClassBasedMechanism",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:ImplementationMechanismConcept",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:TypeConcept",
+    "classes": [
+      "owl:Class",
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:TypeInference",
+    "classes": [
+      "ce:PrimitiveConcept",
+      "ce:TypeConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Types",
+    "classes": [
+      "ce:PrimitiveConcept",
+      "ce:TypeConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:UXUIDesign",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:UnitTesting",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:UsabilityTesting",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:UserAcceptanceTesting",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:ValidationActivity",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:ValidationTestingActivity",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:ValueSemantics",
+    "classes": [
+      "ce:MutabilityConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:VariablesAsState",
+    "classes": [
+      "ce:PrimitiveConcept",
+      "ce:StateConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:Variants",
+    "classes": [
+      "ce:DataConcept",
+      "ce:PrimitiveConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:VerificationActivity",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:VerificationAndValidationActivity",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:VerificationTestingActivity",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:Versioning",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "ce:WeakTyping",
+    "classes": [
+      "ce:PrimitiveConcept",
+      "ce:TypeConcept",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageConcept"
+    ]
+  },
+  {
+    "entity": "ce:XMLware",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:TechnologicalSpace"
+    ]
+  },
+  {
+    "entity": "fe:ALC",
+    "classes": [
+      "fe:DescriptionLogic",
+      "fe:FormalSystem",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:AbstractRewritingSystem",
+    "classes": [
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:AbstractSyntaxDefinitionApproach",
+    "classes": [
+      "fe:SyntaxDefinitionApproach",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity",
+      "tbox:MethodologicalApproach"
+    ]
+  },
+  {
+    "entity": "fe:AnalyticGrammar",
+    "classes": [
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:AttributeGrammar",
+    "classes": [
+      "fe:FormalGrammar",
+      "fe:FormalSystem",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:AxiomaticSemantics",
+    "classes": [
+      "fe:FormalSemanticsApproach",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity",
+      "tbox:MethodologicalApproach"
+    ]
+  },
+  {
+    "entity": "fe:CalculusOfCommunicatingSystems",
+    "classes": [
+      "fe:FormalSystem",
+      "fe:ProcessCalculus",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:CategoryTheory",
+    "classes": [
+      "fe:Theory",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:ClassicalLambdaCalculus",
+    "classes": [
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:CommunicatingSequentialProcesses",
+    "classes": [
+      "fe:FormalSystem",
+      "fe:ProcessCalculus",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:ComputationalProblem",
+    "classes": [
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:ConcreteSyntaxDefinitionApproach",
+    "classes": [
+      "fe:SyntaxDefinitionApproach",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity",
+      "tbox:MethodologicalApproach"
+    ]
+  },
+  {
+    "entity": "fe:ConstraintSatisfactionProblem",
+    "classes": [
+      "fe:ComputationalProblem",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:ContextFreeGrammar",
+    "classes": [
+      "fe:FormalGrammar",
+      "fe:FormalSystem",
+      "fe:GenerativeGrammar",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:DataManagementApproach",
+    "classes": [
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:DataStructure",
+    "classes": [
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:DataValidation",
+    "classes": [
+      "fe:DataManagementApproach",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity",
+      "tbox:MethodologicalApproach"
+    ]
+  },
+  {
+    "entity": "fe:DenotationalSemantics",
+    "classes": [
+      "fe:FormalSemanticsApproach",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity",
+      "tbox:MethodologicalApproach"
+    ]
+  },
+  {
+    "entity": "fe:DependencyGrammar",
+    "classes": [
+      "fe:FormalGrammar",
+      "fe:FormalSystem",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:DependencyGraph",
+    "classes": [
+      "fe:DataStructure",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:DescriptionLogic",
+    "classes": [
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:DesignByContract",
+    "classes": [
+      "fe:SoftwareDesignApproach",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity",
+      "tbox:MethodologicalApproach"
+    ]
+  },
+  {
+    "entity": "fe:DomainTheory",
+    "classes": [
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:ELPlusPlus",
+    "classes": [
+      "fe:DescriptionLogic",
+      "fe:FormalSystem",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:FirstOrderLogic",
+    "classes": [
+      "fe:FormalSystem",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:FormalGrammar",
+    "classes": [
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:FormalObject",
+    "classes": [
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:FormalProof",
+    "classes": [
+      "fe:FormalObject",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:FormalSemanticsApproach",
+    "classes": [
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:FormalSystem",
+    "classes": [
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:GenerativeGrammar",
+    "classes": [
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:Graph",
+    "classes": [
+      "fe:MathematicalStructure",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:GraphRewritingSystem",
+    "classes": [
+      "fe:AbstractRewritingSystem",
+      "fe:ModelOfComputation",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:GraphTheory",
+    "classes": [
+      "fe:Theory",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:HoareLogic",
+    "classes": [
+      "fe:FormalSystem",
+      "fe:ProgramLogic",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:HornClause",
+    "classes": [
+      "fe:FormalObject",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:LambdaCalculus",
+    "classes": [
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:LambdaCube",
+    "classes": [
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:LambdaMuCalculus",
+    "classes": [
+      "fe:FormalSystem",
+      "fe:LambdaCalculus",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:MathematicalStructure",
+    "classes": [
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:MetaprogrammingApproach",
+    "classes": [
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:ModelOfComputation",
+    "classes": [
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:ModelTransformation",
+    "classes": [
+      "fe:MetaprogrammingApproach",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity",
+      "tbox:MethodologicalApproach"
+    ]
+  },
+  {
+    "entity": "fe:OperationalSemantics",
+    "classes": [
+      "fe:FormalSemanticsApproach",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity",
+      "tbox:MethodologicalApproach"
+    ]
+  },
+  {
+    "entity": "fe:ParsingExpressionGrammar",
+    "classes": [
+      "fe:AnalyticGrammar",
+      "fe:FormalGrammar",
+      "fe:FormalSystem",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:ProcessCalculus",
+    "classes": [
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:ProgramLogic",
+    "classes": [
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:ProgramTransformation",
+    "classes": [
+      "fe:MetaprogrammingApproach",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity",
+      "tbox:MethodologicalApproach"
+    ]
+  },
+  {
+    "entity": "fe:RegularGrammar",
+    "classes": [
+      "fe:FormalGrammar",
+      "fe:FormalSystem",
+      "fe:GenerativeGrammar",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:RelationalAlgebra",
+    "classes": [
+      "fe:FormalSystem",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:RelationalCalculus",
+    "classes": [
+      "fe:FormalSystem",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:RelationalModel",
+    "classes": [
+      "fe:DataManagementApproach",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity",
+      "tbox:MethodologicalApproach"
+    ]
+  },
+  {
+    "entity": "fe:Rule",
+    "classes": [
+      "fe:FormalObject",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:SeparationLogic",
+    "classes": [
+      "fe:FormalSystem",
+      "fe:ProgramLogic",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:SequentCalculus",
+    "classes": [
+      "fe:FormalSystem",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:SimplyTypedLambdaCalculus",
+    "classes": [
+      "fe:ClassicalLambdaCalculus",
+      "fe:FormalSystem",
+      "fe:LambdaCalculus",
+      "fe:LambdaCube",
+      "fe:Theory",
+      "fe:TypeTheory",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:SoftwareDesignApproach",
+    "classes": [
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:SoftwareInterface",
+    "classes": [
+      "fe:FormalObject",
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:StringRewritingSystem",
+    "classes": [
+      "fe:AbstractRewritingSystem",
+      "fe:ModelOfComputation",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:SyntaxDefinitionApproach",
+    "classes": [
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:SyntaxDirectedTranslation",
+    "classes": [
+      "fe:MetaprogrammingApproach",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity",
+      "tbox:MethodologicalApproach"
+    ]
+  },
+  {
+    "entity": "fe:SystemF",
+    "classes": [
+      "fe:FormalSystem",
+      "fe:LambdaCalculus",
+      "fe:LambdaCube",
+      "fe:Theory",
+      "fe:TypeTheory",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:TDPLGrammar",
+    "classes": [
+      "fe:AnalyticGrammar",
+      "fe:FormalGrammar",
+      "fe:FormalSystem",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:TermRewritingSystem",
+    "classes": [
+      "fe:AbstractRewritingSystem",
+      "fe:ModelOfComputation",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:Theory",
+    "classes": [
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:TransitionSystem",
+    "classes": [
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:TreeTransducer",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:TypeTheory",
+    "classes": [
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "fe:UntypedLambdaCalculus",
+    "classes": [
+      "fe:ClassicalLambdaCalculus",
+      "fe:FormalSystem",
+      "fe:LambdaCalculus",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "le:ATL",
+    "classes": [
+      "le:ModelTransformationLanguage",
+      "le:TransformationLanguage",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:BNF",
+    "classes": [
+      "le:GrammarMetalanguage",
+      "le:Metalanguage",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:BackusNaurForm",
+    "classes": [
+      "le:GrammarMetalanguage",
+      "le:Metalanguage",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:BuildScriptingLanguage",
+    "classes": [
+      "tbox:Entity",
+      "tbox:LanguageEntity"
+    ]
+  },
+  {
+    "entity": "le:ConfigurationLanguage",
+    "classes": [
+      "tbox:Entity",
+      "tbox:LanguageEntity"
+    ]
+  },
+  {
+    "entity": "le:ConstraintLanguage",
+    "classes": [
+      "tbox:Entity",
+      "tbox:LanguageEntity"
+    ]
+  },
+  {
+    "entity": "le:Coq",
+    "classes": [
+      "le:ProofLanguage",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:Cypher",
+    "classes": [
+      "le:GraphQueryLanguage",
+      "le:QueryLanguage",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:DataDefinitionLanguage",
+    "classes": [
+      "tbox:Entity",
+      "tbox:LanguageEntity"
+    ]
+  },
+  {
+    "entity": "le:DataManipulationLanguage",
+    "classes": [
+      "tbox:Entity",
+      "tbox:LanguageEntity"
+    ]
+  },
+  {
+    "entity": "le:DocumentTransformationLanguage",
+    "classes": [
+      "tbox:Entity",
+      "tbox:LanguageEntity"
+    ]
+  },
+  {
+    "entity": "le:EBNF",
+    "classes": [
+      "le:GrammarMetalanguage",
+      "le:Metalanguage",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:Ecore",
+    "classes": [
+      "le:Metalanguage",
+      "le:MetamodelingLanguage",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:ExtendedBackusNaurForm",
+    "classes": [
+      "le:GrammarMetalanguage",
+      "le:Metalanguage",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:GrammarMetalanguage",
+    "classes": [
+      "tbox:Entity",
+      "tbox:LanguageEntity"
+    ]
+  },
+  {
+    "entity": "le:GrammarTransformationLanguage",
+    "classes": [
+      "tbox:Entity",
+      "tbox:LanguageEntity"
+    ]
+  },
+  {
+    "entity": "le:GraphQLSchema",
+    "classes": [
+      "le:InterfaceDescriptionLanguage",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:GraphQueryLanguage",
+    "classes": [
+      "tbox:Entity",
+      "tbox:LanguageEntity"
+    ]
+  },
+  {
+    "entity": "le:GraphQueryLanguageStandard",
+    "classes": [
+      "le:QueryLanguage",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:Gremlin",
+    "classes": [
+      "le:QueryLanguage",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:HTML",
+    "classes": [
+      "le:MarkupLanguage",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:InterfaceDescriptionLanguage",
+    "classes": [
+      "tbox:Entity",
+      "tbox:LanguageEntity"
+    ]
+  },
+  {
+    "entity": "le:JSON",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:JSONQueryLanguage",
+    "classes": [
+      "tbox:Entity",
+      "tbox:LanguageEntity"
+    ]
+  },
+  {
+    "entity": "le:JSONSchema",
+    "classes": [
+      "le:JSONSchemaLanguage",
+      "le:SchemaLanguage",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:JSONSchemaLanguage",
+    "classes": [
+      "tbox:Entity",
+      "tbox:LanguageEntity"
+    ]
+  },
+  {
+    "entity": "le:Lean",
+    "classes": [
+      "le:ProofLanguage",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:MOF",
+    "classes": [
+      "le:Metalanguage",
+      "le:MetamodelingLanguage",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:Makefile",
+    "classes": [
+      "le:BuildScriptingLanguage",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:MappingLanguage",
+    "classes": [
+      "tbox:Entity",
+      "tbox:LanguageEntity"
+    ]
+  },
+  {
+    "entity": "le:Markdown",
+    "classes": [
+      "le:MarkupLanguage",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:MarkupLanguage",
+    "classes": [
+      "tbox:Entity",
+      "tbox:LanguageEntity"
+    ]
+  },
+  {
+    "entity": "le:MegamodelingLanguage",
+    "classes": [
+      "tbox:Entity",
+      "tbox:LanguageEntity"
+    ]
+  },
+  {
+    "entity": "le:Metalanguage",
+    "classes": [
+      "tbox:Entity",
+      "tbox:LanguageEntity"
+    ]
+  },
+  {
+    "entity": "le:MetamodelingLanguage",
+    "classes": [
+      "tbox:Entity",
+      "tbox:LanguageEntity"
+    ]
+  },
+  {
+    "entity": "le:ModelTransformationLanguage",
+    "classes": [
+      "tbox:Entity",
+      "tbox:LanguageEntity"
+    ]
+  },
+  {
+    "entity": "le:ModelingLanguage",
+    "classes": [
+      "tbox:Entity",
+      "tbox:LanguageEntity"
+    ]
+  },
+  {
+    "entity": "le:OCL",
+    "classes": [
+      "le:ConstraintLanguage",
+      "le:QueryLanguage",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:OWL",
+    "classes": [
+      "le:OntologyLanguage",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:OntologyLanguage",
+    "classes": [
+      "tbox:Entity",
+      "tbox:LanguageEntity"
+    ]
+  },
+  {
+    "entity": "le:OpenAPI",
+    "classes": [
+      "le:InterfaceDescriptionLanguage",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:PetriNet",
+    "classes": [
+      "le:ModelingLanguage",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:ProofLanguage",
+    "classes": [
+      "tbox:Entity",
+      "tbox:LanguageEntity"
+    ]
+  },
+  {
+    "entity": "le:PropertyGraphDataModelLanguage",
+    "classes": [
+      "tbox:Entity",
+      "tbox:LanguageEntity"
+    ]
+  },
+  {
+    "entity": "le:QVT",
+    "classes": [
+      "le:ModelTransformationLanguage",
+      "le:TransformationLanguage",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:QueryLanguage",
+    "classes": [
+      "tbox:Entity",
+      "tbox:LanguageEntity"
+    ]
+  },
+  {
+    "entity": "le:RDF",
+    "classes": [
+      "le:SemanticDataModelLanguage",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:RDFS",
+    "classes": [
+      "le:OntologyLanguage",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:RELAXNG",
+    "classes": [
+      "le:SchemaLanguage",
+      "le:XMLSchemaLanguage",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:RelationalQueryLanguage",
+    "classes": [
+      "tbox:Entity",
+      "tbox:LanguageEntity"
+    ]
+  },
+  {
+    "entity": "le:RequirementsInterchangeFormat",
+    "classes": [
+      "le:RequirementsSpecificationLanguage",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:RequirementsSpecificationLanguage",
+    "classes": [
+      "tbox:Entity",
+      "tbox:LanguageEntity"
+    ]
+  },
+  {
+    "entity": "le:RuleLanguage",
+    "classes": [
+      "tbox:Entity",
+      "tbox:LanguageEntity"
+    ]
+  },
+  {
+    "entity": "le:SHACL",
+    "classes": [
+      "le:ConstraintLanguage",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:SPARQL",
+    "classes": [
+      "le:QueryLanguage",
+      "le:SemanticQueryLanguage",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:SQL",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:SQLDDL",
+    "classes": [
+      "le:DataDefinitionLanguage",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:SQLDML",
+    "classes": [
+      "le:DataManipulationLanguage",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:SQLQuery",
+    "classes": [
+      "le:QueryLanguage",
+      "le:RelationalQueryLanguage",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:SWRL",
+    "classes": [
+      "le:RuleLanguage",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:SchemaLanguage",
+    "classes": [
+      "tbox:Entity",
+      "tbox:LanguageEntity"
+    ]
+  },
+  {
+    "entity": "le:SemanticDataModelLanguage",
+    "classes": [
+      "tbox:Entity",
+      "tbox:LanguageEntity"
+    ]
+  },
+  {
+    "entity": "le:SemanticQueryLanguage",
+    "classes": [
+      "tbox:Entity",
+      "tbox:LanguageEntity"
+    ]
+  },
+  {
+    "entity": "le:ShEx",
+    "classes": [
+      "le:ConstraintLanguage",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:TransformationLanguage",
+    "classes": [
+      "tbox:Entity",
+      "tbox:LanguageEntity"
+    ]
+  },
+  {
+    "entity": "le:UMLStateMachine",
+    "classes": [
+      "le:ModelingLanguage",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:XML",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:XMLQueryLanguage",
+    "classes": [
+      "tbox:Entity",
+      "tbox:LanguageEntity"
+    ]
+  },
+  {
+    "entity": "le:XMLSchema",
+    "classes": [
+      "le:SchemaLanguage",
+      "le:XMLSchemaLanguage",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:XMLSchemaLanguage",
+    "classes": [
+      "tbox:Entity",
+      "tbox:LanguageEntity"
+    ]
+  },
+  {
+    "entity": "le:XPath",
+    "classes": [
+      "le:QueryLanguage",
+      "le:XMLQueryLanguage",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:XQuery",
+    "classes": [
+      "le:QueryLanguage",
+      "le:XMLQueryLanguage",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:XSLT",
+    "classes": [
+      "le:DocumentTransformationLanguage",
+      "le:TransformationLanguage",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "le:YAML",
+    "classes": [
+      "le:ConfigurationLanguage",
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "pe:Ada",
+    "classes": [
+      "owl:NamedIndividual",
+      "pe:ProgrammingLanguage",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "pe:Assembly_Language",
+    "classes": [
+      "owl:NamedIndividual",
+      "pe:ProgrammingLanguage",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "pe:C",
+    "classes": [
+      "owl:NamedIndividual",
+      "pe:ProgrammingLanguage",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "pe:COBOL",
+    "classes": [
+      "owl:NamedIndividual",
+      "pe:ProgrammingLanguage",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "pe:C_Sharp",
+    "classes": [
+      "owl:NamedIndividual",
+      "pe:ProgrammingLanguage",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "pe:Cpp",
+    "classes": [
+      "owl:NamedIndividual",
+      "pe:ProgrammingLanguage",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "pe:Datalog",
+    "classes": [
+      "owl:NamedIndividual",
+      "pe:ProgrammingLanguage",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "pe:Delphi_Object_Pascal",
+    "classes": [
+      "owl:NamedIndividual",
+      "pe:ProgrammingLanguage",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "pe:F_Sharp",
+    "classes": [
+      "owl:NamedIndividual",
+      "pe:ProgrammingLanguage",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "pe:F_Sharp_PipelineStyle_assertion",
+    "classes": [
+      "tbox:Assertion",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageSupportAssertion"
+    ]
+  },
+  {
+    "entity": "pe:F_Sharp_StructuredComputationAbstractions_assertion",
+    "classes": [
+      "tbox:Assertion",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageSupportAssertion"
+    ]
+  },
+  {
+    "entity": "pe:Fortran",
+    "classes": [
+      "owl:NamedIndividual",
+      "pe:ProgrammingLanguage",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "pe:Go",
+    "classes": [
+      "owl:NamedIndividual",
+      "pe:ProgrammingLanguage",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "pe:Haskell",
+    "classes": [
+      "owl:NamedIndividual",
+      "pe:ProgrammingLanguage",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "pe:Haskell_EvaluationStrategy_assertion",
+    "classes": [
+      "tbox:Assertion",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageSupportAssertion"
+    ]
+  },
+  {
+    "entity": "pe:Haskell_StructuredComputationAbstractions_assertion",
+    "classes": [
+      "tbox:Assertion",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageSupportAssertion"
+    ]
+  },
+  {
+    "entity": "pe:Java",
+    "classes": [
+      "owl:NamedIndividual",
+      "pe:ProgrammingLanguage",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "pe:JavaScript",
+    "classes": [
+      "owl:NamedIndividual",
+      "pe:ProgrammingLanguage",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "pe:Java_ErrorHandling_assertion",
+    "classes": [
+      "tbox:Assertion",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageSupportAssertion"
+    ]
+  },
+  {
+    "entity": "pe:Java_FuturesAndPromises_assertion",
+    "classes": [
+      "tbox:Assertion",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageSupportAssertion"
+    ]
+  },
+  {
+    "entity": "pe:Java_Objects_assertion",
+    "classes": [
+      "tbox:Assertion",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageSupportAssertion"
+    ]
+  },
+  {
+    "entity": "pe:Koka",
+    "classes": [
+      "owl:NamedIndividual",
+      "pe:ProgrammingLanguage",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "pe:Koka_EffectHandlerStyle_assertion",
+    "classes": [
+      "tbox:Assertion",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageSupportAssertion"
+    ]
+  },
+  {
+    "entity": "pe:MATLAB",
+    "classes": [
+      "owl:NamedIndividual",
+      "pe:ProgrammingLanguage",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "pe:PHP",
+    "classes": [
+      "owl:NamedIndividual",
+      "pe:ProgrammingLanguage",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "pe:Pascal",
+    "classes": [
+      "owl:NamedIndividual",
+      "pe:ProgrammingLanguage",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "pe:Perl",
+    "classes": [
+      "owl:NamedIndividual",
+      "pe:ProgrammingLanguage",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "pe:ProgrammingLanguage",
+    "classes": [
+      "owl:Class",
+      "tbox:Entity",
+      "tbox:LanguageEntity"
+    ]
+  },
+  {
+    "entity": "pe:Prolog",
+    "classes": [
+      "owl:NamedIndividual",
+      "pe:ProgrammingLanguage",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "pe:Prolog_ComputationalParadigmsAndEvaluationModels_assertion",
+    "classes": [
+      "tbox:Assertion",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageSupportAssertion"
+    ]
+  },
+  {
+    "entity": "pe:Prolog_ControlFlow_assertion",
+    "classes": [
+      "tbox:Assertion",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageSupportAssertion"
+    ]
+  },
+  {
+    "entity": "pe:Python",
+    "classes": [
+      "owl:NamedIndividual",
+      "pe:ProgrammingLanguage",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "pe:Python_IteratorsAndGenerators_assertion",
+    "classes": [
+      "tbox:Assertion",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageSupportAssertion"
+    ]
+  },
+  {
+    "entity": "pe:Python_Objects_assertion",
+    "classes": [
+      "tbox:Assertion",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageSupportAssertion"
+    ]
+  },
+  {
+    "entity": "pe:R",
+    "classes": [
+      "owl:NamedIndividual",
+      "pe:ProgrammingLanguage",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "pe:Rust",
+    "classes": [
+      "owl:NamedIndividual",
+      "pe:ProgrammingLanguage",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "pe:Scheme",
+    "classes": [
+      "owl:NamedIndividual",
+      "pe:ProgrammingLanguage",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "pe:Scheme_ContinuationPassingStyle_assertion",
+    "classes": [
+      "tbox:Assertion",
+      "tbox:ConceptualEntity",
+      "tbox:Entity",
+      "tbox:LanguageSupportAssertion"
+    ]
+  },
+  {
+    "entity": "pe:Scratch",
+    "classes": [
+      "owl:NamedIndividual",
+      "pe:ProgrammingLanguage",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "pe:Swift",
+    "classes": [
+      "owl:NamedIndividual",
+      "pe:ProgrammingLanguage",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "pe:Visual_Basic",
+    "classes": [
+      "owl:NamedIndividual",
+      "pe:ProgrammingLanguage",
+      "tbox:Entity",
+      "tbox:LanguageEntity",
+      "tbox:SoftwareLanguage"
+    ]
+  },
+  {
+    "entity": "tbox:CompositeConcept",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "tbox:EngineeringActivity",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "tbox:ImplementationMechanismConcept",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "tbox:LanguageConcept",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "tbox:LanguageConceptApplicability",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "tbox:LanguageSupportAssertion",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "tbox:LanguageSupportKind",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "tbox:MethodologicalApproach",
+    "classes": [
+      "tbox:Entity",
+      "tbox:FormalEntity"
+    ]
+  },
+  {
+    "entity": "tbox:SoftwareArtifact",
+    "classes": [
+      "tbox:ArtifactEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "tbox:SoftwareLanguage",
+    "classes": [
+      "tbox:Entity",
+      "tbox:LanguageEntity"
+    ]
+  },
+  {
+    "entity": "tbox:SoftwareTool",
+    "classes": [
+      "tbox:Entity",
+      "tbox:ToolEntity"
+    ]
+  },
+  {
+    "entity": "tbox:SubjectArea",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "tbox:TechnologicalSpace",
+    "classes": [
+      "tbox:ConceptualEntity",
+      "tbox:Entity"
+    ]
+  },
+  {
+    "entity": "tbox:assertedForConcept",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:assertedForLanguage",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:classifies",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:commentingPolicy",
+    "classes": [
+      "owl:AnnotationProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:conformsTo",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:critique",
+    "classes": [
+      "owl:DatatypeProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:defines",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:elementOf",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:extends",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:formattingPolicy",
+    "classes": [
+      "owl:AnnotationProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:hasAffectedArtifact",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:hasApplicability",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:hasArea",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:hasArtifact",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:hasBibTeX",
+    "classes": [
+      "owl:DatatypeProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:hasComponent",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:hasDominantForm",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:hasElement",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:hasInputArtifact",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:hasOutputArtifact",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:hasPrimaryComponent",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:hasPrimaryMechanism",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:hasSecondaryComponent",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:hasSpace",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:hasSupportKind",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:hasSupportingLanguage",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:hasSupportingTool",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:hasTool",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:isAreaOf",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:isArtifactOf",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:isDefinedBy",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:isExtendedBy",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:isProcessedBy",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:isServedBy",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:isSpaceOf",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:isSpecifiedBy",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:isTargetedBy",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:isToolOf",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:isUsedBy",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:linkingPolicy",
+    "classes": [
+      "owl:AnnotationProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:metamodelingPolicy",
+    "classes": [
+      "owl:AnnotationProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:nativelySupports",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:processes",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:resolveAfter",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:serves",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:specifies",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:standardlySupports",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:suggestion",
+    "classes": [
+      "owl:DatatypeProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:supports",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:targets",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "tbox:uses",
+    "classes": [
+      "owl:ObjectProperty",
+      "tbox:Entity",
+      "tbox:PropertyEntity"
+    ]
+  },
+  {
+    "entity": "te:ANTLR",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:SoftwareTool",
+      "tbox:ToolEntity",
+      "te:ParserGenerator"
+    ]
+  },
+  {
+    "entity": "te:APIWorkbench",
+    "classes": [
+      "tbox:Entity",
+      "tbox:ToolEntity"
+    ]
+  },
+  {
+    "entity": "te:ATLTransformationEngine",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:SoftwareTool",
+      "tbox:ToolEntity",
+      "te:ModelTransformationEngine",
+      "te:TransformationEngine"
+    ]
+  },
+  {
+    "entity": "te:Ansible",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:SoftwareTool",
+      "tbox:ToolEntity",
+      "te:ConfigurationTool"
+    ]
+  },
+  {
+    "entity": "te:ApacheJena",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:SoftwareTool",
+      "tbox:ToolEntity",
+      "te:QueryProcessor",
+      "te:Reasoner",
+      "te:SemanticReasoner",
+      "te:TripleStore"
+    ]
+  },
+  {
+    "entity": "te:BaseX",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:SoftwareTool",
+      "tbox:ToolEntity",
+      "te:QueryProcessor",
+      "te:XMLProcessor"
+    ]
+  },
+  {
+    "entity": "te:Bison",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:SoftwareTool",
+      "tbox:ToolEntity",
+      "te:ParserGenerator"
+    ]
+  },
+  {
+    "entity": "te:BuildTool",
+    "classes": [
+      "tbox:Entity",
+      "tbox:ToolEntity"
+    ]
+  },
+  {
+    "entity": "te:CPython",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:SoftwareTool",
+      "tbox:ToolEntity",
+      "te:Interpreter"
+    ]
+  },
+  {
+    "entity": "te:Compiler",
+    "classes": [
+      "tbox:Entity",
+      "tbox:ToolEntity"
+    ]
+  },
+  {
+    "entity": "te:ConfigurationTool",
+    "classes": [
+      "tbox:Entity",
+      "tbox:ToolEntity"
+    ]
+  },
+  {
+    "entity": "te:CoqProofAssistant",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:SoftwareTool",
+      "tbox:ToolEntity",
+      "te:ProofAssistant"
+    ]
+  },
+  {
+    "entity": "te:Database",
+    "classes": [
+      "tbox:Entity",
+      "tbox:ToolEntity"
+    ]
+  },
+  {
+    "entity": "te:Drools",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:SoftwareTool",
+      "tbox:ToolEntity",
+      "te:RuleEngine"
+    ]
+  },
+  {
+    "entity": "te:EclipseIDE",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:SoftwareTool",
+      "tbox:ToolEntity",
+      "te:RefactoringTool"
+    ]
+  },
+  {
+    "entity": "te:EclipseModelingFramework",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:SoftwareTool",
+      "tbox:ToolEntity",
+      "te:ModelingWorkbench"
+    ]
+  },
+  {
+    "entity": "te:GCC",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:SoftwareTool",
+      "tbox:ToolEntity",
+      "te:Compiler"
+    ]
+  },
+  {
+    "entity": "te:GNUMake",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:SoftwareTool",
+      "tbox:ToolEntity",
+      "te:BuildTool"
+    ]
+  },
+  {
+    "entity": "te:GrammarAnalyzer",
+    "classes": [
+      "tbox:Entity",
+      "tbox:ToolEntity"
+    ]
+  },
+  {
+    "entity": "te:GrammarTransformationEngine",
+    "classes": [
+      "tbox:Entity",
+      "tbox:ToolEntity"
+    ]
+  },
+  {
+    "entity": "te:GraphDB",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:SoftwareTool",
+      "tbox:ToolEntity",
+      "te:QueryProcessor",
+      "te:Reasoner",
+      "te:SemanticReasoner",
+      "te:TripleStore"
+    ]
+  },
+  {
+    "entity": "te:GraphDatabase",
+    "classes": [
+      "tbox:Entity",
+      "tbox:ToolEntity"
+    ]
+  },
+  {
+    "entity": "te:GraphDatabaseManagementSystem",
+    "classes": [
+      "tbox:Entity",
+      "tbox:ToolEntity"
+    ]
+  },
+  {
+    "entity": "te:IBMDOORS",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:SoftwareTool",
+      "tbox:ToolEntity",
+      "te:RequirementsTool"
+    ]
+  },
+  {
+    "entity": "te:Interpreter",
+    "classes": [
+      "tbox:Entity",
+      "tbox:ToolEntity"
+    ]
+  },
+  {
+    "entity": "te:JSONProcessor",
+    "classes": [
+      "tbox:Entity",
+      "tbox:ToolEntity"
+    ]
+  },
+  {
+    "entity": "te:LeanProofAssistant",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:SoftwareTool",
+      "tbox:ToolEntity",
+      "te:ProofAssistant"
+    ]
+  },
+  {
+    "entity": "te:LogicProgrammingSystem",
+    "classes": [
+      "tbox:Entity",
+      "tbox:ToolEntity"
+    ]
+  },
+  {
+    "entity": "te:MarkupProcessor",
+    "classes": [
+      "tbox:Entity",
+      "tbox:ToolEntity"
+    ]
+  },
+  {
+    "entity": "te:ModelTransformationEngine",
+    "classes": [
+      "tbox:Entity",
+      "tbox:ToolEntity"
+    ]
+  },
+  {
+    "entity": "te:ModelValidator",
+    "classes": [
+      "tbox:Entity",
+      "tbox:ToolEntity"
+    ]
+  },
+  {
+    "entity": "te:ModelingWorkbench",
+    "classes": [
+      "tbox:Entity",
+      "tbox:ToolEntity"
+    ]
+  },
+  {
+    "entity": "te:Neo4j",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:SoftwareTool",
+      "tbox:ToolEntity",
+      "te:Database",
+      "te:GraphDatabase",
+      "te:GraphDatabaseManagementSystem",
+      "te:QueryProcessor"
+    ]
+  },
+  {
+    "entity": "te:OntologyEditor",
+    "classes": [
+      "tbox:Entity",
+      "tbox:ToolEntity"
+    ]
+  },
+  {
+    "entity": "te:ParserGenerator",
+    "classes": [
+      "tbox:Entity",
+      "tbox:ToolEntity"
+    ]
+  },
+  {
+    "entity": "te:PostgreSQL",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:SoftwareTool",
+      "tbox:ToolEntity",
+      "te:QueryProcessor",
+      "te:RelationalDatabaseManagementSystem",
+      "te:Validator"
+    ]
+  },
+  {
+    "entity": "te:ProofAssistant",
+    "classes": [
+      "tbox:Entity",
+      "tbox:ToolEntity"
+    ]
+  },
+  {
+    "entity": "te:Protege",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:SoftwareTool",
+      "tbox:ToolEntity",
+      "te:OntologyEditor"
+    ]
+  },
+  {
+    "entity": "te:QueryProcessor",
+    "classes": [
+      "tbox:Entity",
+      "tbox:ToolEntity"
+    ]
+  },
+  {
+    "entity": "te:Reasoner",
+    "classes": [
+      "tbox:Entity",
+      "tbox:ToolEntity"
+    ]
+  },
+  {
+    "entity": "te:RefactoringTool",
+    "classes": [
+      "tbox:Entity",
+      "tbox:ToolEntity"
+    ]
+  },
+  {
+    "entity": "te:RelationalDatabaseManagementSystem",
+    "classes": [
+      "tbox:Entity",
+      "tbox:ToolEntity"
+    ]
+  },
+  {
+    "entity": "te:RequirementsTool",
+    "classes": [
+      "tbox:Entity",
+      "tbox:ToolEntity"
+    ]
+  },
+  {
+    "entity": "te:RuleEngine",
+    "classes": [
+      "tbox:Entity",
+      "tbox:ToolEntity"
+    ]
+  },
+  {
+    "entity": "te:SWIProlog",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:SoftwareTool",
+      "tbox:ToolEntity",
+      "te:LogicProgrammingSystem"
+    ]
+  },
+  {
+    "entity": "te:Saxon",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:SoftwareTool",
+      "tbox:ToolEntity",
+      "te:QueryProcessor",
+      "te:TransformationEngine",
+      "te:XMLProcessor"
+    ]
+  },
+  {
+    "entity": "te:SemanticReasoner",
+    "classes": [
+      "tbox:Entity",
+      "tbox:ToolEntity"
+    ]
+  },
+  {
+    "entity": "te:SonarQube",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:SoftwareTool",
+      "tbox:ToolEntity",
+      "te:StaticAnalyzer"
+    ]
+  },
+  {
+    "entity": "te:StaticAnalyzer",
+    "classes": [
+      "tbox:Entity",
+      "tbox:ToolEntity"
+    ]
+  },
+  {
+    "entity": "te:SwaggerEditor",
+    "classes": [
+      "owl:NamedIndividual",
+      "tbox:Entity",
+      "tbox:SoftwareTool",
+      "tbox:ToolEntity",
+      "te:APIWorkbench"
+    ]
+  },
+  {
+    "entity": "te:TransformationEngine",
+    "classes": [
+      "tbox:Entity",
+      "tbox:ToolEntity"
+    ]
+  },
+  {
+    "entity": "te:TripleStore",
+    "classes": [
+      "tbox:Entity",
+      "tbox:ToolEntity"
+    ]
+  },
+  {
+    "entity": "te:Validator",
+    "classes": [
+      "tbox:Entity",
+      "tbox:ToolEntity"
+    ]
+  },
+  {
+    "entity": "te:XMLProcessor",
+    "classes": [
+      "tbox:Entity",
+      "tbox:ToolEntity"
+    ]
+  }
+]
