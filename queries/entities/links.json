@@ -1,14 +1,20 @@
 {
+  "total": 600,
   "na": {
     "page": 16,
     "isPrimaryTopicOf": 0,
     "sum": 16
   },
-  "failing": 109,
-  "succeeding": {
-    "page": 328,
-    "isPrimaryTopicOf": 245,
-    "sum": 491,
-    "percentage": 81.83
+  "missing": 113,
+  "unacceptable": 86,
+  "linked": {
+    "page": 324,
+    "isPrimaryTopicOf": 165,
+    "sum": 487,
+    "percentage": 81.17
+  },
+  "acceptable": {
+    "sum": 405,
+    "percentage": 67.5
   }
 }
