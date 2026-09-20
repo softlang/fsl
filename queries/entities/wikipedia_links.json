@@ -1,0 +1,4866 @@
+[
+  {
+    "link": "https://en.wikipedia.org/?title=Rule_engine&redirect=no",
+    "resources": [
+      {
+        "resource": "te:RuleEngine",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/ANTLR",
+    "resources": [
+      {
+        "resource": "te:ANTLR",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/API",
+    "resources": [
+      {
+        "resource": "ce:APIDesign",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/ATLAS_Transformation_Language",
+    "resources": [
+      {
+        "resource": "le:ATL",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Abstract_data_type",
+    "resources": [
+      {
+        "resource": "ce:DataAbstraction",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Abstract_rewriting_system",
+    "resources": [
+      {
+        "resource": "fe:AbstractRewritingSystem",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Abstract_syntax",
+    "resources": [
+      {
+        "resource": "fe:AbstractSyntaxDefinitionApproach",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Abstraction_(computer_science)",
+    "resources": [
+      {
+        "resource": "ce:Abstraction",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Academic_discipline",
+    "resources": [
+      {
+        "resource": "tbox:hasArea",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:isAreaOf",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Acceptance_testing",
+    "resources": [
+      {
+        "resource": "ce:AcceptanceTesting",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      },
+      {
+        "resource": "ce:UserAcceptanceTesting",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Actor_model",
+    "resources": [
+      {
+        "resource": "ce:ActorBasedConcurrency",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:Actors",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Ad_hoc_polymorphism",
+    "resources": [
+      {
+        "resource": "ce:AdHocPolymorphism",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Ada_(programming_language)",
+    "resources": [
+      {
+        "resource": "pe:Ada",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Algebraic_data_type",
+    "resources": [
+      {
+        "resource": "ce:AlgebraicDataTypes",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Annotated_bibliography",
+    "resources": [
+      {
+        "resource": "tbox:hasBibTeX",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Ansible_(software)",
+    "resources": [
+      {
+        "resource": "te:Ansible",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Apache_Jena",
+    "resources": [
+      {
+        "resource": "te:ApacheJena",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Applicative_functor",
+    "resources": [
+      {
+        "resource": "ce:ApplicativeStyle",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:StructuredComputationAbstractions",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Arrow_(computer_science)",
+    "resources": [
+      {
+        "resource": "ce:ArrowStyle",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:StructuredComputationAbstractions",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Artifact_(software_development)",
+    "resources": [
+      {
+        "resource": "tbox:hasAffectedArtifact",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:hasArtifact",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:hasInputArtifact",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:hasOutputArtifact",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:isArtifactOf",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Assembly_language",
+    "resources": [
+      {
+        "resource": "pe:Assembly_Language",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Attribute_grammar",
+    "resources": [
+      {
+        "resource": "fe:AttributeGrammar",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Audit",
+    "resources": [
+      {
+        "resource": "ce:Auditing",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Axiomatic_semantics",
+    "resources": [
+      {
+        "resource": "fe:AxiomaticSemantics",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Backtracking",
+    "resources": [
+      {
+        "resource": "ce:Backtracking",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:BacktrackingMechanism",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Backup",
+    "resources": [
+      {
+        "resource": "ce:BackupAndRecovery",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form",
+    "resources": [
+      {
+        "resource": "le:BNF",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      },
+      {
+        "resource": "le:BackusNaurForm",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/BaseX",
+    "resources": [
+      {
+        "resource": "te:BaseX",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Binding_time",
+    "resources": [
+      {
+        "resource": "ce:BindingTime",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Build_automation",
+    "resources": [
+      {
+        "resource": "ae:BuildScriptArtifact",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:BuildScripting",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "le:BuildScriptingLanguage",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "te:BuildTool",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/C%2B%2B",
+    "resources": [
+      {
+        "resource": "pe:Cpp",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/COBOL",
+    "resources": [
+      {
+        "resource": "pe:COBOL",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/CPython",
+    "resources": [
+      {
+        "resource": "te:CPython",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/C_(programming_language)",
+    "resources": [
+      {
+        "resource": "pe:C",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)",
+    "resources": [
+      {
+        "resource": "pe:C_Sharp",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Calculus_of_communicating_systems",
+    "resources": [
+      {
+        "resource": "fe:CalculusOfCommunicatingSystems",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Capacity_management",
+    "resources": [
+      {
+        "resource": "ce:CapacityPlanning",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Category:Program_logic",
+    "resources": [
+      {
+        "resource": "fe:ProgramLogic",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Category:Programming_language_concepts",
+    "resources": [
+      {
+        "resource": "tbox:CompositeConcept",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:ImplementationMechanismConcept",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:LanguageConcept",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:LanguageConceptApplicability",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:LanguageSupportAssertion",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:LanguageSupportKind",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:assertedForConcept",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:assertedForLanguage",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:hasApplicability",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:hasComponent",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:hasDominantForm",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:hasPrimaryComponent",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:hasPrimaryMechanism",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:hasSecondaryComponent",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:hasSupportKind",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:nativelySupports",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:standardlySupports",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:supports",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Category_theory",
+    "resources": [
+      {
+        "resource": "fe:CategoryTheory",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Change_management",
+    "resources": [
+      {
+        "resource": "ce:ChangeManagement",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Class-based_programming",
+    "resources": [
+      {
+        "resource": "ce:ClassBasedMechanism",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Classical_logic#Lambda_calculi",
+    "resources": [
+      {
+        "resource": "fe:ClassicalLambdaCalculus",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Closure_(computer_programming)",
+    "resources": [
+      {
+        "resource": "ce:Closures",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Code_generation_(compiler)",
+    "resources": [
+      {
+        "resource": "ce:CodeGeneration",
+        "predicates": [
+          "foaf:isPrimaryTopicOf",
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:CodeGenerationConcept",
+        "predicates": [
+          "foaf:isPrimaryTopicOf",
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Code_refactoring",
+    "resources": [
+      {
+        "resource": "ce:Refactoring",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      },
+      {
+        "resource": "te:RefactoringTool",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Code_review",
+    "resources": [
+      {
+        "resource": "ce:CodeReview",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Communicating_sequential_processes",
+    "resources": [
+      {
+        "resource": "fe:CommunicatingSequentialProcesses",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Compiler#Compiler_construction",
+    "resources": [
+      {
+        "resource": "ce:CC",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Composition_over_inheritance",
+    "resources": [
+      {
+        "resource": "ce:CompositionVsInheritance",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Computational_linguistics",
+    "resources": [
+      {
+        "resource": "ce:CL",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Computational_problem",
+    "resources": [
+      {
+        "resource": "fe:ComputationalProblem",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Computer_programming",
+    "resources": [
+      {
+        "resource": "ce:Coding",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:Programming",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Concurrent_computing",
+    "resources": [
+      {
+        "resource": "ce:Concurrency",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:SharedMemoryConcurrency",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Conditional_(computer_programming)",
+    "resources": [
+      {
+        "resource": "ce:Branching",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Configuration_file",
+    "resources": [
+      {
+        "resource": "ae:ConfigurationArtifact",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "le:ConfigurationLanguage",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Configuration_management",
+    "resources": [
+      {
+        "resource": "ce:ConfigurationManagementPlanning",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "te:ConfigurationTool",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Constraint_programming",
+    "resources": [
+      {
+        "resource": "le:ConstraintLanguage",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Constraint_satisfaction_problem",
+    "resources": [
+      {
+        "resource": "fe:ConstraintSatisfactionProblem",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Context-free_grammar",
+    "resources": [
+      {
+        "resource": "fe:ContextFreeGrammar",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Continuation",
+    "resources": [
+      {
+        "resource": "ce:ContinuationOperatorMechanism",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:Continuations",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Continuation-passing_style",
+    "resources": [
+      {
+        "resource": "ce:ContinuationPassingStyle",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Continuous_delivery",
+    "resources": [
+      {
+        "resource": "ce:ContinuousDelivery",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Continuous_deployment",
+    "resources": [
+      {
+        "resource": "ce:ContinuousDeployment",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Continuous_integration",
+    "resources": [
+      {
+        "resource": "ce:ContinuousIntegration",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Control_flow",
+    "resources": [
+      {
+        "resource": "ce:ControlFlow",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:Sequencing",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Control_flow#Loops",
+    "resources": [
+      {
+        "resource": "ce:Iteration",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Coq",
+    "resources": [
+      {
+        "resource": "le:Coq",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      },
+      {
+        "resource": "te:CoqProofAssistant",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Coroutine",
+    "resources": [
+      {
+        "resource": "ce:Coroutines",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Cypher_(query_language)",
+    "resources": [
+      {
+        "resource": "le:Cypher",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Data_definition_language",
+    "resources": [
+      {
+        "resource": "le:DataDefinitionLanguage",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "le:SQLDDL",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Data_management",
+    "resources": [
+      {
+        "resource": "fe:DataManagementApproach",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Data_manipulation_language",
+    "resources": [
+      {
+        "resource": "le:DataManipulationLanguage",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "le:SQLDML",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Data_mapping",
+    "resources": [
+      {
+        "resource": "le:MappingLanguage",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Data_model",
+    "resources": [
+      {
+        "resource": "ce:DataModelDesign",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Data_parallelism",
+    "resources": [
+      {
+        "resource": "ce:DataParallelism",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Data_recovery",
+    "resources": [
+      {
+        "resource": "ce:BackupAndRecovery",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Data_structure",
+    "resources": [
+      {
+        "resource": "fe:DataStructure",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Data_type",
+    "resources": [
+      {
+        "resource": "ce:Data",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Data_validation",
+    "resources": [
+      {
+        "resource": "fe:DataValidation",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Database",
+    "resources": [
+      {
+        "resource": "te:Database",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Datalog",
+    "resources": [
+      {
+        "resource": "pe:Datalog",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Declarative_programming",
+    "resources": [
+      {
+        "resource": "ce:DeclarativeParadigm",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Delphi_(software)",
+    "resources": [
+      {
+        "resource": "pe:Delphi_Object_Pascal",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Denotational_semantics",
+    "resources": [
+      {
+        "resource": "fe:DenotationalSemantics",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Dependency_grammar",
+    "resources": [
+      {
+        "resource": "fe:DependencyGrammar",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Dependency_graph",
+    "resources": [
+      {
+        "resource": "fe:DependencyGraph",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Description_logic",
+    "resources": [
+      {
+        "resource": "fe:ALC",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      },
+      {
+        "resource": "fe:DescriptionLogic",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Design_by_contract",
+    "resources": [
+      {
+        "resource": "fe:DesignByContract",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/DevOps",
+    "resources": [
+      {
+        "resource": "ce:DevOpsPractice",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Documentation",
+    "resources": [
+      {
+        "resource": "ce:Documentation",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Domain_theory",
+    "resources": [
+      {
+        "resource": "fe:DomainTheory",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Drools",
+    "resources": [
+      {
+        "resource": "te:Drools",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/EL%2B%2B",
+    "resources": [
+      {
+        "resource": "fe:ELPlusPlus",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Eclipse_(software)",
+    "resources": [
+      {
+        "resource": "te:EclipseIDE",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Eclipse_Modeling_Framework",
+    "resources": [
+      {
+        "resource": "le:Ecore",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      },
+      {
+        "resource": "te:EclipseModelingFramework",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Effect_system",
+    "resources": [
+      {
+        "resource": "ce:EffectHandlerMechanism",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:EffectHandlerStyle",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)",
+    "resources": [
+      {
+        "resource": "ce:Encapsulation",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Enumerated_type",
+    "resources": [
+      {
+        "resource": "ce:Enums",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Evaluation_strategy",
+    "resources": [
+      {
+        "resource": "ce:EagerEvaluation",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:EvaluationStrategy",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Evaluation_strategy#Call_by_name",
+    "resources": [
+      {
+        "resource": "ce:CallByName",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Evaluation_strategy#Call_by_need",
+    "resources": [
+      {
+        "resource": "ce:CallByNeed",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Evaluation_strategy#Call_by_value",
+    "resources": [
+      {
+        "resource": "ce:CallByValue",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Event-driven_programming",
+    "resources": [
+      {
+        "resource": "ce:AsyncEventDrivenConcurrency",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Exception_handling",
+    "resources": [
+      {
+        "resource": "ce:ErrorHandling",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:ExceptionMechanism",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:Exceptions",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:ExceptionsAsEffects",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Experiment",
+    "resources": [
+      {
+        "resource": "ce:Experimentation",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form",
+    "resources": [
+      {
+        "resource": "le:EBNF",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      },
+      {
+        "resource": "le:ExtendedBackusNaurForm",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/F_Sharp_(programming_language)",
+    "resources": [
+      {
+        "resource": "pe:F_Sharp",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/First-class_function",
+    "resources": [
+      {
+        "resource": "ce:FirstClassFunctions",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/First-order_logic",
+    "resources": [
+      {
+        "resource": "fe:FirstOrderLogic",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Formal_grammar",
+    "resources": [
+      {
+        "resource": "fe:FormalGrammar",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Formal_grammar#Analytic_grammars",
+    "resources": [
+      {
+        "resource": "fe:AnalyticGrammar",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Formal_grammar#The_Chomsky_hierarchy",
+    "resources": [
+      {
+        "resource": "fe:GenerativeGrammar",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Formal_methods",
+    "resources": [
+      {
+        "resource": "ce:FM",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Formal_proof",
+    "resources": [
+      {
+        "resource": "fe:FormalProof",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Formal_system",
+    "resources": [
+      {
+        "resource": "fe:FormalSystem",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Formal_verification",
+    "resources": [
+      {
+        "resource": "ce:FormalVerification",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Formalism_(philosophy_of_mathematics)",
+    "resources": [
+      {
+        "resource": "fe:FormalObject",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Fortran",
+    "resources": [
+      {
+        "resource": "pe:Fortran",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Function_(computer_programming)",
+    "resources": [
+      {
+        "resource": "ce:FunctionAbstraction",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Functional_programming",
+    "resources": [
+      {
+        "resource": "ce:FunctionalParadigm",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Futures_and_promises",
+    "resources": [
+      {
+        "resource": "ce:FuturesAndPromises",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:TaskLibraryMechanism",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/GNU_Bison",
+    "resources": [
+      {
+        "resource": "te:Bison",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/GNU_Compiler_Collection",
+    "resources": [
+      {
+        "resource": "te:GCC",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/GNU_Make",
+    "resources": [
+      {
+        "resource": "te:GNUMake",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Generator_(computer_programming)",
+    "resources": [
+      {
+        "resource": "ce:GeneratorProtocolMechanism",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:IteratorsAndGenerators",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Go_(programming_language)",
+    "resources": [
+      {
+        "resource": "pe:Go",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/GraphDB",
+    "resources": [
+      {
+        "resource": "te:GraphDB",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/GraphQL",
+    "resources": [
+      {
+        "resource": "le:GraphQLSchema",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)",
+    "resources": [
+      {
+        "resource": "fe:Graph",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Graph_Query_Language",
+    "resources": [
+      {
+        "resource": "le:GraphQueryLanguageStandard",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Graph_database",
+    "resources": [
+      {
+        "resource": "te:GraphDatabase",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Graph_query_language",
+    "resources": [
+      {
+        "resource": "le:GraphQueryLanguage",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Graph_rewriting",
+    "resources": [
+      {
+        "resource": "fe:GraphRewritingSystem",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Graph_theory",
+    "resources": [
+      {
+        "resource": "fe:GraphTheory",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Gremlin_(query_language)",
+    "resources": [
+      {
+        "resource": "le:Gremlin",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Guideline",
+    "resources": [
+      {
+        "resource": "tbox:commentingPolicy",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:formattingPolicy",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:linkingPolicy",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:metamodelingPolicy",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/HTML",
+    "resources": [
+      {
+        "resource": "le:HTML",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Haskell",
+    "resources": [
+      {
+        "resource": "pe:Haskell",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Higher-order_function",
+    "resources": [
+      {
+        "resource": "ce:HigherOrderEntities",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:HigherOrderFunctions",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Hoare_logic",
+    "resources": [
+      {
+        "resource": "fe:HoareLogic",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Horn_clause",
+    "resources": [
+      {
+        "resource": "fe:HornClause",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/IBM_DOORS",
+    "resources": [
+      {
+        "resource": "te:IBMDOORS",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Immutable_object",
+    "resources": [
+      {
+        "resource": "ce:ImmutableData",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:Mutability",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:MutableData",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Imperative_programming",
+    "resources": [
+      {
+        "resource": "ce:ImperativeParadigm",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Implementation",
+    "resources": [
+      {
+        "resource": "ce:Implementation",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      },
+      {
+        "resource": "ce:ImplementationActivity",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Incident_management",
+    "resources": [
+      {
+        "resource": "ce:IncidentManagement",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Information_security_management",
+    "resources": [
+      {
+        "resource": "ce:SecurityManagement",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Input/output",
+    "resources": [
+      {
+        "resource": "ce:IOEffects",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Integration_testing",
+    "resources": [
+      {
+        "resource": "ce:IntegrationTesting",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Interface_(computing)",
+    "resources": [
+      {
+        "resource": "ce:InterfaceDesign",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Interface_(computing)#Software_interfaces",
+    "resources": [
+      {
+        "resource": "fe:SoftwareInterface",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Interface_(object-oriented_programming)",
+    "resources": [
+      {
+        "resource": "ce:InterfacesAndContracts",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Interface_description_language",
+    "resources": [
+      {
+        "resource": "le:InterfaceDescriptionLanguage",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Issue_tracking_system",
+    "resources": [
+      {
+        "resource": "tbox:IssueEntity",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:critique",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:object",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:predicate",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:resolveAfter",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:subject",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:suggestion",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:target",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Iterator",
+    "resources": [
+      {
+        "resource": "ce:IteratorsAndGenerators",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/JSON",
+    "resources": [
+      {
+        "resource": "le:JSON",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/JSONPath",
+    "resources": [
+      {
+        "resource": "le:JSONQueryLanguage",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/JSON_Schema",
+    "resources": [
+      {
+        "resource": "le:JSONSchema",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      },
+      {
+        "resource": "le:JSONSchemaLanguage",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/JavaScript",
+    "resources": [
+      {
+        "resource": "pe:JavaScript",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Java_(programming_language)",
+    "resources": [
+      {
+        "resource": "pe:Java",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Kind_(type_theory)",
+    "resources": [
+      {
+        "resource": "ce:KindPolymorphism",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Knowledge_management",
+    "resources": [
+      {
+        "resource": "ce:KnowledgeManagement",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Knowledge_representation_and_reasoning",
+    "resources": [
+      {
+        "resource": "ce:KR",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      },
+      {
+        "resource": "tbox:Entity",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Lambda-mu_calculus",
+    "resources": [
+      {
+        "resource": "fe:LambdaMuCalculus",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Lambda_calculus",
+    "resources": [
+      {
+        "resource": "fe:LambdaCalculus",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "fe:UntypedLambdaCalculus",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Lambda_cube",
+    "resources": [
+      {
+        "resource": "fe:LambdaCube",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Language_engineering",
+    "resources": [
+      {
+        "resource": "ce:SLE",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Lazy_evaluation",
+    "resources": [
+      {
+        "resource": "ce:LazyEvaluation",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Lean_(proof_assistant)",
+    "resources": [
+      {
+        "resource": "le:Lean",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      },
+      {
+        "resource": "te:LeanProofAssistant",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/List_(abstract_data_type)",
+    "resources": [
+      {
+        "resource": "ce:Lists",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Logging_(computing)",
+    "resources": [
+      {
+        "resource": "ce:Logging",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Logic_programming",
+    "resources": [
+      {
+        "resource": "ce:LogicParadigm",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:RuleAndPredicateMechanism",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/MATLAB",
+    "resources": [
+      {
+        "resource": "pe:MATLAB",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Macro_(computer_science)",
+    "resources": [
+      {
+        "resource": "ce:Macros",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Makefile",
+    "resources": [
+      {
+        "resource": "le:Makefile",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Markdown",
+    "resources": [
+      {
+        "resource": "le:Markdown",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Markup_language",
+    "resources": [
+      {
+        "resource": "le:MarkupLanguage",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Mathematical_structure",
+    "resources": [
+      {
+        "resource": "fe:MathematicalStructure",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Membership_function_(mathematics)",
+    "resources": [
+      {
+        "resource": "tbox:elementOf",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:hasElement",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Memory_management",
+    "resources": [
+      {
+        "resource": "ce:HeapLifetime",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Mereology",
+    "resources": [
+      {
+        "resource": "tbox:hasPart",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      },
+      {
+        "resource": "tbox:isPartOf",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Message_passing",
+    "resources": [
+      {
+        "resource": "ce:MessagePassingConcurrency",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Meta-Object_Facility",
+    "resources": [
+      {
+        "resource": "le:MOF",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Metalanguage",
+    "resources": [
+      {
+        "resource": "le:Metalanguage",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Metamodeling",
+    "resources": [
+      {
+        "resource": "le:MetamodelingLanguage",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:classifies",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:conformsTo",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Metaprogramming",
+    "resources": [
+      {
+        "resource": "ce:Metaprogramming",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "fe:MetaprogrammingApproach",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Metasyntax",
+    "resources": [
+      {
+        "resource": "le:GrammarMetalanguage",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Migration_(software)",
+    "resources": [
+      {
+        "resource": "ce:Migration",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Model-driven_engineering",
+    "resources": [
+      {
+        "resource": "ce:MDE",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Model_of_computation",
+    "resources": [
+      {
+        "resource": "fe:ModelOfComputation",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Model_transformation",
+    "resources": [
+      {
+        "resource": "fe:ModelTransformation",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      },
+      {
+        "resource": "le:ModelTransformationLanguage",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Modeling_language",
+    "resources": [
+      {
+        "resource": "le:ModelingLanguage",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Modular_programming",
+    "resources": [
+      {
+        "resource": "ce:Modularity",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:ModuleAbstraction",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:Modules",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Module_(programming)",
+    "resources": [
+      {
+        "resource": "ce:FirstClassModules",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Monad_(functional_programming)",
+    "resources": [
+      {
+        "resource": "ce:MonadicStyle",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:StructuredComputationAbstractions",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/N/A",
+    "resources": [
+      {
+        "resource": "tbox:extends",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:hasSpace",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:hasSupportingLanguage",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:hasSupportingTool",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:isExtendedBy",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:isProcessedBy",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:isServedBy",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:isSpaceOf",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:isSpecifiedBy",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:isTargetedBy",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:isUsedBy",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:processes",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:serves",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:specifies",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:targets",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:uses",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Name_binding",
+    "resources": [
+      {
+        "resource": "ce:Binding",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:NameBinding",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Namespace",
+    "resources": [
+      {
+        "resource": "ce:Namespaces",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Natural_language_processing",
+    "resources": [
+      {
+        "resource": "ce:NLP",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Neo4j",
+    "resources": [
+      {
+        "resource": "te:Neo4j",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Object-oriented_programming",
+    "resources": [
+      {
+        "resource": "ce:ObjectOrientedParadigm",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Object_(computer_science)",
+    "resources": [
+      {
+        "resource": "ce:Objects",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:ObjectsAsData",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Object_Constraint_Language",
+    "resources": [
+      {
+        "resource": "le:OCL",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Object_Pascal",
+    "resources": [
+      {
+        "resource": "pe:Delphi_Object_Pascal",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Object_lifetime",
+    "resources": [
+      {
+        "resource": "ce:Lifetime",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Object_reference",
+    "resources": [
+      {
+        "resource": "ce:ReferenceSemantics",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Onboarding",
+    "resources": [
+      {
+        "resource": "ce:TrainingAndOnboarding",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Ontology_language",
+    "resources": [
+      {
+        "resource": "le:OntologyLanguage",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/OpenAPI_Specification",
+    "resources": [
+      {
+        "resource": "le:OpenAPI",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Operational_semantics",
+    "resources": [
+      {
+        "resource": "fe:OperationalSemantics",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Option_type",
+    "resources": [
+      {
+        "resource": "ce:OptionResultTypes",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:OptionTypeMechanism",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/PHP",
+    "resources": [
+      {
+        "resource": "pe:PHP",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Package_(package_management_system)",
+    "resources": [
+      {
+        "resource": "ce:Packages",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Package_manager",
+    "resources": [
+      {
+        "resource": "ce:DependencyManagement",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Parallel_computing",
+    "resources": [
+      {
+        "resource": "ce:Parallelism",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Parametric_polymorphism",
+    "resources": [
+      {
+        "resource": "ce:ParametricPolymorphism",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Parsing_expression_grammar",
+    "resources": [
+      {
+        "resource": "fe:ParsingExpressionGrammar",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Pascal_(programming_language)",
+    "resources": [
+      {
+        "resource": "pe:Pascal",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Patch_(computing)",
+    "resources": [
+      {
+        "resource": "ce:Patching",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Performance_testing",
+    "resources": [
+      {
+        "resource": "ce:PerformanceTesting",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      },
+      {
+        "resource": "ce:PerformanceTuning",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Perl",
+    "resources": [
+      {
+        "resource": "pe:Perl",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Persistent_data_structure",
+    "resources": [
+      {
+        "resource": "ce:PersistentState",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Petri_net",
+    "resources": [
+      {
+        "resource": "le:PetriNet",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Pipeline_(computing)",
+    "resources": [
+      {
+        "resource": "ce:PipelineParallelism",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Pipeline_(software)",
+    "resources": [
+      {
+        "resource": "ce:PipelineOperatorMechanism",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:PipelineStyle",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Pointer_(computer_programming)",
+    "resources": [
+      {
+        "resource": "ce:ReferencesAndPointers",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/PostgreSQL",
+    "resources": [
+      {
+        "resource": "te:PostgreSQL",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Primitive_data_type",
+    "resources": [
+      {
+        "resource": "ce:PrimitiveValues",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Procedure_(computer_science)",
+    "resources": [
+      {
+        "resource": "ce:ProceduralAbstraction",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Process_calculus",
+    "resources": [
+      {
+        "resource": "fe:ProcessCalculus",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Product_type",
+    "resources": [
+      {
+        "resource": "ce:ProductLikeData",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Program_transformation",
+    "resources": [
+      {
+        "resource": "fe:ProgramTransformation",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      },
+      {
+        "resource": "le:GrammarTransformationLanguage",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "le:TransformationLanguage",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Programming_language",
+    "resources": [
+      {
+        "resource": "ce:NativeSupport",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "pe:ProgrammingLanguage",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Programming_language_specification",
+    "resources": [
+      {
+        "resource": "tbox:defines",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:isDefinedBy",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Programming_language_theory",
+    "resources": [
+      {
+        "resource": "ce:PLT",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Programming_paradigm",
+    "resources": [
+      {
+        "resource": "ce:ComputationalParadigmsAndEvaluationModels",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Programming_tool",
+    "resources": [
+      {
+        "resource": "tbox:SoftwareTool",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:hasTool",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:isToolOf",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Project_planning",
+    "resources": [
+      {
+        "resource": "ce:ProjectPlanning",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Prolog",
+    "resources": [
+      {
+        "resource": "pe:Prolog",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Proof_assistant",
+    "resources": [
+      {
+        "resource": "le:ProofLanguage",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Property_graph",
+    "resources": [
+      {
+        "resource": "le:PropertyGraphDataModelLanguage",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Prot%C3%A9g%C3%A9_(software)",
+    "resources": [
+      {
+        "resource": "te:Protege",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Prototype-based_programming",
+    "resources": [
+      {
+        "resource": "ce:PrototypeBasedMechanism",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Provisioning",
+    "resources": [
+      {
+        "resource": "ce:EnvironmentProvisioning",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Pure_function",
+    "resources": [
+      {
+        "resource": "ce:PureComputation",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+    "resources": [
+      {
+        "resource": "pe:Python",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/QVT",
+    "resources": [
+      {
+        "resource": "le:QVT",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Quality_assurance",
+    "resources": [
+      {
+        "resource": "ce:QualityAssurance",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Quality_control",
+    "resources": [
+      {
+        "resource": "ce:QualityControl",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Query_language",
+    "resources": [
+      {
+        "resource": "le:QueryLanguage",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/RDF_Schema",
+    "resources": [
+      {
+        "resource": "le:RDFS",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/RELAX_NG",
+    "resources": [
+      {
+        "resource": "le:RELAXNG",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/R_(programming_language)",
+    "resources": [
+      {
+        "resource": "pe:R",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Record_(computer_science)",
+    "resources": [
+      {
+        "resource": "ce:Records",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Recursion_(computer_science)",
+    "resources": [
+      {
+        "resource": "ce:Recursion",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Recursive_data_type",
+    "resources": [
+      {
+        "resource": "ce:RecursiveData",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Reengineering",
+    "resources": [
+      {
+        "resource": "ce:Reengineering",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Reflective_programming",
+    "resources": [
+      {
+        "resource": "ce:Reflection",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Regular_grammar",
+    "resources": [
+      {
+        "resource": "fe:RegularGrammar",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Regulatory_compliance",
+    "resources": [
+      {
+        "resource": "ce:ComplianceManagement",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Reification_(knowledge_representation)",
+    "resources": [
+      {
+        "resource": "tbox:Assertion",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Relational_algebra",
+    "resources": [
+      {
+        "resource": "fe:RelationalAlgebra",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Relational_calculus",
+    "resources": [
+      {
+        "resource": "fe:RelationalCalculus",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Relational_model",
+    "resources": [
+      {
+        "resource": "fe:RelationalModel",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Release_management",
+    "resources": [
+      {
+        "resource": "ce:ReleaseManagement",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Requirements_elicitation",
+    "resources": [
+      {
+        "resource": "ce:RequirementsElicitation",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Requirements_engineering",
+    "resources": [
+      {
+        "resource": "ce:RequirementsAnalysis",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:RequirementsEngineeringActivity",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      },
+      {
+        "resource": "ce:RequirementsManagement",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:RequirementsPrioritization",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:RequirementsValidation",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "te:RequirementsTool",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Requirements_interchange_format",
+    "resources": [
+      {
+        "resource": "le:RequirementsSpecificationLanguage",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Resource_Description_Framework",
+    "resources": [
+      {
+        "resource": "le:RDF",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Resource_allocation",
+    "resources": [
+      {
+        "resource": "ce:ResourceAllocation",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Rewriting#Term_rewriting_systems",
+    "resources": [
+      {
+        "resource": "fe:TermRewritingSystem",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Risk_management",
+    "resources": [
+      {
+        "resource": "ce:RiskManagement",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Rollback_(data_management)",
+    "resources": [
+      {
+        "resource": "ce:RollbackManagement",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Rule-based_system",
+    "resources": [
+      {
+        "resource": "le:RuleLanguage",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Rule-based_system#Production_system_rules",
+    "resources": [
+      {
+        "resource": "fe:Rule",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Rust_(programming_language)",
+    "resources": [
+      {
+        "resource": "pe:Rust",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/SPARQL",
+    "resources": [
+      {
+        "resource": "le:SPARQL",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      },
+      {
+        "resource": "le:SemanticQueryLanguage",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/SQL",
+    "resources": [
+      {
+        "resource": "le:RelationalQueryLanguage",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "le:SQL",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      },
+      {
+        "resource": "le:SQLQuery",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/SWI-Prolog",
+    "resources": [
+      {
+        "resource": "te:SWIProlog",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Saxon_XSLT",
+    "resources": [
+      {
+        "resource": "te:Saxon",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Schema_(computer_science)",
+    "resources": [
+      {
+        "resource": "le:SchemaLanguage",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Scheme_(programming_language)",
+    "resources": [
+      {
+        "resource": "pe:Scheme",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Scope_(computer_science)",
+    "resources": [
+      {
+        "resource": "ce:Scope",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Scope_(computer_science)#Dynamic_scope",
+    "resources": [
+      {
+        "resource": "ce:DynamicScope",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Scope_(computer_science)#Lexical_scope",
+    "resources": [
+      {
+        "resource": "ce:LexicalScope",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Scratch_(programming_language)",
+    "resources": [
+      {
+        "resource": "pe:Scratch",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Security_testing",
+    "resources": [
+      {
+        "resource": "ce:SecurityTesting",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Semantic_Web_Rule_Language",
+    "resources": [
+      {
+        "resource": "le:SWRL",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Semantic_data_model",
+    "resources": [
+      {
+        "resource": "le:SemanticDataModelLanguage",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Semantic_reasoner",
+    "resources": [
+      {
+        "resource": "te:SemanticReasoner",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Semantics_(programming_languages)#Approaches",
+    "resources": [
+      {
+        "resource": "fe:FormalSemanticsApproach",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Semi-Thue_system",
+    "resources": [
+      {
+        "resource": "fe:StringRewritingSystem",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Separation_logic",
+    "resources": [
+      {
+        "resource": "fe:SeparationLogic",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Sequent_calculus",
+    "resources": [
+      {
+        "resource": "fe:SequentCalculus",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Shape_Expressions",
+    "resources": [
+      {
+        "resource": "le:ShEx",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Shapes_Constraint_Language",
+    "resources": [
+      {
+        "resource": "le:SHACL",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Short-circuit_evaluation",
+    "resources": [
+      {
+        "resource": "ce:ShortCircuitEvaluation",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Side_effect_(computer_science)",
+    "resources": [
+      {
+        "resource": "ce:Effects",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:SideEffects",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Simply_typed_lambda_calculus",
+    "resources": [
+      {
+        "resource": "fe:SimplyTypedLambdaCalculus",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Software_architecture",
+    "resources": [
+      {
+        "resource": "ce:SystemArchitectureDesign",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Software_bug",
+    "resources": [
+      {
+        "resource": "ce:BugFixing",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Software_deployment",
+    "resources": [
+      {
+        "resource": "ce:Deployment",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Software_design",
+    "resources": [
+      {
+        "resource": "ce:DesignActivity",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      },
+      {
+        "resource": "ce:DesignValidation",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:HighLevelDesign",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:LowLevelDesign",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "fe:SoftwareDesignApproach",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Software_development_effort_estimation",
+    "resources": [
+      {
+        "resource": "ce:EffortEstimation",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Software_development_process",
+    "resources": [
+      {
+        "resource": "ce:ProcessDefinition",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "tbox:EngineeringActivity",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Software_engineering",
+    "resources": [
+      {
+        "resource": "ce:SE",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Software_evolution",
+    "resources": [
+      {
+        "resource": "ce:EvolutionAndImprovementActivity",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      },
+      {
+        "resource": "ce:FeatureEnhancement",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Software_inspection",
+    "resources": [
+      {
+        "resource": "ce:CodeInspection",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Software_language",
+    "resources": [
+      {
+        "resource": "tbox:SoftwareLanguage",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Software_maintenance",
+    "resources": [
+      {
+        "resource": "ce:OperationsAndMaintenanceActivity",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Software_packaging",
+    "resources": [
+      {
+        "resource": "ce:Packaging",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Software_project_management",
+    "resources": [
+      {
+        "resource": "ce:PlanningAndManagementActivity",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Software_prototyping",
+    "resources": [
+      {
+        "resource": "ce:Prototyping",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Software_quality",
+    "resources": [
+      {
+        "resource": "ce:QualityAndGovernanceActivity",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Software_release_life_cycle",
+    "resources": [
+      {
+        "resource": "ce:ReleaseAndDeploymentActivity",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Software_requirements_specification",
+    "resources": [
+      {
+        "resource": "ae:RequirementsArtifact",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:RequirementsSpecification",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Software_testing",
+    "resources": [
+      {
+        "resource": "ce:TestingActivity",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      },
+      {
+        "resource": "ce:ValidationTestingActivity",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:VerificationTestingActivity",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Software_tool",
+    "resources": [
+      {
+        "resource": "ce:ToolingSetup",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Software_transactional_memory",
+    "resources": [
+      {
+        "resource": "ce:SoftwareTransactionalMemory",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Software_versioning",
+    "resources": [
+      {
+        "resource": "ce:Versioning",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/SonarQube",
+    "resources": [
+      {
+        "resource": "te:SonarQube",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Stack-based_memory_allocation",
+    "resources": [
+      {
+        "resource": "ce:StackLifetime",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Stakeholder_management",
+    "resources": [
+      {
+        "resource": "ce:StakeholderManagement",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Standard_library",
+    "resources": [
+      {
+        "resource": "ce:StandardLibrarySupport",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/State_(computer_science)",
+    "resources": [
+      {
+        "resource": "ce:State",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:VariablesAsState",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Static_program_analysis",
+    "resources": [
+      {
+        "resource": "ce:StaticAnalysis",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Strong_and_weak_typing",
+    "resources": [
+      {
+        "resource": "ce:StrongTyping",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:WeakTyping",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Subtyping",
+    "resources": [
+      {
+        "resource": "ce:Subtyping",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Sum_type",
+    "resources": [
+      {
+        "resource": "ce:SumLikeData",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Swagger_(software)",
+    "resources": [
+      {
+        "resource": "te:SwaggerEditor",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Swift_(programming_language)",
+    "resources": [
+      {
+        "resource": "pe:Swift",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Syntax-directed_translation",
+    "resources": [
+      {
+        "resource": "fe:SyntaxDirectedTranslation",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Syntax_(programming_languages)",
+    "resources": [
+      {
+        "resource": "fe:SyntaxDefinitionApproach",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/System_F",
+    "resources": [
+      {
+        "resource": "fe:SystemF",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/System_monitoring",
+    "resources": [
+      {
+        "resource": "ce:Monitoring",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/System_testing",
+    "resources": [
+      {
+        "resource": "ce:SystemTesting",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Systems_development_life_cycle",
+    "resources": [
+      {
+        "resource": "ce:SupportActivity",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Tagged_union",
+    "resources": [
+      {
+        "resource": "ce:Variants",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Task_parallelism",
+    "resources": [
+      {
+        "resource": "ce:TaskParallelism",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Technical_debt",
+    "resources": [
+      {
+        "resource": "ce:TechnicalDebtManagement",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Technology_roadmap",
+    "resources": [
+      {
+        "resource": "ce:Roadmapping",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Theoretical_computer_science",
+    "resources": [
+      {
+        "resource": "ce:TCS",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Theory",
+    "resources": [
+      {
+        "resource": "fe:Theory",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Top-down_parsing_language",
+    "resources": [
+      {
+        "resource": "fe:TDPLGrammar",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Transition_system",
+    "resources": [
+      {
+        "resource": "fe:TransitionSystem",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Tree_transducer",
+    "resources": [
+      {
+        "resource": "fe:TreeTransducer",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Tuple",
+    "resources": [
+      {
+        "resource": "ce:Tuples",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Type_class",
+    "resources": [
+      {
+        "resource": "ce:TypeClassBasedMechanism",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Type_inference",
+    "resources": [
+      {
+        "resource": "ce:TypeInference",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Type_introspection",
+    "resources": [
+      {
+        "resource": "ce:Introspection",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Type_system",
+    "resources": [
+      {
+        "resource": "ce:TypeAbstraction",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:Types",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Type_system#Dynamic_type_checking_and_runtime_type_information",
+    "resources": [
+      {
+        "resource": "ce:DynamicTyping",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Type_system#Static_type_checking",
+    "resources": [
+      {
+        "resource": "ce:StaticTyping",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Type_theory",
+    "resources": [
+      {
+        "resource": "fe:TypeTheory",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/UML_state_machine",
+    "resources": [
+      {
+        "resource": "le:UMLStateMachine",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Unit_testing",
+    "resources": [
+      {
+        "resource": "ce:UnitTesting",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Usability_testing",
+    "resources": [
+      {
+        "resource": "ce:UsabilityTesting",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/User_experience_design",
+    "resources": [
+      {
+        "resource": "ce:UXUIDesign",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/User_interface_design",
+    "resources": [
+      {
+        "resource": "ce:UXUIDesign",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Value_semantics",
+    "resources": [
+      {
+        "resource": "ce:ValueSemantics",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Verification_and_validation",
+    "resources": [
+      {
+        "resource": "ce:ValidationActivity",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:VerificationActivity",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "ce:VerificationAndValidationActivity",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Visual_Basic",
+    "resources": [
+      {
+        "resource": "pe:Visual_Basic",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/Web_Ontology_Language",
+    "resources": [
+      {
+        "resource": "le:OWL",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/XML",
+    "resources": [
+      {
+        "resource": "le:XML",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/XML_Schema_(W3C)",
+    "resources": [
+      {
+        "resource": "le:XMLSchema",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      },
+      {
+        "resource": "le:XMLSchemaLanguage",
+        "predicates": [
+          "foaf:page"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/XPath",
+    "resources": [
+      {
+        "resource": "le:XPath",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/XQuery",
+    "resources": [
+      {
+        "resource": "le:XMLQueryLanguage",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "le:XQuery",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/XSLT",
+    "resources": [
+      {
+        "resource": "le:DocumentTransformationLanguage",
+        "predicates": [
+          "foaf:page"
+        ]
+      },
+      {
+        "resource": "le:XSLT",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  },
+  {
+    "link": "https://en.wikipedia.org/wiki/YAML",
+    "resources": [
+      {
+        "resource": "le:YAML",
+        "predicates": [
+          "foaf:isPrimaryTopicOf"
+        ]
+      }
+    ]
+  }
+]
