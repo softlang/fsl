@@ -8,7 +8,7 @@ all:
 	make all-abox
 
 
-LinkingPolicy.json: LinkingPolicy.py
+LinkingPolicy.json: LinkingPolicy.py ${master}/*.ttl
 	python3 LinkingPolicy.py
 
 all-tbox:
