@@ -1,8 +1,15 @@
+export PYTHONPATH := ../utils:$(PYTHONPATH)
+
 master = ../ontologies
 
 all:
+	make LinkingPolicy.json
 	make all-tbox
 	make all-abox
+
+
+LinkingPolicy.json: LinkingPolicy.py
+	python3 LinkingPolicy.py
 
 all-tbox:
 	make ClassDeclarationsMustHaveCommentShape.tbox

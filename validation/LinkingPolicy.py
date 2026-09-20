@@ -140,6 +140,6 @@ report = {
     },
 }
 
-with open("links.json", "w", encoding="utf-8") as f:
+with open("LinkingPolicy.json", "w", encoding="utf-8") as f:
     json.dump(report, f, indent=2)
     f.write("\n")
