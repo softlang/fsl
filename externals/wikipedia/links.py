@@ -6,6 +6,10 @@ from fsl_openai import start_openai, upload_json_openai, prompt_openai
 # Whether to call into OpenAI API
 openai = True
 
+# Count API calls
+api_calls = 0
+max_api_calls = 1024
+
 # Controling during development
 control = False
 control_group = [
@@ -53,7 +57,6 @@ from typing import Any
 VALID_ASSESSMENTS = {"support", "replace", "resolve"}
 VALID_PREDICATES = {"foaf:isPrimaryTopicOf", "foaf:page"}
 
-
 # Helper for OpenAI response validation (link format)
 def _is_link(value: Any) -> bool:
     return (
@@ -92,10 +95,6 @@ def check_response(data: Any, resource: str) -> bool:
     if not valid_count[assessment]:
         return False
     return True
-
-# Count API calls
-api_calls = 0
-max_api_calls = 100
 
 # Create and run all prompts
 for context_file in sorted(
