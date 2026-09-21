@@ -1,0 +1,29 @@
+We are concerned with the FSL ontology `{ontology}` and, specifically, with Wikipedia linkage for the resource `{resource}`.
+
+The attached file provides knowledge-graph context for the resource `{resource}`; the file lists all incoming and outgoing statements for the resource in a straightforward JSON format. We are particularly concerned with outgoing statements that use the predicates `foaf:isPrimaryTopicOf` and `foaf:page` with URLs in the object position; these URLs preferably, but not necessarily, link to English Wikipedia articles. The ontology's TBox at `https://github.com/softlang/fsl/blob/main/ontologies/tbox.ttl` should be consulted for interpreting other predicates occurring in the attached resource context; this is necessary for determining the correct Wikipedia linkage for the resource.
+
+It follows the policy for Wikipedia linkage. Each resource should have exactly one outgoing statement using one of the predicates `foaf:isPrimaryTopicOf` or `foaf:page` with the URL in the object position being a link to an English Wikipedia article. The use of `foaf:isPrimaryTopicOf` is preferred, but it can only be used when the linked Wikipedia article is primarily about the resource itself. The use of `foaf:page` still requires that the linked Wikipedia page is relevant to the resource, but cannot confidently be regarded as having the resource as its primary topic. Canonical English Wikipedia article URLs are to be preferred. Nonexistent pages are not acceptable. Disambiguation pages are to be avoided, unless the ontology resource itself genuinely represents the corresponding disambiguation concept. If no suitable Wikipedia article can be identified with sufficient confidence, the designated fallback, `https://en.wikipedia.org/wiki/N/A`, shall be used with the predicate `foaf:page`.
+
+The task is now to assess the linkage for the resource `{resource}`. To this links readily found in the provided context should be assessed and Wikipedia needs to be searched while taking into accout the resource's context and the ontology's tbox.
+
+The assessment must have exactly one of the following outcomes:
+
+* `support`: There is exactly one found link in the provided context which readily complies with the policy for Wikipedia linkage and should be thus retained unchanged.
+* `replace`: There is one found link or several found links in the provided context while we need exactly one link which complies with the policy for Wikipedia linkage. So either one of the found links is proposed because it is fit for purpose a new link must be proposed. The proposed link must comply with the policy for Wikipedia linkage.
+* `resolve`: There are no links in the provided context; a suitable link must be proposed.
+
+More constraints:
+* Any supported and proposed link must be in compliance with the policy for Wikipedia linkage.
+* Option `support' only can be applied, if there is exactly one link found in the provided context.
+
+Rules for the response format:
+* Return only a single JSON object with key-value pairs as follows:
+  * Key "resource"; value "{resource}".
+  * Key "assessment"; value "support" or "replace" or "resolve".
+  * Key "links_found"; value a list of JSON objects for the links found in the resource context.
+  * Key "link_proposed"; value a JSON object for the proposed link. This key-value pair is to be omitted for the `support` case.
+* The JSON objects for found and proposed links have key-value pairs as follows:
+  * Key "predicate"; value "foaf:isPrimaryTopicOf" or "foaf:page".
+  * Key "url"; value the URL
+* Do not include Markdown, commentary, explanations, or code fences.
+* The entire response must be directly parseable by `json.loads(...)` without preprocessing.
