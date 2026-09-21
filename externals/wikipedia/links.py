@@ -49,13 +49,12 @@ client = start_openai() if openai else None
 import json
 from typing import Any
 
-
+# Helpers for OpenAI response validation (keys)
 VALID_ASSESSMENTS = {"support", "replace", "resolve"}
 VALID_PREDICATES = {"foaf:isPrimaryTopicOf", "foaf:page"}
 
-VALID_ASSESSMENTS = {"support", "replace", "resolve"}
-VALID_PREDICATES = {"foaf:isPrimaryTopicOf", "foaf:page"}
 
+# Helper for OpenAI response validation (link format)
 def _is_link(value: Any) -> bool:
     return (
         isinstance(value, dict)
@@ -64,6 +63,7 @@ def _is_link(value: Any) -> bool:
         and isinstance(value["url"], str)
     )
 
+# OpenAI response validation
 def check_response(data: Any, resource: str) -> bool:
     if not isinstance(data, dict):
         return False
