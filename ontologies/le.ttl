@@ -35,7 +35,7 @@
     rdfs:subClassOf tbox:SoftwareLanguage ;
     owl:disjointWith [ a owl:Class ;
             owl:unionOf ( :ConstraintLanguage :QueryLanguage :TransformationLanguage :DataManipulationLanguage :DataDefinitionLanguage ) ] ;
-    foaf:page <https://en.wikipedia.org/wiki/Configuration_file> .
+    foaf:page <https://en.wikipedia.org/wiki/Computer_language> .
 
 :ConstraintLanguage a tbox:LanguageEntity ;
     rdfs:label "Constraint language"@en ;
@@ -66,7 +66,7 @@
         ce:SLE ;
     tbox:hasSpace ce:SQLware ;
     rdfs:subClassOf tbox:SoftwareLanguage ;
-    foaf:page <https://en.wikipedia.org/wiki/Data_manipulation_language> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Data_manipulation_language> .
 
 :DocumentTransformationLanguage a tbox:LanguageEntity ;
     rdfs:label "Document transformation language"@en ;
@@ -75,7 +75,7 @@
     tbox:hasSpace ce:JSONware,
         ce:XMLware ;
     rdfs:subClassOf :TransformationLanguage ;
-    foaf:page <https://en.wikipedia.org/wiki/XSLT> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/XML_transformation_language> .
 
 :GrammarMetalanguage a tbox:LanguageEntity ;
     rdfs:label "Grammar metalanguage"@en ;
@@ -94,7 +94,7 @@
         ce:SLE ;
     tbox:hasSpace ce:Grammarware ;
     rdfs:subClassOf :TransformationLanguage ;
-    foaf:page <https://en.wikipedia.org/wiki/Program_transformation> .
+    foaf:page <https://en.wikipedia.org/wiki/Transformation_language> .
 
 :GraphQueryLanguage a tbox:LanguageEntity ;
     rdfs:label "Graph query language"@en ;
@@ -112,7 +112,7 @@
     rdfs:subClassOf tbox:SoftwareLanguage ;
     owl:disjointWith [ a owl:Class ;
             owl:unionOf ( :ConstraintLanguage :QueryLanguage :TransformationLanguage :DataManipulationLanguage :DataDefinitionLanguage ) ] ;
-    foaf:page <https://en.wikipedia.org/wiki/Interface_description_language> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Interface_description_language> .
 
 :JSONQueryLanguage a tbox:LanguageEntity ;
     rdfs:label "JSON query language"@en ;
@@ -129,7 +129,7 @@
     tbox:hasSpace ce:JSONware ;
     rdfs:comment "schema language for JSON documents"@en ;
     rdfs:subClassOf :SchemaLanguage ;
-    foaf:page <https://en.wikipedia.org/wiki/JSON_Schema> .
+    foaf:page <https://en.wikipedia.org/wiki/JSON> .
 
 :MappingLanguage a tbox:LanguageEntity ;
     rdfs:label "Mapping language"@en ;
@@ -157,7 +157,8 @@
     tbox:hasArea ce:MDE,
         ce:SLE ;
     rdfs:comment "modeling language for expressing megamodels"@en ;
-    rdfs:subClassOf :ModelingLanguage .
+    rdfs:subClassOf :ModelingLanguage ;
+    foaf:page <https://en.wikipedia.org/wiki/Modeling_language> .
 
 :Metalanguage a tbox:LanguageEntity ;
     rdfs:label "Metalanguage"@en ;
@@ -168,7 +169,7 @@
     rdfs:subClassOf tbox:SoftwareLanguage ;
     owl:disjointWith [ a owl:Class ;
             owl:unionOf ( :ConstraintLanguage :QueryLanguage :TransformationLanguage :DataManipulationLanguage :DataDefinitionLanguage ) ] ;
-    foaf:page <https://en.wikipedia.org/wiki/Metalanguage> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Metalanguage> .
 
 :MetamodelingLanguage a tbox:LanguageEntity ;
     rdfs:label "Metamodeling language"@en ;
@@ -197,7 +198,7 @@
         ce:ModelingConcept,
         ce:TransformationConcept ;
     rdfs:subClassOf :TransformationLanguage ;
-    foaf:page <https://en.wikipedia.org/wiki/Model_transformation> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Model_transformation_language> .
 
 :ModelingLanguage a tbox:LanguageEntity ;
     rdfs:label "Modeling language"@en ;
@@ -279,7 +280,7 @@
     rdfs:subClassOf tbox:SoftwareLanguage ;
     owl:disjointWith [ a owl:Class ;
             owl:unionOf ( :ConstraintLanguage :QueryLanguage :TransformationLanguage :DataManipulationLanguage :DataDefinitionLanguage ) ] ;
-    foaf:page <https://en.wikipedia.org/wiki/Requirements_interchange_format> .
+    foaf:page <https://en.wikipedia.org/wiki/Requirements_Interchange_Format> .
 
 :RuleLanguage a tbox:LanguageEntity ;
     rdfs:label "Rule language"@en ;
@@ -304,7 +305,7 @@
     rdfs:subClassOf tbox:SoftwareLanguage ;
     owl:disjointWith [ a owl:Class ;
             owl:unionOf ( :ConstraintLanguage :QueryLanguage :TransformationLanguage :DataManipulationLanguage :DataDefinitionLanguage ) ] ;
-    foaf:page <https://en.wikipedia.org/wiki/Schema_(computer_science)> .
+    foaf:page <https://en.wikipedia.org/wiki/Data_definition_language> .
 
 :SemanticDataModelLanguage a tbox:LanguageEntity ;
     rdfs:label "Semantic data-model language"@en ;
@@ -335,7 +336,7 @@
     tbox:supports ce:Abstraction,
         ce:TransformationConcept ;
     rdfs:subClassOf tbox:SoftwareLanguage ;
-    foaf:page <https://en.wikipedia.org/wiki/Program_transformation> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Transformation_language> .
 
 :XMLQueryLanguage a tbox:LanguageEntity ;
     rdfs:label "XML query language"@en ;
@@ -360,9 +361,9 @@
         ce:StrongTyping ;
     rdfs:comment "schema language for XML documents"@en ;
     rdfs:subClassOf :SchemaLanguage ;
-    foaf:page <https://en.wikipedia.org/wiki/XML_Schema_(W3C)> .
+    foaf:page <https://en.wikipedia.org/wiki/XML_schema> .
 
-_:n7bab122fd83842f3872e66d0a91a3ed0b94 a owl:Class ;
+_:n71498270cd224f37a0e4dd918f8d3de4b79 a owl:Class ;
     owl:unionOf ( :ConstraintLanguage :QueryLanguage :TransformationLanguage :DataManipulationLanguage :DataDefinitionLanguage ) .
 
 :ATL a :ModelTransformationLanguage,
@@ -413,7 +414,7 @@ _:n7bab122fd83842f3872e66d0a91a3ed0b94 a owl:Class ;
         ce:KR,
         ce:SLE ;
     tbox:hasSpace ce:Proofware ;
-    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Coq> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Rocq> .
 
 :Cypher a :GraphQueryLanguage,
         tbox:LanguageEntity,
@@ -452,7 +453,7 @@ _:n7bab122fd83842f3872e66d0a91a3ed0b94 a owl:Class ;
         ce:Namespaces,
         ce:Packages,
         ce:TransformationConcept ;
-    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Eclipse_Modeling_Framework> .
+    foaf:page <https://en.wikipedia.org/wiki/Eclipse_Modeling_Framework> .
 
 :ExtendedBackusNaurForm a :GrammarMetalanguage,
         tbox:LanguageEntity,
@@ -475,7 +476,7 @@ _:n7bab122fd83842f3872e66d0a91a3ed0b94 a owl:Class ;
     tbox:hasArea ce:SE,
         ce:SLE ;
     tbox:hasSpace ce:APIware ;
-    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/GraphQL> .
+    foaf:page <https://en.wikipedia.org/wiki/GraphQL> .
 
 :GraphQueryLanguageStandard a :QueryLanguage,
         tbox:LanguageEntity,
@@ -527,7 +528,7 @@ _:n7bab122fd83842f3872e66d0a91a3ed0b94 a owl:Class ;
         ce:SchemaConcept,
         ce:StaticTyping,
         ce:StrongTyping ;
-    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/JSON_Schema> .
+    foaf:page <https://en.wikipedia.org/wiki/JSON> .
 
 :Lean a :ProofLanguage,
         tbox:LanguageEntity,
@@ -562,7 +563,7 @@ _:n7bab122fd83842f3872e66d0a91a3ed0b94 a owl:Class ;
     tbox:hasArea ce:SE,
         ce:SLE ;
     tbox:hasSpace ce:Programware ;
-    foaf:page <https://en.wikipedia.org/wiki/Makefile> .
+    foaf:page <https://en.wikipedia.org/wiki/Make_(software)> .
 
 :Markdown a :MarkupLanguage,
         tbox:LanguageEntity,
@@ -685,7 +686,7 @@ _:n7bab122fd83842f3872e66d0a91a3ed0b94 a owl:Class ;
     tbox:hasArea ce:SE,
         ce:SLE ;
     tbox:hasSpace ce:Modelware ;
-    foaf:page <https://www.omg.org/spec/ReqIF/> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Requirements_Interchange_Format> .
 
 :SHACL a :ConstraintLanguage,
         tbox:LanguageEntity,
@@ -702,7 +703,7 @@ _:n7bab122fd83842f3872e66d0a91a3ed0b94 a owl:Class ;
         ce:SchemaConcept,
         ce:StaticTyping ;
     rdfs:comment "constraint language for RDF graphs"@en ;
-    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Shapes_Constraint_Language> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/SHACL> .
 
 :SPARQL a :SemanticQueryLanguage,
         tbox:LanguageEntity,
@@ -739,7 +740,7 @@ _:n7bab122fd83842f3872e66d0a91a3ed0b94 a owl:Class ;
     tbox:hasSpace ce:SQLware ;
     tbox:isPartOf :SQL ;
     rdfs:comment "data-definition part of SQL"@en ;
-    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Data_definition_language> .
+    foaf:page <https://en.wikipedia.org/wiki/Data_definition_language> .
 
 :SQLDML a :DataManipulationLanguage,
         tbox:LanguageEntity,
@@ -750,7 +751,7 @@ _:n7bab122fd83842f3872e66d0a91a3ed0b94 a owl:Class ;
     tbox:hasSpace ce:SQLware ;
     tbox:isPartOf :SQL ;
     rdfs:comment "data-manipulation part of SQL"@en ;
-    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Data_manipulation_language> .
+    foaf:page <https://en.wikipedia.org/wiki/Data_manipulation_language> .
 
 :SQLQuery a :RelationalQueryLanguage,
         tbox:LanguageEntity,
@@ -761,7 +762,7 @@ _:n7bab122fd83842f3872e66d0a91a3ed0b94 a owl:Class ;
     tbox:hasSpace ce:SQLware ;
     tbox:isPartOf :SQL ;
     rdfs:comment "query part of SQL"@en ;
-    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/SQL> .
+    foaf:page <https://en.wikipedia.org/wiki/SQL> .
 
 :SWRL a :RuleLanguage,
         tbox:LanguageEntity,
@@ -787,7 +788,7 @@ _:n7bab122fd83842f3872e66d0a91a3ed0b94 a owl:Class ;
         ce:StaticTyping,
         ce:StrongTyping ;
     rdfs:comment "shape-expression language for RDF validation"@en ;
-    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Shape_Expressions> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/ShEx> .
 
 :UMLStateMachine a :ModelingLanguage,
         tbox:LanguageEntity,
@@ -872,7 +873,7 @@ _:n7bab122fd83842f3872e66d0a91a3ed0b94 a owl:Class ;
     tbox:hasSpace ce:Markupware ;
     foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/YAML> .
 
-pe:ProgrammingLanguage owl:disjointWith _:n7bab122fd83842f3872e66d0a91a3ed0b94 .
+pe:ProgrammingLanguage owl:disjointWith _:n71498270cd224f37a0e4dd918f8d3de4b79 .
 
 [] a owl:AllDisjointClasses ;
     owl:members ( :BuildScriptingLanguage :ConfigurationLanguage :InterfaceDescriptionLanguage :MappingLanguage :MarkupLanguage :Metalanguage :ModelingLanguage :OntologyLanguage :ProofLanguage :RequirementsSpecificationLanguage :RuleLanguage :SchemaLanguage :SemanticDataModelLanguage pe:ProgrammingLanguage ) .

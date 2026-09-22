@@ -54,8 +54,7 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:StrongTyping,
         ce:TaskParallelism ;
     rdfs:comment "statically typed language with strong support for reliability and concurrency"@en ;
-    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Ada_(programming_language)> ;
-    foaf:page <https://en.wikipedia.org/wiki/Ada_(programming_language)> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Ada_(programming_language)> .
 
 :Assembly_Language a :ProgrammingLanguage,
         tbox:LanguageEntity,
@@ -70,8 +69,7 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:Iteration,
         ce:Sequencing ;
     rdfs:comment "low-level language family closely reflecting machine instruction sets"@en ;
-    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Assembly_language> ;
-    foaf:page <https://en.wikipedia.org/wiki/Assembly_language> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Assembly_language> .
 
 :C a :ProgrammingLanguage,
         tbox:LanguageEntity,
@@ -94,8 +92,7 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:Sequencing,
         ce:StaticTyping ;
     rdfs:comment "procedural systems programming language with low-level control and widespread influence"@en ;
-    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/C_(programming_language)> ;
-    foaf:page <https://en.wikipedia.org/wiki/C_(programming_language)> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/C_(programming_language)> .
 
 :COBOL a :ProgrammingLanguage,
         tbox:LanguageEntity,
@@ -114,8 +111,7 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:Sequencing,
         ce:StaticTyping ;
     rdfs:comment "business-oriented programming language family"@en ;
-    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/COBOL> ;
-    foaf:page <https://en.wikipedia.org/wiki/COBOL> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/COBOL> .
 
 :C_Sharp a :ProgrammingLanguage,
         tbox:LanguageEntity,
@@ -140,8 +136,7 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:TypeInference ;
     tbox:standardlySupports ce:FuturesAndPromises ;
     rdfs:comment "multi-paradigm language on the .NET platform"@en ;
-    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/C_Sharp_(programming_language)> ;
-    foaf:page <https://en.wikipedia.org/wiki/C_Sharp_(programming_language)> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/C_Sharp_(programming_language)> .
 
 :Cpp a :ProgrammingLanguage,
         tbox:LanguageEntity,
@@ -166,8 +161,7 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:StaticTyping,
         ce:Subtyping ;
     rdfs:comment "general-purpose programming language combining procedural, object-oriented, and generic programming"@en ;
-    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/C%2B%2B> ;
-    foaf:page <https://en.wikipedia.org/wiki/C%2B%2B> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/C%2B%2B> .
 
 :Datalog a :ProgrammingLanguage,
         tbox:LanguageEntity,
@@ -206,8 +200,7 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:Sequencing,
         ce:StaticTyping ;
     rdfs:comment "Object Pascal family as used in Delphi and related environments"@en ;
-    foaf:page <https://en.wikipedia.org/wiki/Delphi_(software)>,
-        <https://en.wikipedia.org/wiki/Object_Pascal> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Object_Pascal> .
 
 :F_Sharp a :ProgrammingLanguage,
         tbox:LanguageEntity,
@@ -300,22 +293,23 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:Variants ;
     tbox:standardlySupports ce:FuturesAndPromises ;
     rdfs:comment "multi-paradigm functional-first language on .NET"@en ;
-    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/F_Sharp_(programming_language)> ;
-    foaf:page <https://en.wikipedia.org/wiki/F_Sharp_(programming_language)> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/F_Sharp_(programming_language)> .
 
 :F_Sharp_PipelineStyle_assertion a tbox:LanguageSupportAssertion ;
     tbox:assertedForConcept ce:PipelineStyle ;
     tbox:assertedForLanguage :F_Sharp ;
     tbox:hasDominantForm ce:PipelineStyle ;
     tbox:hasPrimaryMechanism ce:PipelineOperatorMechanism ;
-    tbox:hasSupportKind ce:NativeSupport .
+    tbox:hasSupportKind ce:NativeSupport ;
+    foaf:page <https://en.wikipedia.org/wiki/F_Sharp_(programming_language)> .
 
 :F_Sharp_StructuredComputationAbstractions_assertion a tbox:LanguageSupportAssertion ;
     tbox:assertedForConcept ce:StructuredComputationAbstractions ;
     tbox:assertedForLanguage :F_Sharp ;
     tbox:hasDominantForm ce:MonadicStyle ;
     tbox:hasPrimaryMechanism ce:ComputationExpressionMechanism ;
-    tbox:hasSupportKind ce:NativeSupport .
+    tbox:hasSupportKind ce:NativeSupport ;
+    foaf:page <https://en.wikipedia.org/wiki/F_Sharp_(programming_language)> .
 
 :Fortran a :ProgrammingLanguage,
         tbox:LanguageEntity,
@@ -334,8 +328,7 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:Sequencing,
         ce:StaticTyping ;
     rdfs:comment "family of languages with strong historic emphasis on scientific and numeric computing"@en ;
-    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Fortran> ;
-    foaf:page <https://en.wikipedia.org/wiki/Fortran> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Fortran> .
 
 :Go a :ProgrammingLanguage,
         tbox:LanguageEntity,
@@ -352,8 +345,7 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:StaticTyping,
         ce:TaskParallelism ;
     rdfs:comment "compiled language designed for simplicity, tooling, and concurrency"@en ;
-    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Go_(programming_language)> ;
-    foaf:page <https://en.wikipedia.org/wiki/Go_(programming_language)> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Go_(programming_language)> .
 
 :Haskell a :ProgrammingLanguage,
         tbox:LanguageEntity,
@@ -428,14 +420,14 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:ValueSemantics,
         ce:VariablesAsState ;
     rdfs:comment "statically typed purely functional programming language"@en ;
-    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Haskell_(programming_language)> ;
-    foaf:page <https://en.wikipedia.org/wiki/Haskell> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Haskell> .
 
 :Haskell_EvaluationStrategy_assertion a tbox:LanguageSupportAssertion ;
     tbox:assertedForConcept ce:EvaluationStrategy ;
     tbox:assertedForLanguage :Haskell ;
     tbox:hasDominantForm ce:LazyEvaluation ;
-    tbox:hasSupportKind ce:NativeSupport .
+    tbox:hasSupportKind ce:NativeSupport ;
+    foaf:page <https://en.wikipedia.org/wiki/Evaluation_strategy> .
 
 :Haskell_StructuredComputationAbstractions_assertion a tbox:LanguageSupportAssertion ;
     tbox:assertedForConcept ce:StructuredComputationAbstractions ;
@@ -443,7 +435,8 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
     tbox:hasDominantForm ce:MonadicStyle ;
     tbox:hasPrimaryMechanism ce:TypeClassBasedMechanism ;
     tbox:hasSupportKind ce:NativeSupport ;
-    skos:note "Representative native support centers on type classes and monadic style."@en .
+    skos:note "Representative native support centers on type classes and monadic style."@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Haskell> .
 
 :Java a :ProgrammingLanguage,
         tbox:LanguageEntity,
@@ -470,8 +463,7 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:Subtyping ;
     tbox:standardlySupports ce:FuturesAndPromises ;
     rdfs:comment "class-based general-purpose programming language targeting portability and managed execution"@en ;
-    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Java_(programming_language)> ;
-    foaf:page <https://en.wikipedia.org/wiki/Java_(programming_language)> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Java_(programming_language)> .
 
 :JavaScript a :ProgrammingLanguage,
         tbox:LanguageEntity,
@@ -492,29 +484,31 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:Recursion,
         ce:Sequencing ;
     rdfs:comment "dynamic multi-paradigm language widely used for web programming"@en ;
-    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/JavaScript> ;
-    foaf:page <https://en.wikipedia.org/wiki/JavaScript> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/JavaScript> .
 
 :Java_ErrorHandling_assertion a tbox:LanguageSupportAssertion ;
     tbox:assertedForConcept ce:ErrorHandling ;
     tbox:assertedForLanguage :Java ;
     tbox:hasDominantForm ce:Exceptions ;
     tbox:hasPrimaryMechanism ce:ExceptionMechanism ;
-    tbox:hasSupportKind ce:NativeSupport .
+    tbox:hasSupportKind ce:NativeSupport ;
+    foaf:page <https://en.wikipedia.org/wiki/Exception_handling_(programming)> .
 
 :Java_FuturesAndPromises_assertion a tbox:LanguageSupportAssertion ;
     tbox:assertedForConcept ce:FuturesAndPromises ;
     tbox:assertedForLanguage :Java ;
     tbox:hasDominantForm ce:AsyncEventDrivenConcurrency ;
     tbox:hasPrimaryMechanism ce:TaskLibraryMechanism ;
-    tbox:hasSupportKind ce:StandardLibrarySupport .
+    tbox:hasSupportKind ce:StandardLibrarySupport ;
+    foaf:page <https://en.wikipedia.org/wiki/Futures_and_promises> .
 
 :Java_Objects_assertion a tbox:LanguageSupportAssertion ;
     tbox:assertedForConcept ce:Objects ;
     tbox:assertedForLanguage :Java ;
     tbox:hasDominantForm ce:ObjectOrientedParadigm ;
     tbox:hasPrimaryMechanism ce:ClassBasedMechanism ;
-    tbox:hasSupportKind ce:NativeSupport .
+    tbox:hasSupportKind ce:NativeSupport ;
+    foaf:page <https://en.wikipedia.org/wiki/Object_(computer_science)> .
 
 :Koka a :ProgrammingLanguage,
         tbox:LanguageEntity,
@@ -532,7 +526,7 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:StructuredComputationAbstractions,
         ce:TypeInference ;
     rdfs:comment "research-oriented language emphasizing effects and effect handlers"@en ;
-    foaf:page <https://koka-lang.github.io/koka/doc/index.html> .
+    foaf:page <https://en.wikipedia.org/wiki/Effect_system> .
 
 :Koka_EffectHandlerStyle_assertion a tbox:LanguageSupportAssertion ;
     tbox:assertedForConcept ce:EffectHandlerStyle ;
@@ -540,7 +534,8 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
     tbox:hasDominantForm ce:EffectHandlerStyle ;
     tbox:hasPrimaryMechanism ce:EffectHandlerMechanism ;
     tbox:hasSupportKind ce:NativeSupport ;
-    skos:note "Representative exercise language for effect-handler style."@en .
+    skos:note "Representative exercise language for effect-handler style."@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Effect_system> .
 
 :MATLAB a :ProgrammingLanguage,
         tbox:LanguageEntity,
@@ -555,8 +550,7 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:ImperativeParadigm,
         ce:ProceduralAbstraction ;
     rdfs:comment "language and environment for numerical computing"@en ;
-    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/MATLAB> ;
-    foaf:page <https://en.wikipedia.org/wiki/MATLAB> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/MATLAB> .
 
 :PHP a :ProgrammingLanguage,
         tbox:LanguageEntity,
@@ -574,8 +568,7 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:Objects,
         ce:ProceduralAbstraction ;
     rdfs:comment "server-side scripting language widely used for web development"@en ;
-    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/PHP> ;
-    foaf:page <https://en.wikipedia.org/wiki/PHP> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/PHP> .
 
 :Pascal a :ProgrammingLanguage,
         tbox:LanguageEntity,
@@ -599,8 +592,7 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:StaticTyping,
         ce:StrongTyping ;
     rdfs:comment "procedural language family with strong influence on teaching and later descendants"@en ;
-    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Pascal_(programming_language)> ;
-    foaf:page <https://en.wikipedia.org/wiki/Pascal_(programming_language)> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Pascal_(programming_language)> .
 
 :Perl a :ProgrammingLanguage,
         tbox:LanguageEntity,
@@ -617,8 +609,7 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:ProceduralAbstraction,
         ce:Reflection ;
     rdfs:comment "dynamic general-purpose language especially known for text processing"@en ;
-    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Perl> ;
-    foaf:page <https://en.wikipedia.org/wiki/Perl> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Perl> .
 
 :Prolog a :ProgrammingLanguage,
         tbox:LanguageEntity,
@@ -635,8 +626,7 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:Recursion,
         ce:RecursiveData ;
     rdfs:comment "logic programming language based on rules, facts, and backtracking search"@en ;
-    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Prolog> ;
-    foaf:page <https://en.wikipedia.org/wiki/Prolog> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Prolog> .
 
 :Prolog_ComputationalParadigmsAndEvaluationModels_assertion a tbox:LanguageSupportAssertion ;
     tbox:assertedForConcept ce:ComputationalParadigmsAndEvaluationModels ;
@@ -644,14 +634,16 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
     tbox:hasDominantForm ce:LogicParadigm ;
     tbox:hasPrimaryMechanism ce:RuleAndPredicateMechanism ;
     tbox:hasSupportKind ce:NativeSupport ;
-    skos:note "Representative support centers on logic programming and rule/predicate execution."@en .
+    skos:note "Representative support centers on logic programming and rule/predicate execution."@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Prolog> .
 
 :Prolog_ControlFlow_assertion a tbox:LanguageSupportAssertion ;
     tbox:assertedForConcept ce:ControlFlow ;
     tbox:assertedForLanguage :Prolog ;
     tbox:hasDominantForm ce:Backtracking ;
     tbox:hasPrimaryMechanism ce:BacktrackingMechanism ;
-    tbox:hasSupportKind ce:NativeSupport .
+    tbox:hasSupportKind ce:NativeSupport ;
+    foaf:page <https://en.wikipedia.org/wiki/Prolog> .
 
 :Python a :ProgrammingLanguage,
         tbox:LanguageEntity,
@@ -683,22 +675,23 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:Sequencing,
         ce:StrongTyping ;
     rdfs:comment "multi-paradigm programming language with dynamic typing and strong support for scripting, data processing, and general-purpose programming"@en ;
-    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Python_(programming_language)> ;
-    foaf:page <https://en.wikipedia.org/wiki/Python_(programming_language)> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Python_(programming_language)> .
 
 :Python_IteratorsAndGenerators_assertion a tbox:LanguageSupportAssertion ;
     tbox:assertedForConcept ce:IteratorsAndGenerators ;
     tbox:assertedForLanguage :Python ;
     tbox:hasDominantForm ce:Coroutines ;
     tbox:hasPrimaryMechanism ce:GeneratorProtocolMechanism ;
-    tbox:hasSupportKind ce:NativeSupport .
+    tbox:hasSupportKind ce:NativeSupport ;
+    foaf:page <https://en.wikipedia.org/wiki/Python_syntax_and_semantics> .
 
 :Python_Objects_assertion a tbox:LanguageSupportAssertion ;
     tbox:assertedForConcept ce:Objects ;
     tbox:assertedForLanguage :Python ;
     tbox:hasDominantForm ce:ObjectOrientedParadigm ;
     tbox:hasPrimaryMechanism ce:ClassBasedMechanism ;
-    tbox:hasSupportKind ce:NativeSupport .
+    tbox:hasSupportKind ce:NativeSupport ;
+    foaf:page <https://en.wikipedia.org/wiki/Python_syntax_and_semantics> .
 
 :R a :ProgrammingLanguage,
         tbox:LanguageEntity,
@@ -714,8 +707,7 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:HigherOrderFunctions,
         ce:PipelineStyle ;
     rdfs:comment "language and environment for statistical computing and data analysis"@en ;
-    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/R_(programming_language)> ;
-    foaf:page <https://en.wikipedia.org/wiki/R_(programming_language)> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/R_(programming_language)> .
 
 :Rust a :ProgrammingLanguage,
         tbox:LanguageEntity,
@@ -745,8 +737,7 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:ValueSemantics,
         ce:Variants ;
     rdfs:comment "systems programming language emphasizing memory safety and concurrency"@en ;
-    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Rust_(programming_language)> ;
-    foaf:page <https://en.wikipedia.org/wiki/Rust_(programming_language)> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Rust_(programming_language)> .
 
 :Scheme a :ProgrammingLanguage,
         tbox:LanguageEntity,
@@ -764,8 +755,7 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:FunctionalParadigm,
         ce:HigherOrderFunctions ;
     rdfs:comment "minimalist dialect of Lisp with first-class continuations and lexical scope"@en ;
-    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Scheme_(programming_language)> ;
-    foaf:page <https://en.wikipedia.org/wiki/Scheme_(programming_language)> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Scheme_(programming_language)> .
 
 :Scheme_ContinuationPassingStyle_assertion a tbox:LanguageSupportAssertion ;
     tbox:assertedForConcept ce:ContinuationPassingStyle ;
@@ -773,7 +763,8 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
     tbox:hasDominantForm ce:ContinuationPassingStyle ;
     tbox:hasPrimaryMechanism ce:ContinuationOperatorMechanism ;
     tbox:hasSupportKind ce:NativeSupport ;
-    skos:note "Representative exercise language for continuation-passing style."@en .
+    skos:note "Representative exercise language for continuation-passing style."@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Continuation-passing_style> .
 
 :Scratch a :ProgrammingLanguage,
         tbox:LanguageEntity,
@@ -789,8 +780,7 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:ProceduralAbstraction,
         ce:Sequencing ;
     rdfs:comment "block-based educational programming language"@en ;
-    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Scratch_(programming_language)> ;
-    foaf:page <https://en.wikipedia.org/wiki/Scratch_(programming_language)> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Scratch_(programming_language)> .
 
 :Swift a :ProgrammingLanguage,
         tbox:LanguageEntity,
@@ -814,8 +804,7 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:StaticTyping,
         ce:TypeInference ;
     rdfs:comment "multi-paradigm language developed for Apple platforms"@en ;
-    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Swift_(programming_language)> ;
-    foaf:page <https://en.wikipedia.org/wiki/Swift_(programming_language)> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Swift_(programming_language)> .
 
 :Visual_Basic a :ProgrammingLanguage,
         tbox:LanguageEntity,
@@ -833,6 +822,5 @@ Paradigm-based subclassing of programming languages is not used; paradigms are r
         ce:Sequencing,
         ce:StaticTyping ;
     rdfs:comment "family of Microsoft programming languages and environments"@en ;
-    foaf:isPrimaryTopicOf <https://dbpedia.org/resource/Visual_Basic> ;
-    foaf:page <https://en.wikipedia.org/wiki/Visual_Basic> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Visual_Basic> .
 

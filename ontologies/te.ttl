@@ -24,7 +24,8 @@
     tbox:hasOutputArtifact ae:APIDescriptionArtifact ;
     tbox:processes ae:APIDescriptionArtifact ;
     tbox:targets le:InterfaceDescriptionLanguage ;
-    rdfs:subClassOf tbox:SoftwareTool .
+    rdfs:subClassOf tbox:SoftwareTool ;
+    foaf:page <https://en.wikipedia.org/wiki/Swagger_(software)> .
 
 :BuildTool a tbox:ToolEntity ;
     rdfs:label "Build tool"@en ;
@@ -41,7 +42,8 @@
     tbox:hasOutputArtifact ae:ProgramArtifact ;
     tbox:processes ae:ProgramArtifact ;
     tbox:targets pe:ProgrammingLanguage ;
-    rdfs:subClassOf tbox:SoftwareTool .
+    rdfs:subClassOf tbox:SoftwareTool ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Compiler> .
 
 :ConfigurationTool a tbox:ToolEntity ;
     rdfs:label "Configuration tool"@en ;
@@ -62,13 +64,15 @@
     rdfs:label "Grammar analyzer"@en ;
     tbox:processes ae:GrammarArtifact ;
     tbox:targets le:GrammarMetalanguage ;
-    rdfs:subClassOf tbox:SoftwareTool .
+    rdfs:subClassOf tbox:SoftwareTool ;
+    foaf:page <https://en.wikipedia.org/wiki/Compiler-compiler> .
 
 :GrammarTransformationEngine a tbox:ToolEntity ;
     rdfs:label "Grammar transformation engine"@en ;
     tbox:processes ae:GrammarArtifact ;
     tbox:targets le:GrammarTransformationLanguage ;
-    rdfs:subClassOf :TransformationEngine .
+    rdfs:subClassOf :TransformationEngine ;
+    foaf:page <https://en.wikipedia.org/wiki/N/A> .
 
 :GraphDatabase a tbox:ToolEntity ;
     rdfs:label "Graph database"@en ;
@@ -85,14 +89,16 @@
     tbox:targets le:GraphQueryLanguage,
         le:PropertyGraphDataModelLanguage ;
     rdfs:subClassOf :GraphDatabase,
-        :QueryProcessor .
+        :QueryProcessor ;
+    foaf:page <https://en.wikipedia.org/wiki/Graph_database> .
 
 :Interpreter a tbox:ToolEntity ;
     rdfs:label "Interpreter"@en ;
     tbox:hasInputArtifact ae:ProgramArtifact ;
     tbox:processes ae:ProgramArtifact ;
     tbox:targets pe:ProgrammingLanguage ;
-    rdfs:subClassOf tbox:SoftwareTool .
+    rdfs:subClassOf tbox:SoftwareTool ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Interpreter_(computing)> .
 
 :JSONProcessor a tbox:ToolEntity ;
     rdfs:label "JSON processor"@en ;
@@ -102,20 +108,23 @@
         le:JSONQueryLanguage,
         le:JSONSchemaLanguage ;
     rdfs:subClassOf tbox:SoftwareTool ;
-    owl:disjointWith :XMLProcessor .
+    owl:disjointWith :XMLProcessor ;
+    foaf:page <https://en.wikipedia.org/wiki/JSON> .
 
 :LogicProgrammingSystem a tbox:ToolEntity ;
     rdfs:label "Logic programming system"@en ;
     tbox:processes ae:LogicProgramArtifact ;
     tbox:targets pe:Datalog,
         pe:Prolog ;
-    rdfs:subClassOf tbox:SoftwareTool .
+    rdfs:subClassOf tbox:SoftwareTool ;
+    foaf:page <https://en.wikipedia.org/wiki/Logic_programming> .
 
 :MarkupProcessor a tbox:ToolEntity ;
     rdfs:label "Markup processor"@en ;
     tbox:processes ae:MarkupArtifact ;
     tbox:targets le:MarkupLanguage ;
-    rdfs:subClassOf tbox:SoftwareTool .
+    rdfs:subClassOf tbox:SoftwareTool ;
+    foaf:page <https://en.wikipedia.org/wiki/Text_processing> .
 
 :ModelTransformationEngine a tbox:ToolEntity ;
     rdfs:label "Model transformation engine"@en ;
@@ -125,13 +134,15 @@
     tbox:processes ae:MetamodelArtifact,
         ae:ModelArtifact ;
     tbox:targets le:ModelTransformationLanguage ;
-    rdfs:subClassOf :TransformationEngine .
+    rdfs:subClassOf :TransformationEngine ;
+    foaf:page <https://en.wikipedia.org/wiki/Model_transformation> .
 
 :ModelValidator a tbox:ToolEntity ;
     rdfs:label "Model validator"@en ;
     tbox:processes ae:ModelArtifact ;
     tbox:targets le:ConstraintLanguage ;
-    rdfs:subClassOf :Validator .
+    rdfs:subClassOf :Validator ;
+    foaf:page <https://en.wikipedia.org/wiki/Model_checking> .
 
 :ModelingWorkbench a tbox:ToolEntity ;
     rdfs:label "Modeling workbench"@en ;
@@ -139,19 +150,22 @@
         ae:ModelArtifact ;
     tbox:targets le:MetamodelingLanguage,
         le:ModelingLanguage ;
-    rdfs:subClassOf tbox:SoftwareTool .
+    rdfs:subClassOf tbox:SoftwareTool ;
+    foaf:page <https://en.wikipedia.org/wiki/MetaCASE_tool> .
 
 :OntologyEditor a tbox:ToolEntity ;
     rdfs:label "Ontology editor"@en ;
     tbox:processes ae:OntologyArtifact ;
     tbox:targets le:OntologyLanguage ;
-    rdfs:subClassOf tbox:SoftwareTool .
+    rdfs:subClassOf tbox:SoftwareTool ;
+    foaf:page <https://en.wikipedia.org/wiki/Ontology_(information_science)> .
 
 :ParserGenerator a tbox:ToolEntity ;
     rdfs:label "Parser generator"@en ;
     tbox:processes ae:GrammarArtifact ;
     tbox:targets le:GrammarMetalanguage ;
-    rdfs:subClassOf tbox:SoftwareTool .
+    rdfs:subClassOf tbox:SoftwareTool ;
+    foaf:page <https://en.wikipedia.org/wiki/Compiler-compiler> .
 
 :ProofAssistant a tbox:ToolEntity ;
     rdfs:label "Proof assistant"@en ;
@@ -160,11 +174,13 @@
     tbox:hasOutputArtifact ae:ProofArtifact ;
     tbox:processes ae:ProofArtifact ;
     tbox:targets le:ProofLanguage ;
-    rdfs:subClassOf tbox:SoftwareTool .
+    rdfs:subClassOf tbox:SoftwareTool ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Proof_assistant> .
 
 :QueryProcessor a tbox:ToolEntity ;
     rdfs:label "Query processor"@en ;
-    rdfs:subClassOf tbox:SoftwareTool .
+    rdfs:subClassOf tbox:SoftwareTool ;
+    foaf:page <https://en.wikipedia.org/wiki/Programming_tool> .
 
 :Reasoner a tbox:ToolEntity ;
     rdfs:label "Reasoner"@en ;
@@ -173,7 +189,8 @@
     tbox:targets le:OntologyLanguage,
         le:SemanticDataModelLanguage ;
     rdfs:subClassOf tbox:SoftwareTool,
-        :SemanticReasoner .
+        :SemanticReasoner ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Semantic_reasoner> .
 
 :RefactoringTool a tbox:ToolEntity ;
     rdfs:label "Refactoring tool"@en ;
@@ -192,7 +209,8 @@
         le:SQLDML,
         le:SQLQuery ;
     rdfs:subClassOf :QueryProcessor,
-        :Validator .
+        :Validator ;
+    foaf:page <https://en.wikipedia.org/wiki/Relational_database> .
 
 :RequirementsTool a tbox:ToolEntity ;
     rdfs:label "Requirements tool"@en ;
@@ -201,7 +219,7 @@
     tbox:hasOutputArtifact ae:RequirementsArtifact ;
     tbox:targets le:RequirementsSpecificationLanguage ;
     rdfs:subClassOf tbox:SoftwareTool ;
-    foaf:page <https://en.wikipedia.org/wiki/Requirements_engineering> .
+    foaf:page <https://en.wikipedia.org/wiki/Requirements_engineering_tools> .
 
 :RuleEngine a tbox:ToolEntity ;
     rdfs:label "Rule engine"@en ;
@@ -209,7 +227,7 @@
     tbox:processes ae:RuleArtifact ;
     tbox:targets le:RuleLanguage ;
     rdfs:subClassOf tbox:SoftwareTool ;
-    foaf:page <https://en.wikipedia.org/?title=Rule_engine&redirect=no> .
+    foaf:page <https://en.wikipedia.org/wiki/Business_rules_engine> .
 
 :SemanticReasoner a tbox:ToolEntity ;
     rdfs:label "Semantic reasoner"@en ;
@@ -224,22 +242,26 @@
     tbox:hasInputArtifact ae:ProgramArtifact ;
     tbox:processes ae:ProgramArtifact ;
     tbox:targets pe:ProgrammingLanguage ;
-    rdfs:subClassOf tbox:SoftwareTool .
+    rdfs:subClassOf tbox:SoftwareTool ;
+    foaf:page <https://en.wikipedia.org/wiki/Static_program_analysis> .
 
 :TransformationEngine a tbox:ToolEntity ;
     rdfs:label "Transformation engine"@en ;
-    rdfs:subClassOf tbox:SoftwareTool .
+    rdfs:subClassOf tbox:SoftwareTool ;
+    foaf:page <https://en.wikipedia.org/wiki/Software_engine> .
 
 :TripleStore a tbox:ToolEntity ;
     rdfs:label "Triple store"@en ;
     tbox:processes ae:RDFGraphArtifact ;
     tbox:targets le:RDF,
         le:SPARQL ;
-    rdfs:subClassOf :QueryProcessor .
+    rdfs:subClassOf :QueryProcessor ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Triplestore> .
 
 :Validator a tbox:ToolEntity ;
     rdfs:label "Validator"@en ;
-    rdfs:subClassOf tbox:SoftwareTool .
+    rdfs:subClassOf tbox:SoftwareTool ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Validator> .
 
 :XMLProcessor a tbox:ToolEntity ;
     rdfs:label "XML processor"@en ;
@@ -249,7 +271,8 @@
         le:XML,
         le:XMLQueryLanguage,
         le:XMLSchemaLanguage ;
-    rdfs:subClassOf tbox:SoftwareTool .
+    rdfs:subClassOf tbox:SoftwareTool ;
+    foaf:page <https://en.wikipedia.org/wiki/XML> .
 
 :ANTLR a tbox:ToolEntity,
         :ParserGenerator,
@@ -263,7 +286,7 @@
         owl:NamedIndividual ;
     rdfs:label "ATL transformation engine"@en ;
     rdfs:comment "engine for executing ATL model transformations"@en ;
-    foaf:page <https://eclipse.dev/atl/> .
+    foaf:page <https://en.wikipedia.org/wiki/ATLAS_Transformation_Language> .
 
 :Ansible a tbox:ToolEntity,
         :ConfigurationTool,
@@ -307,7 +330,7 @@
         owl:NamedIndividual ;
     rdfs:label "Coq proof assistant"@en ;
     rdfs:comment "proof assistant for interactive theorem proving based on dependent type theory"@en ;
-    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Coq> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Rocq> .
 
 :Drools a tbox:ToolEntity,
         :RuleEngine,
@@ -342,7 +365,7 @@
         owl:NamedIndividual ;
     rdfs:label "GNU Make"@en ;
     rdfs:comment "build automation tool for executing Makefile-based build specifications"@en ;
-    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/GNU_Make> .
+    foaf:page <https://en.wikipedia.org/wiki/Make_(software)> .
 
 :GraphDB a tbox:ToolEntity,
         :Reasoner,
@@ -350,14 +373,14 @@
         owl:NamedIndividual ;
     rdfs:label "GraphDB"@en ;
     rdfs:comment "semantic graph database with RDF storage and reasoning support"@en ;
-    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/GraphDB> .
+    foaf:page <https://en.wikipedia.org/wiki/Ontotext> .
 
 :IBMDOORS a tbox:ToolEntity,
         :RequirementsTool,
         owl:NamedIndividual ;
     rdfs:label "IBM DOORS"@en ;
     rdfs:comment "requirements management tool for capturing and organizing requirements artifacts"@en ;
-    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/IBM_DOORS> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/DOORS> .
 
 :LeanProofAssistant a tbox:ToolEntity,
         :ProofAssistant,

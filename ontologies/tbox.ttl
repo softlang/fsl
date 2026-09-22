@@ -67,7 +67,7 @@
     rdfs:label "Implementation mechanism concept"@en ;
     rdfs:comment "a more realization/implementation-oriented category of language concepts"@en ;
     rdfs:subClassOf :LanguageConcept ;
-    foaf:page <https://en.wikipedia.org/wiki/Category:Programming_language_concepts> .
+    foaf:page <https://en.wikipedia.org/wiki/Programming_language_theory> .
 
 :IssueEntity rdfs:label "Issue entity"@en ;
     rdfs:comment "Entity for representing review issues, critiques, and proposed resolutions concerning resources, predicates, or fully specified assertions in the ontology"@en ;
@@ -78,13 +78,13 @@
     rdfs:label "Language concept"@en ;
     rdfs:comment "concept associated with a language framework such as programming-language concepts"@en ;
     rdfs:subClassOf :ConceptualEntity ;
-    foaf:page <https://en.wikipedia.org/wiki/Category:Programming_language_concepts> .
+    foaf:page <https://en.wikipedia.org/wiki/N/A> .
 
 :LanguageConceptApplicability a :ConceptualEntity ;
     rdfs:label "Language concept applicability"@en ;
     rdfs:comment "qualifier for how directly a language concept applies to a language"@en ;
     rdfs:subClassOf :ConceptualEntity ;
-    foaf:page <https://en.wikipedia.org/wiki/Category:Programming_language_concepts> .
+    foaf:page <https://en.wikipedia.org/wiki/N/A> .
 
 :LanguageEntity rdfs:label "Language entity"@en ;
     :metamodelingPolicy "All non-immediate subclasses must also be of this type."@en ;
@@ -103,7 +103,7 @@
     rdfs:label "Language support assertion"@en ;
     rdfs:comment "reified assertion that a language supports a language concept, optionally qualified"@en ;
     rdfs:subClassOf :Assertion ;
-    foaf:page <https://en.wikipedia.org/wiki/Category:Programming_language_concepts> .
+    foaf:page <https://en.wikipedia.org/wiki/Programming_language> .
 
 :LanguageSupportKind a :ConceptualEntity ;
     rdfs:label "Language support kind"@en ;
@@ -114,7 +114,8 @@
 :MethodologicalApproach a :FormalEntity ;
     rdfs:label "Methodological approach"@en ;
     rdfs:comment "class of formal entities that represent methodological orientations, techniques, or styles of treatment used in the study or engineering of software languages and related formalisms"@en ;
-    rdfs:subClassOf :FormalEntity .
+    rdfs:subClassOf :FormalEntity ;
+    foaf:page <https://en.wikipedia.org/wiki/Software_development_process> .
 
 :PropertyEntity rdfs:label "Property entity"@en ;
     rdfs:comment "Ontological entity used to represent property declarations that participate in relations like other modeled entities"@en ;
@@ -123,7 +124,8 @@
 :SoftwareArtifact a :ArtifactEntity ;
     rdfs:label "Software artifact"@en ;
     rdfs:comment "Software artifact kind used to classify the characteristic artifacts of a technological space"@en ;
-    rdfs:subClassOf :ArtifactEntity .
+    rdfs:subClassOf :ArtifactEntity ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Artifact_(software_development)> .
 
 :SoftwareLanguage a :LanguageEntity ;
     rdfs:label "Software language"@en ;
@@ -139,26 +141,28 @@
 :SubjectArea a :ConceptualEntity ;
     rdfs:label "Subject area"@en ;
     rdfs:comment "research or application area relevant to the foundations of software languages and related disciplines"@en ;
-    rdfs:subClassOf :ConceptualEntity .
+    rdfs:subClassOf :ConceptualEntity ;
+    foaf:page <https://en.wikipedia.org/wiki/Academic_discipline> .
 
 :TechnologicalSpace a :ConceptualEntity ;
     rdfs:label "Technological space"@en ;
     :hasBibTeX "KurtevBezivinAksit2002TechnologicalSpaces" ;
     rdfs:comment "Technological spaces are families of related software-language technologies that share characteristic artifact kinds, metalanguages, tools, conformance relations, skills, and communities of practice. A technological space is not just a single language or formalism, but a working context in which artifacts are defined, manipulated, queried, transformed, validated, exchanged, and executed according to characteristic principles. This class represents such ecosystems."@en ;
-    rdfs:subClassOf :ConceptualEntity .
+    rdfs:subClassOf :ConceptualEntity ;
+    foaf:page <https://en.wikipedia.org/wiki/Software_language> .
 
 :ToolEntity rdfs:label "Tool entity"@en ;
     :metamodelingPolicy "All non-immediate subclasses must also be of this type."@en ;
     rdfs:comment "Ontological entity used to represent software tools, tool families, and tool-related instances"@en ;
     rdfs:subClassOf :Entity .
 
-_:nf9279e8bd75249d3942d53eb0318d1e4b10 a owl:Class ;
+_:n98f4237db2e24619bea4201248feee45b10 a owl:Class ;
     owl:unionOf ( :EngineeringActivity :ToolEntity ) .
 
-_:nf9279e8bd75249d3942d53eb0318d1e4b13 a owl:Class ;
+_:n98f4237db2e24619bea4201248feee45b13 a owl:Class ;
     owl:unionOf ( :EngineeringActivity :ToolEntity ) .
 
-_:nf9279e8bd75249d3942d53eb0318d1e4b16 a owl:Class ;
+_:n98f4237db2e24619bea4201248feee45b16 a owl:Class ;
     owl:unionOf ( :EngineeringActivity :ToolEntity ) .
 
 :assertedForConcept a :PropertyEntity,
@@ -167,7 +171,7 @@ _:nf9279e8bd75249d3942d53eb0318d1e4b16 a owl:Class ;
     rdfs:comment "Relates a reified assertion about language concepts with the concept"@en ;
     rdfs:domain :LanguageSupportAssertion ;
     rdfs:range :LanguageConcept ;
-    foaf:page <https://en.wikipedia.org/wiki/Category:Programming_language_concepts> .
+    foaf:page <https://en.wikipedia.org/wiki/Programming_language> .
 
 :assertedForLanguage a :PropertyEntity,
         owl:ObjectProperty ;
@@ -212,7 +216,7 @@ _:nf9279e8bd75249d3942d53eb0318d1e4b16 a owl:Class ;
     rdfs:comment "Describes the problem, concern, or critique expressed by an issue"@en ;
     rdfs:domain :IssueEntity ;
     rdfs:range rdf:langString ;
-    foaf:page <https://en.wikipedia.org/wiki/Issue_tracking_system> .
+    foaf:page <https://en.wikipedia.org/wiki/Criticism> .
 
 :defines a :PropertyEntity,
         owl:ObjectProperty ;
@@ -231,7 +235,7 @@ _:nf9279e8bd75249d3942d53eb0318d1e4b16 a owl:Class ;
     rdfs:domain :ArtifactEntity ;
     rdfs:range :LanguageEntity ;
     owl:inverseOf :hasElement ;
-    foaf:page <https://en.wikipedia.org/wiki/Membership_function_(mathematics)> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Element_of_a_set> .
 
 :extends a :PropertyEntity,
         owl:ObjectProperty ;
@@ -240,7 +244,7 @@ _:nf9279e8bd75249d3942d53eb0318d1e4b16 a owl:Class ;
     rdfs:domain :SoftwareLanguage ;
     rdfs:range :SoftwareLanguage ;
     owl:inverseOf :isExtendedBy ;
-    foaf:page <https://en.wikipedia.org/wiki/N/A> .
+    foaf:page <https://en.wikipedia.org/wiki/Extensible_programming> .
 
 :formattingPolicy a :PropertyEntity,
         owl:AnnotationProperty ;
@@ -252,7 +256,7 @@ _:nf9279e8bd75249d3942d53eb0318d1e4b16 a owl:Class ;
         owl:ObjectProperty ;
     rdfs:label "has affected artifact"@en ;
     rdfs:comment "Relates an activity or a tool to an artifact kind that it typically affects (thereby complementing in- and output)"@en ;
-    rdfs:domain _:nf9279e8bd75249d3942d53eb0318d1e4b10 ;
+    rdfs:domain _:n98f4237db2e24619bea4201248feee45b10 ;
     rdfs:range :ArtifactEntity ;
     foaf:page <https://en.wikipedia.org/wiki/Artifact_(software_development)> .
 
@@ -262,7 +266,7 @@ _:nf9279e8bd75249d3942d53eb0318d1e4b16 a owl:Class ;
     rdfs:comment "Relates a reified assertion about language concepts with the applicability"@en ;
     rdfs:domain :LanguageSupportAssertion ;
     rdfs:range :LanguageConceptApplicability ;
-    foaf:page <https://en.wikipedia.org/wiki/Category:Programming_language_concepts> .
+    foaf:page <https://en.wikipedia.org/wiki/Programming_language_theory> .
 
 :hasArea a :PropertyEntity,
         owl:ObjectProperty ;
@@ -288,7 +292,7 @@ _:nf9279e8bd75249d3942d53eb0318d1e4b16 a owl:Class ;
     rdfs:comment "Relates an entity to the BibTeX key of a bibliographic entry that documents, discusses, or supports it"@en ;
     rdfs:domain :Entity ;
     rdfs:range xsd:string ;
-    foaf:page <https://en.wikipedia.org/wiki/Annotated_bibliography> .
+    foaf:page <https://en.wikipedia.org/wiki/BibTeX> .
 
 :hasComponent a :PropertyEntity,
         owl:ObjectProperty ;
@@ -296,7 +300,7 @@ _:nf9279e8bd75249d3942d53eb0318d1e4b16 a owl:Class ;
     rdfs:comment "Relates a composite language concept to a component"@en ;
     rdfs:domain :CompositeConcept ;
     rdfs:range :LanguageConcept ;
-    foaf:page <https://en.wikipedia.org/wiki/Category:Programming_language_concepts> .
+    foaf:page <https://en.wikipedia.org/wiki/N/A> .
 
 :hasDominantForm a :PropertyEntity,
         owl:ObjectProperty ;
@@ -313,13 +317,13 @@ _:nf9279e8bd75249d3942d53eb0318d1e4b16 a owl:Class ;
     rdfs:domain :LanguageEntity ;
     rdfs:range :ArtifactEntity ;
     owl:inverseOf :elementOf ;
-    foaf:page <https://en.wikipedia.org/wiki/Membership_function_(mathematics)> .
+    foaf:page <https://en.wikipedia.org/wiki/Element_of_a_set> .
 
 :hasInputArtifact a :PropertyEntity,
         owl:ObjectProperty ;
     rdfs:label "has input artifact"@en ;
     rdfs:comment "Relates an activity or a tool to an artifact kind that it typically requires or consumes as input"@en ;
-    rdfs:domain _:nf9279e8bd75249d3942d53eb0318d1e4b13 ;
+    rdfs:domain _:n98f4237db2e24619bea4201248feee45b13 ;
     rdfs:range :ArtifactEntity ;
     foaf:page <https://en.wikipedia.org/wiki/Artifact_(software_development)> .
 
@@ -327,7 +331,7 @@ _:nf9279e8bd75249d3942d53eb0318d1e4b16 a owl:Class ;
         owl:ObjectProperty ;
     rdfs:label "has output artifact"@en ;
     rdfs:comment "Relates an activity or a tool to an artifact kind that it typically produces as output"@en ;
-    rdfs:domain _:nf9279e8bd75249d3942d53eb0318d1e4b16 ;
+    rdfs:domain _:n98f4237db2e24619bea4201248feee45b16 ;
     rdfs:range :ArtifactEntity ;
     foaf:page <https://en.wikipedia.org/wiki/Artifact_(software_development)> .
 
@@ -357,7 +361,7 @@ _:nf9279e8bd75249d3942d53eb0318d1e4b16 a owl:Class ;
     rdfs:comment "Relates a reified assertion about language concepts with the primary mechanism for realization"@en ;
     rdfs:domain :LanguageSupportAssertion ;
     rdfs:range :ImplementationMechanismConcept ;
-    foaf:page <https://en.wikipedia.org/wiki/Category:Programming_language_concepts> .
+    foaf:page <https://en.wikipedia.org/wiki/Programming_language_design_and_implementation> .
 
 :hasSecondaryComponent a :PropertyEntity,
         owl:ObjectProperty ;
@@ -383,7 +387,7 @@ _:nf9279e8bd75249d3942d53eb0318d1e4b16 a owl:Class ;
     rdfs:comment "Relates a reified assertion about language concepts with the type of support"@en ;
     rdfs:domain :LanguageSupportAssertion ;
     rdfs:range :LanguageSupportKind ;
-    foaf:page <https://en.wikipedia.org/wiki/Category:Programming_language_concepts> .
+    foaf:page <https://en.wikipedia.org/wiki/N/A> .
 
 :hasSupportingLanguage a :PropertyEntity,
         owl:ObjectProperty ;
@@ -391,7 +395,7 @@ _:nf9279e8bd75249d3942d53eb0318d1e4b16 a owl:Class ;
     rdfs:comment "Relates a software engineering activity to a language kind that is characteristically used to perform or express the activity"@en ;
     rdfs:domain :EngineeringActivity ;
     rdfs:range :LanguageEntity ;
-    foaf:page <https://en.wikipedia.org/wiki/N/A> .
+    foaf:page <https://en.wikipedia.org/wiki/Software_language> .
 
 :hasSupportingTool a :PropertyEntity,
         owl:ObjectProperty ;
@@ -399,7 +403,7 @@ _:nf9279e8bd75249d3942d53eb0318d1e4b16 a owl:Class ;
     rdfs:comment "Relates a software engineering activity to a tool kind that characteristically supports carrying out the activity"@en ;
     rdfs:domain :EngineeringActivity ;
     rdfs:range :ToolEntity ;
-    foaf:page <https://en.wikipedia.org/wiki/N/A> .
+    foaf:page <https://en.wikipedia.org/wiki/Computer-aided_software_engineering> .
 
 :hasTool a :PropertyEntity,
         owl:ObjectProperty ;
@@ -417,7 +421,7 @@ _:nf9279e8bd75249d3942d53eb0318d1e4b16 a owl:Class ;
     rdfs:domain :SubjectArea ;
     rdfs:range :Entity ;
     owl:inverseOf :hasArea ;
-    foaf:page <https://en.wikipedia.org/wiki/Academic_discipline> .
+    foaf:page <https://en.wikipedia.org/wiki/N/A> .
 
 :isArtifactOf a :PropertyEntity,
         owl:ObjectProperty ;
@@ -464,7 +468,7 @@ _:nf9279e8bd75249d3942d53eb0318d1e4b16 a owl:Class ;
     rdfs:domain :ArtifactEntity ;
     rdfs:range :ToolEntity ;
     owl:inverseOf :processes ;
-    foaf:page <https://en.wikipedia.org/wiki/N/A> .
+    foaf:page <https://en.wikipedia.org/wiki/Data_processing> .
 
 :isServedBy a :PropertyEntity,
         owl:ObjectProperty ;
@@ -473,7 +477,7 @@ _:nf9279e8bd75249d3942d53eb0318d1e4b16 a owl:Class ;
     rdfs:domain :MethodologicalApproach ;
     rdfs:range :Entity ;
     owl:inverseOf :serves ;
-    foaf:page <https://en.wikipedia.org/wiki/N/A> .
+    foaf:page <https://en.wikipedia.org/wiki/Methodology> .
 
 :isSpaceOf a :PropertyEntity,
         owl:ObjectProperty ;
@@ -491,7 +495,7 @@ _:nf9279e8bd75249d3942d53eb0318d1e4b16 a owl:Class ;
     rdfs:domain :FormalEntity ;
     rdfs:range :MethodologicalApproach ;
     owl:inverseOf :specifies ;
-    foaf:page <https://en.wikipedia.org/wiki/N/A> .
+    foaf:page <https://en.wikipedia.org/wiki/Formal_methods> .
 
 :isTargetedBy a :PropertyEntity,
         owl:ObjectProperty ;
@@ -539,7 +543,7 @@ _:nf9279e8bd75249d3942d53eb0318d1e4b16 a owl:Class ;
     rdfs:domain :LanguageEntity ;
     rdfs:range :LanguageConcept ;
     rdfs:subPropertyOf :supports ;
-    foaf:page <https://en.wikipedia.org/wiki/Category:Programming_language_concepts> .
+    foaf:page <https://en.wikipedia.org/wiki/Programming_language> .
 
 :object a rdf:Property ;
     rdfs:label "object"@en ;
@@ -562,7 +566,7 @@ _:nf9279e8bd75249d3942d53eb0318d1e4b16 a owl:Class ;
     rdfs:domain :ToolEntity ;
     rdfs:range :ArtifactEntity ;
     owl:inverseOf :isProcessedBy ;
-    foaf:page <https://en.wikipedia.org/wiki/N/A> .
+    foaf:page <https://en.wikipedia.org/wiki/Artifact_(software_development)> .
 
 :resolveAfter a :PropertyEntity,
         owl:ObjectProperty ;
@@ -579,7 +583,7 @@ _:nf9279e8bd75249d3942d53eb0318d1e4b16 a owl:Class ;
     rdfs:domain :Entity ;
     rdfs:range :MethodologicalApproach ;
     owl:inverseOf :isServedBy ;
-    foaf:page <https://en.wikipedia.org/wiki/N/A> .
+    foaf:page <https://en.wikipedia.org/wiki/Methodology> .
 
 :specifies a :PropertyEntity,
         owl:ObjectProperty ;
@@ -588,7 +592,7 @@ _:nf9279e8bd75249d3942d53eb0318d1e4b16 a owl:Class ;
     rdfs:domain :MethodologicalApproach ;
     rdfs:range :FormalEntity ;
     owl:inverseOf :isSpecifiedBy ;
-    foaf:page <https://en.wikipedia.org/wiki/N/A> .
+    foaf:page <https://en.wikipedia.org/wiki/Formal_specification> .
 
 :standardlySupports a :PropertyEntity,
         owl:ObjectProperty ;

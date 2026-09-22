@@ -14,6 +14,9 @@
     rdfs:comment "Sub-ontology / ABox for the formal entities"@en ;
     owl:imports <http://www.softlang.org/ontologies/tbox> .
 
+[] a owl:Class ;
+    owl:unionOf ( :FormalSystem :ModelOfComputation :Theory ) .
+
 :AbstractRewritingSystem a tbox:FormalEntity ;
     rdfs:label "Abstract rewriting system"@en ;
     tbox:hasArea ce:PLT,
@@ -38,7 +41,7 @@
         ce:TCS ;
     tbox:hasSpace ce:Programware ;
     rdfs:subClassOf :LambdaCalculus ;
-    foaf:page <https://en.wikipedia.org/wiki/Classical_logic#Lambda_calculi> .
+    foaf:page <https://en.wikipedia.org/wiki/Lambda_calculus> .
 
 :ComputationalProblem a tbox:FormalEntity ;
     rdfs:label "Computational problem"@en ;
@@ -79,7 +82,7 @@
         ce:TCS ;
     tbox:hasSpace ce:Ontoware ;
     rdfs:subClassOf :FormalSystem ;
-    foaf:page <https://en.wikipedia.org/wiki/Description_logic> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Description_logic> .
 
 :DomainTheory a tbox:FormalEntity ;
     rdfs:label "Domain theory"@en ;
@@ -103,7 +106,7 @@
     rdfs:label "Formal object"@en ;
     rdfs:comment "formal object used as a mathematically characterized syntactic or symbolic entity"@en ;
     rdfs:subClassOf tbox:FormalEntity ;
-    foaf:page <https://en.wikipedia.org/wiki/Formalism_(philosophy_of_mathematics)> .
+    foaf:page <https://en.wikipedia.org/wiki/Formal_system> .
 
 :FormalSemanticsApproach a tbox:FormalEntity ;
     rdfs:label "Formal semantics approach"@en ;
@@ -118,7 +121,7 @@
     rdfs:label "Formal system"@en ;
     rdfs:comment "symbolic deductive formal system"@en ;
     rdfs:subClassOf tbox:FormalEntity ;
-    foaf:page <https://en.wikipedia.org/wiki/Formal_system> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Formal_system> .
 
 :GenerativeGrammar a tbox:FormalEntity ;
     rdfs:label "Generative grammar"@en ;
@@ -127,7 +130,7 @@
         ce:TCS ;
     tbox:hasSpace ce:Grammarware ;
     rdfs:subClassOf :FormalGrammar ;
-    foaf:page <https://en.wikipedia.org/wiki/Formal_grammar#The_Chomsky_hierarchy> .
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Generative_grammar> .
 
 :LambdaCalculus a tbox:FormalEntity ;
     rdfs:label "Lambda calculus"@en ;
@@ -185,7 +188,7 @@
         ce:TCS ;
     tbox:hasSpace ce:Programware ;
     rdfs:subClassOf :FormalSystem ;
-    foaf:page <https://en.wikipedia.org/wiki/Category:Program_logic> .
+    foaf:page <https://en.wikipedia.org/wiki/Formal_verification> .
 
 :SoftwareDesignApproach a tbox:FormalEntity ;
     rdfs:label "Software design approach"@en ;
@@ -234,7 +237,7 @@
     rdfs:subClassOf :Theory ;
     foaf:page <https://en.wikipedia.org/wiki/Type_theory> .
 
-_:n63571e6a5775491da7f5345f2fdf0cb1b2 a owl:Class ;
+_:n561a5b86e6ee4298999bfb400e7fc085b6 a owl:Class ;
     owl:unionOf ( :FormalSystem :ModelOfComputation :Theory ) .
 
 :ALC a :DescriptionLogic,
@@ -245,7 +248,7 @@ _:n63571e6a5775491da7f5345f2fdf0cb1b2 a owl:Class ;
         ce:TCS ;
     tbox:hasSpace ce:Ontoware ;
     rdfs:comment "basic attributional description logic with complement"@en ;
-    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Description_logic> .
+    foaf:page <https://en.wikipedia.org/wiki/Description_logic> .
 
 :AbstractSyntaxDefinitionApproach a :SyntaxDefinitionApproach,
         tbox:FormalEntity,
@@ -260,7 +263,7 @@ _:n63571e6a5775491da7f5345f2fdf0cb1b2 a owl:Class ;
         ce:Modelware,
         ce:XMLware ;
     rdfs:comment "syntax-definition approach concerned with the structural representation of language constructs independently of concrete notation details"@en ;
-    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Abstract_syntax> .
+    foaf:page <https://en.wikipedia.org/wiki/Abstract_syntax> .
 
 :AttributeGrammar a :FormalGrammar,
         tbox:FormalEntity,
@@ -331,7 +334,8 @@ _:n63571e6a5775491da7f5345f2fdf0cb1b2 a owl:Class ;
         ce:SLE ;
     tbox:hasSpace ce:Grammarware,
         ce:Modelware ;
-    rdfs:comment "syntax-definition approach concerned with the explicit surface representation of language constructs, including notation, delimiters, and other syntactically relevant details"@en .
+    rdfs:comment "syntax-definition approach concerned with the explicit surface representation of language constructs, including notation, delimiters, and other syntactically relevant details"@en ;
+    foaf:page <https://en.wikipedia.org/wiki/Syntax_(programming_languages)> .
 
 :ConstraintSatisfactionProblem a :ComputationalProblem,
         tbox:FormalEntity,
@@ -469,7 +473,7 @@ _:n63571e6a5775491da7f5345f2fdf0cb1b2 a owl:Class ;
         ce:TCS ;
     tbox:hasSpace ce:Graphware ;
     rdfs:comment "rewriting system based on graph transformation rules"@en ;
-    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Graph_rewriting> .
+    foaf:page <https://en.wikipedia.org/wiki/Graph_rewriting> .
 
 :GraphTheory a :Theory,
         tbox:FormalEntity,
@@ -614,7 +618,7 @@ _:n63571e6a5775491da7f5345f2fdf0cb1b2 a owl:Class ;
         ce:SE ;
     tbox:hasSpace ce:Ruleware ;
     rdfs:comment "formal object representing a production-system rule"@en ;
-    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Rule-based_system#Production_system_rules> .
+    foaf:page <https://en.wikipedia.org/wiki/Rule-based_system#Production_system_rules> .
 
 :SeparationLogic a :ProgramLogic,
         tbox:FormalEntity,
@@ -658,7 +662,7 @@ _:n63571e6a5775491da7f5345f2fdf0cb1b2 a owl:Class ;
         ce:SLE ;
     tbox:hasSpace ce:APIware ;
     rdfs:comment "formal object concerned with the specified boundary and interaction contract between software components"@en ;
-    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Interface_(computing)#Software_interfaces> .
+    foaf:page <https://en.wikipedia.org/wiki/Interface_(computing)> .
 
 :StringRewritingSystem a :AbstractRewritingSystem,
         tbox:FormalEntity,
@@ -713,7 +717,7 @@ _:n63571e6a5775491da7f5345f2fdf0cb1b2 a owl:Class ;
     tbox:hasSpace ce:Grammarware ;
     tbox:serves :ProgramTransformation ;
     rdfs:comment "rewriting system over algebraic terms"@en ;
-    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Rewriting#Term_rewriting_systems> .
+    foaf:page <https://en.wikipedia.org/wiki/Rewriting> .
 
 :TreeTransducer a tbox:FormalEntity,
         owl:NamedIndividual ;
@@ -740,18 +744,5 @@ _:n63571e6a5775491da7f5345f2fdf0cb1b2 a owl:Class ;
     foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Lambda_calculus> .
 
 [] a owl:AllDisjointClasses ;
-    owl:members (
-        :ComputationalProblem
-        :DataStructure
-        :MathematicalStructure
-        :FormalObject
-        _:unionClass
-    ) .
-
-_:unionClass a owl:Class ;
-    owl:unionOf (
-        :FormalSystem
-        :ModelOfComputation
-        :Theory
-    ) .
+    owl:members ( :ComputationalProblem :DataStructure :MathematicalStructure :FormalObject _:n561a5b86e6ee4298999bfb400e7fc085b6 ) .
 
