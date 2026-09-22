@@ -133,7 +133,7 @@ for context_file in sorted(
     # Get response, but only if there is no stored response yet
     response_file = (prompts_folder / relative_path).with_suffix(".response")
     if not response_file.is_file():
-        print("Prompting `{resource}`.".format(resource=resource))
+        print("Processing `{resource}`.".format(resource=resource))
         context_file_uploadid = upload_json_openai(client, context_file) if openai else None
         content = [
             { "type": "input_file", "file_id": context_file_uploadid },
@@ -152,4 +152,4 @@ for context_file in sorted(
         if openai:
             with response_file.open("w", encoding="utf-8") as file:
                 json.dump(data, file, ensure_ascii=False, indent=2)
-            assert check_response(data, resource), "Response format error for resource `" + resource + "`" 
+            assert check_response(data, resource), "Response format error for resource `{resource}`.".format(resource=resource) 

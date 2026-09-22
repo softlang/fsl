@@ -15,6 +15,7 @@ The assessment must have exactly one of the following outcomes:
 More constraints:
 * Any supported and proposed link must be in compliance with the policy for Wikipedia linkage.
 * Option `support' only can be applied, if there is exactly one link found in the provided context.
+* Any URL under the found links must come from the context. 
 
 Rules for the response format:
 * Return only a single JSON object with key-value pairs as follows:
