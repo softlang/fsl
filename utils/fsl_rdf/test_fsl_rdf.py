@@ -7,7 +7,7 @@ from rdflib.namespace import OWL, RDF
 from fsl_rdf import FSLOntology
 
 
-ROOT = Path(__file__).parents[1]
+ROOT = Path(__file__).parents[2]
 ONTOLOGIES = ROOT / "ontologies"
 
 

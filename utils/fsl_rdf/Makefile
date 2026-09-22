@@ -6,9 +6,9 @@ install:
 
 roundtrip:
 	rm -rf build
-	python3 fsl_rdf.py ../ontologies build/ontologies
-	cp ../ontologies/*.xml build/ontologies
-	cp ../ontologies/*.csv build/ontologies
+	python3 fsl_rdf.py ../../ontologies build/ontologies
+	cp ../../ontologies/*.xml build/ontologies
+	cp ../../ontologies/*.csv build/ontologies
 
 test:
 	python3 -m pytest -v test_fsl_rdf.py
